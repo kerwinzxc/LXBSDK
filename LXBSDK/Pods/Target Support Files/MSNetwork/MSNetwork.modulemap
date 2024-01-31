@@ -1,0 +1,6 @@
+framework module MSNetwork {
+  umbrella header "MSNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}

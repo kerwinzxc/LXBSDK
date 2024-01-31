@@ -1,0 +1,6 @@
+framework module Pods_LXBSDK {
+  umbrella header "Pods-LXBSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
