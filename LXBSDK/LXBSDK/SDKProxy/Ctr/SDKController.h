@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)sdkInit;
 + (void)login;
++ (void)test;
++ (void)createOrder;
 @end
 
 

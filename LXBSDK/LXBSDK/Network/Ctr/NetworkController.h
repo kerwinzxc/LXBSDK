@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <MSNetwork/MSNetwork.h>
 #import "NetworkConfig.h"
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,9 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)networkServiceInit;
 
-+ (void)GET:(NSString *)moduleName url:(NSString *)URL parameters:(NSDictionary *)parameters success:(MSHttpSuccess)success  failure:(MSHttpFail)failure;
++ (void)GET:(NSString *)moduleName classMeta:(Class)clazz url:(NSString *)URL parameters:(NSDictionary *)parameters success:(MSHttpSuccess)success  failure:(MSHttpFail)failure;
 /** Post*/
-+ (void)POST:(NSString *)moduleName url:(NSString *)URL parameters:(NSDictionary *)parameters success:(MSHttpSuccess)success failure:(MSHttpFail)failure;
++ (void)POST:(NSString *)moduleName classMeta:(Class)clazz url:(NSString *)URL parameters:(NSDictionary *)parameters success:(MSHttpSuccess)success failure:(MSHttpFail)failure;
 
 @end
 

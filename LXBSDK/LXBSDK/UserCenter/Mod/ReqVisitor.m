@@ -5,9 +5,9 @@
 //  Created by pub on 2024/1/30.
 //
 
-#import "VisitorReqModel.h"
+#import "ReqVisitor.h"
 
-@implementation VisitorReqModel
+@implementation ReqVisitor
 
 
 @end

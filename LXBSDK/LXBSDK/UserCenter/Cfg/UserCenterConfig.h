@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 static NSString *const UserCenterModuleName = @"usercenter";
 
-static NSString *const visitor = @"visitor";
+static NSString *const visitorUrl = @"visitor";
 @interface UserCenterConfig : NSObject
 
 @end

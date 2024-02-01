@@ -6,7 +6,9 @@ target 'LXBSDK' do
   use_frameworks!
 
   # Pods for LXBSDK
-  pod 'MSNetwork'
+  pod 'MJExtension'
+  pod 'AFNetworking'
+  pod 'YYCache'
 end
 
 target 'TestDemo' do
@@ -14,7 +16,9 @@ target 'TestDemo' do
   use_frameworks!
 
   # Pods for TestDemo
-  pod 'MSNetwork'
+  pod 'MJExtension'
+  pod 'AFNetworking'
+  pod 'YYCache'
 end
 
 post_install do |installer|

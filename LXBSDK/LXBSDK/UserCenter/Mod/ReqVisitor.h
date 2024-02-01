@@ -8,10 +8,11 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
-@interface VisitorReqModel : NSObject
+@interface ReqVisitor : NSObject
 @property(nonatomic, strong)NSString *device_id;
 @property(nonatomic, strong)NSString *uuid;
-@property(nonatomic, assign)NSInteger channel_id;
+@property(nonatomic, assign)long channel_id;
+
 @end
 
 NS_ASSUME_NONNULL_END

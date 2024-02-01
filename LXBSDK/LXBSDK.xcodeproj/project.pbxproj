@@ -25,8 +25,8 @@
 		891C1DC52B690EC3004AF32A /* UserCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 891C1DC32B690EC3004AF32A /* UserCenterController.m */; };
 		891C1DCA2B69123F004AF32A /* SDKController.h in Headers */ = {isa = PBXBuildFile; fileRef = 891C1DC82B69123F004AF32A /* SDKController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		891C1DCB2B69123F004AF32A /* SDKController.m in Sources */ = {isa = PBXBuildFile; fileRef = 891C1DC92B69123F004AF32A /* SDKController.m */; };
-		891C1DCF2B6915D4004AF32A /* VisitorReqModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 891C1DCD2B6915D4004AF32A /* VisitorReqModel.h */; };
-		891C1DD02B6915D4004AF32A /* VisitorReqModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 891C1DCE2B6915D4004AF32A /* VisitorReqModel.m */; };
+		891C1DCF2B6915D4004AF32A /* ReqVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 891C1DCD2B6915D4004AF32A /* ReqVisitor.h */; };
+		891C1DD02B6915D4004AF32A /* ReqVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 891C1DCE2B6915D4004AF32A /* ReqVisitor.m */; };
 		891C1DEB2B6921C2004AF32A /* KeychainController.h in Headers */ = {isa = PBXBuildFile; fileRef = 891C1DE92B6921C2004AF32A /* KeychainController.h */; };
 		891C1DEC2B6921C2004AF32A /* KeychainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 891C1DEA2B6921C2004AF32A /* KeychainController.m */; };
 		891C1DF12B692324004AF32A /* KeychainConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 891C1DEF2B692324004AF32A /* KeychainConfig.h */; };
@@ -35,6 +35,27 @@
 		891C1DF72B69E7D4004AF32A /* PostArgUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 891C1DF52B69E7D4004AF32A /* PostArgUtils.m */; };
 		8941CB9E2B6A31DB00DA9CA5 /* AFNet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8941CB9C2B6A31DB00DA9CA5 /* AFNet.h */; };
 		8941CB9F2B6A31DB00DA9CA5 /* AFNet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8941CB9D2B6A31DB00DA9CA5 /* AFNet.m */; };
+		8941CBA32B6A742800DA9CA5 /* BaseResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8941CBA12B6A742800DA9CA5 /* BaseResponse.h */; };
+		8941CBA42B6A742800DA9CA5 /* BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8941CBA22B6A742800DA9CA5 /* BaseResponse.m */; };
+		8941CBA62B6B3DD500DA9CA5 /* PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 8941CBA52B6B3DD500DA9CA5 /* PrefixHeader.pch */; };
+		8941CBAD2B6B41AC00DA9CA5 /* ResVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8941CBAB2B6B41AC00DA9CA5 /* ResVisitor.h */; };
+		8941CBAE2B6B41AC00DA9CA5 /* ResVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8941CBAC2B6B41AC00DA9CA5 /* ResVisitor.m */; };
+		8941CBB12B6B4BAD00DA9CA5 /* ThirdUserInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8941CBAF2B6B4BAD00DA9CA5 /* ThirdUserInfo.h */; };
+		8941CBB22B6B4BAD00DA9CA5 /* ThirdUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8941CBB02B6B4BAD00DA9CA5 /* ThirdUserInfo.m */; };
+		8941CBB62B6B527800DA9CA5 /* DataHub.h in Headers */ = {isa = PBXBuildFile; fileRef = 8941CBB42B6B527800DA9CA5 /* DataHub.h */; };
+		8941CBB72B6B527800DA9CA5 /* DataHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 8941CBB52B6B527800DA9CA5 /* DataHub.m */; };
+		8941CBBC2B6B6E3B00DA9CA5 /* PayController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8941CBBA2B6B6E3B00DA9CA5 /* PayController.h */; };
+		8941CBBD2B6B6E3B00DA9CA5 /* PayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8941CBBB2B6B6E3B00DA9CA5 /* PayController.m */; };
+		8941CBC22B6B6EA600DA9CA5 /* PayConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 8941CBC02B6B6EA600DA9CA5 /* PayConfig.h */; };
+		8941CBC32B6B6EA600DA9CA5 /* PayConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8941CBC12B6B6EA600DA9CA5 /* PayConfig.m */; };
+		8941CBC62B6B6F3800DA9CA5 /* ReqPayCreate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8941CBC42B6B6F3800DA9CA5 /* ReqPayCreate.h */; };
+		8941CBC72B6B6F3800DA9CA5 /* ReqPayCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8941CBC52B6B6F3800DA9CA5 /* ReqPayCreate.m */; };
+		8941CBCA2B6B708100DA9CA5 /* ResPayCreate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8941CBC82B6B708100DA9CA5 /* ResPayCreate.h */; };
+		8941CBCB2B6B708100DA9CA5 /* ResPayCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8941CBC92B6B708100DA9CA5 /* ResPayCreate.m */; };
+		8941CBCE2B6B9DD800DA9CA5 /* CustomResponseSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8941CBCC2B6B9DD800DA9CA5 /* CustomResponseSerializer.h */; };
+		8941CBCF2B6B9DD800DA9CA5 /* CustomResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8941CBCD2B6B9DD800DA9CA5 /* CustomResponseSerializer.m */; };
+		8941CBD32B6BA02100DA9CA5 /* MSNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 8941CBD12B6BA02100DA9CA5 /* MSNetwork.m */; };
+		8941CBD42B6BA02100DA9CA5 /* MSNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 8941CBD22B6BA02100DA9CA5 /* MSNetwork.h */; };
 		FFB512BDA3A6E25301A726DA /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADE1CE4487ABAEF2D87E922 /* Pods_TestDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,8 +95,8 @@
 		891C1DC32B690EC3004AF32A /* UserCenterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserCenterController.m; sourceTree = "<group>"; };
 		891C1DC82B69123F004AF32A /* SDKController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKController.h; sourceTree = "<group>"; };
 		891C1DC92B69123F004AF32A /* SDKController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDKController.m; sourceTree = "<group>"; };
-		891C1DCD2B6915D4004AF32A /* VisitorReqModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VisitorReqModel.h; sourceTree = "<group>"; };
-		891C1DCE2B6915D4004AF32A /* VisitorReqModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VisitorReqModel.m; sourceTree = "<group>"; };
+		891C1DCD2B6915D4004AF32A /* ReqVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReqVisitor.h; sourceTree = "<group>"; };
+		891C1DCE2B6915D4004AF32A /* ReqVisitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReqVisitor.m; sourceTree = "<group>"; };
 		891C1DE92B6921C2004AF32A /* KeychainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeychainController.h; sourceTree = "<group>"; };
 		891C1DEA2B6921C2004AF32A /* KeychainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeychainController.m; sourceTree = "<group>"; };
 		891C1DEF2B692324004AF32A /* KeychainConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeychainConfig.h; sourceTree = "<group>"; };
@@ -84,6 +105,27 @@
 		891C1DF52B69E7D4004AF32A /* PostArgUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostArgUtils.m; sourceTree = "<group>"; };
 		8941CB9C2B6A31DB00DA9CA5 /* AFNet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNet.h; sourceTree = "<group>"; };
 		8941CB9D2B6A31DB00DA9CA5 /* AFNet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNet.m; sourceTree = "<group>"; };
+		8941CBA12B6A742800DA9CA5 /* BaseResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseResponse.h; sourceTree = "<group>"; };
+		8941CBA22B6A742800DA9CA5 /* BaseResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseResponse.m; sourceTree = "<group>"; };
+		8941CBA52B6B3DD500DA9CA5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8941CBAB2B6B41AC00DA9CA5 /* ResVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResVisitor.h; sourceTree = "<group>"; };
+		8941CBAC2B6B41AC00DA9CA5 /* ResVisitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResVisitor.m; sourceTree = "<group>"; };
+		8941CBAF2B6B4BAD00DA9CA5 /* ThirdUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdUserInfo.h; sourceTree = "<group>"; };
+		8941CBB02B6B4BAD00DA9CA5 /* ThirdUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdUserInfo.m; sourceTree = "<group>"; };
+		8941CBB42B6B527800DA9CA5 /* DataHub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataHub.h; sourceTree = "<group>"; };
+		8941CBB52B6B527800DA9CA5 /* DataHub.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataHub.m; sourceTree = "<group>"; };
+		8941CBBA2B6B6E3B00DA9CA5 /* PayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayController.h; sourceTree = "<group>"; };
+		8941CBBB2B6B6E3B00DA9CA5 /* PayController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayController.m; sourceTree = "<group>"; };
+		8941CBC02B6B6EA600DA9CA5 /* PayConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayConfig.h; sourceTree = "<group>"; };
+		8941CBC12B6B6EA600DA9CA5 /* PayConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayConfig.m; sourceTree = "<group>"; };
+		8941CBC42B6B6F3800DA9CA5 /* ReqPayCreate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReqPayCreate.h; sourceTree = "<group>"; };
+		8941CBC52B6B6F3800DA9CA5 /* ReqPayCreate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReqPayCreate.m; sourceTree = "<group>"; };
+		8941CBC82B6B708100DA9CA5 /* ResPayCreate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResPayCreate.h; sourceTree = "<group>"; };
+		8941CBC92B6B708100DA9CA5 /* ResPayCreate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResPayCreate.m; sourceTree = "<group>"; };
+		8941CBCC2B6B9DD800DA9CA5 /* CustomResponseSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomResponseSerializer.h; sourceTree = "<group>"; };
+		8941CBCD2B6B9DD800DA9CA5 /* CustomResponseSerializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomResponseSerializer.m; sourceTree = "<group>"; };
+		8941CBD12B6BA02100DA9CA5 /* MSNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSNetwork.m; sourceTree = "<group>"; };
+		8941CBD22B6BA02100DA9CA5 /* MSNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNetwork.h; sourceTree = "<group>"; };
 		9DF32DB3C373AF2F30BE6001 /* Pods-LXBSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXBSDK.debug.xcconfig"; path = "Target Support Files/Pods-LXBSDK/Pods-LXBSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		BADE1CE4487ABAEF2D87E922 /* Pods_TestDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E488D5F7EB21815A661E80 /* Pods-LXBSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXBSDK.release.xcconfig"; path = "Target Support Files/Pods-LXBSDK/Pods-LXBSDK.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,12 +186,15 @@
 		891C1D842B6907A7004AF32A /* LXBSDK */ = {
 			isa = PBXGroup;
 			children = (
+				8941CBD02B6B9FF200DA9CA5 /* ThirdExtension */,
+				8941CBB82B6B6E1100DA9CA5 /* Pay */,
 				891C1DF32B69E786004AF32A /* Utils */,
 				891C1DE62B69214D004AF32A /* Keychain */,
 				891C1DC62B69111A004AF32A /* SDKProxy */,
 				891C1DBA2B690E30004AF32A /* UserCenter */,
 				891C1DAF2B690A71004AF32A /* Network */,
 				891C1D852B6907A7004AF32A /* LXBSDK.h */,
+				8941CBA52B6B3DD500DA9CA5 /* PrefixHeader.pch */,
 			);
 			path = LXBSDK;
 			sourceTree = "<group>";
@@ -184,6 +229,7 @@
 		891C1DAF2B690A71004AF32A /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				8941CBA02B6A740B00DA9CA5 /* Mod */,
 				891C1DB12B690A90004AF32A /* Cfg */,
 				891C1DB02B690A79004AF32A /* Ctr */,
 			);
@@ -212,6 +258,7 @@
 		891C1DBA2B690E30004AF32A /* UserCenter */ = {
 			isa = PBXGroup;
 			children = (
+				8941CBB32B6B526400DA9CA5 /* Data */,
 				891C1DCC2B69158E004AF32A /* Mod */,
 				891C1DBB2B690E3E004AF32A /* Cfg */,
 				891C1DBC2B690E4C004AF32A /* Ctr */,
@@ -256,8 +303,12 @@
 		891C1DCC2B69158E004AF32A /* Mod */ = {
 			isa = PBXGroup;
 			children = (
-				891C1DCD2B6915D4004AF32A /* VisitorReqModel.h */,
-				891C1DCE2B6915D4004AF32A /* VisitorReqModel.m */,
+				891C1DCD2B6915D4004AF32A /* ReqVisitor.h */,
+				891C1DCE2B6915D4004AF32A /* ReqVisitor.m */,
+				8941CBAB2B6B41AC00DA9CA5 /* ResVisitor.h */,
+				8941CBAC2B6B41AC00DA9CA5 /* ResVisitor.m */,
+				8941CBAF2B6B4BAD00DA9CA5 /* ThirdUserInfo.h */,
+				8941CBB02B6B4BAD00DA9CA5 /* ThirdUserInfo.m */,
 			);
 			path = Mod;
 			sourceTree = "<group>";
@@ -298,6 +349,74 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		8941CBA02B6A740B00DA9CA5 /* Mod */ = {
+			isa = PBXGroup;
+			children = (
+				8941CBA12B6A742800DA9CA5 /* BaseResponse.h */,
+				8941CBA22B6A742800DA9CA5 /* BaseResponse.m */,
+			);
+			path = Mod;
+			sourceTree = "<group>";
+		};
+		8941CBB32B6B526400DA9CA5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8941CBB42B6B527800DA9CA5 /* DataHub.h */,
+				8941CBB52B6B527800DA9CA5 /* DataHub.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8941CBB82B6B6E1100DA9CA5 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				8941CBBF2B6B6E9200DA9CA5 /* Cfg */,
+				8941CBBE2B6B6E4100DA9CA5 /* Mod */,
+				8941CBB92B6B6E1900DA9CA5 /* Ctr */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		8941CBB92B6B6E1900DA9CA5 /* Ctr */ = {
+			isa = PBXGroup;
+			children = (
+				8941CBBA2B6B6E3B00DA9CA5 /* PayController.h */,
+				8941CBBB2B6B6E3B00DA9CA5 /* PayController.m */,
+			);
+			path = Ctr;
+			sourceTree = "<group>";
+		};
+		8941CBBE2B6B6E4100DA9CA5 /* Mod */ = {
+			isa = PBXGroup;
+			children = (
+				8941CBC42B6B6F3800DA9CA5 /* ReqPayCreate.h */,
+				8941CBC52B6B6F3800DA9CA5 /* ReqPayCreate.m */,
+				8941CBC82B6B708100DA9CA5 /* ResPayCreate.h */,
+				8941CBC92B6B708100DA9CA5 /* ResPayCreate.m */,
+			);
+			path = Mod;
+			sourceTree = "<group>";
+		};
+		8941CBBF2B6B6E9200DA9CA5 /* Cfg */ = {
+			isa = PBXGroup;
+			children = (
+				8941CBC02B6B6EA600DA9CA5 /* PayConfig.h */,
+				8941CBC12B6B6EA600DA9CA5 /* PayConfig.m */,
+			);
+			path = Cfg;
+			sourceTree = "<group>";
+		};
+		8941CBD02B6B9FF200DA9CA5 /* ThirdExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8941CBD22B6BA02100DA9CA5 /* MSNetwork.h */,
+				8941CBD12B6BA02100DA9CA5 /* MSNetwork.m */,
+				8941CBCC2B6B9DD800DA9CA5 /* CustomResponseSerializer.h */,
+				8941CBCD2B6B9DD800DA9CA5 /* CustomResponseSerializer.m */,
+			);
+			path = ThirdExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -306,16 +425,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				891C1DF12B692324004AF32A /* KeychainConfig.h in Headers */,
+				8941CBB12B6B4BAD00DA9CA5 /* ThirdUserInfo.h in Headers */,
 				891C1DF62B69E7D4004AF32A /* PostArgUtils.h in Headers */,
+				8941CBA62B6B3DD500DA9CA5 /* PrefixHeader.pch in Headers */,
 				891C1D862B6907A7004AF32A /* LXBSDK.h in Headers */,
+				8941CBCE2B6B9DD800DA9CA5 /* CustomResponseSerializer.h in Headers */,
 				891C1DCA2B69123F004AF32A /* SDKController.h in Headers */,
 				891C1DEB2B6921C2004AF32A /* KeychainController.h in Headers */,
+				8941CBC62B6B6F3800DA9CA5 /* ReqPayCreate.h in Headers */,
 				891C1DB82B690B6C004AF32A /* NetworkConfig.h in Headers */,
+				8941CBB62B6B527800DA9CA5 /* DataHub.h in Headers */,
+				8941CBD42B6BA02100DA9CA5 /* MSNetwork.h in Headers */,
+				8941CBC22B6B6EA600DA9CA5 /* PayConfig.h in Headers */,
+				8941CBA32B6A742800DA9CA5 /* BaseResponse.h in Headers */,
+				8941CBCA2B6B708100DA9CA5 /* ResPayCreate.h in Headers */,
 				891C1DBF2B690E74004AF32A /* UserCenterConfig.h in Headers */,
-				891C1DCF2B6915D4004AF32A /* VisitorReqModel.h in Headers */,
+				891C1DCF2B6915D4004AF32A /* ReqVisitor.h in Headers */,
 				8941CB9E2B6A31DB00DA9CA5 /* AFNet.h in Headers */,
 				891C1DC42B690EC3004AF32A /* UserCenterController.h in Headers */,
+				8941CBAD2B6B41AC00DA9CA5 /* ResVisitor.h in Headers */,
 				891C1DB42B690ABC004AF32A /* NetworkController.h in Headers */,
+				8941CBBC2B6B6E3B00DA9CA5 /* PayController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,13 +617,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				8941CB9F2B6A31DB00DA9CA5 /* AFNet.m in Sources */,
+				8941CBCB2B6B708100DA9CA5 /* ResPayCreate.m in Sources */,
+				8941CBBD2B6B6E3B00DA9CA5 /* PayController.m in Sources */,
+				8941CBC72B6B6F3800DA9CA5 /* ReqPayCreate.m in Sources */,
+				8941CBA42B6A742800DA9CA5 /* BaseResponse.m in Sources */,
 				891C1DF72B69E7D4004AF32A /* PostArgUtils.m in Sources */,
+				8941CBD32B6BA02100DA9CA5 /* MSNetwork.m in Sources */,
 				891C1DCB2B69123F004AF32A /* SDKController.m in Sources */,
 				891C1DF22B692324004AF32A /* KeychainConfig.m in Sources */,
-				891C1DD02B6915D4004AF32A /* VisitorReqModel.m in Sources */,
+				8941CBB72B6B527800DA9CA5 /* DataHub.m in Sources */,
+				891C1DD02B6915D4004AF32A /* ReqVisitor.m in Sources */,
 				891C1DB52B690ABC004AF32A /* NetworkController.m in Sources */,
+				8941CBAE2B6B41AC00DA9CA5 /* ResVisitor.m in Sources */,
+				8941CBC32B6B6EA600DA9CA5 /* PayConfig.m in Sources */,
 				891C1DC52B690EC3004AF32A /* UserCenterController.m in Sources */,
 				891C1DEC2B6921C2004AF32A /* KeychainController.m in Sources */,
+				8941CBB22B6B4BAD00DA9CA5 /* ThirdUserInfo.m in Sources */,
+				8941CBCF2B6B9DD800DA9CA5 /* CustomResponseSerializer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,6 +805,8 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LXBSDK/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -701,6 +843,8 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LXBSDK/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";

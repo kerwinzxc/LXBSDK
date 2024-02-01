@@ -7,6 +7,8 @@
 #import "PostArgUtils.h"
 #import "NetworkController.h"
 #import "PostArgUtils.h"
+#import "BaseResponse.h"
+#import <MJExtension/MJExtension.h>
 @implementation NetworkController
 
 + (void)networkServiceInit{
@@ -33,19 +35,20 @@
 }
 
 + (void)test{
-    NSString *ll = [PostArgUtils getMillisec];
+    NSNumber *ll = [PostArgUtils getMillisec];
     NSLog(@"%@",ll);
 }
 
-+ (void)GET:(NSString *)moduleName url:(NSString *)URL parameters:(NSDictionary *)parameters success:(MSHttpSuccess)success  failure:(MSHttpFail)failure{
-    [self lxbRequestWithMethod:MSRequestMethodGET moduleName:moduleName url:URL params:parameters success:success failure:failure];
++ (void)GET:(NSString *)moduleName classMeta:(Class)clazz url:(NSString *)URL parameters:(NSDictionary *)parameters success:(MSHttpSuccess)success  failure:(MSHttpFail)failure{
+    [self lxbRequestWithMethod:MSRequestMethodGET classMeta:clazz moduleName:moduleName url:URL params:parameters success:success failure:failure];
 }
 
-+ (void)POST:(NSString *)moduleName url:(NSString *)URL parameters:(NSDictionary *)parameters success:(MSHttpSuccess)success failure:(MSHttpFail)failure{
-    [self lxbRequestWithMethod:MSRequestMethodPOST moduleName:moduleName url:URL params:parameters success:success failure:failure];
++ (void)POST:(NSString *)moduleName classMeta:(Class)clazz url:(NSString *)URL parameters:(NSDictionary *)parameters success:(MSHttpSuccess)success failure:(MSHttpFail)failure{
+    [self lxbRequestWithMethod:MSRequestMethodPOST classMeta:clazz moduleName:moduleName url:URL params:parameters success:success failure:failure];
 }
 
 + (void)lxbRequestWithMethod:(MSRequestMethod)method
+                   classMeta:(Class)clazz
                   moduleName:(NSString *)mName
                          url:(NSString *)URL
                       params:(NSDictionary *)params
@@ -56,13 +59,26 @@
     
     [self networkServiceInit];
     
-    [MSNetwork HTTPWithMethod:method url:blUrl parameters:lastParams headers:nil cachePolicy:MSCachePolicyOnlyNetNoCache success:^(id  _Nonnull responseObject) {
+    [MSNetwork HTTPWithMethod:method url:blUrl parameters:lastParams headers:nil cachePolicy:MSCachePolicyOnlyNetNoCache success:^(id  _Nonnull data) {
+        BaseResponse *baseResponse=[[BaseResponse class] mj_objectWithKeyValues:data];
+        if([self isSuccessWithResponse:baseResponse]){
+            id dataDict=data[@"data"];
+            
+            id meta=[[clazz class] mj_objectWithKeyValues:dataDict];
+            
+            success(meta);
+        }
         //[MBProgressHUD mb_hide];
-        success(responseObject);
+        
     } failure:^(NSError * _Nonnull error) {
         //[MBProgressHUD mb_hide];
         failure(error);
     }];
+}
+
+
++ (BOOL)isSuccessWithResponse:(BaseResponse *)data{
+    return data.code == 200;
 }
 
 #pragma mark - 请求的公共方法

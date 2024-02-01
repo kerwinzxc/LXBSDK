@@ -9,8 +9,7 @@
 #import "MSNetwork.h"
 #import "AFNetworkActivityIndicatorManager.h"
 #import "AFNetworking.h"
-
-
+#import "CustomResponseSerializer.h"
 #import <YYCache/YYCache.h>
 
 #ifdef DEBUG
@@ -62,9 +61,10 @@ static YYCache *_dataCache;
     //设置请求超时时间
     _sessionManager.requestSerializer.timeoutInterval = 30.f;
     //设置服务器返回结果的类型:JSON(AFJSONResponseSerializer,AFHTTPResponseSerializer)
-    _sessionManager.responseSerializer = [AFJSONResponseSerializer serializer];
+    _sessionManager.responseSerializer = [CustomResponseSerializer serializer];
     
     _sessionManager.requestSerializer = [AFJSONRequestSerializer serializer];
+    
     
     _sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/plain", @"text/javascript", @"text/xml", @"image/*",@"multipart/form-data",@"application/x-www-form-urlencoded", nil];
     //开始监测网络状态
