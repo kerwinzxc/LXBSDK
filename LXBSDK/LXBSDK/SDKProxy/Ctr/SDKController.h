@@ -14,6 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)login;
 + (void)test;
 + (void)createOrder;
++ (void)realName;
++ (void)payItem;
++ (void)queryLostOrder;
 @end
 
 

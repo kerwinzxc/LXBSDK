@@ -45,7 +45,6 @@
         NSLog(@"从 Keychain 中加载数据时出错");
     }
 
-    //NSString *password = [KeychainService loadPasswordWithService:@"MyService" account:@"MyAccount"];
     return nil;
 }
 

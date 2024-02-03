@@ -10,6 +10,7 @@
 #import "UserCenterController.h"
 #import "PayController.h"
 #import "PostArgUtils.h"
+#import "RealNameController.h"
 #import "AFNet.h"
 @implementation SDKController
 
@@ -69,8 +70,28 @@
     req.uuid = @"123465";
     NSInteger cId = [U8_CHANNEL intValue];
     NSDictionary *dic = req.mj_keyValues;
-    
-    
 }
 
++ (void)realName{
+    ReqRealName *req = [[ReqRealName alloc] init];
+    req.app_id = [U8_GAME_ID longLongValue];
+    req.channel_id = [U8_CHANNEL longLongValue];
+    req.account_id = [DataHub getInstance].useModel.account_id;
+    req.realname = @"张胜";
+    req.id_card = @"422128197201131431";
+    
+    [RealNameController realName:req success:^(id  _Nonnull responseObject) {
+            NSLog(@"xx");
+        } failure:^(NSError * _Nonnull error) {
+            NSLog(@"xxxx");
+        }];
+}
+
++ (void)payItem{
+    [[PayController getInstance] QueryInfo:@"12yuan"];
+}
+
++ (void)queryLostOrder{
+    [[PayController getInstance] queryLostOrder];
+}
 @end

@@ -44,7 +44,16 @@
             [SDKController login];
             break;
         case 2:
+            [SDKController realName];
+            break;
+        case 3:
             [SDKController createOrder];
+            break;
+        case 4:
+            [SDKController payItem];
+            break;
+        case 5:
+            [SDKController queryLostOrder];
             break;
         default:
             break;
@@ -53,12 +62,12 @@
 
 - (void)initActionLable{
     self.actionLable = @[
-        @"SDKInit",
-        @"游客登陆",
-        @"创建订单",
-        @"账号绑定检测",
-        @"账号绑定",
-        @"发送验证码",
+        @"0SDKInit",
+        @"1游客登陆",
+        @"2实名认证",
+        @"3创建订单",
+        @"4苹果内购",
+        @"5处理苹果订单",
         @"绑定更新",
         @"微信绑定",
         @"解封冻结账号",
