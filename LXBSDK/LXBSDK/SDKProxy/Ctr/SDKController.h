@@ -9,14 +9,19 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SDKController : NSObject
-
-+ (void)sdkInit;
-+ (void)login;
-+ (void)test;
-+ (void)createOrder;
-+ (void)realName;
-+ (void)payItem;
-+ (void)queryLostOrder;
++ (SDKController *)getInstance;
+- (void)sdkInit;
+- (void)login;
+- (void)test;
+- (void)createOrder;
+- (void)realName;
+- (void)payItem;
+- (void)finishLostOrder;
+- (void)buyProduct;
+- (void)buyProduct2;
+- (void)launchAppleLogin;
+- (void)launchAppleBind;
+- (void)autoLogin;
 @end
 
 

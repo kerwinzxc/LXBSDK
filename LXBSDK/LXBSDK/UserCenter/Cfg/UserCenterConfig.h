@@ -8,9 +8,6 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
-static NSString *const UserCenterModuleName = @"usercenter";
-
-static NSString *const visitorUrl = @"visitor";
 @interface UserCenterConfig : NSObject
 
 @end

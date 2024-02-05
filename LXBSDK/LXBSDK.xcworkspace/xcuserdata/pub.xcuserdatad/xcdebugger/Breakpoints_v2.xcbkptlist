@@ -3,4 +3,70 @@
    uuid = "8FF996C0-A98D-4D30-AA48-55EA946B2F98"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6912F6FD-750A-4CEA-A886-ABC2FB4783EC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LXBSDK/ThirdLogin/Apple/AppleLoginController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "-authorizationController:didCompleteWithError:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "78E14563-0D27-4C4E-A44B-6DC08AA17B4E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LXBSDK/SDKProxy/Ctr/SDKController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "219"
+            endingLineNumber = "219"
+            landmarkName = "-handerAppleLogin:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "78E14563-0D27-4C4E-A44B-6DC08AA17B4E - 18f5427238f97d16"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__34-[SDKController handerAppleLogin:]_block_invoke_3"
+                  moduleName = "TestDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pub/Documents/LXBSDK/LXBSDK/LXBSDK/SDKProxy/Ctr/SDKController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "219"
+                  endingLineNumber = "219"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "78E14563-0D27-4C4E-A44B-6DC08AA17B4E - 18f5427238f97d16"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__34-[SDKController handerAppleLogin:]_block_invoke_3"
+                  moduleName = "TestDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pub/Documents/LXBSDK/LXBSDK/LXBSDK/SDKProxy/Ctr/SDKController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "219"
+                  endingLineNumber = "219"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

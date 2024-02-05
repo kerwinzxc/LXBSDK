@@ -9,10 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-static NSString *const LXBLoginDevicesId = @"LXBLoginDevicesId";
-static NSString *const LXBLoginUUID = @"LXBLoginUUID";
 
-static NSString *const LXBDevicesIDService = @"LXBDevicesIDService";
 
 @interface KeychainConfig : NSObject
 

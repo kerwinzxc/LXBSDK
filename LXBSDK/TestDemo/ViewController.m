@@ -7,6 +7,9 @@
 
 #import "ViewController.h"
 #import <LXBSDK/LXBSDK.h>
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+static DDLogLevel ddLogLevel = DDLogLevelDebug;
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong)NSArray *actionLable;
 @end
@@ -17,12 +20,12 @@
     [self initActionLable];
     [self tableViewInit];
     [super viewDidLoad];
-    
-    
     // Do any additional setup after loading the view.
-    
-    NSLog(@"xxx");
-
+    [DDLog addLogger:[DDOSLogger sharedInstance]];
+    DDFileLogger *fileLog = [[DDFileLogger alloc] init];
+    fileLog.rollingFrequency = 60 * 60 *24;
+    fileLog.logFileManager.maximumNumberOfLogFiles = 3;
+    [DDLog addLogger:fileLog];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -38,22 +41,37 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.row) {
         case 0:
-            [SDKController sdkInit];
+            [[SDKController getInstance] sdkInit];
             break;
         case 1:
-            [SDKController login];
+            [[SDKController getInstance] login];
             break;
         case 2:
-            [SDKController realName];
+            [[SDKController getInstance] realName];
             break;
         case 3:
-            [SDKController createOrder];
+            [[SDKController getInstance] createOrder];
             break;
         case 4:
-            [SDKController payItem];
+            [[SDKController getInstance] buyProduct];
             break;
         case 5:
-            [SDKController queryLostOrder];
+            [[SDKController getInstance] finishLostOrder];
+            break;
+        case 6:
+            NSLog(@"DDLogDebug");
+            break;
+        case 7:
+            [[SDKController getInstance] buyProduct2];
+            break;
+        case 8:
+            [[SDKController getInstance] launchAppleBind];
+            break;
+        case 9:
+            [[SDKController getInstance] autoLogin];
+            break;
+        case 10:
+            [[SDKController getInstance] launchAppleLogin];
             break;
         default:
             break;
@@ -67,18 +85,17 @@
         @"2实名认证",
         @"3创建订单",
         @"4苹果内购",
-        @"5处理苹果订单",
-        @"绑定更新",
-        @"微信绑定",
-        @"解封冻结账号",
-        @"账号解绑",
-        @"账号切换检测",
+        @"5处理未处理苹果订单",
+        @"6绑定更新",
+        @"7 30元购买",
+        @"8bind Apple",
+        @"9autoLogin",
+        @"10apple login",
         @"账号切换",
         @"账号解绑",
         @"硬核渠道登录",
         @"一键、验证码登录",
         @"自动登录校验",
-        
         @"账号解绑",
     ];
     

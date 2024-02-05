@@ -567,10 +567,6 @@ cachePolicy:(MSCachePolicy)cachePolicy
                        failure:(void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure {
     NSURLSessionTask *sessionTask;
     
-
-    
-    //NSLog(@"head %@", requestSerializer.HTTPRequestHeaders);
-    
     switch (method) {
         case MSRequestMethodGET:{
             sessionTask = [_sessionManager GET:url parameters:parameters headers:headers progress:nil success:success failure:failure];

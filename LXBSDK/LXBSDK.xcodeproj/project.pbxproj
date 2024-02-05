@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		247E519413FC280AADEA3141 /* Pods_LXBSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AEE0D2C39091E96A671D14 /* Pods_LXBSDK.framework */; };
-		891518102B6CF20F002BE705 /* PayController+PayVerify.h in Headers */ = {isa = PBXBuildFile; fileRef = 8915180E2B6CF20F002BE705 /* PayController+PayVerify.h */; };
-		891518112B6CF20F002BE705 /* PayController+PayVerify.m in Sources */ = {isa = PBXBuildFile; fileRef = 8915180F2B6CF20F002BE705 /* PayController+PayVerify.m */; };
 		891C1D862B6907A7004AF32A /* LXBSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 891C1D852B6907A7004AF32A /* LXBSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		891C1D942B6907D0004AF32A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 891C1D932B6907D0004AF32A /* AppDelegate.m */; };
 		891C1D972B6907D0004AF32A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 891C1D962B6907D0004AF32A /* SceneDelegate.m */; };
@@ -67,6 +65,28 @@
 		8941CBE72B6BA2E000DA9CA5 /* ResRealName.h in Headers */ = {isa = PBXBuildFile; fileRef = 8941CBE52B6BA2E000DA9CA5 /* ResRealName.h */; };
 		8941CBE82B6BA2E000DA9CA5 /* ResRealName.m in Sources */ = {isa = PBXBuildFile; fileRef = 8941CBE62B6BA2E000DA9CA5 /* ResRealName.m */; };
 		8941CBEA2B6BC1D700DA9CA5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8941CBE92B6BC1D700DA9CA5 /* StoreKit.framework */; };
+		89B06DAC2B6E3DE200605573 /* NSObject+BLLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B06DAA2B6E3DE200605573 /* NSObject+BLLog.h */; };
+		89B06DAD2B6E3DE200605573 /* NSObject+BLLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B06DAB2B6E3DE200605573 /* NSObject+BLLog.m */; };
+		89EFAF312B6F859D00F13986 /* ReqPayValidate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF2F2B6F859D00F13986 /* ReqPayValidate.h */; };
+		89EFAF322B6F859D00F13986 /* ReqPayValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF302B6F859D00F13986 /* ReqPayValidate.m */; };
+		89EFAF352B6F85B400F13986 /* ResPayValidate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF332B6F85B400F13986 /* ResPayValidate.h */; };
+		89EFAF362B6F85B400F13986 /* ResPayValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF342B6F85B400F13986 /* ResPayValidate.m */; };
+		89EFAF422B6FB3F800F13986 /* SKDConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF402B6FB3F800F13986 /* SKDConfig.h */; };
+		89EFAF432B6FB3F800F13986 /* SKDConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF412B6FB3F800F13986 /* SKDConfig.m */; };
+		89EFAF4A2B7082EF00F13986 /* AppleLoginController.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF482B7082EF00F13986 /* AppleLoginController.h */; };
+		89EFAF4B2B7082EF00F13986 /* AppleLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF492B7082EF00F13986 /* AppleLoginController.m */; };
+		89EFAF4D2B70836700F13986 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89EFAF4C2B70836700F13986 /* AuthenticationServices.framework */; };
+		89EFAF502B70B62600F13986 /* ReqAutoLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF4E2B70B62600F13986 /* ReqAutoLogin.h */; };
+		89EFAF512B70B62600F13986 /* ReqAutoLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF4F2B70B62600F13986 /* ReqAutoLogin.m */; };
+		89EFAF582B70C78A00F13986 /* ReqOverseaBind.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF562B70C78A00F13986 /* ReqOverseaBind.h */; };
+		89EFAF592B70C78A00F13986 /* ReqOverseaBind.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF572B70C78A00F13986 /* ReqOverseaBind.m */; };
+		89EFAF5C2B70CCF100F13986 /* BindExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF5A2B70CCF100F13986 /* BindExtend.h */; };
+		89EFAF5D2B70CCF100F13986 /* BindExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF5B2B70CCF100F13986 /* BindExtend.m */; };
+		89EFAF622B70E36300F13986 /* BaseConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF602B70E36300F13986 /* BaseConfig.h */; };
+		89EFAF632B70E36300F13986 /* BaseConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF612B70E36300F13986 /* BaseConfig.m */; };
+		89EFAF662B70E6DA00F13986 /* ReqThirdPartyLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF642B70E6DA00F13986 /* ReqThirdPartyLogin.h */; };
+		89EFAF672B70E6DA00F13986 /* ReqThirdPartyLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF652B70E6DA00F13986 /* ReqThirdPartyLogin.m */; };
+		89EFAF692B70FDC200F13986 /* Monddia.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89EFAF682B70FDC200F13986 /* Monddia.bundle */; };
 		FFB512BDA3A6E25301A726DA /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADE1CE4487ABAEF2D87E922 /* Pods_TestDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,8 +104,6 @@
 		17AEE0D2C39091E96A671D14 /* Pods_LXBSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXBSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		371C3261880401D51EA82E65 /* Pods-TestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.debug.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		63792BEA1EA7954C6084CBDD /* Pods-TestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.release.xcconfig"; path = "Target Support Files/Pods-TestDemo/Pods-TestDemo.release.xcconfig"; sourceTree = "<group>"; };
-		8915180E2B6CF20F002BE705 /* PayController+PayVerify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PayController+PayVerify.h"; sourceTree = "<group>"; };
-		8915180F2B6CF20F002BE705 /* PayController+PayVerify.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PayController+PayVerify.m"; sourceTree = "<group>"; };
 		891C1D822B6907A7004AF32A /* LXBSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LXBSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		891C1D852B6907A7004AF32A /* LXBSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXBSDK.h; sourceTree = "<group>"; };
 		891C1D902B6907D0004AF32A /* TestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +166,29 @@
 		8941CBE52B6BA2E000DA9CA5 /* ResRealName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResRealName.h; sourceTree = "<group>"; };
 		8941CBE62B6BA2E000DA9CA5 /* ResRealName.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResRealName.m; sourceTree = "<group>"; };
 		8941CBE92B6BC1D700DA9CA5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		89B06DAA2B6E3DE200605573 /* NSObject+BLLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+BLLog.h"; sourceTree = "<group>"; };
+		89B06DAB2B6E3DE200605573 /* NSObject+BLLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BLLog.m"; sourceTree = "<group>"; };
+		89EFAF2F2B6F859D00F13986 /* ReqPayValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReqPayValidate.h; sourceTree = "<group>"; };
+		89EFAF302B6F859D00F13986 /* ReqPayValidate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReqPayValidate.m; sourceTree = "<group>"; };
+		89EFAF332B6F85B400F13986 /* ResPayValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResPayValidate.h; sourceTree = "<group>"; };
+		89EFAF342B6F85B400F13986 /* ResPayValidate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResPayValidate.m; sourceTree = "<group>"; };
+		89EFAF402B6FB3F800F13986 /* SKDConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKDConfig.h; sourceTree = "<group>"; };
+		89EFAF412B6FB3F800F13986 /* SKDConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKDConfig.m; sourceTree = "<group>"; };
+		89EFAF442B707F4000F13986 /* TestDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestDemo.entitlements; sourceTree = "<group>"; };
+		89EFAF482B7082EF00F13986 /* AppleLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleLoginController.h; sourceTree = "<group>"; };
+		89EFAF492B7082EF00F13986 /* AppleLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleLoginController.m; sourceTree = "<group>"; };
+		89EFAF4C2B70836700F13986 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		89EFAF4E2B70B62600F13986 /* ReqAutoLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReqAutoLogin.h; sourceTree = "<group>"; };
+		89EFAF4F2B70B62600F13986 /* ReqAutoLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReqAutoLogin.m; sourceTree = "<group>"; };
+		89EFAF562B70C78A00F13986 /* ReqOverseaBind.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReqOverseaBind.h; sourceTree = "<group>"; };
+		89EFAF572B70C78A00F13986 /* ReqOverseaBind.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReqOverseaBind.m; sourceTree = "<group>"; };
+		89EFAF5A2B70CCF100F13986 /* BindExtend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindExtend.h; sourceTree = "<group>"; };
+		89EFAF5B2B70CCF100F13986 /* BindExtend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindExtend.m; sourceTree = "<group>"; };
+		89EFAF602B70E36300F13986 /* BaseConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseConfig.h; sourceTree = "<group>"; };
+		89EFAF612B70E36300F13986 /* BaseConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseConfig.m; sourceTree = "<group>"; };
+		89EFAF642B70E6DA00F13986 /* ReqThirdPartyLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReqThirdPartyLogin.h; sourceTree = "<group>"; };
+		89EFAF652B70E6DA00F13986 /* ReqThirdPartyLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReqThirdPartyLogin.m; sourceTree = "<group>"; };
+		89EFAF682B70FDC200F13986 /* Monddia.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Monddia.bundle; sourceTree = "<group>"; };
 		9DF32DB3C373AF2F30BE6001 /* Pods-LXBSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXBSDK.debug.xcconfig"; path = "Target Support Files/Pods-LXBSDK/Pods-LXBSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		BADE1CE4487ABAEF2D87E922 /* Pods_TestDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E488D5F7EB21815A661E80 /* Pods-LXBSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXBSDK.release.xcconfig"; path = "Target Support Files/Pods-LXBSDK/Pods-LXBSDK.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,6 +199,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89EFAF4D2B70836700F13986 /* AuthenticationServices.framework in Frameworks */,
 				247E519413FC280AADEA3141 /* Pods_LXBSDK.framework in Frameworks */,
 				8941CBEA2B6BC1D700DA9CA5 /* StoreKit.framework in Frameworks */,
 			);
@@ -209,6 +251,8 @@
 		891C1D842B6907A7004AF32A /* LXBSDK */ = {
 			isa = PBXGroup;
 			children = (
+				89EFAF5E2B70E33600F13986 /* Base */,
+				89EFAF462B7082B300F13986 /* ThirdLogin */,
 				8941CBD52B6BA1ED00DA9CA5 /* RealName */,
 				8941CBD02B6B9FF200DA9CA5 /* ThirdExtension */,
 				8941CBB82B6B6E1100DA9CA5 /* Pay */,
@@ -226,6 +270,8 @@
 		891C1D912B6907D0004AF32A /* TestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				89EFAF682B70FDC200F13986 /* Monddia.bundle */,
+				89EFAF442B707F4000F13986 /* TestDemo.entitlements */,
 				891C1D922B6907D0004AF32A /* AppDelegate.h */,
 				891C1D932B6907D0004AF32A /* AppDelegate.m */,
 				891C1D952B6907D0004AF32A /* SceneDelegate.h */,
@@ -244,6 +290,7 @@
 		891C1DA92B6908A5004AF32A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				89EFAF4C2B70836700F13986 /* AuthenticationServices.framework */,
 				8941CBE92B6BC1D700DA9CA5 /* StoreKit.framework */,
 				17AEE0D2C39091E96A671D14 /* Pods_LXBSDK.framework */,
 				BADE1CE4487ABAEF2D87E922 /* Pods_TestDemo.framework */,
@@ -311,6 +358,7 @@
 		891C1DC62B69111A004AF32A /* SDKProxy */ = {
 			isa = PBXGroup;
 			children = (
+				89EFAF3F2B6FB3E300F13986 /* Cfg */,
 				891C1DC72B691134004AF32A /* Ctr */,
 			);
 			path = SDKProxy;
@@ -334,6 +382,14 @@
 				8941CBAC2B6B41AC00DA9CA5 /* ResVisitor.m */,
 				8941CBAF2B6B4BAD00DA9CA5 /* ThirdUserInfo.h */,
 				8941CBB02B6B4BAD00DA9CA5 /* ThirdUserInfo.m */,
+				89EFAF4E2B70B62600F13986 /* ReqAutoLogin.h */,
+				89EFAF4F2B70B62600F13986 /* ReqAutoLogin.m */,
+				89EFAF562B70C78A00F13986 /* ReqOverseaBind.h */,
+				89EFAF572B70C78A00F13986 /* ReqOverseaBind.m */,
+				89EFAF5A2B70CCF100F13986 /* BindExtend.h */,
+				89EFAF5B2B70CCF100F13986 /* BindExtend.m */,
+				89EFAF642B70E6DA00F13986 /* ReqThirdPartyLogin.h */,
+				89EFAF652B70E6DA00F13986 /* ReqThirdPartyLogin.m */,
 			);
 			path = Mod;
 			sourceTree = "<group>";
@@ -370,6 +426,8 @@
 			children = (
 				891C1DF42B69E7D4004AF32A /* PostArgUtils.h */,
 				891C1DF52B69E7D4004AF32A /* PostArgUtils.m */,
+				89B06DAA2B6E3DE200605573 /* NSObject+BLLog.h */,
+				89B06DAB2B6E3DE200605573 /* NSObject+BLLog.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -407,8 +465,6 @@
 			children = (
 				8941CBBA2B6B6E3B00DA9CA5 /* PayController.h */,
 				8941CBBB2B6B6E3B00DA9CA5 /* PayController.m */,
-				8915180E2B6CF20F002BE705 /* PayController+PayVerify.h */,
-				8915180F2B6CF20F002BE705 /* PayController+PayVerify.m */,
 			);
 			path = Ctr;
 			sourceTree = "<group>";
@@ -420,6 +476,10 @@
 				8941CBC52B6B6F3800DA9CA5 /* ReqPayCreate.m */,
 				8941CBC82B6B708100DA9CA5 /* ResPayCreate.h */,
 				8941CBC92B6B708100DA9CA5 /* ResPayCreate.m */,
+				89EFAF2F2B6F859D00F13986 /* ReqPayValidate.h */,
+				89EFAF302B6F859D00F13986 /* ReqPayValidate.m */,
+				89EFAF332B6F85B400F13986 /* ResPayValidate.h */,
+				89EFAF342B6F85B400F13986 /* ResPayValidate.m */,
 			);
 			path = Mod;
 			sourceTree = "<group>";
@@ -483,6 +543,49 @@
 			path = Mod;
 			sourceTree = "<group>";
 		};
+		89EFAF3F2B6FB3E300F13986 /* Cfg */ = {
+			isa = PBXGroup;
+			children = (
+				89EFAF402B6FB3F800F13986 /* SKDConfig.h */,
+				89EFAF412B6FB3F800F13986 /* SKDConfig.m */,
+			);
+			path = Cfg;
+			sourceTree = "<group>";
+		};
+		89EFAF462B7082B300F13986 /* ThirdLogin */ = {
+			isa = PBXGroup;
+			children = (
+				89EFAF472B7082C600F13986 /* Apple */,
+			);
+			path = ThirdLogin;
+			sourceTree = "<group>";
+		};
+		89EFAF472B7082C600F13986 /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				89EFAF482B7082EF00F13986 /* AppleLoginController.h */,
+				89EFAF492B7082EF00F13986 /* AppleLoginController.m */,
+			);
+			path = Apple;
+			sourceTree = "<group>";
+		};
+		89EFAF5E2B70E33600F13986 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				89EFAF5F2B70E34000F13986 /* Cfg */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		89EFAF5F2B70E34000F13986 /* Cfg */ = {
+			isa = PBXGroup;
+			children = (
+				89EFAF602B70E36300F13986 /* BaseConfig.h */,
+				89EFAF612B70E36300F13986 /* BaseConfig.m */,
+			);
+			path = Cfg;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -491,14 +594,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				891C1DF12B692324004AF32A /* KeychainConfig.h in Headers */,
+				89EFAF5C2B70CCF100F13986 /* BindExtend.h in Headers */,
 				8941CBE32B6BA2D400DA9CA5 /* ReqRealName.h in Headers */,
 				8941CBB12B6B4BAD00DA9CA5 /* ThirdUserInfo.h in Headers */,
 				891C1DF62B69E7D4004AF32A /* PostArgUtils.h in Headers */,
 				8941CBA62B6B3DD500DA9CA5 /* PrefixHeader.pch in Headers */,
+				89EFAF422B6FB3F800F13986 /* SKDConfig.h in Headers */,
+				89EFAF312B6F859D00F13986 /* ReqPayValidate.h in Headers */,
+				89EFAF582B70C78A00F13986 /* ReqOverseaBind.h in Headers */,
+				89EFAF352B6F85B400F13986 /* ResPayValidate.h in Headers */,
 				891C1D862B6907A7004AF32A /* LXBSDK.h in Headers */,
+				89EFAF622B70E36300F13986 /* BaseConfig.h in Headers */,
 				8941CBCE2B6B9DD800DA9CA5 /* CustomResponseSerializer.h in Headers */,
 				891C1DCA2B69123F004AF32A /* SDKController.h in Headers */,
 				891C1DEB2B6921C2004AF32A /* KeychainController.h in Headers */,
+				89EFAF4A2B7082EF00F13986 /* AppleLoginController.h in Headers */,
 				8941CBC62B6B6F3800DA9CA5 /* ReqPayCreate.h in Headers */,
 				8941CBDF2B6BA2B900DA9CA5 /* RealNameConfig.h in Headers */,
 				891C1DB82B690B6C004AF32A /* NetworkConfig.h in Headers */,
@@ -508,14 +618,16 @@
 				8941CBA32B6A742800DA9CA5 /* BaseResponse.h in Headers */,
 				8941CBCA2B6B708100DA9CA5 /* ResPayCreate.h in Headers */,
 				891C1DBF2B690E74004AF32A /* UserCenterConfig.h in Headers */,
+				89B06DAC2B6E3DE200605573 /* NSObject+BLLog.h in Headers */,
 				891C1DCF2B6915D4004AF32A /* ReqVisitor.h in Headers */,
 				8941CBDA2B6BA22400DA9CA5 /* RealNameController.h in Headers */,
 				8941CB9E2B6A31DB00DA9CA5 /* AFNet.h in Headers */,
-				891518102B6CF20F002BE705 /* PayController+PayVerify.h in Headers */,
 				891C1DC42B690EC3004AF32A /* UserCenterController.h in Headers */,
 				8941CBAD2B6B41AC00DA9CA5 /* ResVisitor.h in Headers */,
 				891C1DB42B690ABC004AF32A /* NetworkController.h in Headers */,
 				8941CBE72B6BA2E000DA9CA5 /* ResRealName.h in Headers */,
+				89EFAF502B70B62600F13986 /* ReqAutoLogin.h in Headers */,
+				89EFAF662B70E6DA00F13986 /* ReqThirdPartyLogin.h in Headers */,
 				8941CBBC2B6B6E3B00DA9CA5 /* PayController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,6 +724,7 @@
 			files = (
 				891C1DA22B6907D1004AF32A /* LaunchScreen.storyboard in Resources */,
 				891C1D9F2B6907D1004AF32A /* Assets.xcassets in Resources */,
+				89EFAF692B70FDC200F13986 /* Monddia.bundle in Resources */,
 				891C1D9D2B6907D0004AF32A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -691,25 +804,34 @@
 				8941CBE42B6BA2D400DA9CA5 /* ReqRealName.m in Sources */,
 				8941CBDB2B6BA22400DA9CA5 /* RealNameController.m in Sources */,
 				8941CBCB2B6B708100DA9CA5 /* ResPayCreate.m in Sources */,
+				89EFAF5D2B70CCF100F13986 /* BindExtend.m in Sources */,
 				8941CBBD2B6B6E3B00DA9CA5 /* PayController.m in Sources */,
 				8941CBC72B6B6F3800DA9CA5 /* ReqPayCreate.m in Sources */,
 				8941CBA42B6A742800DA9CA5 /* BaseResponse.m in Sources */,
 				891C1DF72B69E7D4004AF32A /* PostArgUtils.m in Sources */,
-				891518112B6CF20F002BE705 /* PayController+PayVerify.m in Sources */,
 				8941CBD32B6BA02100DA9CA5 /* MSNetwork.m in Sources */,
 				891C1DCB2B69123F004AF32A /* SDKController.m in Sources */,
 				891C1DF22B692324004AF32A /* KeychainConfig.m in Sources */,
 				8941CBB72B6B527800DA9CA5 /* DataHub.m in Sources */,
+				89EFAF362B6F85B400F13986 /* ResPayValidate.m in Sources */,
+				89EFAF4B2B7082EF00F13986 /* AppleLoginController.m in Sources */,
 				891C1DD02B6915D4004AF32A /* ReqVisitor.m in Sources */,
 				891C1DB52B690ABC004AF32A /* NetworkController.m in Sources */,
 				8941CBAE2B6B41AC00DA9CA5 /* ResVisitor.m in Sources */,
 				8941CBC32B6B6EA600DA9CA5 /* PayConfig.m in Sources */,
 				891C1DC52B690EC3004AF32A /* UserCenterController.m in Sources */,
+				89EFAF512B70B62600F13986 /* ReqAutoLogin.m in Sources */,
 				891C1DEC2B6921C2004AF32A /* KeychainController.m in Sources */,
+				89EFAF322B6F859D00F13986 /* ReqPayValidate.m in Sources */,
+				89EFAF592B70C78A00F13986 /* ReqOverseaBind.m in Sources */,
 				8941CBB22B6B4BAD00DA9CA5 /* ThirdUserInfo.m in Sources */,
 				8941CBE02B6BA2B900DA9CA5 /* RealNameConfig.m in Sources */,
 				8941CBCF2B6B9DD800DA9CA5 /* CustomResponseSerializer.m in Sources */,
+				89EFAF672B70E6DA00F13986 /* ReqThirdPartyLogin.m in Sources */,
 				8941CBE82B6BA2E000DA9CA5 /* ResRealName.m in Sources */,
+				89EFAF432B6FB3F800F13986 /* SKDConfig.m in Sources */,
+				89EFAF632B70E36300F13986 /* BaseConfig.m in Sources */,
+				89B06DAD2B6E3DE200605573 /* NSObject+BLLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -958,6 +1080,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TestDemo/TestDemo.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -993,6 +1116,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TestDemo/TestDemo.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;

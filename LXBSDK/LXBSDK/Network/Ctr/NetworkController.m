@@ -29,14 +29,12 @@
     [MSNetwork setValue:@"zh-CN" forHTTPHeaderField:HeadXLanguage];
     [MSNetwork setValue:@"2.0" forHTTPHeaderField:HeadXVersion];
     [MSNetwork setValue:@"application/json;charset=UTF-8" forHTTPHeaderField:HeadContentType];
-    //NSLog(@"xxxxx%@",kApiPrefix);
-    //NSLog(@"xxxxx%@",MSNetwork );
     [self test];
 }
 
 + (void)test{
     NSNumber *ll = [PostArgUtils getMillisec];
-    NSLog(@"%@",ll);
+    DDLog(@"%@",ll);
 }
 
 + (void)GET:(NSString *)moduleName classMeta:(Class)clazz url:(NSString *)URL parameters:(NSDictionary *)parameters success:(MSHttpSuccess)success  failure:(MSHttpFail)failure{
@@ -107,7 +105,7 @@
     
     //可以设置全局等待的指示器
 //    [MBProgressHUD mb_loading:^{
-//        NSLog(@"hud已经隐藏");
+//        
 //    }];
 
     

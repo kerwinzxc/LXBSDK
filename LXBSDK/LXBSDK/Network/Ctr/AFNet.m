@@ -41,11 +41,11 @@
           progress:nil
            success:^(NSURLSessionDataTask *task, id responseObject) {
                // 请求成功的处理
-               NSLog(@"Response: %@", responseObject);
+        DDLog(@"Response: %@", responseObject);
            }
-           failure:^(NSURLSessionDataTask *task, NSError *error) {
+        failure:^(NSURLSessionDataTask *task, NSError *error) {
                // 请求失败的处理
-               NSLog(@"Error: %@", error);
+        DDLog(@"Error: %@", error);
            }];
 }
 

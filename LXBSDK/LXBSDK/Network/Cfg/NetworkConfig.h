@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 static NSString *const kApiPrefix = @"https://gmshwtest.boomgames.top/";
 //@"https://gmstest.boomgames.top/";
 //@"https://gms.boomgames.top/"
-static NSString *const kServerVersion = @"v2";
+static NSString *const kServerVersion = @"v3";
 
 #pragma mark - debug 功能
 static BOOL const OPENNETWORKLOG = YES;

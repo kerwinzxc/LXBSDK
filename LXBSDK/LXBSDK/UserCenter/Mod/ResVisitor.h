@@ -35,6 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong)NSString *extension;
 @property(nonatomic, assign)int is_realname;
 
+@property(nonatomic, strong)NSString *access_token;
 +(NSDictionary *)mj_objectClassInArray;
 
 @end

@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 static NSString *const PayModuleName = @"order";
 
 static NSString *const payCreate = @"create";
+
+static NSString *const payValidateUrl = @"applepay/validate";
 @interface PayConfig : NSObject
 
 @end

@@ -14,25 +14,39 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - CocoaLumberjack (3.8.2):
+    - CocoaLumberjack/Core (= 3.8.2)
+  - CocoaLumberjack/Core (3.8.2)
   - MJExtension (3.4.1)
+  - MMKV (1.3.3):
+    - MMKVCore (~> 1.3.3)
+  - MMKVCore (1.3.3)
   - YYCache (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking
+  - CocoaLumberjack
   - MJExtension
+  - MMKV
   - YYCache
 
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - CocoaLumberjack
     - MJExtension
+    - MMKV
+    - MMKVCore
     - YYCache
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  CocoaLumberjack: f8d89a516e7710fdb2e9b8f1560b16ec6040eef0
   MJExtension: 21c5f6f8c4d5d8844b7ae8fbae08fed0b501f961
+  MMKV: f902fb6719da13c2ab0965233d8963a59416f911
+  MMKVCore: d26e4d3edd5cb8588c2569222cbd8be4231374e9
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 4e299ad22e41f07709496df7c7cd132172e8b327
+PODFILE CHECKSUM: 0318ea4aa2f4baa2c201fb384a8f4ecdc7dc6f5a
 
 COCOAPODS: 1.12.1

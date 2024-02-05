@@ -42,7 +42,7 @@
       // 加密的内容有可能有中文 所以用NSUTF8StringEncoding
     NSString *string = [self sortKeyArr:value timestamp:timestamp nonce:nonce];
     const char *cData = [string cStringUsingEncoding:NSUTF8StringEncoding];
-    NSLog(@"boomgamecenter: paramsString %@", string);
+    DDLog(@"boomgamecenter: paramsString %@", string);
 
     unsigned char cHMAC[CC_SHA256_DIGEST_LENGTH];
     //SHA256加密
