@@ -86,7 +86,19 @@
 		89EFAF632B70E36300F13986 /* BaseConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF612B70E36300F13986 /* BaseConfig.m */; };
 		89EFAF662B70E6DA00F13986 /* ReqThirdPartyLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF642B70E6DA00F13986 /* ReqThirdPartyLogin.h */; };
 		89EFAF672B70E6DA00F13986 /* ReqThirdPartyLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF652B70E6DA00F13986 /* ReqThirdPartyLogin.m */; };
-		89EFAF692B70FDC200F13986 /* Monddia.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89EFAF682B70FDC200F13986 /* Monddia.bundle */; };
+		89EFAF692B70FDC200F13986 /* LxbBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89EFAF682B70FDC200F13986 /* LxbBundle.bundle */; };
+		89EFAF762B71D55000F13986 /* UserCenterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF742B71D55000F13986 /* UserCenterView.h */; };
+		89EFAF772B71D55000F13986 /* UserCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF752B71D55000F13986 /* UserCenterView.m */; };
+		89EFAF7F2B71E25500F13986 /* LXBHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF7D2B71E25500F13986 /* LXBHelper.h */; };
+		89EFAF802B71E25500F13986 /* LXBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF7E2B71E25500F13986 /* LXBHelper.m */; };
+		89EFAFAD2B72166C00F13986 /* LxbBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89EFAF682B70FDC200F13986 /* LxbBundle.bundle */; };
+		89EFAFB02B721C6A00F13986 /* LXBScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAFAE2B721C6A00F13986 /* LXBScreen.h */; };
+		89EFAFB12B721C6A00F13986 /* LXBScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAFAF2B721C6A00F13986 /* LXBScreen.m */; };
+		89EFAFE92B72877C00F13986 /* U8SDK_Language.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89EFAFE82B72877C00F13986 /* U8SDK_Language.bundle */; };
+		89EFAFEC2B7287F400F13986 /* U8Language.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAFEA2B7287F300F13986 /* U8Language.h */; };
+		89EFAFED2B7287F400F13986 /* U8Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAFEB2B7287F400F13986 /* U8Language.m */; };
+		89EFAFF02B72887A00F13986 /* NSString+Handle.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAFEE2B72887A00F13986 /* NSString+Handle.h */; };
+		89EFAFF12B72887A00F13986 /* NSString+Handle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAFEF2B72887A00F13986 /* NSString+Handle.m */; };
 		FFB512BDA3A6E25301A726DA /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADE1CE4487ABAEF2D87E922 /* Pods_TestDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -188,7 +200,24 @@
 		89EFAF612B70E36300F13986 /* BaseConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseConfig.m; sourceTree = "<group>"; };
 		89EFAF642B70E6DA00F13986 /* ReqThirdPartyLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReqThirdPartyLogin.h; sourceTree = "<group>"; };
 		89EFAF652B70E6DA00F13986 /* ReqThirdPartyLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReqThirdPartyLogin.m; sourceTree = "<group>"; };
-		89EFAF682B70FDC200F13986 /* Monddia.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Monddia.bundle; sourceTree = "<group>"; };
+		89EFAF682B70FDC200F13986 /* LxbBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LxbBundle.bundle; sourceTree = "<group>"; };
+		89EFAF742B71D55000F13986 /* UserCenterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserCenterView.h; sourceTree = "<group>"; };
+		89EFAF752B71D55000F13986 /* UserCenterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserCenterView.m; sourceTree = "<group>"; };
+		89EFAF7D2B71E25500F13986 /* LXBHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXBHelper.h; sourceTree = "<group>"; };
+		89EFAF7E2B71E25500F13986 /* LXBHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXBHelper.m; sourceTree = "<group>"; };
+		89EFAFAE2B721C6A00F13986 /* LXBScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXBScreen.h; sourceTree = "<group>"; };
+		89EFAFAF2B721C6A00F13986 /* LXBScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXBScreen.m; sourceTree = "<group>"; };
+		89EFAFB22B723B7000F13986 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		89EFAFB32B723B7000F13986 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		89EFAFB42B726CD100F13986 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		89EFAFB52B726CD100F13986 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		89EFAFB62B726D0000F13986 /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_TW; path = zh_TW.lproj/Main.strings; sourceTree = "<group>"; };
+		89EFAFB72B726D0000F13986 /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_TW; path = zh_TW.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		89EFAFE82B72877C00F13986 /* U8SDK_Language.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = U8SDK_Language.bundle; sourceTree = "<group>"; };
+		89EFAFEA2B7287F300F13986 /* U8Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = U8Language.h; sourceTree = "<group>"; };
+		89EFAFEB2B7287F400F13986 /* U8Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = U8Language.m; sourceTree = "<group>"; };
+		89EFAFEE2B72887A00F13986 /* NSString+Handle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Handle.h"; sourceTree = "<group>"; };
+		89EFAFEF2B72887A00F13986 /* NSString+Handle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Handle.m"; sourceTree = "<group>"; };
 		9DF32DB3C373AF2F30BE6001 /* Pods-LXBSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXBSDK.debug.xcconfig"; path = "Target Support Files/Pods-LXBSDK/Pods-LXBSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		BADE1CE4487ABAEF2D87E922 /* Pods_TestDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E488D5F7EB21815A661E80 /* Pods-LXBSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXBSDK.release.xcconfig"; path = "Target Support Files/Pods-LXBSDK/Pods-LXBSDK.release.xcconfig"; sourceTree = "<group>"; };
@@ -270,7 +299,8 @@
 		891C1D912B6907D0004AF32A /* TestDemo */ = {
 			isa = PBXGroup;
 			children = (
-				89EFAF682B70FDC200F13986 /* Monddia.bundle */,
+				89EFAFE82B72877C00F13986 /* U8SDK_Language.bundle */,
+				89EFAF682B70FDC200F13986 /* LxbBundle.bundle */,
 				89EFAF442B707F4000F13986 /* TestDemo.entitlements */,
 				891C1D922B6907D0004AF32A /* AppDelegate.h */,
 				891C1D932B6907D0004AF32A /* AppDelegate.m */,
@@ -358,19 +388,21 @@
 		891C1DC62B69111A004AF32A /* SDKProxy */ = {
 			isa = PBXGroup;
 			children = (
+				89EFAF6F2B71D48900F13986 /* Ctr */,
+				89EFAF6E2B71D44500F13986 /* View */,
 				89EFAF3F2B6FB3E300F13986 /* Cfg */,
-				891C1DC72B691134004AF32A /* Ctr */,
+				891C1DC72B691134004AF32A /* Proxy */,
 			);
 			path = SDKProxy;
 			sourceTree = "<group>";
 		};
-		891C1DC72B691134004AF32A /* Ctr */ = {
+		891C1DC72B691134004AF32A /* Proxy */ = {
 			isa = PBXGroup;
 			children = (
 				891C1DC82B69123F004AF32A /* SDKController.h */,
 				891C1DC92B69123F004AF32A /* SDKController.m */,
 			);
-			path = Ctr;
+			path = Proxy;
 			sourceTree = "<group>";
 		};
 		891C1DCC2B69158E004AF32A /* Mod */ = {
@@ -424,10 +456,18 @@
 		891C1DF32B69E786004AF32A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				89EFAFEE2B72887A00F13986 /* NSString+Handle.h */,
+				89EFAFEF2B72887A00F13986 /* NSString+Handle.m */,
+				89EFAFEA2B7287F300F13986 /* U8Language.h */,
+				89EFAFEB2B7287F400F13986 /* U8Language.m */,
 				891C1DF42B69E7D4004AF32A /* PostArgUtils.h */,
 				891C1DF52B69E7D4004AF32A /* PostArgUtils.m */,
 				89B06DAA2B6E3DE200605573 /* NSObject+BLLog.h */,
 				89B06DAB2B6E3DE200605573 /* NSObject+BLLog.m */,
+				89EFAF7D2B71E25500F13986 /* LXBHelper.h */,
+				89EFAF7E2B71E25500F13986 /* LXBHelper.m */,
+				89EFAFAE2B721C6A00F13986 /* LXBScreen.h */,
+				89EFAFAF2B721C6A00F13986 /* LXBScreen.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -586,6 +626,22 @@
 			path = Cfg;
 			sourceTree = "<group>";
 		};
+		89EFAF6E2B71D44500F13986 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89EFAF742B71D55000F13986 /* UserCenterView.h */,
+				89EFAF752B71D55000F13986 /* UserCenterView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		89EFAF6F2B71D48900F13986 /* Ctr */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Ctr;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -595,6 +651,7 @@
 			files = (
 				891C1DF12B692324004AF32A /* KeychainConfig.h in Headers */,
 				89EFAF5C2B70CCF100F13986 /* BindExtend.h in Headers */,
+				89EFAF762B71D55000F13986 /* UserCenterView.h in Headers */,
 				8941CBE32B6BA2D400DA9CA5 /* ReqRealName.h in Headers */,
 				8941CBB12B6B4BAD00DA9CA5 /* ThirdUserInfo.h in Headers */,
 				891C1DF62B69E7D4004AF32A /* PostArgUtils.h in Headers */,
@@ -604,9 +661,12 @@
 				89EFAF582B70C78A00F13986 /* ReqOverseaBind.h in Headers */,
 				89EFAF352B6F85B400F13986 /* ResPayValidate.h in Headers */,
 				891C1D862B6907A7004AF32A /* LXBSDK.h in Headers */,
+				89EFAFB02B721C6A00F13986 /* LXBScreen.h in Headers */,
+				89EFAFF02B72887A00F13986 /* NSString+Handle.h in Headers */,
 				89EFAF622B70E36300F13986 /* BaseConfig.h in Headers */,
 				8941CBCE2B6B9DD800DA9CA5 /* CustomResponseSerializer.h in Headers */,
 				891C1DCA2B69123F004AF32A /* SDKController.h in Headers */,
+				89EFAF7F2B71E25500F13986 /* LXBHelper.h in Headers */,
 				891C1DEB2B6921C2004AF32A /* KeychainController.h in Headers */,
 				89EFAF4A2B7082EF00F13986 /* AppleLoginController.h in Headers */,
 				8941CBC62B6B6F3800DA9CA5 /* ReqPayCreate.h in Headers */,
@@ -617,6 +677,7 @@
 				8941CBC22B6B6EA600DA9CA5 /* PayConfig.h in Headers */,
 				8941CBA32B6A742800DA9CA5 /* BaseResponse.h in Headers */,
 				8941CBCA2B6B708100DA9CA5 /* ResPayCreate.h in Headers */,
+				89EFAFEC2B7287F400F13986 /* U8Language.h in Headers */,
 				891C1DBF2B690E74004AF32A /* UserCenterConfig.h in Headers */,
 				89B06DAC2B6E3DE200605573 /* NSObject+BLLog.h in Headers */,
 				891C1DCF2B6915D4004AF32A /* ReqVisitor.h in Headers */,
@@ -662,7 +723,7 @@
 				891C1D8C2B6907D0004AF32A /* Sources */,
 				891C1D8D2B6907D0004AF32A /* Frameworks */,
 				891C1D8E2B6907D0004AF32A /* Resources */,
-				FB525F9CD93A5FA2DEADACDC /* [CP] Embed Pods Frameworks */,
+				A8BC62841E0FE99E7934462A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -693,11 +754,14 @@
 			};
 			buildConfigurationList = 891C1D7C2B6907A7004AF32A /* Build configuration list for PBXProject "LXBSDK" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = "zh-Hans";
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				ja,
+				zh_TW,
 			);
 			mainGroup = 891C1D782B6907A7004AF32A;
 			productRefGroup = 891C1D832B6907A7004AF32A /* Products */;
@@ -715,6 +779,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89EFAFAD2B72166C00F13986 /* LxbBundle.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -724,7 +789,8 @@
 			files = (
 				891C1DA22B6907D1004AF32A /* LaunchScreen.storyboard in Resources */,
 				891C1D9F2B6907D1004AF32A /* Assets.xcassets in Resources */,
-				89EFAF692B70FDC200F13986 /* Monddia.bundle in Resources */,
+				89EFAFE92B72877C00F13986 /* U8SDK_Language.bundle in Resources */,
+				89EFAF692B70FDC200F13986 /* LxbBundle.bundle in Resources */,
 				891C1D9D2B6907D0004AF32A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -754,6 +820,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A8BC62841E0FE99E7934462A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestDemo/Pods-TestDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestDemo/Pods-TestDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestDemo/Pods-TestDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F1445A1B7367911B7F1C2DD3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -774,23 +857,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FB525F9CD93A5FA2DEADACDC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestDemo/Pods-TestDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestDemo/Pods-TestDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestDemo/Pods-TestDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -816,20 +882,25 @@
 				89EFAF362B6F85B400F13986 /* ResPayValidate.m in Sources */,
 				89EFAF4B2B7082EF00F13986 /* AppleLoginController.m in Sources */,
 				891C1DD02B6915D4004AF32A /* ReqVisitor.m in Sources */,
+				89EFAFED2B7287F400F13986 /* U8Language.m in Sources */,
 				891C1DB52B690ABC004AF32A /* NetworkController.m in Sources */,
+				89EFAF772B71D55000F13986 /* UserCenterView.m in Sources */,
 				8941CBAE2B6B41AC00DA9CA5 /* ResVisitor.m in Sources */,
 				8941CBC32B6B6EA600DA9CA5 /* PayConfig.m in Sources */,
 				891C1DC52B690EC3004AF32A /* UserCenterController.m in Sources */,
 				89EFAF512B70B62600F13986 /* ReqAutoLogin.m in Sources */,
 				891C1DEC2B6921C2004AF32A /* KeychainController.m in Sources */,
 				89EFAF322B6F859D00F13986 /* ReqPayValidate.m in Sources */,
+				89EFAF802B71E25500F13986 /* LXBHelper.m in Sources */,
 				89EFAF592B70C78A00F13986 /* ReqOverseaBind.m in Sources */,
 				8941CBB22B6B4BAD00DA9CA5 /* ThirdUserInfo.m in Sources */,
 				8941CBE02B6BA2B900DA9CA5 /* RealNameConfig.m in Sources */,
+				89EFAFB12B721C6A00F13986 /* LXBScreen.m in Sources */,
 				8941CBCF2B6B9DD800DA9CA5 /* CustomResponseSerializer.m in Sources */,
 				89EFAF672B70E6DA00F13986 /* ReqThirdPartyLogin.m in Sources */,
 				8941CBE82B6BA2E000DA9CA5 /* ResRealName.m in Sources */,
 				89EFAF432B6FB3F800F13986 /* SKDConfig.m in Sources */,
+				89EFAFF12B72887A00F13986 /* NSString+Handle.m in Sources */,
 				89EFAF632B70E36300F13986 /* BaseConfig.m in Sources */,
 				89B06DAD2B6E3DE200605573 /* NSObject+BLLog.m in Sources */,
 			);
@@ -861,6 +932,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				891C1D9C2B6907D0004AF32A /* Base */,
+				89EFAFB22B723B7000F13986 /* zh-Hans */,
+				89EFAFB42B726CD100F13986 /* ja */,
+				89EFAFB62B726D0000F13986 /* zh_TW */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -869,6 +943,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				891C1DA12B6907D1004AF32A /* Base */,
+				89EFAFB32B723B7000F13986 /* zh-Hans */,
+				89EFAFB52B726CD100F13986 /* ja */,
+				89EFAFB72B726D0000F13986 /* zh_TW */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -880,6 +957,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -941,6 +1019,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

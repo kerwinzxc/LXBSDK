@@ -1,0 +1,230 @@
+"u8sdk_current_language_type" = "ko";
+"u8_language_type_key" = "韩语";
+
+"u8_privacy_policy_guidelines" = "개인정보 약관 보호 가이드";
+"u8_privacy_detail_thank" =  "본 게임을 이용해 주셔서 감사합니다. 기기 정보를 수집하기 위해 본 게임을 이용하실 때 자세히 읽어보시고 동의해 주세요.";
+"u8_user_services_agreement" = "\"유저 서비스 약관\"";
+"u8_user_privacy_agreement" = "\"유저 개인정보 약관\"";
+"u8_privacy_detail_content" = "거부하실 경우 게임에 접속하실 수 없습니다. 서비스 제공에 대한 동의를 눌러주세요. 게임 서비스를 제공하기 위해 당사는 다음과 같은 권한 및 정보를 수집할 수 있습니다. 에서 권한을 보고 관리합니다.\n장치 정보: 분실한 계정 암호를 쉽게 복구하고 계정 보안을 보장합니다.";
+"u8_privacy_detail_all" = "본 게임을 이용해 주셔서 감사합니다. 기기 정보를 수집하기 위해 본 게임을 이용하실 때 자세히 읽어보시고 동의해 주세요.\"유저 서비스 약관\"및\"유저 개인정보 약관\", 거부할 경우 게임에 입장할 수 없습니다. 서비스 제공을 시작하려면 동의를 클릭하십시오. 귀하에게 게임 서비스를 제공하기 위해 귀하의 이용 과정에서 다음과 같은 권한 및 정보를 얻을 수 있으며, 귀하는 기기에서 귀하의 권한을 조회하고 관리할 수 있습니다. \n장치 정보: 분실한 계정 암호를 쉽게 검색하고 계정 보안을 보장합니다.";
+
+"u8_user_exit_APP" = "앱 나가기";
+"u8_user_exit_login" = "로그아웃 성공";
+"u8_user_loginSuccess_welcome" = "로그인 성공, 환영합니다!";
+
+
+
+
+"u8_error_data_error" = "데이터 에러";
+"u8_error_unknown_error" = "알 수 없는 에러";
+"u8_error_parameter_error" = "파라미터 오류";
+"u8_error_name_invalid" = "이름 또는 코드 위반";
+"u8_error_code_unsend" = "오류, 인증 코드 발송 불가";
+"u8_error_system_versionLow" = "시스템 버전이 너무 낮습니다. iOS 13+ 이 요구됩니다.";
+
+"u8_tips_button_yes" = "예";
+"u8_tips_button_no" = "아니요";
+"u8_tips_button_ok" = "확인";
+"u8_tips_button_cancel" = "취소";
+"u8_tips_button_unBind" = "미연동";
+"u8_tips_button_alreadyBind" = "경계";
+
+"u8_account_login_success" = "로그인 성공";
+"u8_account_login_failed" = "로그인 실패";
+"u8_account_bind_success" = "성공을 바인딩하라";
+"u8_account_bind_failed" = "바인딩 실패";
+"u8_account_unbind_success" = "성공적으로 바인딩 해제";
+"u8_account_unbind_failed" = "바인딩 실패";
+"u8_account_cutover_success" = "계정 변경 성공";
+"u8_account_cutover_failed" = "계정 전환 실패";
+"u8_account_cutover_abnormal" = "계정 교체 에러";
+"u8_account_verify_failed" = "계정 상태 인증 실패";
+"u8_account_please_login" = "먼저 로그인하세요";
+"u8_account_realname_success" = "실명 인증 성공";
+"u8_account_realname_failed" = "실명 인증 실패";
+"u8_account_realname_verified" = "실명 인증";
+
+"u8_account_realname_noPass" = "실명 인증을 통과하지 못했습니다.";
+"u8_account_realname_pass" = "실명 통과 완료";
+"u8_account_realname_tips1" = "국가 법률 및 규정에 따라 플레이어는 실명 인증이 필요합니다. 게임 경험을 위해 신원 정보를 입력하십시오. 그렇지 않으면 정상적으로 플레이할 수 없습니다.";
+"u8_account_realname_tips2" = "미성년자의 온라인 게임 이용 방지에 관한 고시\"에 따라 게임 이용자는 유효한 신분증을 사용하여 실명으로 등록해야 하며, 법령에 따라 귀하의 개인 정보를 보호할 것을 약속드립니다.";
+"u8_account_UI_realname" = "실명";
+"u8_account_UI_numberCard" = "신분증 번호";
+"u8_account_UI_commit" = "제출";
+"u8_account_UI_current" = "계정";
+"u8_account_UI_agreement" = "사용자 약관";
+"u8_account_UI_service" = "고객센터 연락";
+"u8_account_UI_bind" = "묶다";
+"u8_account_UI_unbind" = "바인딩 해제";
+"u8_account_UI_cutoverBind" = "연동 교체";
+"u8_account_UI_noBind" = "바인딩 없음";
+"u8_account_UI_alreadyBind" = "연동 완료";
+"u8_account_UI_agree" = "동의";
+
+"u8_account_bind_tips1" = "연동 대표 동의";
+"u8_account_privacy_policy" = "개인정보 정책";
+"u8_account_code_sending" = "발송 중";
+
+"u8_account_show_copySuccess" = "복사 성공";
+
+"u8_account_center_tips" = "데이터 손실을 방지하기 위해 계정을 바인딩하고 계정이 연결된 후 다른 기기에서 로그인할 수 있습니다.";
+"u8_account_title_info" = "계정 정보";
+"u8_account_title_bind" = "계정 연동";
+"u8_account_title_bindOrCutover" = "연동 또는 교체";
+"u8_account_input_phoneNumber" = "휴대폰 번호를 입력하세요";
+"u8_account_verification_code" = "인증 코드";
+"u8_account_get_code" = "인증 코드 불러오기";
+"u8_account_code_send" = "발송 중";
+"u8_account_please_wait" = "조금만 기다리세요~";
+"u8_account_oneClick_login" = "본 디바이스 코드 일괄 연동";
+"u8_account_other_bind" = "기타 연동 방식";
+"u8_account_getJGParameter_success" = "빠른 로그인 파라미터 불러오기 성공";
+"u8_account_tips_pleaseAgree" = "먼저 관련 약관 및 규약에 동의하세요";
+"u8_account_request_unHandle" = "해당 작업 처리 불가";
+"u8_account_login_noSupport" = "현재 해당 로그인 방식을 지원하지 않습니다";
+
+"u8_no_plugin_wx" = "WeChat 플러그인 부족";
+"u8_no_plugin_qq" = "QQ 플러그인 부족";
+"u8_no_plugin_fb" = "페이스북 플러그인 부족";
+"u8_no_plugin_gg" = "구글 플러그인 부족";
+"u8_no_plugin_any" = "해당 플랫폼의 플러그인을 찾지 못했습니다";
+"u8_no_plugin_account" = "계정 시스템 플러그인 부족";
+//"u8_no_plugin_wx" = "缺少微信插件";
+//"u8_no_plugin_wx" = "缺少微信插件";
+//"u8_no_plugin_wx" = "缺少微信插件";
+
+"u8_no_open_apple" = "애플 로그인 모듈 미활성화";
+"u8_no_open_wx" = "WeChat 로그인 모듈이 열리지 않음";
+//"u8_no_open_apple" = "애플 로그인 모듈 미활성화";
+
+"u8_no_install_wx" = "WeChat이 설치되지 않음";
+
+"u8_lack_module_fb" = "페이스북 모듈 미활성화";
+"u8_lack_module_gg" = "구글 로그인 모듈 미활성화";
+
+"u8_wx_error_nodate" = "WeChat 인증이 만료되었습니다.";
+"u8_wx_error_open" = "WeChat 열기 실패";
+"u8_wx_error_login" = "WeChat 로그인 실패";
+"u8_wx_error_authorize" = "WeChat 인증 실패";
+"u8_wx_success_authorize" = "WeChat 인증 성공";
+
+
+"u8_ad_error_award" = "보상 지급 실패";
+"u8_ad_error_cacheTimes" = "반드시 캐시 저장 횟수가 0보다 커야 합니다";
+"u8_ad_error_show" = "광고 표시 실패";
+
+"u8_account_platform_alreadyBind" = "해당 플랫폼을 이미 연동했습니다";
+"u8_account_platform_noBind" = "해당 플랫폼 미연동";
+"u8_account_platform_unBind" = "계정 연동 해제";
+"u8_account_platform_unBindTips" = "정말 연동을 해제하시겠습니까?";
+
+"u8_phone_save_failed" = "갤러리에 이미지 저장 실패";
+"u8_phone_save_success" = "갤러리에 이미지 저장 성공";
+
+"u8_apple_login_canceled" = "권한 확보 로그인 요청 취소";
+"u8_apple_login_failed" = "권한 확보 요청 실패";
+"u8_apple_login_invalidResponse" = "권한 확보 요청 응답 무효";
+"u8_apple_login_notHandled" = "권한 확보 요청 처리 불가";
+"u8_apple_login_unknown" = "권한 확보 요청 실패, 알 수 없는 원인";
+"u8_apple_login_success" = "애플 권한 확보 로그인 성공";
+
+"u8_apple_pay_failed" = "결제 실패";
+"u8_apple_no_open" = "인앱 결제 구매 기능을 열지 않았습니다";
+"u8_apple_create_order" = "현재 주문 생성 중";
+"u8_apple_link_AppStore" = "현재 App Store에 연결 중";
+"u8_apple_create_orderFailed" = "주문 생성 실패";
+"u8_apple_product_noFind" = "상품 정보를 찾지 못했습니다";
+"u8_apple_buy_waiting" = "구매 중, 잠시만 기다리세요";
+"u8_apple_ok_waiting" = "확인 대기 중, 잠시만 기다리세요";
+"u8_apple_return_buyData" = "현재 구매 데이터 회신 중";
+"u8_apple_lost_orderData" = "주문 정보 유실";
+"u8_apple_pay_buyFailed" = "구매 실패";
+"u8_apple_pay_receiptURLFailed" = "ReceiptURL 불러오기 불가";
+"u8_apple_pay_success" = "구매 성공";
+"u8_apple_shipment_failed" = "발송 실패";
+"u8_apple_no_handle" = "경제 불가";
+"u8_apple_order_handle" = "순서를 처리하는 중...";
+"u8_apple_order_handleNum" = "%ld번째 주문 처리 중";
+"u8_apple_shipment_success" = "성공적으로 배송되었습니다";
+"u8_apple_order_handleOver" = "주문 처리 완료";
+"u8_apple_order_failedAll" = "주문 처리에 실패했습니다. 현재 네트워크 환경을 확인하십시오. 네트워크 환경에 이상이 없으면 현재 게임을 종료하고 다시 입력하십시오.";
+"u8_apple_order_failedPart" = "주문 처리가 완료되어 %ld건의 주문 처리에 실패하였습니다. 현재 네트워크 환경을 확인하시기 바랍니다. 네트워크 환경에 이상이 없다면 현재 게임을 종료 후 재접속을 시도할 수 있습니다.";
+"u8_apple_order_noti" = "알아채다";
+"u8_apple_order_sure" = "확인";
+"u8_apple_order_willHandle" = "대기 중인 %ld개의 유료 주문이 있습니다. 이제 처리해 드리겠습니다.";
+
+"u8_applePay_failedStatus_1" = "결제 취소";
+"u8_applePay_failedStatus_2" = "알 수 없거나 예상치 못한 오류 발생";
+"u8_applePay_failedStatus_3" = "클라이언트의 요청 발송 불허";
+"u8_applePay_failedStatus_4" = "App Store 지불 파라미터 식별 불가";
+"u8_applePay_failedStatus_5" = "디바이스 지불 불허";
+"u8_applePay_failedStatus_6" = "요청한 제품은 상점에서 사용할 수 없습니다";
+"u8_applePay_failedStatus_7" = "클라우드 서비스 정보 접근 불허";
+"u8_applePay_failedStatus_8" = "디바이스가 네트워크에 접속할 수 없습니다";
+"u8_applePay_failedStatus_9" = "이 클라우드 서비스 사용 권한을 이미 철회했습니다";
+"u8_applePay_failedStatus_10" = "유저는 애플 개인정보 정책에 동의해야만 합니다";
+"u8_applePay_failedStatus_11" = "프로그램에 해당 속성에 대한 접근 권한이 없습니다";
+"u8_applePay_failedStatus_12" = "입찰가 식별 부호를 찾지 못했거나 해당 입찰가 식별 부호가 유효하지 않음";
+"u8_applePay_failedStatus_13" = "제공된 암호화 된 사인 무효";
+"u8_applePay_failedStatus_14" = "파라미터 1개 또는 여러 개 부족";
+"u8_applePay_failedStatus_15" = "선택한 입찰가의 가격 무효";
+"u8_applePay_failedStatus_16" = "알 수 없는 오류 발생";
+
+"u8_appleProduct_question_success" = "상품 정보 조회 성공";
+"u8_appleProduct_question_failed" = "상품 정보 조회 실패";
+"u8_appleProduct_ID_Null" = "상품 ID가 비어 있음";
+"u8_appleProduct_getInfo_load" = "상품 정보 불러오는 중";
+"u8_appleProduct_request_timeout" = "요청 시간 초과";
+
+"u8_share_share_success" = "공유 성공";
+"u8_share_share_failed" = "공유 실패";
+"u8_share_share_cancel" = "공유 취소";
+
+"u8_web_tips_loadFailed" = "로딩 실패, 네트워크를 확인하세요";
+
+"u8_account_UI_otherPhone" = "기타 핸드폰 로그인";
+"u8_account_UI_loginAndBind" = "본 기기 번호 일괄 로그인 및 등록";
+"u8_account_UI_phoneLogin" = "핸드폰 번호로 로그인";
+"u8_account_UI_phoneLoginDetail" = "미등록 핸드폰 번호 확인 후 직접 등록됩니다";
+"u8_account_bind_tips1" = "바인딩은 동의로 간주합니다";
+"u8_account_UI_sendCountdown" = "%ld초 후 다시 보내기";
+"u8_account_UI_phoneNumber" = "핸드폰 번호";
+"u8_account_UI_btnLogin" = "로그인";
+"u8_account_UI_tipsCode" = "인증번호를 입력하세요";
+"u8_account_UI_tipsPhone" = "합법적인 핸드폰 번호를 입력하세요";
+"u8_account_UI_loginAgreement" = "로그인 시 동의합니다";
+"u8_account_UI_usePhone" = "본 기기 번호로도 로그인합니다";
+"u8_account_UI_loginQuestion" = "로그인 관련 문제";
+"u8_account_UI_unableBind" = "바인딩 불가능 또는 로그인 불가능";
+"u8_account_UI_contactService" = "고객센터 연락처";
+
+"u8_account_complaint_complaint" = "번호 변경 신청";
+"u8_account_complaint_enterAccount " = "실명 검증: 기존 계정 실명 정보 입력";
+"u8_account_complaint_originalPhone" = "기존 핸드폰 번호";
+"u8_account_complaint_inputRealname" = "실명을 입력하세요";
+"u8_account_complaint_inputCardnumber" = "신분증 번호를 입력하세요";
+"u8_account_complaint_name" = "이름";
+"u8_account_complaint_enterAccount" = "실명 검증: 기존 계정 실명 정보 입력";
+"u8_account_complaint_tipsCardNumber" = "유효한 신분증 번호를 입력하세요";
+"u8_account_info_account" = "계정";
+"u8_account_info_realName" = "실명";
+"u8_account_info_memberCard" = "신분증";
+"u8_account_info_cutoverBind" = "번호 변경";
+"u8_account_info_cutoverAccount" = "계정 전환";
+"u8_account_cutove_title" = "계정 번호 변경";
+"u8_account_cutove_verify" = "검증";
+"u8_account_cutove_newPhone" = "새 핸드폰 번호";
+"u8_account_cutove_accountCutover" = "계정 전환";
+"u8_account_tips_cancelLogin" = "로그인 취소";
+"u8_account_tips_sendSMSFailed" = "SMS 발송 실패";
+"u8_account_tips_jgloginFailed" = "원클릭 로그인 실패, SMS 인증 방법을 사용하세요";
+"u8_account_tips_phoneCheckPhone" = "핸드폰 검증 실패";
+"u8_account_tips_phoneCheckDifferent" = "입력한 핸드폰 번호는 로그인한 계정 핸드폰 번호와 달라야합니다";
+"u8_account_tips_tokenIsNull" = "토큰이 비어 있습니다";
+"u8_account_tips_submissionFailed" = "제출 실패";
+"u8_account_tips_submissionSuccess" = "제출 성공";
+"u8_account_tips_appealChangeFailed" = "계정 신청 찾기 실패";
+"u8_account_appealSuccess_welcome" = "계정 신청 찾기 성공, 환영합니다!";
+"u8_account_cutoverSuccess_welcome" = "계정 전환 성공, 환영합니다!";
+"u8_account_tips_loginTypeError" = "로그인 방법 오류";
+"u8_account_UI_help" = "도움말";

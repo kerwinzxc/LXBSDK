@@ -1,0 +1,230 @@
+"u8sdk_current_language_type" = "ar-SA";
+"u8_language_type_key" = "阿拉伯语";
+
+"u8_privacy_policy_guidelines" = "إرشادات حماية اتفاقية الخصوصية";
+"u8_privacy_detail_thank" =  "شكرًا لك على لعب هذه اللعبة، يجب أن تقرأ وتوافق على أننا سنجمع معلومات حول جهازك.";
+"u8_user_services_agreement" = "\"اتفاقية خدمة المستخدم\"";
+"u8_user_privacy_agreement" = "\"اتفاقية خصوصية المستخدم\"";
+"u8_privacy_detail_content" = "، إذا رفضت ، فلن تتمكن من دخول اللعبة. يرجى النقر فوق موافق لبدء تزويدك بخدماتنا. من أجل تزويدك بخدمات اللعبة ، قد نحصل على الأذونات والمعلومات التالية أثناء استخدامك ، والتي يمكنه عرض أذوناتك وإدارتها على جهازك.  n\ معلومات الجهاز: لتسهيل استرداد كلمات مرور الحساب المفقودة ، لضمان أمان الحساب. ";
+"u8_privacy_detail_all" = "شكرًا لك على استخدام هذه اللعبة ، يجب أن تقرأ وتوافق بعناية عند استخدام هذه اللعبة ، وسوف نجمع معلومات جهازك. \"اتفاقية خدمة المستخدم\" و \"اتفاقية خصوصية المستخدم\" ، إذا رفضت ، فلن تتمكن من دخول اللعبة. الرجاء النقر فوق \"موافق\" لبدء تقديم خدماتنا لك. لتزويدك بخدمات الألعاب ، قد نحصل على الأذونات والمعلومات التالية أثناء استخدامك ، ويمكنك عرض أذوناتك وإدارتها على الجهاز. n\ معلومات الجهاز: لتسهيل استرداد كلمة مرور الحساب المفقودة وضمان أمان الحساب.";
+
+"u8_user_exit_APP" = "خروج من التطبيق";
+"u8_user_exit_login" = "تم تسجيل الخروج بنجاح";
+"u8_user_loginSuccess_welcome" = "تم تسجيل الدخول بنجاح، أهلاً بك!";
+
+
+
+
+"u8_error_data_error" = "خطأ في البيانات";
+"u8_error_unknown_error" = "خطأ غير معروف";
+"u8_error_parameter_error" = "طلب غير مشروع";
+"u8_error_name_invalid" = "الاسم أو الرقم غير مشروع";
+"u8_error_code_unsend" = "خطأ، لا يمكن إرسال رمز التحقق";
+"u8_error_system_versionLow" = "إصدار النظام منخفض جدًا، iOS 13+ مطلوب";
+
+"u8_tips_button_yes" = "نعم";
+"u8_tips_button_no" = "رقم";
+"u8_tips_button_ok" = "تأكيد";
+"u8_tips_button_cancel" = "إلغاء";
+"u8_tips_button_unBind" = "فك الارتباط";
+"u8_tips_button_alreadyBind" = "ربط الحساب";
+
+"u8_account_login_success" = "تم تسجيل الدخول بنجاح";
+"u8_account_login_failed" = "فشل عملية الدخول";
+"u8_account_bind_success" = "تم الربط بنجاح";
+"u8_account_bind_failed" = "فشل الربط";
+"u8_account_unbind_success" = "تم إلغاء الربط بنجاح";
+"u8_account_unbind_failed" = "فشل إلغاء الربط";
+"u8_account_cutover_success" = "تم تبديل الحساب بنجاح";
+"u8_account_cutover_failed" = "فشل تبديل الحساب";
+"u8_account_cutover_abnormal" = "خطأ في تبديل الحساب";
+"u8_account_verify_failed" = "فشل التحقق من حالة الحساب";
+"u8_account_please_login" = "يرجى تسجيل الدخول أولاً";
+"u8_account_realname_success" = "تمت مصادقة الاسم الحقيقي بنجاح";
+"u8_account_realname_failed" = "فشلت مصادقة الاسم الحقيقي";
+"u8_account_realname_verified" = "مصادقة الاسم الحقيقي";
+
+"u8_account_realname_noPass" = "فشل في اجتياز مصادقة الاسم الحقيقي";
+"u8_account_realname_pass" = "تمت مصادقة الاسم الحقيقي بنجاح";
+"u8_account_realname_tips1" = "وفقًا للقوانين واللوائح الوطنية ، يحتاج اللاعبون إلى مصادقة الاسم الحقيقي. لتجربة اللعبة ، يرجى ملء معلومات هويتك ، وإلا فلن تتمكن من اللعب بشكل طبيعي.";
+"u8_account_realname_tips2" = "وفقًا لـ \"إشعار منع القاصرين من الانغماس في الألعاب عبر الإنترنت\" ، يجب على مستخدمي اللعبة استخدام وثائق هوية صالحة للتسجيل بأسمائهم الحقيقية ، ونعد بحماية معلوماتك الشخصية وفقًا للقانون.";
+"u8_account_UI_realname" = "الاسم الحقيقي";
+"u8_account_UI_numberCard" = "رقم الهوية (ID)";
+"u8_account_UI_commit" = "تقديم";
+"u8_account_UI_current" = "الحساب";
+"u8_account_UI_agreement" = "شروط الخدمة";
+"u8_account_UI_service" = "اتصل بخدمة العملاء";
+"u8_account_UI_bind" = "ربط";
+"u8_account_UI_unbind" = "فك الارتباط";
+"u8_account_UI_cutoverBind" = "تبديل الربط";
+"u8_account_UI_noBind" = "غير ملزم بعد";
+"u8_account_UI_alreadyBind" = "مرتبط";
+"u8_account_UI_agree" = "موافق";
+
+"u8_account_bind_tips1" = "الربط يعني الموافقة";
+"u8_account_privacy_policy" = "سياسة الخصوصية";
+"u8_account_code_sending" = "يتم الإرسال";
+
+"u8_account_show_copySuccess" = "تم النسخ بنجاح";
+
+"u8_account_center_tips" = "من أجل منع فقدان البيانات الخاصة بك ، يرجى ربط حسابك ، ويمكنك تسجيل الدخول على الأجهزة الأخرى بعد تقييد حسابك";
+"u8_account_title_info" = "معلومات الحساب";
+"u8_account_title_bind" = "ربط الحساب";
+"u8_account_title_bindOrCutover" = "ربط أو تبديل";
+"u8_account_input_phoneNumber" = "يرجى إدخال رقم هاتفك المحمول";
+"u8_account_verification_code" = "رمز التحقق";
+"u8_account_get_code" = "الحصول على رمز التحقق";
+"u8_account_code_send" = "يتم الإرسال";
+"u8_account_please_wait" = "يرجى الانتظار لحظة~";
+"u8_account_oneClick_login" = "ربط نقرة واحدة بالرقم المحلي";
+"u8_account_other_bind" = "طرق ربط أخرى";
+"u8_account_getJGParameter_success" = "الوصول إلى معاملات تسجيل الدخول بنقرة واحدة بنجاح";
+"u8_account_tips_pleaseAgree" = "يرجى الموافقة على الشروط والأحكام أولاً";
+"u8_account_request_unHandle" = "تعذر معالجة الإجراء";
+"u8_account_login_noSupport" = "طريقة تسجيل الدخول هذه غير مدعومة حاليًا";
+
+"u8_no_plugin_wx" = "المكون الإضافي WeChat مفقود";
+"u8_no_plugin_qq" = "المكون الإضافي QQ مفقود";
+"u8_no_plugin_fb" = "مكون فيسبوك الإضافي مفقود";
+"u8_no_plugin_gg" = "مكون جوجل الإضافي مفقود";
+"u8_no_plugin_any" = "لم يتم العثور على مكون إضافي لهذه المنصة";
+"u8_no_plugin_account" = "مكون نظام الحساب الإضافي مفقود";
+//"u8_no_plugin_wx" = "缺少微信插件";
+//"u8_no_plugin_wx" = "缺少微信插件";
+//"u8_no_plugin_wx" = "缺少微信插件";
+
+"u8_no_open_apple" = "لم يتم تمكين وحدة تسجيل دخول أبل";
+"u8_no_open_wx" = "وحدة تسجيل الدخول WeChat غير ممكّنة";
+//"u8_no_open_apple" = "لم يتم تمكين وحدة تسجيل دخول أبل";
+
+"u8_no_install_wx" = "WeChat غير مثبت";
+
+"u8_lack_module_fb" = "لم يتم تمكين وحدة فيسبوك";
+"u8_lack_module_gg" = "لم يتم تمكين وحدة تسجيل دخول جوجل";
+
+"u8_wx_error_nodate" = "انتهت صلاحية ترخيص WeChat";
+"u8_wx_error_open" = "فشل فتح WeChat";
+"u8_wx_error_login" = "فشل تسجيل الدخول إلى ترخيص WeChat";
+"u8_wx_error_authorize" = "فشل تفويض WeChat";
+"u8_wx_success_authorize" = "تم تفويض WeChat بنجاح";
+
+
+"u8_ad_error_award" = "فشل توزيع المكافآت";
+"u8_ad_error_cacheTimes" = "يجب أن يكون عدد ذاكرات التخزين المؤقت أكبر من 0";
+"u8_ad_error_show" = "فشل عرض الإعلانات";
+
+"u8_account_platform_alreadyBind" = "أنت مرتبط بالفعل بهذه المنصة";
+"u8_account_platform_noBind" = "أنت غير مرتبط بالمنصة";
+"u8_account_platform_unBind" = "فك ارتباط الحساب";
+"u8_account_platform_unBindTips" = "هل أنت متأكد من فك الارتباط؟";
+
+"u8_phone_save_failed" = "فشل حفظ الصورة في الألبوم";
+"u8_phone_save_success" = "حفظ الصورة في الألبوم بنجاح";
+
+"u8_apple_login_canceled" = "تم إلغاء طلب تفويض تسجيل الدخول";
+"u8_apple_login_failed" = "فشل طلب التفويض";
+"u8_apple_login_invalidResponse" = "خطأ في التفويض استجابة غير صالحة";
+"u8_apple_login_notHandled" = "فشلت معالجة طلب التفويض";
+"u8_apple_login_unknown" = "فشل طلب التفويض لأسباب غير معروفة";
+"u8_apple_login_success" = "تم تسجيل دخول تفويض أبل بنجاح";
+
+"u8_apple_pay_failed" = "عملية الدفع فشلت";
+"u8_apple_no_open" = "لم يتم تمكين الشراء داخل التطبيق";
+"u8_apple_create_order" = "يتم إنشاء الطلب";
+"u8_apple_link_AppStore" = "الاتصال بمتجر التطبيقات";
+"u8_apple_create_orderFailed" = "فشل إنشاء الأمر";
+"u8_apple_product_noFind" = "لم يتم العثور على معلومات المنتج";
+"u8_apple_buy_waiting" = "يتم الشراء، يرجى الانتظار";
+"u8_apple_ok_waiting" = "في انتظار التأكيد";
+"u8_apple_return_buyData" = "يتم إرجاع بيانات الشراء";
+"u8_apple_lost_orderData" = "معلومات الطلب مفقودة";
+"u8_apple_pay_buyFailed" = "فشل الشراء";
+"u8_apple_pay_receiptURLFailed" = "تعذر استرداد ReceiptURL";
+"u8_apple_pay_success" = "نجح الشراء";
+"u8_apple_shipment_failed" = "فشل التسليم";
+"u8_apple_no_handle" = "تعذر الدفع";
+"u8_apple_order_handle" = "معالجة الطلب...";
+"u8_apple_order_handleNum" = "معالجة الترتيب %ld";
+"u8_apple_shipment_success" = "تم الشحن بنجاح" ;
+"u8_apple_order_handleOver" = "اكتملت معالجة الطلب";
+"u8_apple_order_failedAll" = "فشلت معالجة الطلب ، يرجى التحقق من بيئة الشبكة الحالية لديك. إذا لم يكن هناك خلل في بيئة الشبكة ، يمكنك محاولة الخروج من اللعبة الحالية وإعادة الدخول.";
+"u8_apple_order_failedPart" = "اكتملت معالجة الطلب ، وفشلت معالجة %ld طلب. يرجى التحقق من بيئة الشبكة الحالية. إذا لم يكن هناك خلل في بيئة الشبكة ، يمكنك محاولة الخروج من اللعبة الحالية وإعادة الدخول.";
+"u8_apple_order_noti" = "يلاحظ";
+"u8_apple_order_sure" = "نعم";
+"u8_apple_order_willHandle"= "لديك %ld طلب مدفوع لتتم معالجتها ، الآن ستتم معالجتها من أجلك." ;
+
+"u8_applePay_failedStatus_1" = "إلغاء الدفع";
+"u8_applePay_failedStatus_2" = "حدث خطأ غير معروف أو غير متوقع";
+"u8_applePay_failedStatus_3" = "لا يسمح للعميل بإرسال الطلبات";
+"u8_applePay_failedStatus_4" = "لا يستطيع متجر التطبيقات التعرف على معاملات الدفع";
+"u8_applePay_failedStatus_5" = "لا يوجد دفع مسموح به لهذا الجهاز";
+"u8_applePay_failedStatus_6" = "المنتج المطلوب غير متوفر في المتجر";
+"u8_applePay_failedStatus_7" = "غير مسموح بالوصول إلى معلومات الخدمة السحابية";
+"u8_applePay_failedStatus_8" = "لا يمكن للجهاز الاتصال بالشبكة";
+"u8_applePay_failedStatus_9" = "تم إبطال إذن استخدام هذه الخدمة السحابية";
+"u8_applePay_failedStatus_10" = "يحتاج المستخدمون إلى الموافقة على سياسة خصوصية أبل";
+"u8_applePay_failedStatus_11" = "لا يمتلك البرنامج حق الوصول إلى هذه الخاصية";
+"u8_applePay_failedStatus_12" = "معرّف الاقتباس غير موجود أو غير صالح";
+"u8_applePay_failedStatus_13" = "التوقيع المشفر المقدم غير صالح";
+"u8_applePay_failedStatus_14" = "معامل واحد أو أكثر مفقود";
+"u8_applePay_failedStatus_15" = "سعر العرض المحدد غير صالح";
+"u8_applePay_failedStatus_16" = "حدث خطأ غير معروف";
+
+"u8_appleProduct_question_success" = "تم البحث عن معلومات المنتج بنجاح";
+"u8_appleProduct_question_failed" = "فشل التحقق من معلومات المنتج";
+"u8_appleProduct_ID_Null" = "معرف (ID) المنتج فارغ";
+"u8_appleProduct_getInfo_load" = "الوصول إلى معلومات المنتج";
+"u8_appleProduct_request_timeout" = "نفد وقت الطلب";
+
+"u8_share_share_success" = "تمت المشاركة بنجاح";
+"u8_share_share_failed" = "فشلت المشاركة";
+"u8_share_share_cancel" = "عدم المشاركة";
+
+"u8_web_tips_loadFailed" = "فشل التحميل، يرجى التحقق من الشبكة";
+
+"u8_account_UI_otherPhone" = "تسجيل الدخول باستخدام رقم الهاتف الآخر";
+"u8_account_UI_loginAndBind" = "تسجيل الدخول والتسجيل برقم الهاتف الحالي";
+"u8_account_UI_phoneLogin" = "تسجيل الدخول باستخدام رقم الهاتف";
+"u8_account_UI_phoneLoginDetail" = "ستتم إضافة الرقم الغير مسجل مباشرة بعد التحقق منه";
+"u8_account_bind_tips1" = "الربط يعني الموافقة على";
+"u8_account_UI_sendCountdown" = "سيتم إعادة الإرسال بعد %ld ثانية";
+"u8_account_UI_phoneNumber" = "رقم الهاتف";
+"u8_account_UI_btnLogin" = "تسجيل الدخول";
+"u8_account_UI_tipsCode" = "يرجى إدخال رمز التحقق";
+"u8_account_UI_tipsPhone" = "يرجى إدخال رقم هاتف صالح";
+"u8_account_UI_loginAgreement" = "تسجيل الدخول يعني الموافقة على";
+"u8_account_UI_usePhone" = "واستخدام رقم الهاتف الحالي لتسجيل الدخول";
+"u8_account_UI_loginQuestion" = "أسئلة ذات صلة بتسجيل الدخول";
+"u8_account_UI_unableBind" = "لا يمكن الربط أو تسجيل الدخول";
+"u8_account_UI_contactService" = "الاتصال بخدمة العملاء";
+
+"u8_account_complaint_complaint" = "تقديم شكوى لتغيير الربط";
+"u8_account_complaint_enterAccount " = "التحقق من الاسم الحقيقي: إدخال معلومات الحساب الأصلي";
+"u8_account_complaint_originalPhone" = "رقم الهاتف الأصلي";
+"u8_account_complaint_inputRealname" = "الرجاء إدخال الاسم الحقيقي";
+"u8_account_complaint_inputCardnumber" = "الرجاء إدخال رقم الهوية الشخصية";
+"u8_account_complaint_name" = "الاسم";
+"u8_account_complaint_enterAccount" = "التحقق من الاسم الحقيقي: إدخال معلومات الحساب الأصلي";
+"u8_account_complaint_tipsCardNumber" = "الرجاء إدخال رقم هوية شخصية صحيح";
+"u8_account_info_account" = "الحساب";
+"u8_account_info_realName" = "الاسم الحقيقي";
+"u8_account_info_memberCard" = "رقم الهوية الشخصية";
+"u8_account_info_cutoverBind" = "تغيير الربط";
+"u8_account_info_cutoverAccount" = "تبديل الحساب";
+"u8_account_cutove_title" = "تغيير ربط الحساب";
+"u8_account_cutove_verify" = "التحقق";
+"u8_account_cutove_newPhone" = "رقم الهاتف الجديد";
+"u8_account_cutove_accountCutover" = "تبديل الحساب";
+"u8_account_tips_cancelLogin" = "إلغاء تسجيل الدخول";
+"u8_account_tips_sendSMSFailed" = "فشل إرسال الرسالة القصيرة";
+"u8_account_tips_jgloginFailed" = "فشل تسجيل الدخول برقم الهاتف المحلي المصرح به، الرجاء استخدام رمز التحقق من الرسائل القصيرة";
+"u8_account_tips_phoneCheckPhone" = "فشل التحقق من الهاتف";
+"u8_account_tips_phoneCheckDifferent" = "يجب أن يكون رقم الهاتف المدخل مختلفا عن رقم الهاتف المسجل في الحساب";
+"u8_account_tips_tokenIsNull" = "الرمز فارغ";
+"u8_account_tips_submissionFailed" = "فشل الإرسال";
+"u8_account_tips_submissionSuccess" = "تم الإرسال بنجاح";
+"u8_account_tips_appealChangeFailed" = "فشل إرجاع الحساب الذي تم التقدم بشكوى بشأنه";
+"u8_account_appealSuccess_welcome" = "تم استعادة الحساب بنجاح، مرحباً بك!";
+"u8_account_cutoverSuccess_welcome" = "تم تبديل الحساب بنجاح، مرحباً بك!";
+"u8_account_tips_loginTypeError" = "طريقة تسجيل الدخول خاطئة";
+"u8_account_UI_help" = "مساعدة";

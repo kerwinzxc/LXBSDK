@@ -35,6 +35,7 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [[UITableViewCell alloc]init];
     cell.textLabel.text = self.actionLable[indexPath.row];
+    cell.backgroundColor = [UIColor redColor];
     return cell;
 }
 
@@ -73,6 +74,9 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
         case 10:
             [[SDKController getInstance] launchAppleLogin];
             break;
+        case 11:
+            [[SDKController getInstance] showCenter];
+            break;
         default:
             break;
     }
@@ -91,7 +95,7 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
         @"8bind Apple",
         @"9autoLogin",
         @"10apple login",
-        @"账号切换",
+        @"11 showCenter",
         @"账号解绑",
         @"硬核渠道登录",
         @"一键、验证码登录",

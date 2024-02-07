@@ -1,0 +1,230 @@
+"u8sdk_current_language_type" = "es";
+"u8_language_type_key" = "西班牙语";
+
+"u8_privacy_policy_guidelines" = "Guía de Protección del Acuerdo de Privacidad";
+"u8_privacy_detail_thank" =  "Gracias por jugar este juego, debes leer y aceptar que recopilaremos información sobre tu dispositivo.";
+"u8_user_services_agreement" = "\"Acuerdo de Servicio del Usuario\"";
+"u8_user_privacy_agreement" = "\"Acuerdo de Privacidad del Usuario\"";
+"u8_privacy_detail_content" = ", si se niega, no podrá ingresar al juego. Haga clic para aceptar y comenzar a brindarle nuestros servicios. Para brindarle los servicios del juego, podemos obtener los siguientes permisos e información durante su uso. Vea y administre sus permisos en .\nInformación del dispositivo: para facilitar la recuperación de contraseñas de cuentas perdidas y garantizar la seguridad de la cuenta.";
+"u8_privacy_detail_all" = "Gracias por jugar este juego, debes leer y aceptar que recopilaremos información sobre tu dispositivo.\"Acuerdo de Servicio del Usuario\"y\"Acuerdo de Privacidad del Usuario\",Si te niegas, no podrás ingresar al juego. Haga clic en Aceptar para comenzar a brindarle nuestros servicios. Para brindarle servicios de juegos, podemos obtener los siguientes permisos e información durante su uso, y puede ver y administrar sus permisos en el dispositivo. \nInformación del dispositivo: para facilitarle la recuperación de la contraseña de la cuenta perdida y garantizar la seguridad de la cuenta.";
+
+"u8_user_exit_APP" = "Salir de la Aplicación";
+"u8_user_exit_login" = "Se cerró la sesión con éxito";
+"u8_user_loginSuccess_welcome" = "Se inició la sesión con éxito, ¡bienvenido!";
+
+
+
+
+"u8_error_data_error" = "Error de datos";
+"u8_error_unknown_error" = "Error Desconocido";
+"u8_error_parameter_error" = "Solicitud No Legal";
+"u8_error_name_invalid" = "El nombre o número no es legal";
+"u8_error_code_unsend" = "Error, no se puede enviar el código de verificación";
+"u8_error_system_versionLow" = "La versión del sistema es demasiado baja, se requiere iOS 13+";
+
+"u8_tips_button_yes" = "Sí";
+"u8_tips_button_no" = "No";
+"u8_tips_button_ok" = "Confirmar";
+"u8_tips_button_cancel" = "Cancelar";
+"u8_tips_button_unBind" = "Sin vincular";
+"u8_tips_button_alreadyBind" = "Cuenta vinculada";
+
+"u8_account_login_success" = "Inicio de sesión exitoso";
+"u8_account_login_failed" = "Inicio de sesión fallido";
+"u8_account_bind_success" = "Vinculado con éxito";
+"u8_account_bind_failed" = "Error en la vinculación";
+"u8_account_unbind_success" = "Desvinculación correcta";
+"u8_account_unbind_failed" = "Fallo de desvinculación";
+"u8_account_cutover_success" = "Cambio de cuenta correcto";
+"u8_account_cutover_failed" = "Cambio de cuenta fallido";
+"u8_account_cutover_abnormal" = "Error al cambiar de cuenta";
+"u8_account_verify_failed" = "Falló la verificación del estado de la cuenta";
+"u8_account_please_login" = "Primero inicia sesión";
+"u8_account_realname_success" = "Autenticación de Nombre Real exitosa";
+"u8_account_realname_failed" = "Falló la autenticación de nombre real";
+"u8_account_realname_verified" = "Autenticación de Nombre Real";
+
+"u8_account_realname_noPass" = "No se aprobó la autenticación de nombre real";
+"u8_account_realname_pass" = "Autenticación de Nombre Real exitosa";
+"u8_account_realname_tips1" = "De acuerdo con las leyes y regulaciones nacionales, los jugadores necesitan autenticación con su nombre real. Para su experiencia de juego, complete su información de identidad, de lo contrario no podrá jugar normalmente.";
+"u8_account_realname_tips2" = "De acuerdo con el \"Aviso sobre cómo evitar que los menores participen en juegos en línea\", los usuarios del juego deben usar documentos de identidad válidos para registrarse con sus nombres reales y nos comprometemos a proteger su información personal de acuerdo con la ley.";
+"u8_account_UI_realname" = "Nombre Real";
+"u8_account_UI_numberCard" = "Número de ID";
+"u8_account_UI_commit" = "Enviar";
+"u8_account_UI_current" = "Cuenta";
+"u8_account_UI_agreement" = "Condiciones de los servicios";
+"u8_account_UI_service" = "Contactar con Servicio al Cliente";
+"u8_account_UI_bind" = "Vincular";
+"u8_account_UI_unbind" = "Desvincular";
+"u8_account_UI_cutoverBind" = "Cambiar vinculación";
+"u8_account_UI_noBind" = "Todavía no está vinculada";
+"u8_account_UI_alreadyBind" = "Vinculado";
+"u8_account_UI_agree" = "Aceptar";
+
+"u8_account_bind_tips1" = "Vincular significa estar de acuerdo";
+"u8_account_privacy_policy" = "Política de Privacidad";
+"u8_account_code_sending" = "Enviando";
+
+"u8_account_show_copySuccess" = "Copiado con éxito";
+
+"u8_account_center_tips" = "Para evitar la pérdida de datos, vincule su cuenta y podrá iniciar sesión en otros dispositivos después de vincular su cuenta.";
+"u8_account_title_info" = "Información de la cuenta";
+"u8_account_title_bind" = "Vinculación de la cuenta";
+"u8_account_title_bindOrCutover" = "Vincular o cambiar";
+"u8_account_input_phoneNumber" = "Ingresa tu número de móvil";
+"u8_account_verification_code" = "Código de Verificación";
+"u8_account_get_code" = "Obtener código de verificación";
+"u8_account_code_send" = "Enviando";
+"u8_account_please_wait" = "Por favor espera un momento~";
+"u8_account_oneClick_login" = "Vinculación con un clic al número local";
+"u8_account_other_bind" = "Otros métodos de vinculación";
+"u8_account_getJGParameter_success" = "Presiona aquí para acceder con éxito a los parámetros de inicio de sesión";
+"u8_account_tips_pleaseAgree" = "Acepta los términos y condiciones primero";
+"u8_account_request_unHandle" = "No se puede procesar el comportamiento";
+"u8_account_login_noSupport" = "Este método de inicio de sesión no es compatible actualmente";
+
+"u8_no_plugin_wx" = "Falta el add-on de WeChat";
+"u8_no_plugin_qq" = "Falta el add-on de QQ";
+"u8_no_plugin_fb" = "Falta el add-on de Facebook";
+"u8_no_plugin_gg" = "Falta el add-on de Google";
+"u8_no_plugin_any" = "No se encontraron add-ons para esta plataforma";
+"u8_no_plugin_account" = "Falta el add-on del sistema de cuenta";
+//"u8_no_plugin_wx" = "缺少微信插件";
+//"u8_no_plugin_wx" = "缺少微信插件";
+//"u8_no_plugin_wx" = "缺少微信插件";
+
+"u8_no_open_apple" = "El módulo de inicio de sesión de Apple no está habilitado";
+"u8_no_open_wx" = "El módulo de inicio de sesión de WeChat no está habilitado";
+//"u8_no_open_apple" = "El módulo de inicio de sesión de Apple no está habilitado";
+
+"u8_no_install_wx" = "WeChat no está instalado";
+
+"u8_lack_module_fb" = "El módulo de Facebook no está habilitado";
+"u8_lack_module_gg" = "El módulo de inicio de sesión de Google no está habilitado";
+
+"u8_wx_error_nodate" = "La autorización de WeChat ha caducado";
+"u8_wx_error_open" = "No se pudo abrir WeChat";
+"u8_wx_error_login" = "Error al iniciar sesión en WeChat";
+"u8_wx_error_authorize" = "Error en la autorización de WeChat";
+"u8_wx_success_authorize" = "WeChat autorizado correctamente";
+
+
+"u8_ad_error_award" = "Falló la distribución de recompensas";
+"u8_ad_error_cacheTimes" = "La memoria caché debe ser mayor a 0";
+"u8_ad_error_show" = "Error al mostrar anuncios";
+
+"u8_account_platform_alreadyBind" = "Ya estás vinculado a la plataforma";
+"u8_account_platform_noBind" = "No estás vinculado(a) a la plataforma";
+"u8_account_platform_unBind" = "Desvinculación de Cuenta";
+"u8_account_platform_unBindTips" = "¿Seguro que quieres desvincular?";
+
+"u8_phone_save_failed" = "No se pudo guardar la imagen en el álbum";
+"u8_phone_save_success" = "Se guardo con éxito la imagen en el álbum";
+
+"u8_apple_login_canceled" = "Solicitud de inicio de sesión de autorización cancelada";
+"u8_apple_login_failed" = "Falló la solicitud de autorización";
+"u8_apple_login_invalidResponse" = "Error de Autorización Respuesta No Válida";
+"u8_apple_login_notHandled" = "No se pudo procesar la solicitud de autorización";
+"u8_apple_login_unknown" = "La solicitud de autorización falló por razones desconocidas";
+"u8_apple_login_success" = "Inicio de sesión de Autorización de Apple exitoso";
+
+"u8_apple_pay_failed" = "Pago fallido";
+"u8_apple_no_open" = "La compra en la aplicación no está habilitada";
+"u8_apple_create_order" = "Orden creada";
+"u8_apple_link_AppStore" = "Conectando a la Tienda de Aplicaciones";
+"u8_apple_create_orderFailed" = "Error al crear el pedido";
+"u8_apple_product_noFind" = "Información del producto no encontrada";
+"u8_apple_buy_waiting" = "Comprando, espera por favor";
+"u8_apple_ok_waiting" = "Esperando confirmación";
+"u8_apple_return_buyData" = "Se retornaron los datos de compra";
+"u8_apple_lost_orderData" = "Se pierde la información de la Orden";
+"u8_apple_pay_buyFailed" = "Falló la compra";
+"u8_apple_pay_receiptURLFailed" = "No se puede recuperar el ReceiptURL";
+"u8_apple_pay_success" = "Compra exitosa";
+"u8_apple_shipment_failed" = "No se pudo entregar";
+"u8_apple_no_handle" = "No se puede pagar";
+"u8_apple_order_handle" = "Orden de procesamiento...";
+"u8_apple_order_handleNum" = "Procesando el pedido número %ld";
+"u8_apple_shipment_success" = "Envío exitoso";
+"u8_apple_order_handleOver" = "Procesamiento de pedidos completo";
+"u8_apple_order_failedAll" = "Error en el procesamiento del pedido, compruebe su entorno de red actual. Si el entorno de red es normal, intente salir del juego actual y volver a entrar.";
+"u8_apple_order_failedPart" = "El procesamiento del pedido se completó y %ld pedidos fallaron. Verifique su entorno de red actual. Si no hay anomalías en el entorno de red, puede intentar salir del juego actual y volver a ingresar.";
+"u8_apple_order_noti" = "Noti";
+"u8_apple_order_sure" = "Aceptar";
+"u8_apple_order_willHandle"= "Tiene %ld órdenes de pago pendientes, ahora serán procesadas por usted.";
+
+"u8_applePay_failedStatus_1" = "Cancelar el Pago";
+"u8_applePay_failedStatus_2" = "Ocurrió un error desconocido o inesperado";
+"u8_applePay_failedStatus_3" = "El cliente no puede enviar solicitudes.";
+"u8_applePay_failedStatus_4" = "La App Store no puede reconocer los parámetros de pago";
+"u8_applePay_failedStatus_5" = "No se permiten pagos para este dispositivo";
+"u8_applePay_failedStatus_6" = "El producto solicitado no está disponible en la tienda";
+"u8_applePay_failedStatus_7" = "No se permite el acceso a la información del servicio en la nube";
+"u8_applePay_failedStatus_8" = "El dispositivo no puede conectarse a la red.";
+"u8_applePay_failedStatus_9" = "Se ha revocado el permiso para usar este servicio en la nube";
+"u8_applePay_failedStatus_10" = "Los usuarios deben aceptar la política de privacidad de Apple";
+"u8_applePay_failedStatus_11" = "El programa no tiene acceso a esta propiedad";
+"u8_applePay_failedStatus_12" = "No se encontró el identificador de cotización o no es válido";
+"u8_applePay_failedStatus_13" = "La firma criptográfica proporcionada no es válida";
+"u8_applePay_failedStatus_14" = "Falta uno o más parámetros";
+"u8_applePay_failedStatus_15" = "El precio de la oferta seleccionada no es válido";
+"u8_applePay_failedStatus_16" = "Ocurrió un error desconocido";
+
+"u8_appleProduct_question_success" = "Búsqueda de información del producto exitosa";
+"u8_appleProduct_question_failed" = "No se pudo verificar la información del producto";
+"u8_appleProduct_ID_Null" = "La ID del producto está vacía";
+"u8_appleProduct_getInfo_load" = "Acceder a la información del producto";
+"u8_appleProduct_request_timeout" = "Se terminó el tiempo de solicitud";
+
+"u8_share_share_success" = "Compartido exitosamente";
+"u8_share_share_failed" = "Error al compartir";
+"u8_share_share_cancel" = "Dejar de compartir";
+
+"u8_web_tips_loadFailed" = "Error al cargar, verifica la red";
+
+"u8_account_UI_otherPhone" = "Inicio de sesión con otro número de teléfono";
+"u8_account_UI_loginAndBind" = "Registro e inicio de sesión con un solo toque en este dispositivo";
+"u8_account_UI_phoneLogin" = "Inicio de sesión con número de teléfono";
+"u8_account_UI_phoneLoginDetail" = "La verificación del número de teléfono no registrado se registrará directamente después de la verificación.";
+"u8_account_bind_tips1" = "El enlace significa que aceptas los";
+"u8_account_UI_sendCountdown" = "Reenviar después de %ld segundos";
+"u8_account_UI_phoneNumber" = "Número de teléfono";
+"u8_account_UI_btnLogin" = "Iniciar sesión";
+"u8_account_UI_tipsCode" = "Ingresa el código de verificación";
+"u8_account_UI_tipsPhone" = "Ingresa un número de teléfono válido";
+"u8_account_UI_loginAgreement" = "Al iniciar sesión, aceptas";
+"u8_account_UI_usePhone" = "e iniciar sesión con mi número de teléfono móvil";
+"u8_account_UI_loginQuestion" = "Preguntas sobre inicio de sesión";
+"u8_account_UI_unableBind" = "No es posible enlazar o iniciar sesión";
+"u8_account_UI_contactService" = "Contacta con servicio al cliente";
+
+"u8_account_complaint_complaint" = "Reclamo de cambio de cuenta";
+"u8_account_complaint_enterAccount " = "Verificación de identidad: ingrese la información de identidad original de la cuenta";
+"u8_account_complaint_originalPhone" = "Teléfono original";
+"u8_account_complaint_inputRealname" = "Ingrese su nombre real";
+"u8_account_complaint_inputCardnumber" = "Ingrese su número de identificación";
+"u8_account_complaint_name" = "Nombre";
+"u8_account_complaint_enterAccount" = "Verificación de identidad: ingrese la información de identidad original de la cuenta";
+"u8_account_complaint_tipsCardNumber" = "Ingrese un número de identificación válido";
+"u8_account_info_account" = "Cuenta";
+"u8_account_info_realName" = "Identidad verificada";
+"u8_account_info_memberCard" = "Identificación";
+"u8_account_info_cutoverBind" = "Cambiar vinculación";
+"u8_account_info_cutoverAccount" = "Cambiar cuenta";
+"u8_account_cutove_title" = "Cambio de cuenta";
+"u8_account_cutove_verify" = "Verificar";
+"u8_account_cutove_newPhone" = "Nuevo teléfono";
+"u8_account_cutove_accountCutover" = "Cambiar de cuenta";
+"u8_account_tips_cancelLogin" = "Cancelar inicio de sesión";
+"u8_account_tips_sendSMSFailed" = "Fallo en el envío de SMS";
+"u8_account_tips_jgloginFailed" = "El inicio de sesión de autorización de un solo toque en este dispositivo ha fallado. Inicie sesión con el código de verificación SMS.";
+"u8_account_tips_phoneCheckPhone" = "Error en la verificación del teléfono";
+"u8_account_tips_phoneCheckDifferent" = "El número de teléfono ingresado debe ser diferente del número de teléfono de la cuenta iniciada";
+"u8_account_tips_tokenIsNull" = "El token está vacío";
+"u8_account_tips_submissionFailed" = "No se pudo enviar";
+"u8_account_tips_submissionSuccess" = "Enviado correctamente";
+"u8_account_tips_appealChangeFailed" = "No se pudo recuperar la cuenta";
+"u8_account_appealSuccess_welcome" = "¡Cuenta recuperada con éxito, bienvenido!";
+"u8_account_cutoverSuccess_welcome" = "Cambio de cuenta exitoso, ¡bienvenido!";
+"u8_account_tips_loginTypeError" = "Error de inicio de sesión";
+"u8_account_UI_help" = "Ayuda";

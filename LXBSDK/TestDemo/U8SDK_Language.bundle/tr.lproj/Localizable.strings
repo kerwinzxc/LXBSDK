@@ -1,0 +1,230 @@
+"u8sdk_current_language_type" = "tr";
+"u8_language_type_key" = "土耳其语";
+
+"u8_privacy_policy_guidelines" = "Gizlilik Anlaşmasını Koruma Rehberi";
+"u8_privacy_detail_thank" =  "Bu oyunu oynadığınız için teşekkürler, cihazınız hakkında bilgi toplayacağımızı okumalı ve kabul etmelisiniz.";
+"u8_user_services_agreement" = "\"Kullanıcı Servis Anlaşması\"";
+"u8_user_privacy_agreement" = "\"Kullanıcı Gizliliği Anlaşması\"";
+"u8_privacy_detail_content" = ", reddederseniz oyuna giremezsiniz. Size hizmetlerimizi sunmaya başlamak için lütfen kabul etmek için tıklayın. Size oyun hizmetlerini sağlamak için, oyun sırasında aşağıdaki izinleri ve bilgileri alabiliriz. .\nCihaz Bilgileri: Kayıp hesap şifrelerini kurtarmanızı kolaylaştırmak ve hesap güvenliğini sağlamak için.";
+"u8_privacy_detail_all" = "Bu oyunu oynadığınız için teşekkürler, cihazınız hakkında bilgi toplayacağımızı okumalı ve kabul etmelisiniz.\"Kullanıcı Servis Anlaşması\" ve \"Kullanıcı Gizliliği Anlaşması\", reddederseniz oyuna giremezsiniz. Size hizmetlerimizi sunmaya başlamak için lütfen Kabul Et'i tıklayın. Size oyun hizmeti sunabilmek için kullanımınız sırasında aşağıdaki izinleri ve bilgileri alabiliriz ve izinlerinizi cihaz üzerinde görüntüleyebilir ve yönetebilirsiniz. \nCihaz bilgileri: Kayıp hesap şifrenizi bulmanızı kolaylaştırmak ve hesap güvenliğini sağlamak için. ";
+
+"u8_user_exit_APP" = "Uygulamadan Çık";
+"u8_user_exit_login" = "Başarıyla çıkıldı";
+"u8_user_loginSuccess_welcome" = "Giriş başarılı, hoşgeldin!";
+
+
+
+
+"u8_error_data_error" = "Veri Hatası";
+"u8_error_unknown_error" = "Bilinmeyen Hata";
+"u8_error_parameter_error" = "Yasadışı İstek";
+"u8_error_name_invalid" = "İsim veya numara yasadışı";
+"u8_error_code_unsend" = "Hata, doğrulama kodu gönderilemez";
+"u8_error_system_versionLow" = "Sistem versiyonu çok düşük, iOS 13+ gerekli";
+
+"u8_tips_button_yes" = "Evet";
+"u8_tips_button_no" = "Hayır";
+"u8_tips_button_ok" = "Onayla";
+"u8_tips_button_cancel" = "İptal Et";
+"u8_tips_button_unBind" = "Bağı kaldır";
+"u8_tips_button_alreadyBind" = "Hesap Bağlantısı";
+
+"u8_account_login_success" = "Giriş Başarılı";
+"u8_account_login_failed" = "Giriş Başarısız";
+"u8_account_bind_success" = "Bağlı Başarılı";
+"u8_account_bind_failed" = "Bağlı Başarısız";
+"u8_account_unbind_success" = "Bağlantıyı Çöz Başarılı";
+"u8_account_unbind_failed" = "Bağlama Başarısız";
+"u8_account_cutover_success" = "Hesap Değiştirme Başarılı";
+"u8_account_cutover_failed" = "Hesap Değiştirme Başarısız";
+"u8_account_cutover_abnormal" = "Hesap değiştirme hatası";
+"u8_account_verify_failed" = "Hesap durumunu doğrulama başarısız";
+"u8_account_please_login" = "Lütfen önce giriş yapın";
+"u8_account_realname_success" = "Gerçek İsim Doğrulaması başarılı";
+"u8_account_realname_failed" = "Gerçek İsim Doğrulaması başarısız";
+"u8_account_realname_verified" = "Gerçek İsim Doğrulaması";
+
+"u8_account_realname_noPass" = "Gerçek ad doğrulaması geçilmedi";
+"u8_account_realname_pass" = "Gerçek İsim Doğrulaması başarılı";
+"u8_account_realname_tips1" = "Ulusal yasa ve düzenlemelere göre, oyuncuların gerçek adla kimlik doğrulaması yapması gerekir. Oyun deneyiminiz için lütfen kimlik bilgilerinizi girin, aksi takdirde normal şekilde oynayamazsınız.";
+"u8_account_realname_tips2" = "\"Reşit Olmayan Kişilerin Çevrimiçi Oyun Oynamasını Önleme Bildirimi\"ne göre, oyun kullanıcıları gerçek adlarıyla kaydolmak için geçerli kimlik belgeleri kullanmalıdır ve kişisel bilgilerinizi yasalara uygun olarak koruyacağımıza söz veriyoruz.";
+"u8_account_UI_realname" = "Gerçek İsim";
+"u8_account_UI_numberCard" = "ID numarası";
+"u8_account_UI_commit" = "Gönder";
+"u8_account_UI_current" = "Hesap";
+"u8_account_UI_agreement" = "Hizmet Koşulları";
+"u8_account_UI_service" = "Müşteri Servisiyle İletişime Geç";
+"u8_account_UI_bind" = "Bağla";
+"u8_account_UI_unbind" = "Bağları Çöz";
+"u8_account_UI_cutoverBind" = "Bağlamayı değiştir";
+"u8_account_UI_noBind" = "Henüz Bağlanmadı";
+"u8_account_UI_alreadyBind" = "bağlı";
+"u8_account_UI_agree" = "Kabul et";
+
+"u8_account_bind_tips1" = "Bağlaman kabul ettiğin anlamına gelir";
+"u8_account_privacy_policy" = "Gizlilik Politikası";
+"u8_account_code_sending" = "Gönderiliyor";
+
+"u8_account_show_copySuccess" = "Başarıyla kopyalandı";
+
+"u8_account_center_tips" = "Veri kaybınızı önlemek için lütfen hesabınızı bağlayın ve hesabınız bağlandıktan sonra diğer cihazlarda oturum açabilirsiniz";
+"u8_account_title_info" = "Hesap Bilgileri";
+"u8_account_title_bind" = "Hesap Bağlama";
+"u8_account_title_bindOrCutover" = "Bağla veya değiştir";
+"u8_account_input_phoneNumber" = "Lütfen telefon numaranı gir";
+"u8_account_verification_code" = "Doğrulama kodu";
+"u8_account_get_code" = "Doğrulama kodunu elde et";
+"u8_account_code_send" = "Gönderiliyor";
+"u8_account_please_wait" = "Lütfen biraz bekleyin";
+"u8_account_oneClick_login" = "Yerel sayıyla tek tıkla bağla";
+"u8_account_other_bind" = "Diğer bağlama yöntemleri";
+"u8_account_getJGParameter_success" = "Tek tıkla giriş parametresine erişim başarılı";
+"u8_account_tips_pleaseAgree" = "Lütfen önce hüküm ve koşulları kabul et";
+"u8_account_request_unHandle" = "Davranış işlemi yapılamıyor";
+"u8_account_login_noSupport" = "Bu giriş yöntemi şu an desteklenmiyor";
+
+"u8_no_plugin_wx" = "WeChat eklentisi eksik";
+"u8_no_plugin_qq" = "QQ eklentisi eksik";
+"u8_no_plugin_fb" = "Facebook eklentisi eksik";
+"u8_no_plugin_gg" = "Google eklentisi eksik";
+"u8_no_plugin_any" = "Bu platform için eklenti bulunmadı";
+"u8_no_plugin_account" = "Kayıp hesap sistem eklentisi";
+//"u8_no_plugin_wx" = "缺少微信插件";
+//"u8_no_plugin_wx" = "缺少微信插件";
+//"u8_no_plugin_wx" = "缺少微信插件";
+
+"u8_no_open_apple" = "Apple giriş modülü aktifleştirilmedi";
+"u8_no_open_wx" = "WeChat giriş modülü aktifleştirilmedi";
+//"u8_no_open_apple" = "Apple giriş modülü aktifleştirilmedi";
+
+"u8_no_install_wx" = "WeChat kurulu değil";
+
+"u8_lack_module_fb" = "Facebook giriş modülü aktifleştirilmedi";
+"u8_lack_module_gg" = "Google giriş modülü aktifleştirilmedi";
+
+"u8_wx_error_nodate" = "WeChat yetkilendirmesinin süresi doldu";
+"u8_wx_error_open" = "WeChat açılamadı";
+"u8_wx_error_login" = "WeChat oturumu açılamadı";
+"u8_wx_error_authorize" = "WeChat yetkilendirmesi başarısız oldu";
+"u8_wx_success_authorize" = "WeChat başarıyla yetkilendirildi";
+
+
+"u8_ad_error_award" = "Ödül dağıtımı başarısız";
+"u8_ad_error_cacheTimes" = "Önbellek 0‘dan fazla olmalıdır";
+"u8_ad_error_show" = "Reklam gösterimi başarısız";
+
+"u8_account_platform_alreadyBind" = "Platforma zaten bağlısın";
+"u8_account_platform_noBind" = "Platforma bağlı değilsin";
+"u8_account_platform_unBind" = "Hesap Bağı Kaldırılıyor";
+"u8_account_platform_unBindTips" = "Bağı kaldırmaktan emin misin?";
+
+"u8_phone_save_failed" = "Resim albüme kaydedilemedi";
+"u8_phone_save_success" = "Resim albüme başarıyla kaydedildi";
+
+"u8_apple_login_canceled" = "İptal edilen doğrulama girişi isteği";
+"u8_apple_login_failed" = "Doğrulama isteği başarısız oldu";
+"u8_apple_login_invalidResponse" = "Doğrulama Hatasının Geçersiz Yanıtı";
+"u8_apple_login_notHandled" = "Doğrulama başvurusu işlemi başarısız";
+"u8_apple_login_unknown" = "Doğrulama isteği bilinmeyen sebeplerden dolayı başarısız oldu";
+"u8_apple_login_success" = "Apple Doğrulama girişi başarısız";
+
+"u8_apple_pay_failed" = "Ödeme Başarısız";
+"u8_apple_no_open" = "Uygulama için satın alım kapalı";
+"u8_apple_create_order" = "Sipariş oluşturuluyor";
+"u8_apple_link_AppStore" = "Uygulama Mağazasına bağlanıyor";
+"u8_apple_create_orderFailed" = "Sipariş oluşturulamadı";
+"u8_apple_product_noFind" = "Ürün bilgisi bulunmadı";
+"u8_apple_buy_waiting" = "Satın alınıyor, lütfen bekleyin";
+"u8_apple_ok_waiting" = "Doğrulama bekleniyor";
+"u8_apple_return_buyData" = "Satın alım verisi iade ediliyor";
+"u8_apple_lost_orderData" = "Sipariş bilgisi kayıp";
+"u8_apple_pay_buyFailed" = "Satın alım başarısız oldu";
+"u8_apple_pay_receiptURLFailed" = "Fiş URL alımı yapılamadı";
+"u8_apple_pay_success" = "Satın alım başarılı";
+"u8_apple_shipment_failed" = "Gönderim başarısız";
+"u8_apple_no_handle" = "Ödenemez";
+"u8_apple_order_handle" = "İşlem sırası...";
+"u8_apple_order_handleNum" = "%ld. sipariş işleniyor";
+"u8_apple_shipment_success" = "Başarıyla Gönderildi";
+"u8_apple_order_handleOver" = "Sipariş işleme tamamlandı";
+"u8_apple_order_failedAll" = "Sipariş işleme başarısız oldu, lütfen mevcut ağ ortamınızı kontrol edin. Ağ ortamında herhangi bir anormallik yoksa mevcut oyundan çıkıp tekrar girmeyi deneyebilirsiniz.";
+"u8_apple_order_failedPart" = "Sipariş işleme tamamlandı ve %ld sipariş işlenemedi. Lütfen mevcut ağ ortamınızı kontrol edin. Ağ ortamında herhangi bir anormallik yoksa mevcut oyundan çıkıp tekrar girmeyi deneyebilirsiniz.";
+"u8_apple_order_noti" = "Fark etme";
+"u8_apple_order_sure" = "TAMAM";
+"u8_apple_order_willHandle" = "Bekleyen %ld ödemeli siparişiniz var, şimdi bunları sizin için işleme koyacağız.";
+
+"u8_applePay_failedStatus_1" = "Ödemeyi İptal Et";
+"u8_applePay_failedStatus_2" = "Bilinmeyen veya beklenmeyen hata oluştu";
+"u8_applePay_failedStatus_3" = "İstemcinin istek göndermesine izin verilmiyor";
+"u8_applePay_failedStatus_4" = "Uygulama Mağazası ödeme parametrelerini tanımlayamıyor";
+"u8_applePay_failedStatus_5" = "Bu cihaz için ödemeye izin yok";
+"u8_applePay_failedStatus_6" = "İstenen ürün mağazada uygun değil";
+"u8_applePay_failedStatus_7" = "Bulut servis bilgisine erişime izin yok";
+"u8_applePay_failedStatus_8" = "Cihaz ağa bağlanamaz";
+"u8_applePay_failedStatus_9" = "Bu bulut servisini kullanım izni iptal edildi";
+"u8_applePay_failedStatus_10" = "Kullanıcıların Apple gizlilik politikasını kabul etmesi gerekir";
+"u8_applePay_failedStatus_11" = "Programın bu varlığa erişimi yok";
+"u8_applePay_failedStatus_12" = "Kota tanımlayıcı bulunmadı veya geçersiz";
+"u8_applePay_failedStatus_13" = "Sağlanan kriptografik imza geçersiz";
+"u8_applePay_failedStatus_14" = "Bir veya daha çok parametre eksik";
+"u8_applePay_failedStatus_15" = "Seçilen teklif fiyatı geçersiz";
+"u8_applePay_failedStatus_16" = "Bilinmeyen hata oluştu";
+
+"u8_appleProduct_question_success" = "Ürün bilgisini arama başarılı";
+"u8_appleProduct_question_failed" = "Ürün bilgisini kontrol başarısız oldu";
+"u8_appleProduct_ID_Null" = "Ürün ID‘si boş";
+"u8_appleProduct_getInfo_load" = "Ürün bilgisine erişiliyor";
+"u8_appleProduct_request_timeout" = "İstek Zamanı Doldu";
+
+"u8_share_share_success" = "Başarıyla paylaşıldı";
+"u8_share_share_failed" = "Paylaşma başarısız";
+"u8_share_share_cancel" = "Paylaşma";
+
+"u8_web_tips_loadFailed" = "Yükleme başarısız, lütfen ağı kontrol edin";
+
+"u8_account_UI_otherPhone" = "Diğer telefon numarası ile giriş yapın";
+"u8_account_UI_loginAndBind" = "Otomatik Kayıt ve Giriş";
+"u8_account_UI_phoneLogin" = "Telefon numarası ile giriş yapın";
+"u8_account_UI_phoneLoginDetail" = "Kayıt olmayan bir telefon numarası doğrulandıktan sonra otomatik olarak kaydedilecektir";
+"u8_account_bind_tips1" = "Kayıt, kabul anlamına gelir";
+"u8_account_UI_sendCountdown" = "%ld saniye sonra yeniden gönder";
+"u8_account_UI_phoneNumber" = "Telefon numarası";
+"u8_account_UI_btnLogin" = "Giriş yapın";
+"u8_account_UI_tipsCode" = "Lütfen doğrulama kodunu girin";
+"u8_account_UI_tipsPhone" = "Lütfen geçerli bir telefon numarası girin";
+"u8_account_UI_loginAgreement" = "Giriş yaparak kabul ediyorsunuz";
+"u8_account_UI_usePhone" = "Ayrıca, yerel telefon numaranızı kullanın";
+"u8_account_UI_loginQuestion" = "Girişle ilgili sorular";
+"u8_account_UI_unableBind" = "Kayıt veya bağlantı kuramama";
+"u8_account_UI_contactService" = "Müşteri hizmetleriyle iletişim kurun";
+
+"u8_account_complaint_complaint" = "Hesap Değiştirme Şikayeti";
+"u8_account_complaint_enterAccount " = "Kimlik Doğrulama: Orijinal hesap kimlik bilgilerini girin";
+"u8_account_complaint_originalPhone" = "Orijinal telefon numarası";
+"u8_account_complaint_inputRealname" = "Gerçek adınızı girin";
+"u8_account_complaint_inputCardnumber" = "TC kimlik numarasını girin";
+"u8_account_complaint_name" = "İsim";
+"u8_account_complaint_enterAccount" = "Kimlik Doğrulama: Orijinal hesap kimlik bilgilerini girin";
+"u8_account_complaint_tipsCardNumber" = "Lütfen geçerli bir TC kimlik numarası girin";
+"u8_account_info_account" = "Hesap";
+"u8_account_info_realName" = "Gerçek Ad";
+"u8_account_info_memberCard" = "TC Kimlik";
+"u8_account_info_cutoverBind" = "Hesap Değiştirme";
+"u8_account_info_cutoverAccount" = "Hesap Değiştirme";
+"u8_account_cutove_title" = "Hesap Değiştirme";
+"u8_account_cutove_verify" = "Doğrulama";
+"u8_account_cutove_newPhone" = "Yeni Telefon Numarası";
+"u8_account_cutove_accountCutover" = "Hesap Değiştirme";
+"u8_account_tips_cancelLogin" = "Girişi İptal Et";
+"u8_account_tips_sendSMSFailed" = "SMS gönderilemedi";
+"u8_account_tips_jgloginFailed" = "Telefon Numarasıyla Otomatik Giriş Başarısız, SMS kodu ile giriş yapın";
+"u8_account_tips_phoneCheckPhone" = "Telefon numarası doğrulaması başarısız oldu";
+"u8_account_tips_phoneCheckDifferent" = "Girdiğiniz telefon numarası giriş yapmış olduğunuz hesap numarası ile aynı olmamalıdır";
+"u8_account_tips_tokenIsNull" = "Token boş";
+"u8_account_tips_submissionFailed" = "Sunum başarısız oldu";
+"u8_account_tips_submissionSuccess" = "Sunum başarılı oldu";
+"u8_account_tips_appealChangeFailed" = "Hesap itirazı başarısız oldu";
+"u8_account_appealSuccess_welcome" = "Hesap itirazınız başarılı oldu, hoş geldiniz!";
+"u8_account_cutoverSuccess_welcome" = "Hesap değiştirme başarılı oldu, hoş geldiniz!";
+"u8_account_tips_loginTypeError" = "Giriş yöntemi hatası";
+"u8_account_UI_help" = "Yardım";

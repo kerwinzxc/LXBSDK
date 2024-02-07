@@ -1,0 +1,230 @@
+"u8sdk_current_language_type" = "ja";
+"u8_language_type_key" = "日语";
+
+"u8_privacy_policy_guidelines" = "個人情報保護に関するガイドライン";
+"u8_privacy_detail_thank" =  "本ゲームをプレイしていただきありがとうございます。ゲームをプレイするにあたり、関連規約を閲覧後、あなたのデバイスに関する情報を収集することに同意いただくようお願いいたします。";
+"u8_user_services_agreement" = "『ユーザーサービス利用規約』";
+"u8_user_privacy_agreement" = "『プライバシーポリシー』";
+"u8_privacy_detail_content" = "、拒否した場合、ゲームに参加できなくなります。クリックして同意し、サービスの提供を開始してください。ゲーム サービスを提供するために、次の許可と情報を取得する場合があります。でアクセス許可を表示および管理します。\nデバイス情報: 紛失したアカウント パスワードの回復を容易にし、アカウントのセキュリティを確保します。";
+"u8_privacy_detail_all" = "本ゲームをプレイしていただきありがとうございます。ゲームをプレイするにあたり、関連規約を閲覧後、あなたのデバイスに関する情報を収集することに同意いただくようお願いいたします。『ユーザーサービス利用規約』および『プライバシーポリシー』、拒否した場合、ゲームに参加できなくなります。 サービスの提供を開始するには、[同意する] をクリックしてください。 ゲームサービスを提供するために、使用中に次の権限と情報を取得する場合があり、デバイスで権限を表示および管理できます。 \nデバイス情報: 紛失したアカウントのパスワードを簡単に取得し、アカウントのセキュリティを確保するため。";
+
+"u8_user_exit_APP" = "アプリを終了します";
+"u8_user_exit_login" = "ログアウトに成功";
+"u8_user_loginSuccess_welcome" = "ログイン成功、ようこそ！";
+
+
+
+
+"u8_error_data_error" = "データエラー";
+"u8_error_unknown_error" = "不明なエラー";
+"u8_error_parameter_error" = "不正なリクエスト";
+"u8_error_name_invalid" = "名前またはナンバーが不正です";
+"u8_error_code_unsend" = "エラー、認証コードを送信できません";
+"u8_error_system_versionLow" = "古いシステムバージョン、iOS13以上が必要です";
+
+"u8_tips_button_yes" = "はい";
+"u8_tips_button_no" = "いいえ";
+"u8_tips_button_ok" = "決定";
+"u8_tips_button_cancel" = "キャンセル";
+"u8_tips_button_unBind" = "紐付けされていません";
+"u8_tips_button_alreadyBind" = "連携済";
+
+"u8_account_login_success" = "ログイン成功";
+"u8_account_login_failed" = "ログイン失敗";
+"u8_account_bind_success" = "連携成功";
+"u8_account_bind_failed" = "連携失敗";
+"u8_account_unbind_success" = "連携解除成功";
+"u8_account_unbind_failed" = "連携解除失敗";
+"u8_account_cutover_success" = "アカウント変更成功";
+"u8_account_cutover_failed" = "アカウント変更失敗";
+"u8_account_cutover_abnormal" = "アカウント切り替えエラー";
+"u8_account_verify_failed" = "アカウントステータスの確認に失敗しました";
+"u8_account_please_login" = "ログインしてください";
+"u8_account_realname_success" = "実名認証に成功";
+"u8_account_realname_failed" = "実名認証に失敗しました";
+"u8_account_realname_verified" = "実名認証";
+
+"u8_account_realname_noPass" = "実名認証に合格しませんでした";
+"u8_account_realname_pass" = "実名認証が完了しました";
+"u8_account_realname_tips1" = "国の法律および規制により、プレイヤーは実名認証を必要とします。ゲーム体験のために、ID 情報を入力してください。そうしないと、正常にプレイできなくなります。";
+"u8_account_realname_tips2" = "「未成年者によるオンライン ゲームへの参加を防止するための通知」に従って、ゲーム ユーザーは有効な身分証明書を使用して実名で登録する必要があり、法律に従って個人情報を保護することを約束します。";
+"u8_account_UI_realname" = "本名";
+"u8_account_UI_numberCard" = "IDナンバー";
+"u8_account_UI_commit" = "提出";
+"u8_account_UI_current" = "現在アカウント";
+"u8_account_UI_agreement" = "利用规约";
+"u8_account_UI_service" = "カスタマーサービスに連絡";
+"u8_account_UI_bind" = "連携";
+"u8_account_UI_unbind" = "連携解除";
+"u8_account_UI_cutoverBind" = "紐付けの切り替え";
+"u8_account_UI_noBind" = "連携なし";
+"u8_account_UI_alreadyBind" = "既に紐付けされています";
+"u8_account_UI_agree" = "同意";
+
+"u8_account_bind_tips1" = "紐付けは同意することを意味します";
+"u8_account_privacy_policy" = "プライバシーポリシー";
+"u8_account_code_sending" = "配送中です";
+
+"u8_account_show_copySuccess" = "正常にコピーされました";
+
+"u8_account_center_tips" = "データの損失を防ぐために，アカウント連携することを強くお勧めします。連携した後、他のデバイスでログインできます。";
+"u8_account_title_info" = "アカウント情報";
+"u8_account_title_bind" = "アカウント連携";
+"u8_account_title_bindOrCutover" = "紐付けまたは切り替え";
+"u8_account_input_phoneNumber" = "携帯電話番号を入力してください";
+"u8_account_verification_code" = "認証コード";
+"u8_account_get_code" = "認証コードを取得";
+"u8_account_code_send" = "配送中です";
+"u8_account_please_wait" = "しばらくお待ちください";
+"u8_account_oneClick_login" = "携帯電話番号をワンクリック紐付け";
+"u8_account_other_bind" = "その他の紐付け";
+"u8_account_getJGParameter_success" = "ワンクリックログインパラメータへのアクセスに成功";
+"u8_account_tips_pleaseAgree" = "利用規約に同意してください";
+"u8_account_request_unHandle" = "処理できません";
+"u8_account_login_noSupport" = "このログイン方法は現時点ではサポートされていません";
+
+"u8_no_plugin_wx" = "WeChatアドオンが存在しません";
+"u8_no_plugin_qq" = "QQアドオンが存在しません";
+"u8_no_plugin_fb" = "Facebookアドオンが存在しません";
+"u8_no_plugin_gg" = "Googleアドオンが存在しません";
+"u8_no_plugin_any" = "プラットフォームアドオンが見つかりませんでした";
+"u8_no_plugin_account" = "アカウントシステムアドオンが存在しません";
+//"u8_no_plugin_wx" = "缺少微信插件";
+//"u8_no_plugin_wx" = "缺少微信插件";
+//"u8_no_plugin_wx" = "缺少微信插件";
+
+"u8_no_open_apple" = "Appleログインモジュールが有効になっていません";
+"u8_no_open_wx" = "WeChatログインモジュールが有効になっていません";
+//"u8_no_open_apple" = "Appleログインモジュールが有効になっていません";
+
+"u8_no_install_wx" = "WeChat がインストールされていません";
+
+"u8_lack_module_fb" = "Facebookモジュールが有効になっていません";
+"u8_lack_module_gg" = "Googleのログインモジュールが有効になっていません";
+
+"u8_wx_error_nodate" = "WeChat 認証の有効期限が切れています";
+"u8_wx_error_open" = "WeChat を開けませんでした";
+"u8_wx_error_login" = "WeChat ログインに失敗しました";
+"u8_wx_error_authorize" = "WeChat 認証に失敗しました";
+"u8_wx_success_authorize" = "WeChat が正常に認証されました";
+
+
+"u8_ad_error_award" = "特典配布に失敗しました";
+"u8_ad_error_cacheTimes" = "キャッシュカウントは0より大きい必要があります";
+"u8_ad_error_show" = "広告の表示に失敗しました";
+
+"u8_account_platform_alreadyBind" = "プラットフォームに既に紐付けされています";
+"u8_account_platform_noBind" = "プラットフォームに紐付けされていません";
+"u8_account_platform_unBind" = "アカウントの紐付けを解除";
+"u8_account_platform_unBindTips" = "紐付けを解除してよろしいですか？";
+
+"u8_phone_save_failed" = "アルバムへの保存に失敗しました";
+"u8_phone_save_success" = "アルバムへ保存しました";
+
+"u8_apple_login_canceled" = "認証ログインリクエストのキャンセル";
+"u8_apple_login_failed" = "認証リクエストに失敗しました";
+"u8_apple_login_invalidResponse" = "認証リクエスト無効なレスポンス";
+"u8_apple_login_notHandled" = "認証リクエストの処理に失敗しました";
+"u8_apple_login_unknown" = "原因不明の認証リクエスト失敗";
+"u8_apple_login_success" = "Apple認証ログインが成功しました";
+
+"u8_apple_pay_failed" = "決済失敗";
+"u8_apple_no_open" = "アプリ内課金が有効になっていません";
+"u8_apple_create_order" = "注文書を作成しています";
+"u8_apple_link_AppStore" = "App Storeに接続しています";
+"u8_apple_create_orderFailed" = "注文の作成に失敗しました";
+"u8_apple_product_noFind" = "製品情報が見つかりませんでした";
+"u8_apple_buy_waiting" = "購入中、しばらくお待ちください";
+"u8_apple_ok_waiting" = "確認中、しばらくお待ちください";
+"u8_apple_return_buyData" = "購入情報のレスポンスを待っています";
+"u8_apple_lost_orderData" = "注文内容が失われました";
+"u8_apple_pay_buyFailed" = "購入失敗";
+"u8_apple_pay_receiptURLFailed" = "ReceiptURLを取得できません";
+"u8_apple_pay_success" = "購入成功";
+"u8_apple_shipment_failed" = "発送できませんでした";
+"u8_apple_no_handle" = "支払い不可";
+"u8_apple_order_handle" = "注文を処理しています...";
+"u8_apple_order_handleNum" = "%ld 番目の注文を処理しています";
+"u8_apple_shipment_success" = "正常に出荷されました";
+"u8_apple_order_handleOver" = "注文処理完了";
+"u8_apple_order_failedAll" = "注文の処理に失敗しました。現在のネットワーク環境を確認してください。ネットワーク環境に異常がない場合は、現在のゲームを終了してから再入力してみてください。";
+"u8_apple_order_failedPart" = "注文の処理が完了しました。%ld 件の注文の処理に失敗しました。現在のネットワーク環境を確認してください。ネットワーク環境に異常がない場合は、現在のゲームを終了し、再入力してみてください。";
+"u8_apple_order_noti" = "知らせ";
+"u8_apple_order_sure" = "わかった";
+"u8_apple_order_willHandle" = "保留中の支払い注文が %ld 件あります。今すぐ処理します。";
+
+"u8_applePay_failedStatus_1" = "支払いをキャンセル";
+"u8_applePay_failedStatus_2" = "不明または予期せぬエラーが発生しました";
+"u8_applePay_failedStatus_3" = "クライアントはリクエストの送信を許可されていません";
+"u8_applePay_failedStatus_4" = "App Storeで支払いパラメータが認識できません";
+"u8_applePay_failedStatus_5" = "このデバイスでは決済できません";
+"u8_applePay_failedStatus_6" = "リクエストされた製品はストアで使用不可です";
+"u8_applePay_failedStatus_7" = "クラウドサービス情報へのアクセス不可";
+"u8_applePay_failedStatus_8" = "端末がネットワークに接続されていません";
+"u8_applePay_failedStatus_9" = "このクラウドサービスの使用許可が取り消されました";
+"u8_applePay_failedStatus_10" = "Appleのプライバシーポリシーに同意する必要があります";
+"u8_applePay_failedStatus_11" = "プログラムはこのプロパティにアクセスすることはできません";
+"u8_applePay_failedStatus_12" = "見積りの識別子が見つからないか、または無効です";
+"u8_applePay_failedStatus_13" = "提供された電子署名が無効です";
+"u8_applePay_failedStatus_14" = "1つ以上のパラメータが欠落しています";
+"u8_applePay_failedStatus_15" = "選択された価格は無効です";
+"u8_applePay_failedStatus_16" = "不明なエラーが発生しました";
+
+"u8_appleProduct_question_success" = "製品情報が確認できました";
+"u8_appleProduct_question_failed" = "製品情報の確認に失敗しました";
+"u8_appleProduct_ID_Null" = "プロダクトIDが空です";
+"u8_appleProduct_getInfo_load" = "製品情報を取得しています";
+"u8_appleProduct_request_timeout" = "リクエストタイムアウト";
+
+"u8_share_share_success" = "共有に成功";
+"u8_share_share_failed" = "共有に失敗";
+"u8_share_share_cancel" = "共有をキャンセル";
+
+"u8_web_tips_loadFailed" = "読み込み失敗、ネットワークを確認してください";
+
+"u8_account_UI_otherPhone" = "他の電話番号でログイン";
+"u8_account_UI_loginAndBind" = "端末番号でワンタッチ登録・ログイン";
+"u8_account_UI_phoneLogin" = "電話番号でログイン";
+"u8_account_UI_phoneLoginDetail" = "未登録の電話番号は検証後に直接登録されます";
+"u8_account_bind_tips1" = "バインドは同意を代表します";
+"u8_account_UI_sendCountdown" = "%ld秒後に再送信";
+"u8_account_UI_phoneNumber" = "電話番号";
+"u8_account_UI_btnLogin" = "ログイン";
+"u8_account_UI_tipsCode" = "認証コードを入力してください";
+"u8_account_UI_tipsPhone" = "正しい電話番号を入力してください";
+"u8_account_UI_loginAgreement" = "ログインは同意することを意味します";
+"u8_account_UI_usePhone" = "そして、この端末の電話番号でログインする";
+"u8_account_UI_loginQuestion" = "ログインに関する問題";
+"u8_account_UI_unableBind" = "バインドまたはログインできません";
+"u8_account_UI_contactService" = "お問い合わせ";
+
+"u8_account_complaint_complaint" = "変更申し立て";
+"u8_account_complaint_enterAccount " = "本人確認: 元のアカウントの実名情報を入力してください";
+"u8_account_complaint_originalPhone" = "元の携帯番号";
+"u8_account_complaint_inputRealname" = "実名を入力してください";
+"u8_account_complaint_inputCardnumber" = "身分証明書番号を入力してください";
+"u8_account_complaint_name" = "名前";
+"u8_account_complaint_enterAccount" = "本人確認: 元のアカウントの実名情報を入力してください";
+"u8_account_complaint_tipsCardNumber" = "正しい身分証明書番号を入力してください";
+"u8_account_info_account" = "アカウント";
+"u8_account_info_realName" = "実名";
+"u8_account_info_memberCard" = "身分証明書";
+"u8_account_info_cutoverBind" = "変更バインド";
+"u8_account_info_cutoverAccount" = "アカウント切り替え";
+"u8_account_cutove_title" = "アカウント変更バインド";
+"u8_account_cutove_verify" = "確認";
+"u8_account_cutove_newPhone" = "新しい携帯番号";
+"u8_account_cutove_accountCutover" = "アカウント切り替え";
+"u8_account_tips_cancelLogin" = "ログインをキャンセル";
+"u8_account_tips_sendSMSFailed" = "SMSの送信に失敗しました";
+"u8_account_tips_jgloginFailed" = "携帯番号一括認証ログインに失敗しました。SMS認証方式を使用してログインしてください";
+"u8_account_tips_phoneCheckPhone" = "携帯電話検証に失敗しました";
+"u8_account_tips_phoneCheckDifferent" = "入力した携帯番号は、ログインしているアカウントの携帯番号と異なる必要があります";
+"u8_account_tips_tokenIsNull" = "Tokenが空です";
+"u8_account_tips_submissionFailed" = "提出に失敗しました";
+"u8_account_tips_submissionSuccess" = "提出が成功しました";
+"u8_account_tips_appealChangeFailed" = "アカウント申し立てによる変更が失敗しました";
+"u8_account_appealSuccess_welcome" = "アカウント申し立てによる変更が成功しました。ようこそ！";
+"u8_account_cutoverSuccess_welcome" = "アカウント切り替えが成功しました。ようこそ！";
+"u8_account_tips_loginTypeError" = "ログイン方法が間違っています";
+"u8_account_UI_help" = "ヘルプ";

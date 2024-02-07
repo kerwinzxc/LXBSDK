@@ -10,6 +10,8 @@ target 'LXBSDK' do
   pod 'AFNetworking'
   pod 'YYCache'
   pod 'MMKV'
+  pod 'MyLayout'
+  pod 'QMUIKit'
 end
 
 target 'TestDemo' do
@@ -22,6 +24,8 @@ target 'TestDemo' do
   pod 'YYCache'
   pod 'CocoaLumberjack'
   pod 'MMKV'
+  pod 'MyLayout'
+  pod 'QMUIKit'
 end
 
 post_install do |installer|
