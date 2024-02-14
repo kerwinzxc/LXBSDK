@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)launchAppleBind;
 - (void)autoLogin;
 - (void)showCenter;
+- (void)initBaseView;
 @end
 
 

@@ -99,6 +99,10 @@
 		89EFAFED2B7287F400F13986 /* U8Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAFEB2B7287F400F13986 /* U8Language.m */; };
 		89EFAFF02B72887A00F13986 /* NSString+Handle.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAFEE2B72887A00F13986 /* NSString+Handle.h */; };
 		89EFAFF12B72887A00F13986 /* NSString+Handle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAFEF2B72887A00F13986 /* NSString+Handle.m */; };
+		CEADAC7A2B7A3B7C00C34569 /* BindAccView.h in Headers */ = {isa = PBXBuildFile; fileRef = CEADAC782B7A3B7C00C34569 /* BindAccView.h */; };
+		CEADAC7B2B7A3B7C00C34569 /* BindAccView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEADAC792B7A3B7C00C34569 /* BindAccView.m */; };
+		CEADAC7E2B7A3BC300C34569 /* LXBBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = CEADAC7C2B7A3BC300C34569 /* LXBBaseView.h */; };
+		CEADAC7F2B7A3BC300C34569 /* LXBBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEADAC7D2B7A3BC300C34569 /* LXBBaseView.m */; };
 		FFB512BDA3A6E25301A726DA /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADE1CE4487ABAEF2D87E922 /* Pods_TestDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -221,6 +225,10 @@
 		9DF32DB3C373AF2F30BE6001 /* Pods-LXBSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXBSDK.debug.xcconfig"; path = "Target Support Files/Pods-LXBSDK/Pods-LXBSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		BADE1CE4487ABAEF2D87E922 /* Pods_TestDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E488D5F7EB21815A661E80 /* Pods-LXBSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXBSDK.release.xcconfig"; path = "Target Support Files/Pods-LXBSDK/Pods-LXBSDK.release.xcconfig"; sourceTree = "<group>"; };
+		CEADAC782B7A3B7C00C34569 /* BindAccView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindAccView.h; sourceTree = "<group>"; };
+		CEADAC792B7A3B7C00C34569 /* BindAccView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindAccView.m; sourceTree = "<group>"; };
+		CEADAC7C2B7A3BC300C34569 /* LXBBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXBBaseView.h; sourceTree = "<group>"; };
+		CEADAC7D2B7A3BC300C34569 /* LXBBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXBBaseView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -388,7 +396,6 @@
 		891C1DC62B69111A004AF32A /* SDKProxy */ = {
 			isa = PBXGroup;
 			children = (
-				89EFAF6F2B71D48900F13986 /* Ctr */,
 				89EFAF6E2B71D44500F13986 /* View */,
 				89EFAF3F2B6FB3E300F13986 /* Cfg */,
 				891C1DC72B691134004AF32A /* Proxy */,
@@ -631,15 +638,12 @@
 			children = (
 				89EFAF742B71D55000F13986 /* UserCenterView.h */,
 				89EFAF752B71D55000F13986 /* UserCenterView.m */,
+				CEADAC782B7A3B7C00C34569 /* BindAccView.h */,
+				CEADAC792B7A3B7C00C34569 /* BindAccView.m */,
+				CEADAC7C2B7A3BC300C34569 /* LXBBaseView.h */,
+				CEADAC7D2B7A3BC300C34569 /* LXBBaseView.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		89EFAF6F2B71D48900F13986 /* Ctr */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Ctr;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -662,6 +666,7 @@
 				89EFAF352B6F85B400F13986 /* ResPayValidate.h in Headers */,
 				891C1D862B6907A7004AF32A /* LXBSDK.h in Headers */,
 				89EFAFB02B721C6A00F13986 /* LXBScreen.h in Headers */,
+				CEADAC7E2B7A3BC300C34569 /* LXBBaseView.h in Headers */,
 				89EFAFF02B72887A00F13986 /* NSString+Handle.h in Headers */,
 				89EFAF622B70E36300F13986 /* BaseConfig.h in Headers */,
 				8941CBCE2B6B9DD800DA9CA5 /* CustomResponseSerializer.h in Headers */,
@@ -685,6 +690,7 @@
 				8941CB9E2B6A31DB00DA9CA5 /* AFNet.h in Headers */,
 				891C1DC42B690EC3004AF32A /* UserCenterController.h in Headers */,
 				8941CBAD2B6B41AC00DA9CA5 /* ResVisitor.h in Headers */,
+				CEADAC7A2B7A3B7C00C34569 /* BindAccView.h in Headers */,
 				891C1DB42B690ABC004AF32A /* NetworkController.h in Headers */,
 				8941CBE72B6BA2E000DA9CA5 /* ResRealName.h in Headers */,
 				89EFAF502B70B62600F13986 /* ReqAutoLogin.h in Headers */,
@@ -895,8 +901,10 @@
 				89EFAF592B70C78A00F13986 /* ReqOverseaBind.m in Sources */,
 				8941CBB22B6B4BAD00DA9CA5 /* ThirdUserInfo.m in Sources */,
 				8941CBE02B6BA2B900DA9CA5 /* RealNameConfig.m in Sources */,
+				CEADAC7B2B7A3B7C00C34569 /* BindAccView.m in Sources */,
 				89EFAFB12B721C6A00F13986 /* LXBScreen.m in Sources */,
 				8941CBCF2B6B9DD800DA9CA5 /* CustomResponseSerializer.m in Sources */,
+				CEADAC7F2B7A3BC300C34569 /* LXBBaseView.m in Sources */,
 				89EFAF672B70E6DA00F13986 /* ReqThirdPartyLogin.m in Sources */,
 				8941CBE82B6BA2E000DA9CA5 /* ResRealName.m in Sources */,
 				89EFAF432B6FB3F800F13986 /* SKDConfig.m in Sources */,

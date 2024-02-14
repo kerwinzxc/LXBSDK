@@ -8,115 +8,109 @@
 #import "UserCenterView.h"
 #import "NSString+Handle.h"
 #import "U8Language.h"
+#import "BindAccView.h"
 @implementation UserCenterView
 
 - (instancetype)init{
     self = [super init];
-    [self innerInit];
     return self;
 }
 
-- (void)innerInit{
-    UIScreen *screen = [UIScreen mainScreen];
-    self.frame = CGRectMake(0, 0, screen.bounds.size.width, screen.bounds.size.height);
-    UIColor *color = [UIColor blackColor];
-    self.backgroundColor = [color colorWithAlphaComponent:0.04];
-    _rootContainer = [[MyFrameLayout alloc] init];
-    _rootContainer.gravity = MyGravity_Center;
-    _rootContainer.myCenterX = 0;
-    _rootContainer.myCenterY = 0;
-    _rootContainer.myHeight = MyLayoutSize.fill;
-    _rootContainer.myWidth = MyLayoutSize.fill;
-    _rootContainer.backgroundColor = [UIColor clearColor];
-    [self addSubview:_rootContainer];
+- (void)initViews{
+    [super initViews];
     
-    
-    
-    
-    
-   
-    //_bgView.topPos.equalTo()
-    [_rootContainer addSubview:self.bgView];
-    [_rootContainer addSubview:self.contentView];
-    
-    
-    [self initTitleView];
-    [self initSecView];
+    [self.contentView addSubview:self.uidView];
+    [self.contentView addSubview:self.bindAccountBtn];
 }
 
-- (UIImageView *)bgView{
-    if(_bgView == nil){
-        _bgView = [[UIImageView alloc] init];
-        _bgView.image = [LXBHelper imageWithName:@"UcBgView"];
-        _bgView.myWidth = UI(390);
-        _bgView.myHeight = UI(300);
-        _bgView.myCenterX = 0;
-        _bgView.myCenterY = 0;
+
+- (MyLinearLayout *)uidView{
+    if (_uidView == nil) {
+        _uidView = [[MyLinearLayout alloc]initWithOrientation:MyOrientation_Horz];
+        _uidView.myWidth = UI(370);
+        _uidView.myHeight = UI(60);
+        _uidView.backgroundColor = [UIColor whiteColor];
+        _uidView.layer.cornerRadius = UI(6);
+        _uidView.gravity = MyGravity_Vert_Center;
+        
+        UIImageView *iconView = [UIImageView new];
+        iconView.myWidth = UI(50);
+        iconView.myHeight = UI(50);
+        iconView.leftPos.equalTo(_uidView.leftPos).offset(10);
+        iconView.image = [LXBHelper imageWithName:@"HeadPic"];
+        [_uidView addSubview:iconView];
+        UILabel *uinLabel = [UILabel new];
+        uinLabel.text = @"UID:234567890998777";
+        uinLabel.font = [UIFont boldSystemFontOfSize:UI(18)];
+        uinLabel.textColor = [UIColor blackColor];
+        [uinLabel sizeToFit];
+        uinLabel.leftPos.equalTo(iconView.rightPos).offset(10);
+        [_uidView addSubview:uinLabel];
     }
-    return _bgView;
-}
-
-
-- (void)initTitleView{
-    MyFrameLayout *titleView = [[MyFrameLayout alloc] init];
-    titleView.myWidth = MyLayoutSize.fill;
-    titleView.myHeight = UI(50);
-    UILabel *titleLable = [UILabel new];
-    titleLable.text = getLocalString(@"user_account_ui_usercenter");
-    titleLable.myWidth = MyLayoutSize.wrap;
-    titleLable.myHeight = MyLayoutSize.wrap;
-    titleLable.font = [UIFont boldSystemFontOfSize:UI(18)];
-    titleLable.textColor = [UIColor blackColor];
-    titleLable.myCenterY = 0;
-    titleLable.myCenterX = 0;
-    [titleView addSubview:titleLable];
-    [_contentView addSubview:titleView];
-    //[NSString localizedForKey:@"u8_error_data_error"];
-}
-
-- (void)initSecView{
-    MyLinearLayout *frame = [[MyLinearLayout alloc]initWithOrientation:MyOrientation_Horz];
-    frame.myWidth = UI(370);
-    frame.myHeight = UI(70);
-    frame.backgroundColor = [UIColor blueColor];
-    frame.layer.cornerRadius = UI(6);
-    frame.gravity = MyGravity_Vert_Center;
-    
-    UIImageView *iconView = [UIImageView new];
-    iconView.myWidth = UI(58);
-    iconView.myHeight = UI(58);
-    iconView.leftPos.equalTo(frame.leftPos).offset(10);
-    iconView.image = [LXBHelper imageWithName:@"HeadPic"];
-    [frame addSubview:iconView];
-    UILabel *uinLabel = [UILabel new];
-    uinLabel.text = @"UID:234567890998777";
    
-    uinLabel.font = [UIFont boldSystemFontOfSize:UI(18)];
-    uinLabel.textColor = [UIColor blackColor];
-    [uinLabel sizeToFit];
-    uinLabel.leftPos.equalTo(iconView.rightPos).offset(10);
-    
-    [frame addSubview:uinLabel];
-    
-    [_contentView addSubview:frame];
-}
-
-- (void)initIconView{
-    UIView *view = [[UIView alloc]init];
-    view.myWidth = MyLayoutSize.fill;
-    view.myHeight = UI(40);
-    view.backgroundColor = [UIColor redColor];
-    [_bgView addSubview:view];
+    return _uidView;
 }
 
 
-- (MyBaseLayout *)contentView{
-    if(_contentView == nil){
-        _contentView = [[MyLinearLayout alloc] initWithOrientation:MyOrientation_Vert];
-        _contentView.myWidth = UI(360);
-        _contentView.myHeight = UI(300);
-        _contentView.gravity = MyGravity_Horz_Center;
+
+- (MyLinearLayout *)bindAccountBtn{
+    if (_bindAccountBtn == nil) {
+        _bindAccountBtn = [[MyLinearLayout alloc] initWithOrientation:MyOrientation_Horz];
+        _bindAccountBtn.backgroundColor = [UIColor whiteColor];
+        _bindAccountBtn.myWidth = UI(370);
+        _bindAccountBtn.myHeight = UI(50);
+        _bindAccountBtn.gravity =  MyGravity_Vert_Center;
+        
+        UIImage *img = [LXBHelper imageWithName:@"UserBind"];
+        
+        UIImageView *iconView = [[UIImageView alloc] init];
+        iconView.image = img;
+        iconView.myHeight = UI(44);
+        iconView.myWidth = UI(44);
+        iconView.leftPos.equalTo(_bindAccountBtn.leftPos).offset(UI(10));
+        [_bindAccountBtn addSubview:iconView];
+        _bindAccountBtn.layer.cornerRadius = UI(4);
+        
+        UILabel *txtLable = [UILabel new];
+        txtLable.text = @"绑定账户";
+        txtLable.font = [UIFont systemFontOfSize:UI(18)];
+        txtLable.textColor = [UIColor blackColor];
+        [txtLable sizeToFit];
+        txtLable.leftPos.equalTo(iconView.rightPos).offset(10);
+        
+        [_bindAccountBtn addSubview:txtLable];
+        
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] init];
+        [tap addTarget:self action:@selector(bindBtnClick)];
+        [_bindAccountBtn addGestureRecognizer:tap];
+        
+        
+        MyLinearLayout *JianTouParent = [[MyLinearLayout alloc] init];
+        JianTouParent.myHeight = MyLayoutSize.fill;
+        JianTouParent.weight = 1;
+        JianTouParent.backgroundColor = [UIColor clearColor];
+        JianTouParent.gravity = MyGravity_Vert_Center;
+        
+        [_bindAccountBtn addSubview:JianTouParent];
+        
+        UIImageView *jiantou = [[UIImageView alloc] init];
+        jiantou.image = [LXBHelper imageWithName:@"PicArrow"];
+        jiantou.myWidth = UI(20);
+        jiantou.myHeight = UI(20);
+        jiantou.rightPos.equalTo(_bindAccountBtn.rightPos).offset(16);
+        [JianTouParent addSubview:jiantou];
+        
     }
-    return _contentView;
+    return _bindAccountBtn;
 }
+
+- (void)bindBtnClick{
+    BindAccView *bindView = [[BindAccView alloc] initTitle:@"bindg" isRightCloseBtn:NO];
+
+    UIWindow *window = [UIApplication sharedApplication].windows[0];
+    [window addSubview:bindView];
+}
+
+
+
 @end

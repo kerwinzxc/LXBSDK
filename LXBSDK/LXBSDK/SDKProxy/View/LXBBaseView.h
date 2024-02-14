@@ -1,15 +1,15 @@
 //
-//  UserCenterView.h
+//  BaseView.h
 //  LXBSDK
 //
-//  Created by pub on 2024/2/6.
+//  Created by xiaolong on 2024/2/12.
 //
 
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UserCenterView : LXBBaseView
+@interface LXBBaseView : UIView
 
 @property(nonatomic, strong)MyBaseLayout *rootContainer;
 
@@ -19,13 +19,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, strong)MyFrameLayout *titleView;
 
+/// 找控件
+- (void)initViews;
 
+/// 设置数据
+- (void)initDatum;
 
-@property(nonatomic, strong)MyLinearLayout *uidView;
+/// 设置监听器
+- (void)initListeners;
 
-@property(nonatomic, strong)MyLinearLayout *bindAccountBtn;
-
-
+- (instancetype)initTitle:(NSString *)title isRightCloseBtn:(BOOL)rightClose;
 
 @end
 

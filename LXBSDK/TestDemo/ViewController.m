@@ -77,6 +77,9 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
         case 11:
             [[SDKController getInstance] showCenter];
             break;
+        case 12:
+            [[SDKController getInstance] initBaseView];
+            break;
         default:
             break;
     }
@@ -96,7 +99,7 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
         @"9autoLogin",
         @"10apple login",
         @"11 showCenter",
-        @"账号解绑",
+        @"12 showBaseView",
         @"硬核渠道登录",
         @"一键、验证码登录",
         @"自动登录校验",

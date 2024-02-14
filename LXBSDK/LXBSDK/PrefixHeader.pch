@@ -15,6 +15,9 @@
 #else
 #   define DDLog(...)
 #endif
+#import <MJExtension/MJExtension.h>
+#import <MyLayout/MyLayout.h>
+
 
 #import "MSNetwork.h"
 #import "ThirdUserInfo.h"
@@ -29,7 +32,7 @@
 #import "LXBHelper.h"
 #import "LXBScreen.h"
 #import "U8Language.h"
-#import <MJExtension/MJExtension.h>
-#import <MyLayout/MyLayout.h>
+#import "LXBBaseView.h"
+
 
 #endif /* PrefixHeader_pch */

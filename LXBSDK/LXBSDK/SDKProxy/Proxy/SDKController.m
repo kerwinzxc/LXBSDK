@@ -239,11 +239,16 @@ static SDKController* instance;
 }
 
 - (void)showCenter{
-    UserCenterView *view = [[UserCenterView alloc] init];
+    NSString *title = getLocalString(@"user_account_ui_usercenter");
+    UserCenterView *view = [[UserCenterView alloc] initTitle:title isRightCloseBtn:YES];
     UIWindow *window = [UIApplication sharedApplication].windows[0];
     [window addSubview:view];
 //    UIColor *color = [UIColor blackColor];
 //    view.backgroundColor = [color colorWithAlphaComponent:0.5];
+}
+
+- (void)initBaseView{
+
 }
 
 @end
