@@ -1,17 +1,15 @@
 //
-//  LXBBaseView.h
+//  TapDelegate.h
 //  LXBSDK
 //
 //  Created by pub on 2024/2/21.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LXBBaseView : UIView
-
-- (void)destroy;
+@interface TapDelegate : NSObject
 
 @end
 

@@ -173,7 +173,7 @@ static SDKController* instance;
     [UserCenterController autoLoginReq:req success:^(id  _Nonnull responseObject) {
         [weakSelf handlerLoginSucc:responseObject];
         } failure:^(NSError * _Nonnull error) {
-            NSLog(@"xxx");
+            DDLog(@"xxx");
         }];
 }
 
@@ -207,7 +207,7 @@ static SDKController* instance;
         [UserCenterController overseaBind:reqBind sucess:^(id  _Nonnull responseObject) {
             [weakSelf handleBindSucc: responseObject];
             } failure:^(NSError * _Nonnull error) {
-                NSLog(@"xxx");
+                DDLog(@"xxx");
             }];
     }
     else if (self.loginType == ThirdPartyLogin){
@@ -219,7 +219,7 @@ static SDKController* instance;
         [UserCenterController thirdPartyLogin:req sucess:^(id  _Nonnull responseObject) {
                 [weakSelf handleBindSucc: responseObject];
                 } failure:^(NSError * _Nonnull error) {
-                    NSLog(@"xxx");
+                    DDLog(@"xxx");
                 }];
     }
     else{
@@ -240,7 +240,7 @@ static SDKController* instance;
 
 - (void)showCenter{
     NSString *title = getLocalString(@"user_account_ui_usercenter");
-    UserCenterView *view = [[UserCenterView alloc] initTitle:title isRightCloseBtn:YES];
+    UserCenterView *view = [[UserCenterView alloc] initTitle:title isRightCloseBtn:RightClose];
     UIWindow *window = [UIApplication sharedApplication].windows[0];
     [window addSubview:view];
 //    UIColor *color = [UIColor blackColor];

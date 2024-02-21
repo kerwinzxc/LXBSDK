@@ -1,5 +1,5 @@
 //
-//  LXBBaseView.h
+//  LXBUITap.h
 //  LXBSDK
 //
 //  Created by pub on 2024/2/21.
@@ -9,9 +9,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LXBBaseView : UIView
+@interface LXBUITap : UITapGestureRecognizer
 
-- (void)destroy;
+@property(nonatomic, assign)NSTimeInterval lastTapTime;
+
 
 @end
 

@@ -9,22 +9,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UserCenterView : LXBBaseView
-
-@property(nonatomic, strong)MyBaseLayout *rootContainer;
-
-@property(nonatomic, strong)UIImageView *bgView;
-
-@property(nonatomic, strong)MyBaseLayout *contentView;
-
-@property(nonatomic, strong)MyFrameLayout *titleView;
-
-
+@interface UserCenterView : LXBLogicView
 
 @property(nonatomic, strong)MyLinearLayout *uidView;
 
 @property(nonatomic, strong)MyLinearLayout *bindAccountBtn;
-
 
 
 @end

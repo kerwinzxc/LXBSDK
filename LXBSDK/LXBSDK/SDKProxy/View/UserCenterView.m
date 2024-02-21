@@ -9,6 +9,9 @@
 #import "NSString+Handle.h"
 #import "U8Language.h"
 #import "BindAccView.h"
+#import "ChangeAccountView.h"
+#import "ChangeAccWarperView.h"
+#import "ServiceAndPolicyView.h"
 @implementation UserCenterView
 
 - (instancetype)init{
@@ -20,7 +23,8 @@
     [super initViews];
     
     [self.contentView addSubview:self.uidView];
-    [self.contentView addSubview:self.bindAccountBtn];
+    //[self.contentView addSubview:self.bindAccountBtn];
+    [self menuItemViewInit];
 }
 
 
@@ -51,39 +55,37 @@
     return _uidView;
 }
 
-
-
-- (MyLinearLayout *)bindAccountBtn{
-    if (_bindAccountBtn == nil) {
-        _bindAccountBtn = [[MyLinearLayout alloc] initWithOrientation:MyOrientation_Horz];
-        _bindAccountBtn.backgroundColor = [UIColor whiteColor];
-        _bindAccountBtn.myWidth = UI(370);
-        _bindAccountBtn.myHeight = UI(50);
-        _bindAccountBtn.gravity =  MyGravity_Vert_Center;
-        
-        UIImage *img = [LXBHelper imageWithName:@"UserBind"];
-        
+- (void)menuItemViewInit{
+    NSArray *cfg = [LXBConfig getInstance].menuViewCfg;
+    for (int i = 0; i < cfg.count; i++) {
+        NSDictionary *dic = cfg[i];
+        MyLinearLayout *menuBtn = [[MyLinearLayout alloc] initWithOrientation:MyOrientation_Horz];
+        menuBtn.tag = i;
+        menuBtn.backgroundColor = [UIColor whiteColor];
+        menuBtn.myWidth = UI(370);
+        menuBtn.myHeight = UI(50);
+        menuBtn.gravity =  MyGravity_Vert_Center;
+        UIImage *img = [LXBHelper imageWithName:dic[@"imgName"]];
         UIImageView *iconView = [[UIImageView alloc] init];
         iconView.image = img;
         iconView.myHeight = UI(44);
         iconView.myWidth = UI(44);
-        iconView.leftPos.equalTo(_bindAccountBtn.leftPos).offset(UI(10));
-        [_bindAccountBtn addSubview:iconView];
-        _bindAccountBtn.layer.cornerRadius = UI(4);
+        iconView.leftPos.equalTo(menuBtn.leftPos).offset(UI(10));
+        [menuBtn addSubview:iconView];
+        menuBtn.layer.cornerRadius = UI(4);
         
         UILabel *txtLable = [UILabel new];
-        txtLable.text = @"绑定账户";
+        txtLable.text = getLocalString(dic[@"showText"]);
         txtLable.font = [UIFont systemFontOfSize:UI(18)];
         txtLable.textColor = [UIColor blackColor];
         [txtLable sizeToFit];
         txtLable.leftPos.equalTo(iconView.rightPos).offset(10);
         
-        [_bindAccountBtn addSubview:txtLable];
+        [menuBtn addSubview:txtLable];
         
-        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] init];
-        [tap addTarget:self action:@selector(bindBtnClick)];
-        [_bindAccountBtn addGestureRecognizer:tap];
-        
+        LXBUITap *tap = [[LXBUITap alloc] init];
+        [tap addTarget:self action:@selector(bindBtnClick:)];
+        [menuBtn addGestureRecognizer:tap];
         
         MyLinearLayout *JianTouParent = [[MyLinearLayout alloc] init];
         JianTouParent.myHeight = MyLayoutSize.fill;
@@ -91,26 +93,56 @@
         JianTouParent.backgroundColor = [UIColor clearColor];
         JianTouParent.gravity = MyGravity_Vert_Center;
         
-        [_bindAccountBtn addSubview:JianTouParent];
+        [menuBtn addSubview:JianTouParent];
         
         UIImageView *jiantou = [[UIImageView alloc] init];
         jiantou.image = [LXBHelper imageWithName:@"PicArrow"];
         jiantou.myWidth = UI(20);
         jiantou.myHeight = UI(20);
-        jiantou.rightPos.equalTo(_bindAccountBtn.rightPos).offset(16);
+        jiantou.rightPos.equalTo(menuBtn.rightPos).offset(16);
         [JianTouParent addSubview:jiantou];
         
+        [self.contentView addSubview:menuBtn];
     }
-    return _bindAccountBtn;
 }
 
-- (void)bindBtnClick{
-    BindAccView *bindView = [[BindAccView alloc] initTitle:@"bindg" isRightCloseBtn:NO];
+- (void)bindBtnClick:(LXBUITap *)send{
+    if(send.view.tag == 0){
+        //绑定
+        BindAccView *bindView = [[BindAccView alloc] initTitle:getLocalString(@"user_account_ui_bind_title") isRightCloseBtn:LeftClose];
 
+        UIWindow *window = [UIApplication sharedApplication].windows[0];
+        [window addSubview:bindView];
+    }
+    else if (send.view.tag == 1){
+        //客服
+        [self showChangeAccWarperView];
+    }
+    else if(send.view.tag == 2){
+        //协议
+        [self showServiceAndPolicyView];
+    }
+    else if(send.view.tag == 3){
+        //切换账号
+        ChangeAccountView *bindView = [[ChangeAccountView alloc] initTitle:getLocalString(@"u8_account_info_cutoverAccount") isRightCloseBtn:NOClose];
+        UIWindow *window = [UIApplication sharedApplication].windows[0];
+        [window addSubview:bindView];
+    }
+}
+
+- (void)showChangeAccWarperView{
+    ChangeAccWarperView *warperView = [[ChangeAccWarperView alloc] initTitle:getLocalString(@"u8_account_cutacc_warper_title") isRightCloseBtn:LeftClose];
+    
     UIWindow *window = [UIApplication sharedApplication].windows[0];
-    [window addSubview:bindView];
+    [window addSubview:warperView];
 }
 
 
+- (void)showServiceAndPolicyView{
+    ServiceAndPolicyView *view = [[ServiceAndPolicyView alloc] initTitle:getLocalString(@"user_account_ui_main_menu_service") isRightCloseBtn:LeftClose];
+    
+    UIWindow *window = [UIApplication sharedApplication].windows[0];
+    [window addSubview:view];
+}
 
 @end

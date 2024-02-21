@@ -15,12 +15,12 @@ static PayController* instance;
 {
     self = [super init];
     if (self) {
-        [self myInit];
+        [self innerInit];
     }
     return self;
 }
 
-- (void)myInit{
+- (void)innerInit{
     [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handlerLogin:) name:LoginNotiName object:nil];

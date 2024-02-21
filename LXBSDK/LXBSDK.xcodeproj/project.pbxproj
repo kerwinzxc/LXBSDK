@@ -65,14 +65,32 @@
 		8941CBE72B6BA2E000DA9CA5 /* ResRealName.h in Headers */ = {isa = PBXBuildFile; fileRef = 8941CBE52B6BA2E000DA9CA5 /* ResRealName.h */; };
 		8941CBE82B6BA2E000DA9CA5 /* ResRealName.m in Sources */ = {isa = PBXBuildFile; fileRef = 8941CBE62B6BA2E000DA9CA5 /* ResRealName.m */; };
 		8941CBEA2B6BC1D700DA9CA5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8941CBE92B6BC1D700DA9CA5 /* StoreKit.framework */; };
+		89A8141C2B832BEA001177D1 /* Hert.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A8141A2B832BEA001177D1 /* Hert.h */; };
+		89A8141D2B832BEA001177D1 /* Hert.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A8141B2B832BEA001177D1 /* Hert.m */; };
+		89A814242B833F34001177D1 /* ChangeAccountView.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A814222B833F34001177D1 /* ChangeAccountView.h */; };
+		89A814252B833F34001177D1 /* ChangeAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A814232B833F34001177D1 /* ChangeAccountView.m */; };
+		89A814292B835711001177D1 /* ChangeAccWarperView.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A814272B835711001177D1 /* ChangeAccWarperView.h */; };
+		89A8142A2B835711001177D1 /* ChangeAccWarperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A814282B835711001177D1 /* ChangeAccWarperView.m */; };
+		89A8142D2B837967001177D1 /* DeleteAccountView.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A8142B2B837967001177D1 /* DeleteAccountView.h */; };
+		89A8142E2B837967001177D1 /* DeleteAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A8142C2B837967001177D1 /* DeleteAccountView.m */; };
+		89A814312B845341001177D1 /* DeleteWarperView.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A8142F2B845341001177D1 /* DeleteWarperView.h */; };
+		89A814322B845341001177D1 /* DeleteWarperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A814302B845341001177D1 /* DeleteWarperView.m */; };
+		89A814352B845F04001177D1 /* DeleteAccConfirmView.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A814332B845F04001177D1 /* DeleteAccConfirmView.h */; };
+		89A814362B845F04001177D1 /* DeleteAccConfirmView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A814342B845F04001177D1 /* DeleteAccConfirmView.m */; };
+		89A814392B84C1C8001177D1 /* ServiceAndPolicyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A814372B84C1C8001177D1 /* ServiceAndPolicyView.h */; };
+		89A8143A2B84C1C8001177D1 /* ServiceAndPolicyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A814382B84C1C8001177D1 /* ServiceAndPolicyView.m */; };
+		89A8143E2B85ABBC001177D1 /* LXBUITap.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A8143C2B85ABBC001177D1 /* LXBUITap.h */; };
+		89A8143F2B85ABBC001177D1 /* LXBUITap.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A8143D2B85ABBC001177D1 /* LXBUITap.m */; };
+		89A814422B85CAF2001177D1 /* TapDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A814402B85CAF2001177D1 /* TapDelegate.h */; };
+		89A814432B85CAF2001177D1 /* TapDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A814412B85CAF2001177D1 /* TapDelegate.m */; };
+		89A814462B85DDD8001177D1 /* LXBBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A814442B85DDD8001177D1 /* LXBBaseView.h */; };
+		89A814472B85DDD8001177D1 /* LXBBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A814452B85DDD8001177D1 /* LXBBaseView.m */; };
 		89B06DAC2B6E3DE200605573 /* NSObject+BLLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B06DAA2B6E3DE200605573 /* NSObject+BLLog.h */; };
 		89B06DAD2B6E3DE200605573 /* NSObject+BLLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B06DAB2B6E3DE200605573 /* NSObject+BLLog.m */; };
 		89EFAF312B6F859D00F13986 /* ReqPayValidate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF2F2B6F859D00F13986 /* ReqPayValidate.h */; };
 		89EFAF322B6F859D00F13986 /* ReqPayValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF302B6F859D00F13986 /* ReqPayValidate.m */; };
 		89EFAF352B6F85B400F13986 /* ResPayValidate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF332B6F85B400F13986 /* ResPayValidate.h */; };
 		89EFAF362B6F85B400F13986 /* ResPayValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF342B6F85B400F13986 /* ResPayValidate.m */; };
-		89EFAF422B6FB3F800F13986 /* SKDConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF402B6FB3F800F13986 /* SKDConfig.h */; };
-		89EFAF432B6FB3F800F13986 /* SKDConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF412B6FB3F800F13986 /* SKDConfig.m */; };
 		89EFAF4A2B7082EF00F13986 /* AppleLoginController.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF482B7082EF00F13986 /* AppleLoginController.h */; };
 		89EFAF4B2B7082EF00F13986 /* AppleLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF492B7082EF00F13986 /* AppleLoginController.m */; };
 		89EFAF4D2B70836700F13986 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89EFAF4C2B70836700F13986 /* AuthenticationServices.framework */; };
@@ -99,10 +117,12 @@
 		89EFAFED2B7287F400F13986 /* U8Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAFEB2B7287F400F13986 /* U8Language.m */; };
 		89EFAFF02B72887A00F13986 /* NSString+Handle.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAFEE2B72887A00F13986 /* NSString+Handle.h */; };
 		89EFAFF12B72887A00F13986 /* NSString+Handle.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAFEF2B72887A00F13986 /* NSString+Handle.m */; };
+		89EFB0402B8305EC00F13986 /* LXBConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFB03E2B8305EC00F13986 /* LXBConfig.h */; };
+		89EFB0412B8305EC00F13986 /* LXBConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFB03F2B8305EC00F13986 /* LXBConfig.m */; };
 		CEADAC7A2B7A3B7C00C34569 /* BindAccView.h in Headers */ = {isa = PBXBuildFile; fileRef = CEADAC782B7A3B7C00C34569 /* BindAccView.h */; };
 		CEADAC7B2B7A3B7C00C34569 /* BindAccView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEADAC792B7A3B7C00C34569 /* BindAccView.m */; };
-		CEADAC7E2B7A3BC300C34569 /* LXBBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = CEADAC7C2B7A3BC300C34569 /* LXBBaseView.h */; };
-		CEADAC7F2B7A3BC300C34569 /* LXBBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEADAC7D2B7A3BC300C34569 /* LXBBaseView.m */; };
+		CEADAC7E2B7A3BC300C34569 /* LXBLogicView.h in Headers */ = {isa = PBXBuildFile; fileRef = CEADAC7C2B7A3BC300C34569 /* LXBLogicView.h */; };
+		CEADAC7F2B7A3BC300C34569 /* LXBLogicView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEADAC7D2B7A3BC300C34569 /* LXBLogicView.m */; };
 		FFB512BDA3A6E25301A726DA /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADE1CE4487ABAEF2D87E922 /* Pods_TestDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -182,14 +202,32 @@
 		8941CBE52B6BA2E000DA9CA5 /* ResRealName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResRealName.h; sourceTree = "<group>"; };
 		8941CBE62B6BA2E000DA9CA5 /* ResRealName.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResRealName.m; sourceTree = "<group>"; };
 		8941CBE92B6BC1D700DA9CA5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		89A8141A2B832BEA001177D1 /* Hert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hert.h; sourceTree = "<group>"; };
+		89A8141B2B832BEA001177D1 /* Hert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hert.m; sourceTree = "<group>"; };
+		89A814222B833F34001177D1 /* ChangeAccountView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeAccountView.h; sourceTree = "<group>"; };
+		89A814232B833F34001177D1 /* ChangeAccountView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeAccountView.m; sourceTree = "<group>"; };
+		89A814272B835711001177D1 /* ChangeAccWarperView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeAccWarperView.h; sourceTree = "<group>"; };
+		89A814282B835711001177D1 /* ChangeAccWarperView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeAccWarperView.m; sourceTree = "<group>"; };
+		89A8142B2B837967001177D1 /* DeleteAccountView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteAccountView.h; sourceTree = "<group>"; };
+		89A8142C2B837967001177D1 /* DeleteAccountView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteAccountView.m; sourceTree = "<group>"; };
+		89A8142F2B845341001177D1 /* DeleteWarperView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteWarperView.h; sourceTree = "<group>"; };
+		89A814302B845341001177D1 /* DeleteWarperView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteWarperView.m; sourceTree = "<group>"; };
+		89A814332B845F04001177D1 /* DeleteAccConfirmView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteAccConfirmView.h; sourceTree = "<group>"; };
+		89A814342B845F04001177D1 /* DeleteAccConfirmView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteAccConfirmView.m; sourceTree = "<group>"; };
+		89A814372B84C1C8001177D1 /* ServiceAndPolicyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceAndPolicyView.h; sourceTree = "<group>"; };
+		89A814382B84C1C8001177D1 /* ServiceAndPolicyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceAndPolicyView.m; sourceTree = "<group>"; };
+		89A8143C2B85ABBC001177D1 /* LXBUITap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXBUITap.h; sourceTree = "<group>"; };
+		89A8143D2B85ABBC001177D1 /* LXBUITap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXBUITap.m; sourceTree = "<group>"; };
+		89A814402B85CAF2001177D1 /* TapDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapDelegate.h; sourceTree = "<group>"; };
+		89A814412B85CAF2001177D1 /* TapDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapDelegate.m; sourceTree = "<group>"; };
+		89A814442B85DDD8001177D1 /* LXBBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXBBaseView.h; sourceTree = "<group>"; };
+		89A814452B85DDD8001177D1 /* LXBBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXBBaseView.m; sourceTree = "<group>"; };
 		89B06DAA2B6E3DE200605573 /* NSObject+BLLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+BLLog.h"; sourceTree = "<group>"; };
 		89B06DAB2B6E3DE200605573 /* NSObject+BLLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BLLog.m"; sourceTree = "<group>"; };
 		89EFAF2F2B6F859D00F13986 /* ReqPayValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReqPayValidate.h; sourceTree = "<group>"; };
 		89EFAF302B6F859D00F13986 /* ReqPayValidate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReqPayValidate.m; sourceTree = "<group>"; };
 		89EFAF332B6F85B400F13986 /* ResPayValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResPayValidate.h; sourceTree = "<group>"; };
 		89EFAF342B6F85B400F13986 /* ResPayValidate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResPayValidate.m; sourceTree = "<group>"; };
-		89EFAF402B6FB3F800F13986 /* SKDConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKDConfig.h; sourceTree = "<group>"; };
-		89EFAF412B6FB3F800F13986 /* SKDConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKDConfig.m; sourceTree = "<group>"; };
 		89EFAF442B707F4000F13986 /* TestDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestDemo.entitlements; sourceTree = "<group>"; };
 		89EFAF482B7082EF00F13986 /* AppleLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleLoginController.h; sourceTree = "<group>"; };
 		89EFAF492B7082EF00F13986 /* AppleLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleLoginController.m; sourceTree = "<group>"; };
@@ -222,13 +260,15 @@
 		89EFAFEB2B7287F400F13986 /* U8Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = U8Language.m; sourceTree = "<group>"; };
 		89EFAFEE2B72887A00F13986 /* NSString+Handle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Handle.h"; sourceTree = "<group>"; };
 		89EFAFEF2B72887A00F13986 /* NSString+Handle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Handle.m"; sourceTree = "<group>"; };
+		89EFB03E2B8305EC00F13986 /* LXBConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXBConfig.h; sourceTree = "<group>"; };
+		89EFB03F2B8305EC00F13986 /* LXBConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXBConfig.m; sourceTree = "<group>"; };
 		9DF32DB3C373AF2F30BE6001 /* Pods-LXBSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXBSDK.debug.xcconfig"; path = "Target Support Files/Pods-LXBSDK/Pods-LXBSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		BADE1CE4487ABAEF2D87E922 /* Pods_TestDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E488D5F7EB21815A661E80 /* Pods-LXBSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXBSDK.release.xcconfig"; path = "Target Support Files/Pods-LXBSDK/Pods-LXBSDK.release.xcconfig"; sourceTree = "<group>"; };
 		CEADAC782B7A3B7C00C34569 /* BindAccView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindAccView.h; sourceTree = "<group>"; };
 		CEADAC792B7A3B7C00C34569 /* BindAccView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindAccView.m; sourceTree = "<group>"; };
-		CEADAC7C2B7A3BC300C34569 /* LXBBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXBBaseView.h; sourceTree = "<group>"; };
-		CEADAC7D2B7A3BC300C34569 /* LXBBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXBBaseView.m; sourceTree = "<group>"; };
+		CEADAC7C2B7A3BC300C34569 /* LXBLogicView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXBLogicView.h; sourceTree = "<group>"; };
+		CEADAC7D2B7A3BC300C34569 /* LXBLogicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXBLogicView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -475,6 +515,10 @@
 				89EFAF7E2B71E25500F13986 /* LXBHelper.m */,
 				89EFAFAE2B721C6A00F13986 /* LXBScreen.h */,
 				89EFAFAF2B721C6A00F13986 /* LXBScreen.m */,
+				89A8143C2B85ABBC001177D1 /* LXBUITap.h */,
+				89A8143D2B85ABBC001177D1 /* LXBUITap.m */,
+				89A814402B85CAF2001177D1 /* TapDelegate.h */,
+				89A814412B85CAF2001177D1 /* TapDelegate.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -593,8 +637,10 @@
 		89EFAF3F2B6FB3E300F13986 /* Cfg */ = {
 			isa = PBXGroup;
 			children = (
-				89EFAF402B6FB3F800F13986 /* SKDConfig.h */,
-				89EFAF412B6FB3F800F13986 /* SKDConfig.m */,
+				89EFB03E2B8305EC00F13986 /* LXBConfig.h */,
+				89EFB03F2B8305EC00F13986 /* LXBConfig.m */,
+				89A8141A2B832BEA001177D1 /* Hert.h */,
+				89A8141B2B832BEA001177D1 /* Hert.m */,
 			);
 			path = Cfg;
 			sourceTree = "<group>";
@@ -640,8 +686,22 @@
 				89EFAF752B71D55000F13986 /* UserCenterView.m */,
 				CEADAC782B7A3B7C00C34569 /* BindAccView.h */,
 				CEADAC792B7A3B7C00C34569 /* BindAccView.m */,
-				CEADAC7C2B7A3BC300C34569 /* LXBBaseView.h */,
-				CEADAC7D2B7A3BC300C34569 /* LXBBaseView.m */,
+				CEADAC7C2B7A3BC300C34569 /* LXBLogicView.h */,
+				CEADAC7D2B7A3BC300C34569 /* LXBLogicView.m */,
+				89A814442B85DDD8001177D1 /* LXBBaseView.h */,
+				89A814452B85DDD8001177D1 /* LXBBaseView.m */,
+				89A814222B833F34001177D1 /* ChangeAccountView.h */,
+				89A814232B833F34001177D1 /* ChangeAccountView.m */,
+				89A814272B835711001177D1 /* ChangeAccWarperView.h */,
+				89A814282B835711001177D1 /* ChangeAccWarperView.m */,
+				89A8142B2B837967001177D1 /* DeleteAccountView.h */,
+				89A8142C2B837967001177D1 /* DeleteAccountView.m */,
+				89A8142F2B845341001177D1 /* DeleteWarperView.h */,
+				89A814302B845341001177D1 /* DeleteWarperView.m */,
+				89A814332B845F04001177D1 /* DeleteAccConfirmView.h */,
+				89A814342B845F04001177D1 /* DeleteAccConfirmView.m */,
+				89A814372B84C1C8001177D1 /* ServiceAndPolicyView.h */,
+				89A814382B84C1C8001177D1 /* ServiceAndPolicyView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -653,20 +713,24 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89A814352B845F04001177D1 /* DeleteAccConfirmView.h in Headers */,
 				891C1DF12B692324004AF32A /* KeychainConfig.h in Headers */,
 				89EFAF5C2B70CCF100F13986 /* BindExtend.h in Headers */,
 				89EFAF762B71D55000F13986 /* UserCenterView.h in Headers */,
 				8941CBE32B6BA2D400DA9CA5 /* ReqRealName.h in Headers */,
+				89A814462B85DDD8001177D1 /* LXBBaseView.h in Headers */,
 				8941CBB12B6B4BAD00DA9CA5 /* ThirdUserInfo.h in Headers */,
 				891C1DF62B69E7D4004AF32A /* PostArgUtils.h in Headers */,
 				8941CBA62B6B3DD500DA9CA5 /* PrefixHeader.pch in Headers */,
-				89EFAF422B6FB3F800F13986 /* SKDConfig.h in Headers */,
 				89EFAF312B6F859D00F13986 /* ReqPayValidate.h in Headers */,
+				89EFB0402B8305EC00F13986 /* LXBConfig.h in Headers */,
 				89EFAF582B70C78A00F13986 /* ReqOverseaBind.h in Headers */,
+				89A814392B84C1C8001177D1 /* ServiceAndPolicyView.h in Headers */,
+				89A814292B835711001177D1 /* ChangeAccWarperView.h in Headers */,
 				89EFAF352B6F85B400F13986 /* ResPayValidate.h in Headers */,
 				891C1D862B6907A7004AF32A /* LXBSDK.h in Headers */,
 				89EFAFB02B721C6A00F13986 /* LXBScreen.h in Headers */,
-				CEADAC7E2B7A3BC300C34569 /* LXBBaseView.h in Headers */,
+				CEADAC7E2B7A3BC300C34569 /* LXBLogicView.h in Headers */,
 				89EFAFF02B72887A00F13986 /* NSString+Handle.h in Headers */,
 				89EFAF622B70E36300F13986 /* BaseConfig.h in Headers */,
 				8941CBCE2B6B9DD800DA9CA5 /* CustomResponseSerializer.h in Headers */,
@@ -675,11 +739,16 @@
 				891C1DEB2B6921C2004AF32A /* KeychainController.h in Headers */,
 				89EFAF4A2B7082EF00F13986 /* AppleLoginController.h in Headers */,
 				8941CBC62B6B6F3800DA9CA5 /* ReqPayCreate.h in Headers */,
+				89A814312B845341001177D1 /* DeleteWarperView.h in Headers */,
+				89A8142D2B837967001177D1 /* DeleteAccountView.h in Headers */,
 				8941CBDF2B6BA2B900DA9CA5 /* RealNameConfig.h in Headers */,
 				891C1DB82B690B6C004AF32A /* NetworkConfig.h in Headers */,
 				8941CBB62B6B527800DA9CA5 /* DataHub.h in Headers */,
 				8941CBD42B6BA02100DA9CA5 /* MSNetwork.h in Headers */,
+				89A814422B85CAF2001177D1 /* TapDelegate.h in Headers */,
 				8941CBC22B6B6EA600DA9CA5 /* PayConfig.h in Headers */,
+				89A8141C2B832BEA001177D1 /* Hert.h in Headers */,
+				89A814242B833F34001177D1 /* ChangeAccountView.h in Headers */,
 				8941CBA32B6A742800DA9CA5 /* BaseResponse.h in Headers */,
 				8941CBCA2B6B708100DA9CA5 /* ResPayCreate.h in Headers */,
 				89EFAFEC2B7287F400F13986 /* U8Language.h in Headers */,
@@ -690,6 +759,7 @@
 				8941CB9E2B6A31DB00DA9CA5 /* AFNet.h in Headers */,
 				891C1DC42B690EC3004AF32A /* UserCenterController.h in Headers */,
 				8941CBAD2B6B41AC00DA9CA5 /* ResVisitor.h in Headers */,
+				89A8143E2B85ABBC001177D1 /* LXBUITap.h in Headers */,
 				CEADAC7A2B7A3B7C00C34569 /* BindAccView.h in Headers */,
 				891C1DB42B690ABC004AF32A /* NetworkController.h in Headers */,
 				8941CBE72B6BA2E000DA9CA5 /* ResRealName.h in Headers */,
@@ -876,9 +946,11 @@
 				8941CBE42B6BA2D400DA9CA5 /* ReqRealName.m in Sources */,
 				8941CBDB2B6BA22400DA9CA5 /* RealNameController.m in Sources */,
 				8941CBCB2B6B708100DA9CA5 /* ResPayCreate.m in Sources */,
+				89A814322B845341001177D1 /* DeleteWarperView.m in Sources */,
 				89EFAF5D2B70CCF100F13986 /* BindExtend.m in Sources */,
 				8941CBBD2B6B6E3B00DA9CA5 /* PayController.m in Sources */,
 				8941CBC72B6B6F3800DA9CA5 /* ReqPayCreate.m in Sources */,
+				89A814432B85CAF2001177D1 /* TapDelegate.m in Sources */,
 				8941CBA42B6A742800DA9CA5 /* BaseResponse.m in Sources */,
 				891C1DF72B69E7D4004AF32A /* PostArgUtils.m in Sources */,
 				8941CBD32B6BA02100DA9CA5 /* MSNetwork.m in Sources */,
@@ -892,11 +964,17 @@
 				891C1DB52B690ABC004AF32A /* NetworkController.m in Sources */,
 				89EFAF772B71D55000F13986 /* UserCenterView.m in Sources */,
 				8941CBAE2B6B41AC00DA9CA5 /* ResVisitor.m in Sources */,
+				89A8141D2B832BEA001177D1 /* Hert.m in Sources */,
+				89A8143A2B84C1C8001177D1 /* ServiceAndPolicyView.m in Sources */,
+				89A8142A2B835711001177D1 /* ChangeAccWarperView.m in Sources */,
+				89A8142E2B837967001177D1 /* DeleteAccountView.m in Sources */,
+				89A8143F2B85ABBC001177D1 /* LXBUITap.m in Sources */,
 				8941CBC32B6B6EA600DA9CA5 /* PayConfig.m in Sources */,
 				891C1DC52B690EC3004AF32A /* UserCenterController.m in Sources */,
 				89EFAF512B70B62600F13986 /* ReqAutoLogin.m in Sources */,
 				891C1DEC2B6921C2004AF32A /* KeychainController.m in Sources */,
 				89EFAF322B6F859D00F13986 /* ReqPayValidate.m in Sources */,
+				89A814252B833F34001177D1 /* ChangeAccountView.m in Sources */,
 				89EFAF802B71E25500F13986 /* LXBHelper.m in Sources */,
 				89EFAF592B70C78A00F13986 /* ReqOverseaBind.m in Sources */,
 				8941CBB22B6B4BAD00DA9CA5 /* ThirdUserInfo.m in Sources */,
@@ -904,12 +982,14 @@
 				CEADAC7B2B7A3B7C00C34569 /* BindAccView.m in Sources */,
 				89EFAFB12B721C6A00F13986 /* LXBScreen.m in Sources */,
 				8941CBCF2B6B9DD800DA9CA5 /* CustomResponseSerializer.m in Sources */,
-				CEADAC7F2B7A3BC300C34569 /* LXBBaseView.m in Sources */,
+				89A814362B845F04001177D1 /* DeleteAccConfirmView.m in Sources */,
+				CEADAC7F2B7A3BC300C34569 /* LXBLogicView.m in Sources */,
 				89EFAF672B70E6DA00F13986 /* ReqThirdPartyLogin.m in Sources */,
+				89EFB0412B8305EC00F13986 /* LXBConfig.m in Sources */,
 				8941CBE82B6BA2E000DA9CA5 /* ResRealName.m in Sources */,
-				89EFAF432B6FB3F800F13986 /* SKDConfig.m in Sources */,
 				89EFAFF12B72887A00F13986 /* NSString+Handle.m in Sources */,
 				89EFAF632B70E36300F13986 /* BaseConfig.m in Sources */,
+				89A814472B85DDD8001177D1 /* LXBBaseView.m in Sources */,
 				89B06DAD2B6E3DE200605573 /* NSObject+BLLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1083,6 +1163,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9DF32DB3C373AF2F30BE6001 /* Pods-LXBSDK.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1124,6 +1206,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C6E488D5F7EB21815A661E80 /* Pods-LXBSDK.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

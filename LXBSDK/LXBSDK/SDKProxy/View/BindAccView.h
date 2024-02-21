@@ -9,11 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BindAccView : LXBBaseView
+@interface BindAccView : LXBLogicView
 
 @property(nonatomic, strong)MyLinearLayout *desView;
-
-@property(nonatomic, strong)MyLinearLayout *bindApple;
 
 @end
 

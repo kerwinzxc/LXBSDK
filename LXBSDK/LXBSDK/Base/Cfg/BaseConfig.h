@@ -17,6 +17,12 @@ typedef NS_ENUM(NSInteger, ThirdPartyLoginType) {
     ThirdPartyLogin,
 };
 
+typedef NS_ENUM(NSInteger, BaseViewCloseType) {
+    RightClose = 0,
+    LeftClose,
+    NOClose,
+};
+
 @interface BaseConfig : NSObject
 
 @end
