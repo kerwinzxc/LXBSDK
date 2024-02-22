@@ -12,6 +12,8 @@
 #import "ChangeAccountView.h"
 #import "ChangeAccWarperView.h"
 #import "ServiceAndPolicyView.h"
+#import "KeFuView.h"
+#import "SDKController.h"
 @implementation UserCenterView
 
 - (instancetype)init{
@@ -31,24 +33,18 @@
 - (MyLinearLayout *)uidView{
     if (_uidView == nil) {
         _uidView = [[MyLinearLayout alloc]initWithOrientation:MyOrientation_Horz];
-        _uidView.myWidth = UI(370);
-        _uidView.myHeight = UI(60);
+        _uidView.myWidth = MyLayoutSize.fill;
+        _uidView.myHeight = UI(50);
         _uidView.backgroundColor = [UIColor whiteColor];
-        _uidView.layer.cornerRadius = UI(6);
-        _uidView.gravity = MyGravity_Vert_Center;
+        _uidView.layer.cornerRadius = UI(26);
+        _uidView.gravity = MyGravity_Center;
         
-        UIImageView *iconView = [UIImageView new];
-        iconView.myWidth = UI(50);
-        iconView.myHeight = UI(50);
-        iconView.leftPos.equalTo(_uidView.leftPos).offset(10);
-        iconView.image = [LXBHelper imageWithName:@"HeadPic"];
-        [_uidView addSubview:iconView];
         UILabel *uinLabel = [UILabel new];
         uinLabel.text = @"UID:234567890998777";
         uinLabel.font = [UIFont boldSystemFontOfSize:UI(18)];
-        uinLabel.textColor = [UIColor blackColor];
+        uinLabel.textColor = [LXBHelper normalTextColor];
         [uinLabel sizeToFit];
-        uinLabel.leftPos.equalTo(iconView.rightPos).offset(10);
+       
         [_uidView addSubview:uinLabel];
     }
    
@@ -62,22 +58,22 @@
         MyLinearLayout *menuBtn = [[MyLinearLayout alloc] initWithOrientation:MyOrientation_Horz];
         menuBtn.tag = i;
         menuBtn.backgroundColor = [UIColor whiteColor];
-        menuBtn.myWidth = UI(370);
-        menuBtn.myHeight = UI(50);
+        menuBtn.myWidth = MyLayoutSize.fill;
+        menuBtn.myHeight = UI(54);
         menuBtn.gravity =  MyGravity_Vert_Center;
         UIImage *img = [LXBHelper imageWithName:dic[@"imgName"]];
         UIImageView *iconView = [[UIImageView alloc] init];
         iconView.image = img;
-        iconView.myHeight = UI(44);
-        iconView.myWidth = UI(44);
-        iconView.leftPos.equalTo(menuBtn.leftPos).offset(UI(10));
+        iconView.myHeight = UI(40);
+        iconView.myWidth = UI(40);
+        iconView.leftPos.equalTo(menuBtn.leftPos).offset(UI(8));
         [menuBtn addSubview:iconView];
-        menuBtn.layer.cornerRadius = UI(4);
+        menuBtn.layer.cornerRadius = UI(26);
         
         UILabel *txtLable = [UILabel new];
         txtLable.text = getLocalString(dic[@"showText"]);
-        txtLable.font = [UIFont systemFontOfSize:UI(18)];
-        txtLable.textColor = [UIColor blackColor];
+        txtLable.font = [UIFont boldSystemFontOfSize:UI(16)];
+        txtLable.textColor = [LXBHelper normalTextColor];
         [txtLable sizeToFit];
         txtLable.leftPos.equalTo(iconView.rightPos).offset(10);
         
@@ -96,9 +92,9 @@
         [menuBtn addSubview:JianTouParent];
         
         UIImageView *jiantou = [[UIImageView alloc] init];
-        jiantou.image = [LXBHelper imageWithName:@"PicArrow"];
+        jiantou.image = [LXBHelper imageWithName:@"jiantou_icon_yhzx"];
         jiantou.myWidth = UI(20);
-        jiantou.myHeight = UI(20);
+        jiantou.myHeight = UI(16);
         jiantou.rightPos.equalTo(menuBtn.rightPos).offset(16);
         [JianTouParent addSubview:jiantou];
         
@@ -109,14 +105,14 @@
 - (void)bindBtnClick:(LXBUITap *)send{
     if(send.view.tag == 0){
         //绑定
-        BindAccView *bindView = [[BindAccView alloc] initTitle:getLocalString(@"user_account_ui_bind_title") isRightCloseBtn:LeftClose];
+        BindAccView *bindView = [[BindAccView alloc] initTitle:getLocalString(@"user_account_ui_bind_title") isRightCloseBtn:RightClose];
 
         UIWindow *window = [UIApplication sharedApplication].windows[0];
         [window addSubview:bindView];
     }
     else if (send.view.tag == 1){
         //客服
-        [self showChangeAccWarperView];
+        [self showKefuView];
     }
     else if(send.view.tag == 2){
         //协议
@@ -124,14 +120,12 @@
     }
     else if(send.view.tag == 3){
         //切换账号
-        ChangeAccountView *bindView = [[ChangeAccountView alloc] initTitle:getLocalString(@"u8_account_info_cutoverAccount") isRightCloseBtn:NOClose];
-        UIWindow *window = [UIApplication sharedApplication].windows[0];
-        [window addSubview:bindView];
+        [self showChangeAccWarperView];
     }
 }
 
 - (void)showChangeAccWarperView{
-    ChangeAccWarperView *warperView = [[ChangeAccWarperView alloc] initTitle:getLocalString(@"u8_account_cutacc_warper_title") isRightCloseBtn:LeftClose];
+    ChangeAccWarperView *warperView = [[ChangeAccWarperView alloc] initTitle:getLocalString(@"u8_account_cutacc_warper_title") isRightCloseBtn:RightClose];
     
     UIWindow *window = [UIApplication sharedApplication].windows[0];
     [window addSubview:warperView];
@@ -139,10 +133,14 @@
 
 
 - (void)showServiceAndPolicyView{
-    ServiceAndPolicyView *view = [[ServiceAndPolicyView alloc] initTitle:getLocalString(@"user_account_ui_main_menu_service") isRightCloseBtn:LeftClose];
+    ServiceAndPolicyView *view = [[ServiceAndPolicyView alloc] initTitle:getLocalString(@"user_account_ui_main_menu_service") isRightCloseBtn:RightClose];
     
     UIWindow *window = [UIApplication sharedApplication].windows[0];
     [window addSubview:view];
+}
+
+- (void)showKefuView{
+    [[SDKController getInstance] openKeFuView];
 }
 
 @end

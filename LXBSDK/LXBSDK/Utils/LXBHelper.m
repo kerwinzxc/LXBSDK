@@ -27,6 +27,14 @@
     return [UIColor colorWithRed:0.1 green:0.1 blue:0.1 alpha:0.05];;
 }
 
++ (UIColor *)bgViewColor{
+    return [UIColor colorWithRed:243.0f/255.0f green:246.0f/255.0f blue:244/250.0f alpha:1.0f];;
+}
+
++ (UIColor *)normalTextColor{
+    return [UIColor colorWithRed:75.0f/255.0f green:83.0f/255.0f blue:96.0f/255.0f alpha:1.0f];;
+}
+
 + (void)showToast:(NSString *)info supView:(UIView *)view{
     [QMUITips showWithText:info inView:view hideAfterDelay:1.6];
 }

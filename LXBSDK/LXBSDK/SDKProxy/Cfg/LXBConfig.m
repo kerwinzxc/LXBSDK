@@ -24,15 +24,15 @@ static LXBConfig *instance;
 - (NSArray *)bindViewCfg{
     return @[
         @{
-            @"imgName":@"FacebookIcon",
+            @"imgName":@"public_icon_facebook",
             @"showText":getLocalString(@"user_account_ui_bind_facebook"),
         },
         @{
-            @"imgName":@"GoogleIcon",
+            @"imgName":@"public_icon_google",
             @"showText":getLocalString(@"user_account_ui_bind_google"),
         },
         @{
-            @"imgName":@"PingIcon",
+            @"imgName":@"public_icon_apple",
             @"showText":getLocalString(@"user_account_ui_bind_apple"),
         },
     ];
@@ -42,19 +42,19 @@ static LXBConfig *instance;
     
     return @[
         @{
-            @"imgName":@"UserBind",
+            @"imgName":@"zhanghao_icon_yhzx",
             @"showText":getLocalString(@"user_account_ui_bind_title"),
         },
         @{
-            @"imgName":@"Callkefu",
+            @"imgName":@"kefu_icon_yhzx",
             @"showText":getLocalString(@"u8_account_UI_contactService"),
         },
         @{
-            @"imgName":@"ServiceBook",
+            @"imgName":@"xieyi_icon_yhzx",
             @"showText":getLocalString(@"user_account_ui_main_menu_service")
         },
         @{
-            @"imgName":@"CutCan",
+            @"imgName":@"qiehuan_icon_yhzx",
             @"showText":getLocalString(@"user_account_ui_main_menu_change_acc"),
         },
     ];
@@ -76,7 +76,7 @@ static LXBConfig *instance;
         },
         
         @{
-            @"imgName":@"",
+            @"imgName":@"zhanghao_icon_yhzx",
             @"showText":getLocalString(@"u8_account_info_cutacc_signindevicesid"),
         },
     ];

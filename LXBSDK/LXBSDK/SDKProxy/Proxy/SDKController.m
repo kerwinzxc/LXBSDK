@@ -17,6 +17,8 @@
 #import "ReqOverseaBind.h"
 #import "UserCenterView.h"
 #import "LXBWebView.h"
+#import "ChangeAccountView.h"
+#import "KeFuView.h"
 static SDKController* instance;
 
 @interface SDKController ()
@@ -257,6 +259,19 @@ static SDKController* instance;
     UIWindow *wind = [UIApplication sharedApplication].windows[0];
     [wind addSubview:view];
     [view showWeb:urlString];
+}
+
+- (void)openLoginView{
+    ChangeAccountView *bindView = [[ChangeAccountView alloc] initTitle:getLocalString(@"u8_account_info_cutoverAccount") isRightCloseBtn:NOClose];
+    UIWindow *window = [UIApplication sharedApplication].windows[0];
+    [window addSubview:bindView];
+}
+
+- (void)openKeFuView{
+    KeFuView *view = [[KeFuView alloc] initTitle:getLocalString(@"u8_account_UI_contactService") isRightCloseBtn:RightClose];
+    [view setDes:getLocalString(@"use_kefu_des")];
+    UIWindow *window = [UIApplication sharedApplication].windows[0];
+    [window addSubview:view];
 }
 
 @end

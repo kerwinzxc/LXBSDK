@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)showCenter;
 - (void)initBaseView;
 - (void)openWebView:(NSString *)urlString;
+- (void)openLoginView;
+- (void)openKeFuView;
 @end
 
 

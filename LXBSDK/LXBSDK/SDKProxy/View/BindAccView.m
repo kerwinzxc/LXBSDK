@@ -23,7 +23,7 @@
     
     [self.contentView addSubview:self.desView];
     //[self.contentView addSubview:self.bindApple];
-    
+    self.bgView.backgroundColor = [UIColor whiteColor];
     [self initBindSubView];
 }
 
@@ -59,11 +59,11 @@
         NSDictionary *dic = cfg[i];
         MyLinearLayout *bindApple = [[MyLinearLayout alloc] initWithOrientation:MyOrientation_Horz];
         bindApple.myWidth = MyLayoutSize.fill;
-        bindApple.gravity = MyGravity_Center;
+        bindApple.gravity = MyGravity_Vert_Center;
         
-        bindApple.layer.cornerRadius = UI(6);
+        bindApple.layer.cornerRadius = UI(24);
         bindApple.subviewHSpace = UI(10);
-        bindApple.backgroundColor = [UIColor whiteColor];
+        bindApple.backgroundColor = [LXBHelper bgViewColor];
         bindApple.myHeight = UI(50);
         bindApple.tag = i;
         LXBUITap *tap = [[LXBUITap alloc] init];
@@ -72,16 +72,17 @@
         UIImageView *appleIcon = [[UIImageView alloc] init];
         
         appleIcon.image = [LXBHelper imageWithName:dic[@"imgName"]];
-        appleIcon.myHeight = UI(24);
-        appleIcon.myWidth = UI(24);
+        appleIcon.myHeight = UI(31);
+        appleIcon.myWidth = UI(31);
+        appleIcon.myLeft = UI(80);
         [bindApple addSubview:appleIcon];
         UILabel *titleLable = [UILabel new];
         titleLable.text = dic[@"showText"];
         titleLable.myWidth = MyLayoutSize.wrap;
         titleLable.textAlignment = NSTextAlignmentCenter;
         titleLable.myHeight = MyLayoutSize.wrap;
-        titleLable.font = [UIFont boldSystemFontOfSize:UI(18)];
-        titleLable.textColor = [UIColor blackColor];
+        titleLable.font = [UIFont boldSystemFontOfSize:UI(16)];
+        titleLable.textColor = [LXBHelper normalTextColor];
         [titleLable sizeToFit];
         [bindApple addSubview:titleLable];
         [self.contentView addSubview:bindApple];

@@ -88,6 +88,8 @@
 		89A8144B2B862EBE001177D1 /* LXBWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A814492B862EBE001177D1 /* LXBWebView.m */; };
 		89A8144D2B86F75B001177D1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A8144C2B86F75B001177D1 /* WebKit.framework */; };
 		89A8144E2B86F76A001177D1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A8144C2B86F75B001177D1 /* WebKit.framework */; };
+		89A814652B876B6E001177D1 /* KeFuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A814632B876B6E001177D1 /* KeFuView.h */; };
+		89A814662B876B6E001177D1 /* KeFuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A814642B876B6E001177D1 /* KeFuView.m */; };
 		89B06DAC2B6E3DE200605573 /* NSObject+BLLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B06DAA2B6E3DE200605573 /* NSObject+BLLog.h */; };
 		89B06DAD2B6E3DE200605573 /* NSObject+BLLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B06DAB2B6E3DE200605573 /* NSObject+BLLog.m */; };
 		89EFAF312B6F859D00F13986 /* ReqPayValidate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF2F2B6F859D00F13986 /* ReqPayValidate.h */; };
@@ -112,7 +114,6 @@
 		89EFAF772B71D55000F13986 /* UserCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF752B71D55000F13986 /* UserCenterView.m */; };
 		89EFAF7F2B71E25500F13986 /* LXBHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF7D2B71E25500F13986 /* LXBHelper.h */; };
 		89EFAF802B71E25500F13986 /* LXBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF7E2B71E25500F13986 /* LXBHelper.m */; };
-		89EFAFAD2B72166C00F13986 /* LxbBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89EFAF682B70FDC200F13986 /* LxbBundle.bundle */; };
 		89EFAFB02B721C6A00F13986 /* LXBScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAFAE2B721C6A00F13986 /* LXBScreen.h */; };
 		89EFAFB12B721C6A00F13986 /* LXBScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAFAF2B721C6A00F13986 /* LXBScreen.m */; };
 		89EFAFE92B72877C00F13986 /* U8SDK_Language.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89EFAFE82B72877C00F13986 /* U8SDK_Language.bundle */; };
@@ -226,6 +227,8 @@
 		89A814482B862EBE001177D1 /* LXBWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXBWebView.h; sourceTree = "<group>"; };
 		89A814492B862EBE001177D1 /* LXBWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXBWebView.m; sourceTree = "<group>"; };
 		89A8144C2B86F75B001177D1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		89A814632B876B6E001177D1 /* KeFuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeFuView.h; sourceTree = "<group>"; };
+		89A814642B876B6E001177D1 /* KeFuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeFuView.m; sourceTree = "<group>"; };
 		89B06DAA2B6E3DE200605573 /* NSObject+BLLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+BLLog.h"; sourceTree = "<group>"; };
 		89B06DAB2B6E3DE200605573 /* NSObject+BLLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BLLog.m"; sourceTree = "<group>"; };
 		89EFAF2F2B6F859D00F13986 /* ReqPayValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReqPayValidate.h; sourceTree = "<group>"; };
@@ -709,6 +712,8 @@
 				89A814382B84C1C8001177D1 /* ServiceAndPolicyView.m */,
 				89A814482B862EBE001177D1 /* LXBWebView.h */,
 				89A814492B862EBE001177D1 /* LXBWebView.m */,
+				89A814632B876B6E001177D1 /* KeFuView.h */,
+				89A814642B876B6E001177D1 /* KeFuView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -737,6 +742,7 @@
 				89EFAF352B6F85B400F13986 /* ResPayValidate.h in Headers */,
 				891C1D862B6907A7004AF32A /* LXBSDK.h in Headers */,
 				89EFAFB02B721C6A00F13986 /* LXBScreen.h in Headers */,
+				89A814652B876B6E001177D1 /* KeFuView.h in Headers */,
 				CEADAC7E2B7A3BC300C34569 /* LXBLogicView.h in Headers */,
 				89EFAFF02B72887A00F13986 /* NSString+Handle.h in Headers */,
 				89EFAF622B70E36300F13986 /* BaseConfig.h in Headers */,
@@ -863,7 +869,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89EFAFAD2B72166C00F13986 /* LxbBundle.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -968,6 +973,7 @@
 				8941CBB72B6B527800DA9CA5 /* DataHub.m in Sources */,
 				89EFAF362B6F85B400F13986 /* ResPayValidate.m in Sources */,
 				89EFAF4B2B7082EF00F13986 /* AppleLoginController.m in Sources */,
+				89A814662B876B6E001177D1 /* KeFuView.m in Sources */,
 				891C1DD02B6915D4004AF32A /* ReqVisitor.m in Sources */,
 				89EFAFED2B7287F400F13986 /* U8Language.m in Sources */,
 				891C1DB52B690ABC004AF32A /* NetworkController.m in Sources */,
@@ -1181,6 +1187,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
 				ENABLE_MODULE_VERIFIER = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LXBSDK/PrefixHeader.pch";
@@ -1224,6 +1231,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
 				ENABLE_MODULE_VERIFIER = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LXBSDK/PrefixHeader.pch";

@@ -13,7 +13,7 @@
     [super initViews];
     
     [self initContentSubView];
-    
+    self.bgView.backgroundColor = [UIColor whiteColor];
     [self initMenuView];
 }
 
@@ -43,8 +43,9 @@
         bgView.myHeight = UI(50);
         
         bgView.myWidth = MyLayoutSize.fill;
-        bgView.backgroundColor = dic[@"bgColor"];
-        bgView.layer.cornerRadius = UI(6);
+        
+       
+        //bgView.layer.cornerRadius = UI(6);
         bgView.myTop = UI(15);
         bgView.tag = i;
         UILabel *label = [[UILabel alloc] init];
@@ -59,6 +60,16 @@
         LXBUITap *tap = [[LXBUITap alloc] init];
         [tap addTarget:self action:@selector(menuClick:)];
         [bgView addGestureRecognizer:tap];
+        
+        if(i == 0){
+            bgView.backgroundImage = [LXBHelper imageWithName:@"public_btn01_yhzx"];
+            label.textColor = [UIColor whiteColor];
+        }
+        else{
+            bgView.backgroundColor = [LXBHelper titleBgView];//;
+            label.textColor = [LXBHelper normalTextColor];
+            bgView.layer.cornerRadius = UI(24);
+        }
     }
     
 }
@@ -89,7 +100,7 @@
 }
 
 - (void)showDeleteAccView{
-    DeleteAccountView *view = [[DeleteAccountView alloc] initTitle:getLocalString(@"u8_account_cutacc_warper_otherfun") isRightCloseBtn:LeftClose];
+    DeleteAccountView *view = [[DeleteAccountView alloc] initTitle:getLocalString(@"u8_account_cutacc_warper_otherfun") isRightCloseBtn:RightClose];
     UIWindow *window = [UIApplication sharedApplication].windows[0];
     [window addSubview:view];
 }

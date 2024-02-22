@@ -69,6 +69,7 @@
     [_rootContainer addSubview:self.bgView];
     [_rootContainer addSubview:self.contentView];
     [self.contentView addSubview:self.titleView];
+    _contentView.padding = UIEdgeInsetsMake(0, UI(8), 0, UI(8));
 }
 
 - (MyFrameLayout *)titleView{
@@ -84,7 +85,7 @@
         titleLable.myWidth = MyLayoutSize.wrap;
         titleLable.textAlignment = NSTextAlignmentCenter;
         titleLable.myHeight = MyLayoutSize.wrap;
-        titleLable.font = [UIFont boldSystemFontOfSize:UI(18)];
+        titleLable.font = [UIFont boldSystemFontOfSize:UI(20)];
         titleLable.textColor = [UIColor blackColor];
         titleLable.myCenterY = 0;
         titleLable.myCenterX = 0;
@@ -101,12 +102,12 @@
         [closeBtn addGestureRecognizer:tap];
         if(self.closeType == RightClose){
             //UIView *closeBtn = [[UIView alloc] init];
-            closeBtn.image = [LXBHelper imageWithName:@"DeceptionMagicpoint"];
+            closeBtn.image = [LXBHelper imageWithName:@"public_btn_close"];
             closeBtn.rightPos.equalTo(_titleView.rightPos);
             [_titleView addSubview:closeBtn];
         }
         else if(self.closeType == LeftClose){
-            closeBtn.image = [LXBHelper imageWithName:@"GoBack"];
+            closeBtn.image = [LXBHelper imageWithName:@"public_btn_close"];
             closeBtn.leftPos.equalTo(_titleView.leftPos);
             [_titleView addSubview:closeBtn];
         }
@@ -123,9 +124,11 @@
 - (UIImageView *)bgView{
     if(_bgView == nil){
         _bgView = [[UIImageView alloc] init];
-        _bgView.image = [LXBHelper imageWithName:@"UcBgView"];
+        //_bgView.image = [LXBHelper imageWithName:@"UcBgView"];
+        _bgView.backgroundColor = [LXBHelper bgViewColor];
+        _bgView.layer.cornerRadius = UI(20);
         _bgView.myWidth = UI(390);
-        _bgView.myHeight = UI(380);
+        _bgView.myHeight = UI(390);
         _bgView.myCenterX = 0;
         _bgView.myCenterY = 0;
     }
@@ -139,7 +142,7 @@
         //_contentView.topPos.equalTo(self.bgView.topPos);
         //_contentView.bottomPos.equalTo(self.bgView.bottomPos);
         _contentView.myWidth = UI(360);
-        _contentView.myHeight = UI(380);
+        _contentView.myHeight = UI(390);
         _contentView.gravity = MyGravity_Horz_Center;
         _contentView.subviewSpace = UI(10);
     }

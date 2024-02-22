@@ -7,6 +7,7 @@
 
 #import "DeleteAccountView.h"
 #import "DeleteWarperView.h"
+#import "SDKController.h"
 @implementation DeleteAccountView
 
 - (void)initViews{
@@ -44,18 +45,14 @@
     btnView.myWidth = MyLayoutSize.fill;
     btnView.layer.cornerRadius = UI(6);
     btnView.gravity = MyGravity_Center;
-    btnView.backgroundColor = [LXBHelper mainColor];
-    btnView.subviewHSpace = UI(10);
+    btnView.backgroundImage = [LXBHelper imageWithName:@"public_btn01_yhzx"];
+    //btnView.backgroundColor = [LXBHelper mainColor];
+    //btnView.subviewHSpace = UI(10);
     [self.contentView addSubview:btnView];
     
-    UIImageView *img = [[UIImageView alloc] init];
-    img.image = [LXBHelper imageWithName:@"HelpPic"];
-    img.myHeight = UI(24);
-    img.myWidth = UI(24);
-    [btnView addSubview:img];
     
     UILabel *label = [[UILabel alloc] init];
-    label.text = getLocalString(@"u8_account_cutacc_delete_btntxt");
+    label.text = getLocalString(@"u8_account_UI_contactService");
     label.font = [UIFont boldSystemFontOfSize:(16)];
     [label sizeToFit];
     [btnView addSubview:label];
@@ -66,9 +63,11 @@
 }
 
 - (void)btnClick:(LXBUITap *)send{
-    DeleteWarperView *view = [[DeleteWarperView alloc] initTitle:getLocalString(@"u8_account_cutacc_delete_btntxt") isRightCloseBtn:LeftClose];
-    UIWindow *window = [UIApplication sharedApplication].windows[0];
-    [window addSubview:view];
+//    DeleteWarperView *view = [[DeleteWarperView alloc] initTitle:getLocalString(@"u8_account_cutacc_delete_btntxt") isRightCloseBtn:RightClose];
+//    UIWindow *window = [UIApplication sharedApplication].windows[0];
+//    [window addSubview:view];
+    [[SDKController getInstance] openKeFuView];
+    
 }
 
 @end

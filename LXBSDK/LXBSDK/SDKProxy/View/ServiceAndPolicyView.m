@@ -6,7 +6,7 @@
 //
 
 #import "ServiceAndPolicyView.h"
-
+#import "SDKController.h"
 @implementation ServiceAndPolicyView
 
 - (void)initViews{
@@ -27,43 +27,54 @@
     UILabel *lable = [UILabel new];
     
     lable.text = getLocalString(@"user_account_ui_service_des1"); //user_account_ui_main_menu_service
-    lable.font = [UIFont systemFontOfSize:UI(16)];
+    lable.font = [UIFont boldSystemFontOfSize:UI(16)];
     lable.textAlignment = NSTextAlignmentLeft;
     lable.myHeight = UI(80);
     lable.myWidth = MyLayoutSize.fill;
+    lable.textColor = [LXBHelper normalTextColor];
     lable.numberOfLines = 4;
     [firstTitleView addSubview:lable];
 }
 
 - (void)initLinkedBtn{
-    MyLinearLayout *firstTitleView = [[MyLinearLayout alloc] init];
-    firstTitleView.myWidth = MyLayoutSize.fill;
-    firstTitleView.myHeight = UI(150);
-    [self.contentView addSubview:firstTitleView];
+    MyLinearLayout *parentView = [[MyLinearLayout alloc]
+                                  initWithOrientation:MyOrientation_Horz];
+    //parentView.backgroundColor = [UIColor redColor];
+    parentView.myWidth = MyLayoutSize.fill;
+    parentView.myHeight = UI(100);
+    parentView.gravity = MyGravity_Vert_Center;
+    [self.contentView addSubview:parentView];
     
-    _serviceLabel = [[UILabel alloc] init];
-    _serviceLabel.tag = 1;
-    // 创建 NSMutableAttributedString
-    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:getLocalString(@"user_account_ui_service_btn1")];
-    // 添加下划线
-    [attributedString addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlineStyleSingle) range:NSMakeRange(0, attributedString.length)];
-    // 添加链接属性
-    [attributedString addAttribute:NSLinkAttributeName value:[NSURL URLWithString:@"https://yourlink.com"] range:NSMakeRange(0, attributedString.length)];
-    // 将 NSAttributedString 设置为 UILabel 的 attributedText
-    _serviceLabel.attributedText = attributedString;
-    _serviceLabel.font = [UIFont systemFontOfSize:UI(16)];
-    [_serviceLabel sizeToFit];
-    // 设置 UILabel 可以与用户交互
-    _serviceLabel.userInteractionEnabled = YES;
-    // 添加手势识别器，处理链接点击
-    LXBUITap *tapGesture = [[LXBUITap alloc] initWithTarget:self action:@selector(handleLinkTap:)];
-    [_serviceLabel addGestureRecognizer:tapGesture];
-    [firstTitleView addSubview:_serviceLabel];
+    for (int i = 0; i < 2; i++) {
+        MyLinearLayout *btnView = [[MyLinearLayout alloc] initWithOrientation:MyOrientation_Horz];
+        btnView.myHeight = MyLayoutSize.fill;
+        btnView.myWidth = MyLayoutSize.wrap;
+        btnView.gravity = MyGravity_Center;
+        [parentView addSubview:btnView];
+        UILabel *label = [[UILabel alloc] init];
+        btnView.tag = i;
+        if(i == 0){
+            label.text = getLocalString(@"user_account_ui_service_btn1");
+        }
+        else{
+            label.text = getLocalString(@"user_account_ui_service_btn2");
+        }
+        label.font = [UIFont boldSystemFontOfSize:UI(16)];
+        [label sizeToFit];
+        label.textColor = [UIColor blueColor];
+        [btnView addSubview:label];
+        
+        LXBUITap *tapGesture = [[LXBUITap alloc] initWithTarget:self action:@selector(handleLinkTap:)];
+        [btnView addGestureRecognizer:tapGesture];
+    }
+    
+  
+
+//    [_serviceLabel addGestureRecognizer:tapGesture];
     
     
-    
-    _policyLabel = [[UILabel alloc] init];
-    _policyLabel.tag = 2;
+//    _policyLabel = [[UILabel alloc] init];
+//    _policyLabel.tag = 2;
 }
 
 - (void)initBackView{
@@ -71,7 +82,7 @@
     firstTitleView.myWidth = MyLayoutSize.fill;
     firstTitleView.myHeight = UI(50);
     firstTitleView.layer.cornerRadius = UI(6);
-    firstTitleView.backgroundColor = [LXBHelper mainColor];
+    firstTitleView.backgroundImage = [LXBHelper imageWithName:@"public_btn01_yhzx"];
     [self.contentView addSubview:firstTitleView];
     
     UILabel *lable = [UILabel new];
@@ -82,6 +93,7 @@
     lable.myHeight = UI(50);
     lable.myWidth = MyLayoutSize.fill;
     lable.numberOfLines = 4;
+    lable.textColor = [UIColor whiteColor];
     [firstTitleView addSubview:lable];
     
     LXBUITap *tap = [LXBUITap new];
@@ -94,23 +106,12 @@
 }
 
 - (void)handleLinkTap:(LXBUITap *)gesture {
-    if (gesture.state == UIGestureRecognizerStateEnded) {
-        if(gesture.view.tag == 1){
-            NSURL *url = [self.serviceLabel.attributedText attribute:NSLinkAttributeName atIndex:0 effectiveRange:NULL];
-            if (url) {
-                // 在这里处理链接点击，可以打开链接或执行其他操作
-                NSLog(@"Link tapped: %@", url);
-            }
-        }
-        
-        else if(gesture.view.tag == 2){
-            NSURL *url = [self.serviceLabel.attributedText attribute:NSLinkAttributeName atIndex:0 effectiveRange:NULL];
-            if (url) {
-                // 在这里处理链接点击，可以打开链接或执行其他操作
-                NSLog(@"Link tapped: %@", url);
-            }
-        }
-        
+    if(gesture.view.tag == 0){
+        [[SDKController getInstance] openWebView:@"https://www.baidu.com"];
+    }
+    
+    else if(gesture.view.tag == 1){
+        [[SDKController getInstance] openWebView:@"https://www.taobao.com"];
     }
 }
 

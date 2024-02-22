@@ -21,6 +21,10 @@ static NSString *const LXBResourcesBundleName = @"LxbBundle";
 
 + (UIColor *)titleBgView;
 
++ (UIColor *)bgViewColor;
+
++ (UIColor *)normalTextColor;
+
 + (void)showToast:(NSString *)info supView:(UIView *)view;
 
 + (void)showNormalDialogViewController;
