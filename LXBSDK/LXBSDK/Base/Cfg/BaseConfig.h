@@ -23,6 +23,15 @@ typedef NS_ENUM(NSInteger, BaseViewCloseType) {
     NOClose,
 };
 
+typedef NS_ENUM(NSInteger, LXBPayStatus) {
+    LXBPayNone = 0,
+    LXBCreateOriderFormU8Server,
+    LXBUpApplePay,
+    LXBAppleCreateOrder,
+    LXBUserInputPossword,
+    LXBCheckOrder,
+};
+
 @interface BaseConfig : NSObject
 
 @end

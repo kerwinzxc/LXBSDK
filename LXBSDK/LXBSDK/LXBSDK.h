@@ -18,7 +18,8 @@ FOUNDATION_EXPORT const unsigned char LXBSDKVersionString[];
 #import <LXBSDK/SDKController.h>
 
 //Add Framework Security / StoreKit
-//Add Framework AuthenticationServices 
+//Add Framework AuthenticationServices
+//Add Framework WebKit
 //MSNetwork 序列话工具改为Json
 
 //com.boom.maze.ios

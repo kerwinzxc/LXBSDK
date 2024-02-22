@@ -54,7 +54,7 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
             [[SDKController getInstance] createOrder];
             break;
         case 4:
-            [[SDKController getInstance] buyProduct];
+            [[SDKController getInstance] appleBuy];
             break;
         case 5:
             [[SDKController getInstance] finishLostOrder];
@@ -63,7 +63,7 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
             NSLog(@"DDLogDebug");
             break;
         case 7:
-            [[SDKController getInstance] buyProduct2];
+            
             break;
         case 8:
             [[SDKController getInstance] launchAppleBind];

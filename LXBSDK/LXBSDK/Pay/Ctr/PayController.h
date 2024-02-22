@@ -16,10 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface PayController : NSObject<SKProductsRequestDelegate, SKPaymentTransactionObserver>
 
 + (PayController *)getInstance;
+@property(nonatomic, assign)LXBPayStatus payStatus;
 
 - (void)QueryInfo:(NSString *)proId;
 - (BOOL)finishLostOrder;
-- (void)buyProduct:(NSString *)proId;
+- (void)appleBuyWithProId:(NSString *)proId;
 - (void)handleCreateOrder:(ResPayCreate *)res;
 
 

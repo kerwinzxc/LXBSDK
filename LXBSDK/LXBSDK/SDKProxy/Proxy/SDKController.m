@@ -16,6 +16,7 @@
 #import "BindExtend.h"
 #import "ReqOverseaBind.h"
 #import "UserCenterView.h"
+#import "LXBWebView.h"
 static SDKController* instance;
 
 @interface SDKController ()
@@ -97,11 +98,14 @@ static SDKController* instance;
     
     
     DDLog(@"%@",req.mj_keyValues);
-    [PayController ceratePayOrder:req success:^(id  _Nonnull responseObject) {
+    [PayController ceratePayOrder:req
+                          success:^(id  _Nonnull responseObject) {
+        NSLog(@"");
+        
+    }
+                          failure:^(NSError * _Nonnull error) {
         DDLog(@"");
-        } failure:^(NSError * _Nonnull error) {
-            DDLog(@"");
-        }];
+    }];
 }
 
 
@@ -136,13 +140,10 @@ static SDKController* instance;
     [[PayController getInstance] finishLostOrder];
 }
 
-- (void)buyProduct{
-    [[PayController getInstance] buyProduct:@"12yuan"];
+- (void)appleBuy{
+    [[PayController getInstance] appleBuyWithProId:@"12yuan"];
 }
 
-- (void)buyProduct2{
-
-}
 
 - (void)launchAppleLogin{
     self.loginType = ThirdPartyLogin;
@@ -249,6 +250,13 @@ static SDKController* instance;
 
 - (void)initBaseView{
 
+}
+
+- (void)openWebView:(NSString *)urlString{
+    LXBWebView *view = [[LXBWebView alloc] init];
+    UIWindow *wind = [UIApplication sharedApplication].windows[0];
+    [wind addSubview:view];
+    [view showWeb:urlString];
 }
 
 @end

@@ -10,7 +10,6 @@
 		247E519413FC280AADEA3141 /* Pods_LXBSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AEE0D2C39091E96A671D14 /* Pods_LXBSDK.framework */; };
 		891C1D862B6907A7004AF32A /* LXBSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 891C1D852B6907A7004AF32A /* LXBSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		891C1D942B6907D0004AF32A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 891C1D932B6907D0004AF32A /* AppDelegate.m */; };
-		891C1D972B6907D0004AF32A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 891C1D962B6907D0004AF32A /* SceneDelegate.m */; };
 		891C1D9A2B6907D0004AF32A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 891C1D992B6907D0004AF32A /* ViewController.m */; };
 		891C1D9D2B6907D0004AF32A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891C1D9B2B6907D0004AF32A /* Main.storyboard */; };
 		891C1D9F2B6907D1004AF32A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 891C1D9E2B6907D1004AF32A /* Assets.xcassets */; };
@@ -85,6 +84,10 @@
 		89A814432B85CAF2001177D1 /* TapDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A814412B85CAF2001177D1 /* TapDelegate.m */; };
 		89A814462B85DDD8001177D1 /* LXBBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A814442B85DDD8001177D1 /* LXBBaseView.h */; };
 		89A814472B85DDD8001177D1 /* LXBBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A814452B85DDD8001177D1 /* LXBBaseView.m */; };
+		89A8144A2B862EBE001177D1 /* LXBWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A814482B862EBE001177D1 /* LXBWebView.h */; };
+		89A8144B2B862EBE001177D1 /* LXBWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A814492B862EBE001177D1 /* LXBWebView.m */; };
+		89A8144D2B86F75B001177D1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A8144C2B86F75B001177D1 /* WebKit.framework */; };
+		89A8144E2B86F76A001177D1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A8144C2B86F75B001177D1 /* WebKit.framework */; };
 		89B06DAC2B6E3DE200605573 /* NSObject+BLLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B06DAA2B6E3DE200605573 /* NSObject+BLLog.h */; };
 		89B06DAD2B6E3DE200605573 /* NSObject+BLLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B06DAB2B6E3DE200605573 /* NSObject+BLLog.m */; };
 		89EFAF312B6F859D00F13986 /* ReqPayValidate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF2F2B6F859D00F13986 /* ReqPayValidate.h */; };
@@ -145,8 +148,6 @@
 		891C1D902B6907D0004AF32A /* TestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		891C1D922B6907D0004AF32A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		891C1D932B6907D0004AF32A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		891C1D952B6907D0004AF32A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		891C1D962B6907D0004AF32A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		891C1D982B6907D0004AF32A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		891C1D992B6907D0004AF32A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		891C1D9C2B6907D0004AF32A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -222,6 +223,9 @@
 		89A814412B85CAF2001177D1 /* TapDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapDelegate.m; sourceTree = "<group>"; };
 		89A814442B85DDD8001177D1 /* LXBBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXBBaseView.h; sourceTree = "<group>"; };
 		89A814452B85DDD8001177D1 /* LXBBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXBBaseView.m; sourceTree = "<group>"; };
+		89A814482B862EBE001177D1 /* LXBWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXBWebView.h; sourceTree = "<group>"; };
+		89A814492B862EBE001177D1 /* LXBWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXBWebView.m; sourceTree = "<group>"; };
+		89A8144C2B86F75B001177D1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		89B06DAA2B6E3DE200605573 /* NSObject+BLLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+BLLog.h"; sourceTree = "<group>"; };
 		89B06DAB2B6E3DE200605573 /* NSObject+BLLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BLLog.m"; sourceTree = "<group>"; };
 		89EFAF2F2B6F859D00F13986 /* ReqPayValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReqPayValidate.h; sourceTree = "<group>"; };
@@ -278,6 +282,7 @@
 			files = (
 				89EFAF4D2B70836700F13986 /* AuthenticationServices.framework in Frameworks */,
 				247E519413FC280AADEA3141 /* Pods_LXBSDK.framework in Frameworks */,
+				89A8144D2B86F75B001177D1 /* WebKit.framework in Frameworks */,
 				8941CBEA2B6BC1D700DA9CA5 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +293,7 @@
 			files = (
 				891C1DAA2B6908A5004AF32A /* LXBSDK.framework in Frameworks */,
 				FFB512BDA3A6E25301A726DA /* Pods_TestDemo.framework in Frameworks */,
+				89A8144E2B86F76A001177D1 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,8 +358,6 @@
 				89EFAF442B707F4000F13986 /* TestDemo.entitlements */,
 				891C1D922B6907D0004AF32A /* AppDelegate.h */,
 				891C1D932B6907D0004AF32A /* AppDelegate.m */,
-				891C1D952B6907D0004AF32A /* SceneDelegate.h */,
-				891C1D962B6907D0004AF32A /* SceneDelegate.m */,
 				891C1D982B6907D0004AF32A /* ViewController.h */,
 				891C1D992B6907D0004AF32A /* ViewController.m */,
 				891C1D9B2B6907D0004AF32A /* Main.storyboard */,
@@ -368,6 +372,7 @@
 		891C1DA92B6908A5004AF32A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				89A8144C2B86F75B001177D1 /* WebKit.framework */,
 				89EFAF4C2B70836700F13986 /* AuthenticationServices.framework */,
 				8941CBE92B6BC1D700DA9CA5 /* StoreKit.framework */,
 				17AEE0D2C39091E96A671D14 /* Pods_LXBSDK.framework */,
@@ -702,6 +707,8 @@
 				89A814342B845F04001177D1 /* DeleteAccConfirmView.m */,
 				89A814372B84C1C8001177D1 /* ServiceAndPolicyView.h */,
 				89A814382B84C1C8001177D1 /* ServiceAndPolicyView.m */,
+				89A814482B862EBE001177D1 /* LXBWebView.h */,
+				89A814492B862EBE001177D1 /* LXBWebView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -758,6 +765,7 @@
 				8941CBDA2B6BA22400DA9CA5 /* RealNameController.h in Headers */,
 				8941CB9E2B6A31DB00DA9CA5 /* AFNet.h in Headers */,
 				891C1DC42B690EC3004AF32A /* UserCenterController.h in Headers */,
+				89A8144A2B862EBE001177D1 /* LXBWebView.h in Headers */,
 				8941CBAD2B6B41AC00DA9CA5 /* ResVisitor.h in Headers */,
 				89A8143E2B85ABBC001177D1 /* LXBUITap.h in Headers */,
 				CEADAC7A2B7A3B7C00C34569 /* BindAccView.h in Headers */,
@@ -946,6 +954,7 @@
 				8941CBE42B6BA2D400DA9CA5 /* ReqRealName.m in Sources */,
 				8941CBDB2B6BA22400DA9CA5 /* RealNameController.m in Sources */,
 				8941CBCB2B6B708100DA9CA5 /* ResPayCreate.m in Sources */,
+				89A8144B2B862EBE001177D1 /* LXBWebView.m in Sources */,
 				89A814322B845341001177D1 /* DeleteWarperView.m in Sources */,
 				89EFAF5D2B70CCF100F13986 /* BindExtend.m in Sources */,
 				8941CBBD2B6B6E3B00DA9CA5 /* PayController.m in Sources */,
@@ -1001,7 +1010,6 @@
 				891C1D9A2B6907D0004AF32A /* ViewController.m in Sources */,
 				891C1D942B6907D0004AF32A /* AppDelegate.m in Sources */,
 				891C1DA52B6907D1004AF32A /* main.m in Sources */,
-				891C1D972B6907D0004AF32A /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

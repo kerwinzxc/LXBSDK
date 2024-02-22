@@ -23,8 +23,12 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handlerCloseAll:) name:CloseAllViewNotiName object:nil];
 }
 
-- (void)dealloc{
+- (void)onDestroy{
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)dealloc{
+    [self onDestroy];
 }
 
 - (void)handlerCloseAll:(NSNotification *)noti{

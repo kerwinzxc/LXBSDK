@@ -67,10 +67,10 @@
 - (void)btnClick:(LXBUITap *)send{
     DDLog(@"xxxxxxx");
     
-//    DeleteAccConfirmView *view = [[DeleteAccConfirmView alloc] init];
-//
-//    UIWindow *window = [UIApplication sharedApplication].windows[0];
-//    [window addSubview:view];
+    DeleteAccConfirmView *view = [[DeleteAccConfirmView alloc] init];
+
+    UIWindow *window = [UIApplication sharedApplication].windows[0];
+    [window addSubview:view];
 }
 
 @end

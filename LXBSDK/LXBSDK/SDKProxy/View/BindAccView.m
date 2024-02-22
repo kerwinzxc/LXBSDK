@@ -6,7 +6,8 @@
 //
 
 #import "BindAccView.h"
-
+#import "LXBWebView.h"
+#import "SDKController.h"
 @implementation BindAccView
 
 /*
@@ -88,7 +89,18 @@
 }
 
 - (void)viewClick:(LXBUITap *)send{
+    if(send.view.tag == 0){
+        [LXBHelper showToast:@"xxx xxx xxx xxxx xxxxxxxxx xxxxx xxxxx xxx" supView:self];
+    }
+    else if (send.view.tag == 1){
+        [LXBHelper showNormalDialogViewController];
+    }
+    else if (send.view.tag == 2){
+        [[SDKController getInstance] openWebView:@"https://www.baidu.com"];
+    }
     DDLog(@"%li", send.view.tag);
 }
+
+
 
 @end

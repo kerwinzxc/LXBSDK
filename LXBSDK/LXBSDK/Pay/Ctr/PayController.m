@@ -63,12 +63,14 @@ static PayController* instance;
 
 #pragma mark - Purchase Methods
 
-- (void)buyProduct:(NSString *)proId{
+- (void)appleBuyWithProId:(NSString *)proId{
     SKMutablePayment *payment = [[SKMutablePayment alloc] init];
     payment.applicationUsername = @"xxxxx";
     payment.productIdentifier = proId;
     payment.quantity = 1;
     [[SKPaymentQueue defaultQueue] addPayment:payment];
+    
+    self.payStatus = LXBUpApplePay;
 }
 
 
@@ -83,6 +85,7 @@ static PayController* instance;
     switch (transaction.transactionState) {
         case SKPaymentTransactionStatePurchasing:
             DDLog(@"正在创建");
+            self.payStatus = LXBAppleCreateOrder;
             break;
         case SKPaymentTransactionStatePurchased:
             // 购买成功，处理交易并向用户提供购买的内容
@@ -91,6 +94,7 @@ static PayController* instance;
         case SKPaymentTransactionStateFailed:
             // 购买失败，处理错误信息
             [self failedTransaction:transaction];
+            self.payStatus = LXBPayNone;
             break;
         case SKPaymentTransactionStateRestored:
             // 恢复购买，处理交易并向用户提供购买的内容
@@ -119,6 +123,7 @@ static PayController* instance;
     //用户还没有完成登陆
     if ([DataHub getInstance].useModel == nil){
         DDLog(@"用户还没有登陆不去查询");
+        self.payStatus = LXBPayNone;
     }
     else{
         req.account_id = [DataHub getInstance].useModel.account_id;
@@ -127,6 +132,7 @@ static PayController* instance;
             ResPayValidate *res = (ResPayValidate *)responseObject;
             DDLog(@"product_id%@",res.product_id);
             [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+            self.payStatus = LXBPayNone;
             } failure:^(NSError * _Nonnull error) {
                 
             }];
@@ -166,7 +172,7 @@ static PayController* instance;
 
 - (void)handleCreateOrder:(ResPayCreate *)res{
     [KeychainController saveOrderId:res.orderId proId:res.product_id];
-    [self buyProduct:res.product_id];
+    [self appleBuyWithProId:res.product_id];
 }
 
 #pragma mark - 订单处理
@@ -194,16 +200,18 @@ static PayController* instance;
         [[PayController getInstance] finishLostOrder];
     }
     else{
-        [NetworkController POST:PayModuleName classMeta:[ResPayCreate class] url:payCreate parameters:[model mj_keyValues] success:^(id  _Nonnull responseObject){
-            //订单创建成功
-            
+        
+        [PayController getInstance].payStatus = LXBCreateOriderFormU8Server;
+        [NetworkController POST:PayModuleName classMeta:[ResPayCreate class] url:payCreate parameters:[model mj_keyValues]
+                        success:^(id responseObject){
             [[PayController getInstance] handleCreateOrder:responseObject];
-        } failure:^(NSError * _Nonnull error){
-            //创建订单失败
+        }
+                        failure:^(NSError *error){
+            [PayController getInstance].payStatus = LXBPayNone;
+            failure(error);
         }];
     }
 }
-
 
 + (void)validateOrder:(ReqPayValidate *)model success:(MSHttpSuccess)success failure:(MSHttpFail)failure{
     [NetworkController POST:PayModuleName classMeta:[ResPayValidate class] url:payValidateUrl parameters:[model mj_keyValues]  success:success failure:failure];

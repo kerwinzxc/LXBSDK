@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <QMUIKit/QMUIKit.h>
 NS_ASSUME_NONNULL_BEGIN
 
 static NSString *const LXBResourcesBundleName = @"LxbBundle";
@@ -17,6 +18,13 @@ static NSString *const LXBResourcesBundleName = @"LxbBundle";
 + (UIColor *)mainColor;
 
 + (UIColor *)btnBGColor;
+
++ (UIColor *)titleBgView;
+
++ (void)showToast:(NSString *)info supView:(UIView *)view;
+
++ (void)showNormalDialogViewController;
+
 @end
 
 NS_ASSUME_NONNULL_END

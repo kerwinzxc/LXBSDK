@@ -17,13 +17,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)realName;
 - (void)payItem;
 - (void)finishLostOrder;
-- (void)buyProduct;
-- (void)buyProduct2;
+- (void)appleBuy;
 - (void)launchAppleLogin;
 - (void)launchAppleBind;
 - (void)autoLogin;
 - (void)showCenter;
 - (void)initBaseView;
+- (void)openWebView:(NSString *)urlString;
 @end
 
 
