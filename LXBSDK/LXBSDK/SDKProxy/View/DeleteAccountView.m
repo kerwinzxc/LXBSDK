@@ -64,7 +64,7 @@
 
 - (void)btnClick:(LXBUITap *)send{
 //    DeleteWarperView *view = [[DeleteWarperView alloc] initTitle:getLocalString(@"u8_account_cutacc_delete_btntxt") isRightCloseBtn:RightClose];
-    [[SDKController getInstance] openKeFuView];
+    [ViewHub openKeFuView];
     
 }
 

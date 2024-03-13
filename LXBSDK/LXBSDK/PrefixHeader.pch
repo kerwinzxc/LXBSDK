@@ -36,5 +36,5 @@
 #import "LXBLogicView.h"
 #import "LXBTestView.h"
 #import "SDKModel.h"
-
+#import "ViewHub.h"
 #endif /* PrefixHeader_pch */

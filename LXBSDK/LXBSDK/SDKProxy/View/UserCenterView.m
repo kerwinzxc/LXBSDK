@@ -140,7 +140,7 @@
 }
 
 - (void)showKefuView{
-    [[SDKController getInstance] openKeFuView];
+    [ViewHub openKeFuView];
 }
 
 @end

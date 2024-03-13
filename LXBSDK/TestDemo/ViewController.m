@@ -55,33 +55,6 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
             [[SDKController getInstance] sdkInit];
             break;
         case 2:
-            [[SDKController getInstance] login];
-            break;
-        case 3:
-            [[SDKController getInstance] realName];
-            break;
-        case 4:
-            [[SDKController getInstance] createOrder];
-            break;
-        case 5:
-            [[SDKController getInstance] appleBuy];
-            break;
-        case 6:
-            [[SDKController getInstance] launchAppleBind];
-            break;
-        case 7:
-            [[SDKController getInstance] autoLogin];
-            break;
-        case 8:
-            [[SDKController getInstance] launchAppleLogin];
-            break;
-        case 9:
-            [[SDKController getInstance] showCenter];
-            break;
-        case 10:
-            [[SDKController getInstance] openLoginView];
-            break;
-        case 11:
             [[SDKController getInstance] showRewardedAd];
             break;
         default:
@@ -93,16 +66,7 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
     self.actionLable = @[
         @"0  测试窗口",
         @"1  初始化",
-        @"2  游客登陆",
-        @"3  实名认证",
-        @"4  创建订单",
-        @"5  苹果内购",
-        @"6  绑定苹果",
-        @"7  自动登录",
-        @"8  苹果登录",
-        @"9  用户中心",
-        @"10 登录界面",
-        @"11 激励广告",
+        @"2  激励广告",
     ];
     
 }

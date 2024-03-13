@@ -12,21 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SDKController : NSObject
 + (SDKController *)getInstance;
 - (void)sdkInit;
-- (void)login;
-- (void)test;
-- (void)createOrder;
-- (void)realName;
-- (void)payItem;
-- (void)finishLostOrder;
-- (void)appleBuy;
-- (void)launchAppleLogin;
-- (void)launchAppleBind;
-- (void)autoLogin;
-- (void)showCenter;
-- (void)initBaseView;
+- (void)openCenterView;
 - (void)openWebView:(NSString *)urlString;
-- (void)openLoginView;
-- (void)openKeFuView;
 - (void)AdInitAfterControllerDidInit:(UIViewController *)vController adID:(NSString *)adId;
 - (void)showRewardedAd;
 - (void)openTestView;
