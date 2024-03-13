@@ -29,6 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)openKeFuView;
 - (void)AdInitAfterControllerDidInit:(UIViewController *)vController adID:(NSString *)adId;
 - (void)showRewardedAd;
+- (void)openTestView;
 @end
 
 

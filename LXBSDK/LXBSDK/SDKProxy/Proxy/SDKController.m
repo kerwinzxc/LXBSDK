@@ -281,6 +281,11 @@ static SDKController* instance;
     [GoogleAdWarper.sharedInstance showRewardedAd];
 }
 
+- (void)openTestView{
+    LXBTestView *view = [[LXBTestView alloc] init];
+    
+    [[view getRootWindow] addSubview:view];
+}
 
 
 @end

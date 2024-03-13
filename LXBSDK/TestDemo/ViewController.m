@@ -49,52 +49,40 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.row) {
         case 0:
-            [[SDKController getInstance] sdkInit];
+            [[SDKController getInstance] openTestView];
             break;
         case 1:
-            [[SDKController getInstance] login];
+            [[SDKController getInstance] sdkInit];
             break;
         case 2:
-            [[SDKController getInstance] realName];
+            [[SDKController getInstance] login];
             break;
         case 3:
-            [[SDKController getInstance] createOrder];
+            [[SDKController getInstance] realName];
             break;
         case 4:
-            [[SDKController getInstance] appleBuy];
+            [[SDKController getInstance] createOrder];
             break;
         case 5:
-            [[SDKController getInstance] finishLostOrder];
+            [[SDKController getInstance] appleBuy];
             break;
         case 6:
-            NSLog(@"DDLogDebug");
-            break;
-        case 7:
-            
-            break;
-        case 8:
             [[SDKController getInstance] launchAppleBind];
             break;
-        case 9:
+        case 7:
             [[SDKController getInstance] autoLogin];
             break;
-        case 10:
+        case 8:
             [[SDKController getInstance] launchAppleLogin];
             break;
-        case 11:
+        case 9:
             [[SDKController getInstance] showCenter];
             break;
-        case 12:
+        case 10:
             [[SDKController getInstance] openLoginView];
             break;
-        case 13:
+        case 11:
             [[SDKController getInstance] showRewardedAd];
-            break;
-        case 14:
-            [self toast1];
-            break;
-        case 15:
-            [self toast2];
             break;
         default:
             break;
@@ -103,26 +91,18 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
 
 - (void)initActionLable{
     self.actionLable = @[
-        @"0SDKInit",
-        @"1游客登陆",
-        @"2实名认证",
-        @"3创建订单",
-        @"4苹果内购",
-        @"5处理未处理苹果订单",
-        @"6绑定更新",
-        @"7 30元购买",
-        @"8bind Apple",
-        @"9autoLogin",
-        @"10apple login",
-        @"11 showCenter",
-        @"12 登录界面",
-        @"13 激励广告",
-        @"14 toast1",
-        @"15 toast2",
-        @"硬核渠道登录",
-        @"一键、验证码登录",
-        @"自动登录校验",
-        @"账号解绑",
+        @"0  测试窗口",
+        @"1  初始化",
+        @"2  游客登陆",
+        @"3  实名认证",
+        @"4  创建订单",
+        @"5  苹果内购",
+        @"6  绑定苹果",
+        @"7  自动登录",
+        @"8  苹果登录",
+        @"9  用户中心",
+        @"10 登录界面",
+        @"11 激励广告",
     ];
     
 }

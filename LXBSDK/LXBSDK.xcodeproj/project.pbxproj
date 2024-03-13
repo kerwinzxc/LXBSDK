@@ -100,6 +100,8 @@
 		89CD6B052BA0568C0051B2BB /* LXBADInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CD6B032BA0568C0051B2BB /* LXBADInfo.m */; };
 		89CD6B092BA17EAA0051B2BB /* SDKModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CD6B072BA17EAA0051B2BB /* SDKModel.h */; };
 		89CD6B0A2BA17EAA0051B2BB /* SDKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CD6B082BA17EAA0051B2BB /* SDKModel.m */; };
+		89CD6B0D2BA197AB0051B2BB /* LXBTestView.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CD6B0B2BA197AB0051B2BB /* LXBTestView.h */; };
+		89CD6B0E2BA197AB0051B2BB /* LXBTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CD6B0C2BA197AB0051B2BB /* LXBTestView.m */; };
 		89EFAF312B6F859D00F13986 /* ReqPayValidate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF2F2B6F859D00F13986 /* ReqPayValidate.h */; };
 		89EFAF322B6F859D00F13986 /* ReqPayValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF302B6F859D00F13986 /* ReqPayValidate.m */; };
 		89EFAF352B6F85B400F13986 /* ResPayValidate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF332B6F85B400F13986 /* ResPayValidate.h */; };
@@ -247,6 +249,8 @@
 		89CD6B032BA0568C0051B2BB /* LXBADInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXBADInfo.m; sourceTree = "<group>"; };
 		89CD6B072BA17EAA0051B2BB /* SDKModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKModel.h; sourceTree = "<group>"; };
 		89CD6B082BA17EAA0051B2BB /* SDKModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDKModel.m; sourceTree = "<group>"; };
+		89CD6B0B2BA197AB0051B2BB /* LXBTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXBTestView.h; sourceTree = "<group>"; };
+		89CD6B0C2BA197AB0051B2BB /* LXBTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXBTestView.m; sourceTree = "<group>"; };
 		89EFAF2F2B6F859D00F13986 /* ReqPayValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReqPayValidate.h; sourceTree = "<group>"; };
 		89EFAF302B6F859D00F13986 /* ReqPayValidate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReqPayValidate.m; sourceTree = "<group>"; };
 		89EFAF332B6F85B400F13986 /* ResPayValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResPayValidate.h; sourceTree = "<group>"; };
@@ -754,6 +758,8 @@
 				89A814492B862EBE001177D1 /* LXBWebView.m */,
 				89A814632B876B6E001177D1 /* KeFuView.h */,
 				89A814642B876B6E001177D1 /* KeFuView.m */,
+				89CD6B0B2BA197AB0051B2BB /* LXBTestView.h */,
+				89CD6B0C2BA197AB0051B2BB /* LXBTestView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -821,6 +827,7 @@
 				891C1DB42B690ABC004AF32A /* NetworkController.h in Headers */,
 				8941CBE72B6BA2E000DA9CA5 /* ResRealName.h in Headers */,
 				89EFAF502B70B62600F13986 /* ReqAutoLogin.h in Headers */,
+				89CD6B0D2BA197AB0051B2BB /* LXBTestView.h in Headers */,
 				89EFAF662B70E6DA00F13986 /* ReqThirdPartyLogin.h in Headers */,
 				8941CBBC2B6B6E3B00DA9CA5 /* PayController.h in Headers */,
 				89CD6B002BA054020051B2BB /* GoogleMobileAdsConsentManager.h in Headers */,
@@ -1000,6 +1007,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8941CB9F2B6A31DB00DA9CA5 /* AFNet.m in Sources */,
+				89CD6B0E2BA197AB0051B2BB /* LXBTestView.m in Sources */,
 				8941CBE42B6BA2D400DA9CA5 /* ReqRealName.m in Sources */,
 				8941CBDB2B6BA22400DA9CA5 /* RealNameController.m in Sources */,
 				8941CBCB2B6B708100DA9CA5 /* ResPayCreate.m in Sources */,
