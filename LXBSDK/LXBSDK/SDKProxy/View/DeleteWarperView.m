@@ -69,8 +69,7 @@
     
     DeleteAccConfirmView *view = [[DeleteAccConfirmView alloc] init];
 
-    UIWindow *window = [UIApplication sharedApplication].windows[0];
-    [window addSubview:view];
+    [[self getRootWindow] addSubview:view];
 }
 
 @end

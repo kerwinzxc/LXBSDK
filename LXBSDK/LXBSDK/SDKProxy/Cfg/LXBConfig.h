@@ -13,6 +13,10 @@ static NSString * _Nullable const AppleLoginNotiName = @"AppleLoginNotiName";
 
 static NSString * _Nullable const CloseAllViewNotiName = @"CloseAllViewNotiName";
 
+static NSString * _Nullable const AdRewardedNotiName = @"AdRewardedNotiName";
+static NSString * _Nullable const AdPluginInitErrorNotiName = @"AdPluginInitErrorNotiName";
+static NSString * _Nullable const AdLoadErrorNotiName = @"AdLoadErrorNotiName";
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LXBConfig : NSObject

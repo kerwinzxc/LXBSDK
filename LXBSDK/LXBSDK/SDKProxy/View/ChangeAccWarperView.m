@@ -95,14 +95,13 @@
     [alertController addAction:action1];
     [alertController addAction:action2];
     
-    UIWindow *window = [UIApplication sharedApplication].windows[0];
-    [window.rootViewController presentViewController:alertController animated:YES completion:nil];
+    [[self getRootController] presentViewController:alertController animated:YES completion:nil];
 }
 
 - (void)showDeleteAccView{
     DeleteAccountView *view = [[DeleteAccountView alloc] initTitle:getLocalString(@"u8_account_cutacc_warper_otherfun") isRightCloseBtn:RightClose];
-    UIWindow *window = [UIApplication sharedApplication].windows[0];
-    [window addSubview:view];
+   
+    [[self getRootWindow] addSubview:view];
 }
 
 @end

@@ -19,7 +19,6 @@
 
 - (instancetype)init{
     self = [super init];
-    
     [self initViews];
     
     [self initDatum];

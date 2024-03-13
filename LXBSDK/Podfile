@@ -11,7 +11,12 @@ target 'LXBSDK' do
   pod 'YYCache'
   pod 'MMKV'
   pod 'MyLayout'
-  pod 'QMUIKit'
+  
+  # google 广告
+  pod 'Google-Mobile-Ads-SDK'
+  pod 'GoogleUserMessagingPlatform'
+  
+  pod 'ZHToast'
 end
 
 target 'TestDemo' do
@@ -25,7 +30,12 @@ target 'TestDemo' do
   pod 'CocoaLumberjack'
   pod 'MMKV'
   pod 'MyLayout'
-  pod 'QMUIKit'
+  
+  # google 广告
+  pod 'Google-Mobile-Ads-SDK'
+  pod 'GoogleUserMessagingPlatform'
+  
+  pod 'ZHToast'
 end
 
 post_install do |installer|

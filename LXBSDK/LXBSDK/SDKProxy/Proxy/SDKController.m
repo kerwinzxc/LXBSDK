@@ -19,11 +19,11 @@
 #import "LXBWebView.h"
 #import "ChangeAccountView.h"
 #import "KeFuView.h"
+#import "GoogleAdWarper.h"
 static SDKController* instance;
 
 @interface SDKController ()
 
-@property(nonatomic,assign)ThirdPartyLoginType loginType;
 
 @end
 
@@ -46,7 +46,7 @@ static SDKController* instance;
 }
 
 - (void)myInit{
-    self.loginType = ThirdPartyLoginNone;
+    [SDKModel getInstance].loginType = ThirdPartyLoginNone;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handerAppleLogin:) name:AppleLoginNotiName object:nil];
 }
 
@@ -56,7 +56,7 @@ static SDKController* instance;
 }
 
 - (void)login{
-    
+    [LXBHelper showNormalDialogViewController];
     ReqVisitor *req = [[ReqVisitor alloc] init];
 //    req.device_id = @"123456";
 //    req.uuid = @"123465";
@@ -148,12 +148,12 @@ static SDKController* instance;
 
 
 - (void)launchAppleLogin{
-    self.loginType = ThirdPartyLogin;
+    [SDKModel getInstance].loginType = ThirdPartyLogin;
     [[AppleLoginController getInstance] launchLogin];
 }
 
 - (void)launchAppleBind{
-    self.loginType = ThirdPartyLoginBind;
+    [SDKModel getInstance].loginType = ThirdPartyLoginBind;
     [[AppleLoginController getInstance] launchLogin];
 }
 
@@ -202,7 +202,7 @@ static SDKController* instance;
     BindExtend *bind = (BindExtend *)noti.object;
     NSString *ms = [bind mj_JSONString];
     __weak typeof(self) weakSelf = self;
-    if(self.loginType == ThirdPartyLoginBind){
+    if([SDKModel getInstance].loginType == ThirdPartyLoginBind){
         ReqOverseaBind *reqBind = [[ReqOverseaBind alloc] init];
         reqBind.account_id = [DataHub getInstance].useModel.account_id;
         reqBind.platform_type = ApplePlaformName;
@@ -213,7 +213,7 @@ static SDKController* instance;
                 DDLog(@"xxx");
             }];
     }
-    else if (self.loginType == ThirdPartyLogin){
+    else if ([SDKModel getInstance].loginType == ThirdPartyLogin){
         ReqThirdPartyLogin *req = [[ReqThirdPartyLogin alloc] init];
         req.device_id = [KeychainController loadLXBLoginDevicesId];
         req.channel_id = [U8_CHANNEL longLongValue];
@@ -244,10 +244,9 @@ static SDKController* instance;
 - (void)showCenter{
     NSString *title = getLocalString(@"user_account_ui_usercenter");
     UserCenterView *view = [[UserCenterView alloc] initTitle:title isRightCloseBtn:RightClose];
+    //UIWindow *w = [view getRootWindow];
     UIWindow *window = [UIApplication sharedApplication].windows[0];
     [window addSubview:view];
-//    UIColor *color = [UIColor blackColor];
-//    view.backgroundColor = [color colorWithAlphaComponent:0.5];
 }
 
 - (void)initBaseView{
@@ -256,22 +255,32 @@ static SDKController* instance;
 
 - (void)openWebView:(NSString *)urlString{
     LXBWebView *view = [[LXBWebView alloc] init];
-    UIWindow *wind = [UIApplication sharedApplication].windows[0];
-    [wind addSubview:view];
+
+    [[view getRootWindow] addSubview:view];
     [view showWeb:urlString];
 }
 
 - (void)openLoginView{
     ChangeAccountView *bindView = [[ChangeAccountView alloc] initTitle:getLocalString(@"u8_account_info_cutoverAccount") isRightCloseBtn:NOClose];
-    UIWindow *window = [UIApplication sharedApplication].windows[0];
-    [window addSubview:bindView];
+ 
+    [[bindView getRootWindow] addSubview:bindView];
 }
 
 - (void)openKeFuView{
     KeFuView *view = [[KeFuView alloc] initTitle:getLocalString(@"u8_account_UI_contactService") isRightCloseBtn:RightClose];
     [view setDes:getLocalString(@"use_kefu_des")];
-    UIWindow *window = [UIApplication sharedApplication].windows[0];
-    [window addSubview:view];
+    [[view getRootWindow] addSubview:view];
 }
+
+- (void)AdInitAfterControllerDidInit:(UIViewController *)vController adID:(NSString *)adId{
+    [GoogleAdWarper.sharedInstance googleAdInitAfterControllerDidInit:vController adID:adId];
+    [SDKModel getInstance].rootController = vController;
+}
+
+- (void)showRewardedAd{
+    [GoogleAdWarper.sharedInstance showRewardedAd];
+}
+
+
 
 @end

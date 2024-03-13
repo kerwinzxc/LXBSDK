@@ -35,4 +35,12 @@
     [self destroy];
 }
 
+- (UIWindow *)getRootWindow{
+    return [UIApplication sharedApplication].windows[0];
+}
+
+- (UIViewController *)getRootController{
+    return [SDKModel getInstance].rootController;
+}
+
 @end

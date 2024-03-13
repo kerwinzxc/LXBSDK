@@ -181,8 +181,8 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/MMKV/MMKV.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MMKVCore/MMKVCore.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MyLayout/MyLayout.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/QMUIKit/QMUIKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ZHToast/ZHToast.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -191,8 +191,8 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/MMKV/MMKV.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MMKVCore/MMKVCore.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MyLayout/MyLayout.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/QMUIKit/QMUIKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ZHToast/ZHToast.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

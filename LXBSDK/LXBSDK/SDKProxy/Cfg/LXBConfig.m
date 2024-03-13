@@ -63,15 +63,15 @@ static LXBConfig *instance;
 - (NSArray *)changeAccViewCfg{
     return @[
         @{
-            @"imgName":@"HitpointPerception",
+            @"imgName":@"public_icon_facebook",
             @"showText":getLocalString(@"u8_account_info_cutacc_signinfacebook"),
         },
         @{
-            @"imgName":@"SolitairePatience",
+            @"imgName":@"public_icon_google",
             @"showText":getLocalString(@"u8_account_info_cutacc_signingoogel")
         },
         @{
-            @"imgName":@"PingIcon",
+            @"imgName":@"public_icon_apple",
             @"showText":getLocalString(@"u8_account_info_cutacc_signinapple"),
         },
         

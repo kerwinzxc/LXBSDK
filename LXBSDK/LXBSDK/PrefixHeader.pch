@@ -34,6 +34,6 @@
 #import "LXBScreen.h"
 #import "U8Language.h"
 #import "LXBLogicView.h"
-
+#import "SDKModel.h"
 
 #endif /* PrefixHeader_pch */

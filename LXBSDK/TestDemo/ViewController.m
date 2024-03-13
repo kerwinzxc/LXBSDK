@@ -7,8 +7,10 @@
 
 #import "ViewController.h"
 #import <LXBSDK/LXBSDK.h>
+#import <LXBSDK/LXBConfig.h>
+#import <LXBSDK/LXBADInfo.h>
 #import <CocoaLumberjack/CocoaLumberjack.h>
-
+#import <ZHToast/ZHToastView.h>
 static DDLogLevel ddLogLevel = DDLogLevelDebug;
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong)NSArray *actionLable;
@@ -26,6 +28,11 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
     fileLog.rollingFrequency = 60 * 60 *24;
     fileLog.logFileManager.maximumNumberOfLogFiles = 3;
     [DDLog addLogger:fileLog];
+    
+    NSString *adID = @"ca-app-pub-3940256099942544/1712485313";
+    [[SDKController getInstance] AdInitAfterControllerDidInit:self adID:adID];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showRewardedAd:) name:AdRewardedNotiName object:nil];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -80,6 +87,15 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
         case 12:
             [[SDKController getInstance] openLoginView];
             break;
+        case 13:
+            [[SDKController getInstance] showRewardedAd];
+            break;
+        case 14:
+            [self toast1];
+            break;
+        case 15:
+            [self toast2];
+            break;
         default:
             break;
     }
@@ -100,6 +116,9 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
         @"10apple login",
         @"11 showCenter",
         @"12 登录界面",
+        @"13 激励广告",
+        @"14 toast1",
+        @"15 toast2",
         @"硬核渠道登录",
         @"一键、验证码登录",
         @"自动登录校验",
@@ -121,4 +140,22 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
     return 80;
 }
 
+- (void)showRewardedAd:(NSNotification *)noti{
+    LXBADInfo *info = (LXBADInfo *)noti.object;
+    
+    NSLog(@"---%@", info.adType);
+}
+
+
+- (void)toast1{
+   
+}
+
+- (void)toast2{
+    //[LXBHelper showNormalDialogViewController];
+}
+
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 @end

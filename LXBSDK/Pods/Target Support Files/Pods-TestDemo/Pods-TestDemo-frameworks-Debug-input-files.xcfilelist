@@ -4,6 +4,6 @@ ${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework
 ${BUILT_PRODUCTS_DIR}/MMKV/MMKV.framework
 ${BUILT_PRODUCTS_DIR}/MMKVCore/MMKVCore.framework
 ${BUILT_PRODUCTS_DIR}/MyLayout/MyLayout.framework
-${BUILT_PRODUCTS_DIR}/QMUIKit/QMUIKit.framework
 ${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework
+${BUILT_PRODUCTS_DIR}/ZHToast/ZHToast.framework
 ${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework

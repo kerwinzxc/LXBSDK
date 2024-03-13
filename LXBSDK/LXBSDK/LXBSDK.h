@@ -16,7 +16,8 @@ FOUNDATION_EXPORT const unsigned char LXBSDKVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <LXBSDK/PublicHeader.h>
 
 #import <LXBSDK/SDKController.h>
-
+#import <LXBSDK/LXBADInfo.h>
+#import <LXBSDK/LXBConfig.h>
 //Add Framework Security / StoreKit
 //Add Framework AuthenticationServices
 //Add Framework WebKit

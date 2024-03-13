@@ -7,6 +7,7 @@
 
 #import "LXBHelper.h"
 #import <UIKit/UIKit.h>
+#import <ZHToast/ZHToastView.h>
 @implementation LXBHelper
 
 + (UIImage *)imageWithName:(NSString *)name {
@@ -36,25 +37,25 @@
 }
 
 + (void)showToast:(NSString *)info supView:(UIView *)view{
-    [QMUITips showWithText:info inView:view hideAfterDelay:1.6];
+
 }
 
 + (void)showNormalDialogViewController {
-    QMUIDialogViewController *dialogViewController = [[QMUIDialogViewController alloc] init];
-    dialogViewController.title = @"标题";
-    UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 100)];
-    contentView.backgroundColor = UIColorWhite;
-    UILabel *label = [[UILabel alloc] qmui_initWithFont:UIFontMake(14) textColor:UIColorBlack];
-    label.text = @"自定义contentView";
-    [label sizeToFit];
-    label.center = CGPointMake(CGRectGetWidth(contentView.bounds) / 2.0, CGRectGetHeight(contentView.bounds) / 2.0);
-    [contentView addSubview:label];
-    dialogViewController.contentView = contentView;
-    [dialogViewController addCancelButtonWithText:@"取消" block:nil];
-    [dialogViewController addSubmitButtonWithText:@"确定" block:^(QMUIDialogViewController *aDialogViewController) {
-        [aDialogViewController hide];
-    }];
-    [dialogViewController show];
+    ZHToastView *toast = [[ZHToastView alloc] initWithStyle:ZHToastStyleHUD];
+    
+    UIWindow *w = [UIApplication sharedApplication].windows[0];
+    
+    toast.parentView = w;
+    toast.labelText = @"支付中";
+    toast.automaticallyHide = NO;
+    toast.labelFont = [UIFont boldSystemFontOfSize:16];
+    toast.bkgColor = [UIColor grayColor];
+    [toast show];
+    
+    NSLog(@"xxxx");
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [toast hide];
+    });
 }
 
 @end

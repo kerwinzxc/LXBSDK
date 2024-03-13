@@ -10,9 +10,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LXBBaseView : UIView
-
 - (void)destroy;
 - (void)onDestroy;
+- (UIWindow *)getRootWindow;
+- (UIViewController *)getRootController;
 @end
 
 NS_ASSUME_NONNULL_END
