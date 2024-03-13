@@ -17,6 +17,10 @@ target 'LXBSDK' do
   pod 'GoogleUserMessagingPlatform'
   
   pod 'ZHToast'
+  # 谷歌登录
+  pod 'GoogleSignIn'
+  # Facebook 登录
+  pod 'FBSDKLoginKit'
 end
 
 target 'TestDemo' do
@@ -36,6 +40,10 @@ target 'TestDemo' do
   pod 'GoogleUserMessagingPlatform'
   
   pod 'ZHToast'
+  # 谷歌登录
+  pod 'GoogleSignIn'
+  # Facebook 登录
+  pod 'FBSDKLoginKit'
 end
 
 post_install do |installer|

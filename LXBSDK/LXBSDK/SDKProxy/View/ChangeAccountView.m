@@ -6,7 +6,7 @@
 //
 
 #import "ChangeAccountView.h"
-
+#import "GoogleLoginController.h"
 @implementation ChangeAccountView
 
 /*
@@ -71,8 +71,11 @@
 - (void)viewClick:(LXBUITap *)send{
     DDLog(@"--- %li" ,send.view.tag);
     if(send.view.tag == 0){
-       
-        [[NSNotificationCenter defaultCenter] postNotificationName:CloseAllViewNotiName object:nil];
+       //todo facebook 登录
+        //[[NSNotificationCenter defaultCenter] postNotificationName:CloseAllViewNotiName object:nil];
+    }
+    else if (send.view.tag == 1){
+        [[GoogleLoginController getInstance] googleLogin];
     }
     else if (send.view.tag == 3){
         [self destroy];

@@ -57,6 +57,9 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
         case 2:
             [[SDKController getInstance] showRewardedAd];
             break;
+        case 3:
+            [[SDKController getInstance] openCenterView];
+            break;
         default:
             break;
     }
@@ -67,6 +70,7 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
         @"0  测试窗口",
         @"1  初始化",
         @"2  激励广告",
+        @"3  用户中心"
     ];
     
 }

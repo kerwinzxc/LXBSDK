@@ -13,12 +13,12 @@ static AppleLoginController *instance;
 {
     self = [super init];
     if (self) {
-        [self myInit];
+        [self innerInit];
     }
     return self;
 }
 
-- (void)myInit{
+- (void)innerInit{
     
 }
 

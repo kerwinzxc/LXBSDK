@@ -86,7 +86,7 @@
             
             break;
         case 2:
-            
+            [ViewHub openLoginView];
             break;
         case 3:
             
@@ -119,8 +119,9 @@
 
 - (void)initActionLable{
     self.actionLable = @[
-        @"0关闭自己",
-        @"1游客登陆",
+        @"0  关闭自己",
+        @"1  游客登陆",
+        @"2  登录界面",
     ];
     
 }
