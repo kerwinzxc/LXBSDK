@@ -11,6 +11,7 @@
 #import "ReqRealName.h"
 #import "RealNameController.h"
 #import "AppleLoginController.h"
+#import "SDKController.h"
 @interface LXBTestView ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong)UITableView *tableView;
 @property(nonatomic, strong)NSArray *actionLable;
@@ -83,13 +84,13 @@
             [self destroy];
             break;
         case 1:
-            
+            [[SDKController getInstance] openWebView:@"https://www.baidu.com"];
             break;
         case 2:
             [ViewHub openLoginView];
             break;
         case 3:
-            
+            [LXBHelper showToast:@"xxx xxx xxx xxxx xxxxxxxxx xxxxx xxxxx xxx" supView:self];
             break;
         case 4:
             
@@ -120,8 +121,9 @@
 - (void)initActionLable{
     self.actionLable = @[
         @"0  关闭自己",
-        @"1  游客登陆",
+        @"1  打开网页",
         @"2  登录界面",
+        @"3  Tost测试"
     ];
     
 }
@@ -151,7 +153,7 @@
     ReqRealName *req = [[ReqRealName alloc] init];
     req.app_id = [U8_GAME_ID longLongValue];
     req.channel_id = [U8_CHANNEL longLongValue];
-    req.account_id = [DataHub getInstance].useModel.account_id;
+    req.account_id = [DataHub getInstance].userModel.account_id;
     req.realname = @"张胜";
     req.id_card = @"422128197201131431";
     [RealNameController realName:req success:^(id  _Nonnull responseObject) {
@@ -163,7 +165,7 @@
 
 - (void)createOrder{
     ReqPayCreate *req = [[ReqPayCreate alloc] init];
-    req.account_id = [DataHub getInstance].useModel.account_id;
+    req.account_id = [DataHub getInstance].userModel.account_id;
     req.amount = 100;
     req.currency = @"CNY";
     req.cash_fee = 100;

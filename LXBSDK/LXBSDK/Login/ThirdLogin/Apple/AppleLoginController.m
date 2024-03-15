@@ -6,6 +6,8 @@
 //
 
 #import "AppleLoginController.h"
+#import "LoginController.h"
+
 static AppleLoginController *instance;
 @implementation AppleLoginController
 
@@ -42,11 +44,9 @@ static AppleLoginController *instance;
     controller.delegate = self;
     controller.presentationContextProvider = self;
     [controller performRequests];
-    DDLog(@"dddddd")
 }
 
 - (void)authorizationController:(ASAuthorizationController *)controller didCompleteWithAuthorization:(ASAuthorization *)authorization{
-    DDLog(@"ssss");
     if ([authorization.credential isKindOfClass:[ASAuthorizationAppleIDCredential class]]) {
         ASAuthorizationAppleIDCredential *apple = (ASAuthorizationAppleIDCredential *)authorization.credential;
             
@@ -60,7 +60,7 @@ static AppleLoginController *instance;
         NSString *appToken = [[NSString alloc] initWithData:identityToken encoding:NSUTF8StringEncoding];
         
         BindExtend *bind = [[BindExtend alloc] init];
-        bind.platform_id = @"";
+        bind.platform_id = ApplePlaformName;
         bind.verify_type = 11;
         bind.access_token = appToken;
         bind.code = @"";
@@ -68,23 +68,14 @@ static AppleLoginController *instance;
         bind.avatar = @"";
         
         [[NSNotificationCenter defaultCenter] postNotificationName:AppleLoginNotiName object:bind];
-//        NSData *authorizationCode = apple.authorizationCode;
-//
-//        DDLog(@"%@%@%@%@",userIdentifier,fullName,email,identityToken);
-//        NSMutableDictionary* dict = [NSMutableDictionary dictionary];
-//        [dict setValue:[[NSString alloc] initWithData:identityToken encoding:NSUTF8StringEncoding] forKey:@"identityToken"];
-//        [dict setValue:[[NSString alloc] initWithData:authorizationCode encoding:NSUTF8StringEncoding] forKey:@"authorizationCode"];
-//        [dict setValue:userIdentifier forKey:@"userIdentifier"];
-//    //            [dict setValue:fullName.nickname forKey:@"nickname"];
-//        [dict setValue:email forKey:@"email"];
        }
     
     else{
-        DDLog(@"xxxx");
+        [[LoginController getInstance] postLoginFail:@"xxx"];
     }
 }
 - (void)authorizationController:(ASAuthorizationController *)controller didCompleteWithError:(NSError *)error  NS_SWIFT_NAME(authorizationController(controller:didCompleteWithError:)){
-    DDLog(@"ssss");
+    [[LoginController getInstance] postLoginFail:[error description]];
 }
 
 

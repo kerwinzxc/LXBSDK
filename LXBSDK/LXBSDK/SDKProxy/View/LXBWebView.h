@@ -13,13 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, strong)MyLinearLayout *contentView;
 
-@property(nonatomic, strong)MyLinearLayout *titleView;
+@property(nonatomic, strong)MyBaseLayout *titleView;
 
 @property(nonatomic, strong)WKWebView *webView;
 
 @property(nonatomic, strong)UIProgressView *progressView;
 
-- (instancetype)initWithUrl:(NSString *)url;
+- (instancetype)initWithUrl:(NSString *)url title:(NSString *)title;
 
 - (void)showWeb:(NSString *)urlStr;
 @end

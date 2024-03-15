@@ -10,7 +10,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 static NSString *const ApplePlaformName = @"ap";
-
+static NSString *const GooglePlaformName = @"gg";
+static NSString *const FbPlaformName = @"fb";
 typedef NS_ENUM(NSInteger, ThirdPartyLoginType) {
     ThirdPartyLoginNone = 0,
     ThirdPartyLoginBind,

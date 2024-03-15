@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DataHub : NSObject
 + (DataHub*)getInstance;
-@property(nonatomic, strong) ResVisitor* useModel;
+@property(nonatomic, strong) ResVisitor* userModel;
 
 @end
 

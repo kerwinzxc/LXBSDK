@@ -10,7 +10,7 @@
 @interface LXBWebView ()
 
 @property(nonatomic, strong)NSString *urlStr;
-
+@property(nonatomic, strong)NSString *title;
 @end
 
 @implementation LXBWebView
@@ -27,13 +27,15 @@
     return self;
 }
 
-- (instancetype)initWithUrl:(NSString *)url{
+- (instancetype)initWithUrl:(NSString *)url title:(NSString *)title{
     self = [self init];
     self.urlStr = url;
+    self.title = title;
+    [self initView];
     return self;
 }
 
-- (void)innerInit{
+- (void)initView{
     UIScreen *screen = [UIScreen mainScreen];
     self.frame = CGRectMake(0, 0, screen.bounds.size.width, screen.bounds.size.height);
     UIColor *color = [UIColor blackColor];
@@ -52,7 +54,7 @@
     [self initWebView];
 }
 
-- (MyLinearLayout *)titleView{
+- (MyBaseLayout *)titleView{
     if(_titleView == nil){
         _titleView = [[MyLinearLayout alloc] initWithOrientation:MyOrientation_Horz];
         _titleView.myWidth = MyLayoutSize.fill;
@@ -63,7 +65,7 @@
         
         MyLinearLayout *closeView = [[MyLinearLayout alloc] initWithOrientation:MyOrientation_Horz];
         closeView.myHeight = MyLayoutSize.fill;
-        closeView.myWidth = UI(100);
+        closeView.myWidth = UI(60);
         //closeView.backgroundColor = [UIColor orangeColor];
         closeView.gravity = MyGravity_Vert_Center;
         [_titleView addSubview:closeView];
@@ -83,13 +85,26 @@
         MyLinearLayout *textView = [[MyLinearLayout alloc] initWithOrientation:MyOrientation_Horz];
         textView.myHeight = MyLayoutSize.fill;
         textView.weight = 1;
+        textView.gravity = MyGravity_Center;
         //textView.backgroundColor = [UIColor redColor];
         [_titleView addSubview:textView];
         
+        UILabel *label = [UILabel new];
+        if(self.title != nil){
+            label.text = self.title;
+        }
+        else{
+            label.text = @"";
+        }
+        label.font = [UIFont boldSystemFontOfSize:UI(16)];
+        label.myHeight = MyLayoutSize.wrap;
+        [label sizeToFit];
+        label.textAlignment = NSTextAlignmentCenter;
+        [textView addSubview:label];
         
         MyLinearLayout *menu = [[MyLinearLayout alloc] initWithOrientation:MyOrientation_Horz];
         menu.myHeight = MyLayoutSize.fill;
-        menu.myWidth = UI(100);
+        menu.myWidth = UI(60);
         //menu.backgroundColor = [UIColor blueColor];
         [_titleView addSubview:menu];
     }

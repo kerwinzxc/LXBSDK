@@ -52,7 +52,7 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
             [[SDKController getInstance] openTestView];
             break;
         case 1:
-            [[SDKController getInstance] sdkInit];
+           
             break;
         case 2:
             [[SDKController getInstance] showRewardedAd];

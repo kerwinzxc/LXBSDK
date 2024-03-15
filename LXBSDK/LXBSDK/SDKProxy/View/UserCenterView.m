@@ -40,7 +40,15 @@
         _uidView.gravity = MyGravity_Center;
         
         UILabel *uinLabel = [UILabel new];
-        uinLabel.text = @"UID:234567890998777";
+        
+        if([DataHub getInstance].userModel == nil){
+            uinLabel.text = @"No login";
+        }
+        else{
+            uinLabel.text = [NSString stringWithFormat:@"UID:%ld", [DataHub getInstance].userModel.account_id];
+        }
+        
+        
         uinLabel.font = [UIFont boldSystemFontOfSize:UI(18)];
         uinLabel.textColor = [LXBHelper normalTextColor];
         [uinLabel sizeToFit];

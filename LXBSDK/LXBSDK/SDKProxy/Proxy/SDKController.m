@@ -9,6 +9,9 @@
 #import "NetworkController.h"
 #import "PayController.h"
 #import "GoogleAdWarper.h"
+#import "LoginController.h"
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <GoogleSignIn/GoogleSignIn.h>
 static SDKController* instance;
 
 
@@ -39,11 +42,6 @@ static SDKController* instance;
    
 }
 
-- (void)sdkInit{
-    [NetworkController networkServiceInit];
-    [PayController getInstance];
-}
-
 - (void)dealloc{
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
@@ -53,7 +51,7 @@ static SDKController* instance;
 }
 
 - (void)openWebView:(NSString *)urlString{
-    [ViewHub openWebView:urlString];
+    [ViewHub openWebView:urlString title:nil];
 }
 
 - (void)AdInitAfterControllerDidInit:(UIViewController *)vController adID:(NSString *)adId{
@@ -68,6 +66,30 @@ static SDKController* instance;
 - (void)openTestView{
     LXBTestView *view = [[LXBTestView alloc] init];
     [[view getRootWindow] addSubview:view];
+}
+
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [NetworkController networkServiceInit];
+    [PayController getInstance];
+    [LoginController getInstance];
+    [[FBSDKApplicationDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
+    BOOL handled;
+    handled = [GIDSignIn.sharedInstance handleURL:url];
+    if(handled){
+        return YES;
+    }
+    
+    handled = [FBSDKApplicationDelegate.sharedInstance application:app openURL:url sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey] annotation:options[UIApplicationLaunchOptionsAnnotationKey]];
+    if(handled){
+        return YES;
+    }
+    return NO;
 }
 
 @end

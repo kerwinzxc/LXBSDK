@@ -40,22 +40,22 @@
 
 }
 
-+ (void)showNormalDialogViewController {
++ (ZHToastView *)openLoading:(NSString *)content{
+    return [self showNormalDialogViewController:content];
+}
+
+
+
++ (ZHToastView *)showNormalDialogViewController:(NSString *)content {
     ZHToastView *toast = [[ZHToastView alloc] initWithStyle:ZHToastStyleHUD];
-    
     UIWindow *w = [UIApplication sharedApplication].windows[0];
-    
     toast.parentView = w;
-    toast.labelText = @"支付中";
+    toast.labelText = content;
     toast.automaticallyHide = NO;
     toast.labelFont = [UIFont boldSystemFontOfSize:16];
     toast.bkgColor = [UIColor grayColor];
     [toast show];
-    
-    NSLog(@"xxxx");
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [toast hide];
-    });
+    return toast;
 }
 
 @end

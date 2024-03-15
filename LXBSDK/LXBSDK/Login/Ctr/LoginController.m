@@ -10,14 +10,22 @@
 #import "UserCenterController.h"
 #import "BindExtend.h"
 #import "AppleLoginController.h"
+#import "GoogleLoginController.h"
+#import "FacebookLoginController.h"
 @implementation LoginController
 
 static LoginController* instance;
 + (LoginController *)getInstance{
     if(instance == nil){
         instance = [[LoginController alloc] init];
+        [instance innerInit];
     }
     return instance;
+}
+
+- (instancetype)init{
+    self = [super init];
+    return self;
 }
 
 - (void)login{
@@ -34,8 +42,8 @@ static LoginController* instance;
     ReqVisitor *req = [[ReqVisitor alloc] init];
 //    req.device_id = @"123456";
 //    req.uuid = @"123465";
-    req.device_id = @"bowen1234";
-    req.uuid = @"bowen1234";
+    req.device_id = @"bowen1236";
+    req.uuid = @"bowen1236";
     
     NSInteger cId = [U8_CHANNEL intValue];
     req.channel_id = cId;
@@ -72,10 +80,10 @@ static LoginController* instance;
         }];
 }
 
-- (void)handlerLoginSucc:(ReqVisitor *)info{
-    ResVisitor *res = (ResVisitor *)info;
+- (void)handleBindSucc:(ResVisitor *)useData{
+    ResVisitor *res = useData;
     //save use model
-    [DataHub getInstance].useModel = res;
+    [DataHub getInstance].userModel = res;
     //save token
     [KeychainController saveAccessToken:res.access_token];
     long acc = res.account_id;
@@ -87,60 +95,166 @@ static LoginController* instance;
     //save uuid
     [KeychainController saveUuid:res.uuid];
     //fire login event
-    [[NSNotificationCenter defaultCenter] postNotificationName:LoginNotiName object:[DataHub getInstance].useModel];
+    [[NSNotificationCenter defaultCenter] postNotificationName:BindAccountNotiName object:[DataHub getInstance].userModel];
+}
+
+- (void)handlerLoginSucc:(ResVisitor *)info{
+    ResVisitor *res = info;
+    //save use model
+    [DataHub getInstance].userModel = res;
+    //save token
+    [KeychainController saveAccessToken:res.access_token];
+    long acc = res.account_id;
+    //save accountid
+    NSNumber *longNumber = [NSNumber numberWithLong:acc];
+    [KeychainController saveAccount:[longNumber stringValue]];
+    // save deviceid
+    [KeychainController saveDevices:res.device_id];
+    //save uuid
+    [KeychainController saveUuid:res.uuid];
+    //fire login event
+    [[NSNotificationCenter defaultCenter] postNotificationName:LoginSuccNotiName object:[DataHub getInstance].userModel];
 }
 
 
-- (void)handerAppleLogin:(NSNotification *)noti{
+- (void)handlerAppleLogin:(NSNotification *)noti{
     BindExtend *bind = (BindExtend *)noti.object;
-    NSString *ms = [bind mj_JSONString];
+    [self thirdLoginHub:bind thirdType:0];
+}
+
+
+- (void)handlerGoogleLogin:(NSNotification *)noti{
+    BindExtend *bind = (BindExtend *)noti.object;
+    [self thirdLoginHub:bind thirdType:1];
+}
+
+- (void)handlerFacebookLogin:(NSNotification *)noti{
+    BindExtend *bind = (BindExtend *)noti.object;
+    [self thirdLoginHub:bind thirdType:2];
+}
+
+- (void)thirdLoginHub:(BindExtend *)bind thirdType:(NSInteger)tType{
+    
     __weak typeof(self) weakSelf = self;
     if([SDKModel getInstance].loginType == ThirdPartyLoginBind){
         ReqOverseaBind *reqBind = [[ReqOverseaBind alloc] init];
-        reqBind.account_id = [DataHub getInstance].useModel.account_id;
-        reqBind.platform_type = ApplePlaformName;
-        reqBind.extend = ms;
+        if(tType == 0){
+            //苹果
+            reqBind.platform_type = ApplePlaformName;
+            reqBind.account_id = [DataHub getInstance].userModel.account_id;
+            NSString *ms = [bind mj_JSONString];
+            reqBind.extend = ms;
+        }
+        else if (tType == 1){
+            //google
+            reqBind.platform_type = GooglePlaformName;
+            reqBind.account_id = [DataHub getInstance].userModel.account_id;
+            NSString *ms = [bind mj_JSONString];
+            reqBind.extend = ms;
+        }
+        else if (tType == 2){
+            //Fb
+            reqBind.platform_type = FbPlaformName;
+            reqBind.account_id = [DataHub getInstance].userModel.account_id;
+            NSString *ms = [bind mj_JSONString];
+            reqBind.extend = ms;
+        }
         [UserCenterController overseaBind:reqBind sucess:^(id  _Nonnull responseObject) {
             [weakSelf handleBindSucc: responseObject];
             } failure:^(NSError * _Nonnull error) {
-                DDLog(@"xxx");
+                [self postLoginFail:[error description]];
             }];
     }
     else if ([SDKModel getInstance].loginType == ThirdPartyLogin){
         ReqThirdPartyLogin *req = [[ReqThirdPartyLogin alloc] init];
         req.device_id = [KeychainController loadLXBLoginDevicesId];
+        //req.device_id = //@"bowen_fb";//[KeychainController loadLXBLoginDevicesId];
         req.channel_id = [U8_CHANNEL longLongValue];
-        req.platform_type = ApplePlaformName;
-        req.extend = ms;
+        if(tType == 0){
+            //苹果
+            bind.verify_type = 0;
+            NSString *ms = [bind mj_JSONString];
+            req.extend = ms;
+            req.platform_type = ApplePlaformName;
+        }
+        else if (tType == 1){
+            // google
+            bind.verify_type = 0;
+            NSString *ms = [bind mj_JSONString];
+            req.extend = ms;
+           
+            req.platform_type = GooglePlaformName;
+        }
+        else if (tType == 2){
+            bind.verify_type = 0;
+            NSString *ms = [bind mj_JSONString];
+            req.extend = ms;
+            req.platform_type = FbPlaformName;
+        }
+       
         [UserCenterController thirdPartyLogin:req sucess:^(id  _Nonnull responseObject) {
-                [weakSelf handleBindSucc: responseObject];
+                [weakSelf handlerLoginSucc:responseObject];
                 } failure:^(NSError * _Nonnull error) {
-                    DDLog(@"xxx");
+                    [self postLoginFail:[error description]];
                 }];
-    }
-    else{
-        
     }
 }
 
-- (void)handleBindSucc:(ResVisitor *)useData{
-    [DataHub getInstance].useModel = useData;
-}
+
+
 
 - (void)innerInit{
     [SDKModel getInstance].loginType = ThirdPartyLoginNone;
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handerAppleLogin:) name:AppleLoginNotiName object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handlerAppleLogin:) name:AppleLoginNotiName object:nil];
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handlerGoogleLogin:) name:GoogleLoginNotiName object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handlerFacebookLogin:) name:FacebookLoginNotiName object:nil];
+    
 }
 
 
-- (void)launchAppleLogin{
-    [SDKModel getInstance].loginType = ThirdPartyLogin;
+- (void)launchApple:(NSInteger) mtype{
+    if(mtype == 0){
+        [SDKModel getInstance].loginType = ThirdPartyLogin;
+    }
+    else{
+        [SDKModel getInstance].loginType = ThirdPartyLoginBind;
+    }
+    
     [[AppleLoginController getInstance] launchLogin];
 }
 
-- (void)launchAppleBind{
-    [SDKModel getInstance].loginType = ThirdPartyLoginBind;
-    [[AppleLoginController getInstance] launchLogin];
+
+
+- (void)launchGoogle:(NSInteger) mtype{
+    if(mtype == 0){
+        [SDKModel getInstance].loginType = ThirdPartyLogin;
+    }
+    else{
+        [SDKModel getInstance].loginType = ThirdPartyLoginBind;
+    }
+    [[GoogleLoginController getInstance] googleLogin];
+}
+
+- (void)launchFb:(NSInteger) mtype{
+    if(mtype == 0){
+        [SDKModel getInstance].loginType = ThirdPartyLogin;
+    }
+    else{
+        [SDKModel getInstance].loginType = ThirdPartyLoginBind;
+    }
+    [[FacebookLoginController getInstance] facebookLogin];
+}
+
+- (void)youkeLogin{
+    [self loginWithDeviceId];
+}
+
+- (void)postLoginFail:(NSString *)info{
+    NSLog(@"---%@", info);
+    [[NSNotificationCenter defaultCenter] postNotificationName:LoginFailNotiName object:info];
 }
 
 @end

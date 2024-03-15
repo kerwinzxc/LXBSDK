@@ -11,12 +11,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SDKController : NSObject
 + (SDKController *)getInstance;
-- (void)sdkInit;
 - (void)openCenterView;
 - (void)openWebView:(NSString *)urlString;
 - (void)AdInitAfterControllerDidInit:(UIViewController *)vController adID:(NSString *)adId;
 - (void)showRewardedAd;
 - (void)openTestView;
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options;
+
 @end
 
 

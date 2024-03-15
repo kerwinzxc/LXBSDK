@@ -68,13 +68,6 @@
         [btnView addGestureRecognizer:tapGesture];
     }
     
-  
-
-//    [_serviceLabel addGestureRecognizer:tapGesture];
-    
-    
-//    _policyLabel = [[UILabel alloc] init];
-//    _policyLabel.tag = 2;
 }
 
 - (void)initBackView{
@@ -107,11 +100,13 @@
 
 - (void)handleLinkTap:(LXBUITap *)gesture {
     if(gesture.view.tag == 0){
-        [[SDKController getInstance] openWebView:@"https://www.baidu.com"];
+        [ViewHub openWebView:AgreementUrl title:getLocalString(@"user_account_ui_service_btn1")];
+        
     }
     
     else if(gesture.view.tag == 1){
-        [[SDKController getInstance] openWebView:@"https://www.taobao.com"];
+        [ViewHub openWebView:PolicyUrl title:getLocalString(@"user_account_ui_service_btn2")];
+        
     }
 }
 

@@ -20,12 +20,19 @@
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     _window.rootViewController = [[ViewController alloc] init];
     [_window makeKeyAndVisible];
-    [[SDKController getInstance] sdkInit];
+    [[SDKController getInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
 }
 
 
-#pragma mark - UISceneSession lifecycle
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
+    BOOL handled = [[SDKController getInstance] application:app openURL:url options:options];
+    
+    if(handled){
+        return YES;
+    }
+    return NO;
+}
 
 
 

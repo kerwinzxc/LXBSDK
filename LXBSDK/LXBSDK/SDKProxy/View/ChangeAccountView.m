@@ -6,7 +6,12 @@
 //
 
 #import "ChangeAccountView.h"
-#import "GoogleLoginController.h"
+#import "LoginController.h"
+#import <ZHToastView.h>
+@interface ChangeAccountView()
+@property(nonnull, strong)ZHToastView *loginLoading;
+@end
+
 @implementation ChangeAccountView
 
 /*
@@ -17,6 +22,7 @@
 }
 */
 
+
 - (instancetype)init{
     self = [super init];
     return self;
@@ -26,6 +32,14 @@
     [super initViews];
     self.bgView.backgroundColor = [UIColor whiteColor];
     [self initMenuView];
+}
+
+- (void)initListeners{
+    [super initListeners];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginSuccess) name:LoginSuccNotiName object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginFail) name:LoginFailNotiName object:nil];
 }
 
 - (void)initMenuView{
@@ -71,15 +85,38 @@
 - (void)viewClick:(LXBUITap *)send{
     DDLog(@"--- %li" ,send.view.tag);
     if(send.view.tag == 0){
-       //todo facebook 登录
-        //[[NSNotificationCenter defaultCenter] postNotificationName:CloseAllViewNotiName object:nil];
+        [[LoginController getInstance] launchFb:0];
     }
     else if (send.view.tag == 1){
-        [[GoogleLoginController getInstance] googleLogin];
+        [[LoginController getInstance] launchGoogle:0];
+    }
+    
+    else if (send.view.tag == 2){
+        [[LoginController getInstance] launchApple:0];
     }
     else if (send.view.tag == 3){
-        [self destroy];
+        [[LoginController getInstance] youkeLogin];
+        //[self destroy];
+    }
+    
+    self.loginLoading = [LXBHelper openLoading:getLocalString(@"login_logining")];
+}
+
+- (void)loginSuccess{
+    [self hideLoading];
+    [self destroy];
+}
+
+- (void)loginFail{
+    [self hideLoading];
+}
+
+- (void)hideLoading{
+    if(self.loginLoading != nil){
+        [self.loginLoading hide];
     }
 }
+
+
 
 @end

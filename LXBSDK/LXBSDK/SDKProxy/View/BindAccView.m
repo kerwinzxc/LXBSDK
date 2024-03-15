@@ -6,8 +6,12 @@
 //
 
 #import "BindAccView.h"
-#import "LXBWebView.h"
-#import "SDKController.h"
+#import "LoginController.h"
+
+@interface BindAccView ()
+@property(nonnull, strong)ZHToastView *loginLoading;
+@end
+
 @implementation BindAccView
 
 /*
@@ -27,7 +31,11 @@
     [self initBindSubView];
 }
 
-
+- (void)initListeners{
+    [super initListeners];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginSuccess) name:BindAccountNotiName object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginFail) name:LoginFailNotiName object:nil];
+}
 
 - (MyLinearLayout *)desView{
     if (_desView == nil) {
@@ -90,18 +98,40 @@
 }
 
 - (void)viewClick:(LXBUITap *)send{
+    if([DataHub getInstance].userModel.platforms != nil && [DataHub getInstance].userModel.platforms.count > 0){
+        NSLog(@"bind succ");
+        return;
+    }
+    
+    
     if(send.view.tag == 0){
-        [LXBHelper showToast:@"xxx xxx xxx xxxx xxxxxxxxx xxxxx xxxxx xxx" supView:self];
+        
+        [[LoginController getInstance] launchFb:1];
     }
     else if (send.view.tag == 1){
-        [LXBHelper showNormalDialogViewController];
+        [[LoginController getInstance] launchGoogle:1];
     }
     else if (send.view.tag == 2){
-        [[SDKController getInstance] openWebView:@"https://www.baidu.com"];
+        [[LoginController getInstance] launchApple:1];
     }
-    DDLog(@"%li", send.view.tag);
+    
+    self.loginLoading = [LXBHelper openLoading:getLocalString(@"login_binding")];
 }
 
+- (void)loginSuccess{
+    [self hideLoading];
+    [self destroy];
+}
 
+- (void)loginFail{
+    [self hideLoading];
+}
+
+- (void)hideLoading{
+    if(self.loginLoading != nil){
+        [self.loginLoading hide];
+    }
+    
+}
 
 @end

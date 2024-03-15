@@ -65,8 +65,6 @@
 }
 
 - (void)btnClick:(LXBUITap *)send{
-    DDLog(@"xxxxxxx");
-    
     DeleteAccConfirmView *view = [[DeleteAccConfirmView alloc] init];
 
     [[self getRootWindow] addSubview:view];

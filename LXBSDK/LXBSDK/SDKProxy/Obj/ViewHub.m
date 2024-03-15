@@ -25,9 +25,8 @@
 }
 
 
-+ (void)openWebView:(NSString *)urlString{
-    LXBWebView *view = [[LXBWebView alloc] init];
-
++ (void)openWebView:(NSString *)urlString title:(NSString *)title{
+    LXBWebView *view = [[LXBWebView alloc] initWithUrl:urlString title:title];
     [[view getRootWindow] addSubview:view];
     [view showWeb:urlString];
 }

@@ -91,7 +91,6 @@
     
     
     UILabel *label = [[UILabel alloc] init];
-    //label.text = getLocalString(@"u8_account_cutacc_delete_confirm_des");
     label.text = @"xxxxxxx";
     label.font = [UIFont boldSystemFontOfSize:UI(16)];
     label.myTop = 20;

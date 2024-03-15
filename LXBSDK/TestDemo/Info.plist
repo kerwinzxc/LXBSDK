@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>FacebookDisplayName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>FacebookClientToken</key>
+	<string>15a2c99aa121c629ef865ef4902b3182</string>
+	<key>FacebookAppID</key>
+	<string>276626651841654</string>
+	<key>FacebookAutoLogAppEventsEnabled</key>
+	<true/>
 	<key>CFBundleAllowMixedLocalizations</key>
 	<true/>
 	<key>CFBundleURLTypes</key>
@@ -11,7 +19,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb729261539197786</string>
+				<string>fb276626651841654</string>
 			</array>
 		</dict>
 		<dict>
@@ -19,22 +27,14 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.154849416706-1sqs681ma2b6ge05hu97q4d10fc3bmrm</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>jhscheme59</string>
+				<string>com.googleusercontent.apps.424642063844-m8dkukmd1ij480q2vsr2342pi0756dd0</string>
 			</array>
 		</dict>
 	</array>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-3940256099942544~1458002511</string>
 	<key>GIDClientID</key>
-	<string>154849416706-1sqs681ma2b6ge05hu97q4d10fc3bmrm.apps.googleusercontent.com</string>
+	<string>424642063844-m8dkukmd1ij480q2vsr2342pi0756dd0.apps.googleusercontent.com</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>com.google.gppconsent.2.4.1</string>

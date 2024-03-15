@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ViewHub : NSObject
 + (void)openKeFuView;
 + (void)openLoginView;
-+ (void)openWebView:(NSString *)urlString;
++ (void)openWebView:(NSString *)urlString title:(NSString *)title;
 + (void)openCenterView;
 @end
 

@@ -23,7 +23,7 @@ static PayController* instance;
 - (void)innerInit{
     [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handlerLogin:) name:LoginNotiName object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handlerLogin:) name:LoginSuccNotiName object:nil];
 }
 
 - (void)handlerLogin:(NSNotification *)noti{
@@ -121,12 +121,12 @@ static PayController* instance;
     req.order_id = lxbOrderId;
     
     //用户还没有完成登陆
-    if ([DataHub getInstance].useModel == nil){
+    if ([DataHub getInstance].userModel == nil){
         DDLog(@"用户还没有登陆不去查询");
         self.payStatus = LXBPayNone;
     }
     else{
-        req.account_id = [DataHub getInstance].useModel.account_id;
+        req.account_id = [DataHub getInstance].userModel.account_id;
         req.transaction_id = transaction.transactionIdentifier;
         [PayController validateOrder:req success:^(id  _Nonnull responseObject) {
             ResPayValidate *res = (ResPayValidate *)responseObject;

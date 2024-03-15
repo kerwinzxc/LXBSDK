@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <ZHToastView.h>
 NS_ASSUME_NONNULL_BEGIN
 
 static NSString *const LXBResourcesBundleName = @"LxbBundle";
@@ -26,7 +27,7 @@ static NSString *const LXBResourcesBundleName = @"LxbBundle";
 
 + (void)showToast:(NSString *)info supView:(UIView *)view;
 
-+ (void)showNormalDialogViewController;
++ (ZHToastView *)openLoading:(NSString *)content;
 
 @end
 

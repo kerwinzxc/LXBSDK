@@ -66,6 +66,10 @@
             
             success(meta);
         }
+        else{
+            NSError *lxbError = [[NSError alloc] initWithDomain:[baseResponse mj_JSONString] code:-1 userInfo:nil];
+            failure(lxbError);
+        }
         //[MBProgressHUD mb_hide];
         
     } failure:^(NSError * _Nonnull error) {
