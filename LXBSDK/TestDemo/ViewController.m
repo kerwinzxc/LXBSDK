@@ -11,6 +11,8 @@
 #import <LXBSDK/LXBADInfo.h>
 #import <CocoaLumberjack/CocoaLumberjack.h>
 #import <ZHToast/ZHToastView.h>
+#import <WToast/WToast.h>
+#import "LXBToast.h"
 static DDLogLevel ddLogLevel = DDLogLevelDebug;
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong)NSArray *actionLable;
@@ -52,7 +54,7 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
             [[SDKController getInstance] openTestView];
             break;
         case 1:
-           
+            [LXBToast showToastWithMessage:@"王二麻子"];
             break;
         case 2:
             [[SDKController getInstance] showRewardedAd];
@@ -68,7 +70,7 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
 - (void)initActionLable{
     self.actionLable = @[
         @"0  测试窗口",
-        @"1  初始化",
+        @"1  iToast",
         @"2  激励广告",
         @"3  用户中心"
     ];

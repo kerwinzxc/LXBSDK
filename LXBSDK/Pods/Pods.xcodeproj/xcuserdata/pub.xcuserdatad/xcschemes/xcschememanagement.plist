@@ -114,6 +114,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>WToast.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>YYCache.xcscheme</key>
 		<dict>
 			<key>isShown</key>

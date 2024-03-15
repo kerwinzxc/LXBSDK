@@ -44,6 +44,8 @@ target 'TestDemo' do
   pod 'GoogleSignIn'
   # Facebook 登录
   pod 'FBSDKLoginKit'
+  
+  pod 'WToast'
 end
 
 post_install do |installer|

@@ -47,6 +47,7 @@ PODS:
     - MMKVCore (~> 1.3.3)
   - MMKVCore (1.3.3)
   - MyLayout (1.9.10)
+  - WToast (2.1.2)
   - YYCache (1.0.4)
   - ZHToast (0.0.1)
 
@@ -60,6 +61,7 @@ DEPENDENCIES:
   - MJExtension
   - MMKV
   - MyLayout
+  - WToast
   - YYCache
   - ZHToast
 
@@ -81,6 +83,7 @@ SPEC REPOS:
     - MMKV
     - MMKVCore
     - MyLayout
+    - WToast
     - YYCache
     - ZHToast
 
@@ -101,9 +104,10 @@ SPEC CHECKSUMS:
   MMKV: f902fb6719da13c2ab0965233d8963a59416f911
   MMKVCore: d26e4d3edd5cb8588c2569222cbd8be4231374e9
   MyLayout: 39ee012bd780936c973bdc5d8ce0f84e3de489d7
+  WToast: 2c5a163e6d62f1b813ce8100c2ff91d57e07e620
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   ZHToast: 1960412c9a5c7f664b68c03c399aa88cd69eac9f
 
-PODFILE CHECKSUM: 49300c446875928ff3beb956084c2772172ec47e
+PODFILE CHECKSUM: fa9d03eafff755a8edebc8b212559ff14a364706
 
 COCOAPODS: 1.12.1
