@@ -11,8 +11,8 @@
 #import <LXBSDK/LXBADInfo.h>
 #import <CocoaLumberjack/CocoaLumberjack.h>
 #import <ZHToast/ZHToastView.h>
-#import <WToast/WToast.h>
 #import "LXBToast.h"
+#import <SVProgressHUD/SVProgressHUD.h>
 static DDLogLevel ddLogLevel = DDLogLevelDebug;
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong)NSArray *actionLable;
@@ -74,6 +74,12 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
         case 5:
             [[SDKController getInstance] showToast:@"王二麻子仿佛山山水水反反复复发发发反反复复发的是冯绍峰地方奋斗奋斗发生的奋斗"];
             break;
+        case 6:
+            [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeClear];
+            [SVProgressHUD setCornerRadius:4];
+            [SVProgressHUD showWithStatus:@"充值中奋斗奋斗奋斗奋斗奋斗奋斗奋斗奋斗奋斗奋斗奋斗的奋斗奋斗"];
+            [SVProgressHUD dismissWithDelay:3.0f];
+            break;
         default:
             break;
     }
@@ -88,6 +94,7 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
         @"3  用户中心",
         @"4  MyToast",
         @"5  大Toast",
+        @"6  转菊花",
     ];
     
 }

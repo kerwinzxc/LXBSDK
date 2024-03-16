@@ -21,6 +21,8 @@ target 'LXBSDK' do
   pod 'GoogleSignIn'
   # Facebook 登录
   pod 'FBSDKLoginKit'
+  
+  pod 'SVProgressHUD'
 end
 
 target 'TestDemo' do
@@ -45,7 +47,7 @@ target 'TestDemo' do
   # Facebook 登录
   pod 'FBSDKLoginKit'
   
-  pod 'WToast'
+  pod 'SVProgressHUD'
 end
 
 post_install do |installer|
