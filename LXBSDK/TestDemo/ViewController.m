@@ -20,6 +20,10 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
 
 @implementation ViewController
 
+- (void)loadView{
+    [super loadView];
+}
+
 - (void)viewDidLoad {
     [self initActionLable];
     [self tableViewInit];
@@ -35,6 +39,8 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
     [[SDKController getInstance] AdInitAfterControllerDidInit:self adID:adID];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showRewardedAd:) name:AdRewardedNotiName object:nil];
+    
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -62,6 +68,12 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
         case 3:
             [[SDKController getInstance] openCenterView];
             break;
+        case 4:
+            [[SDKController getInstance] showToast:@"王二麻子我反反复复"];
+            break;
+        case 5:
+            [[SDKController getInstance] showToast:@"王二麻子仿佛山山水水反反复复发发发反反复复发的是冯绍峰地方奋斗奋斗发生的奋斗"];
+            break;
         default:
             break;
     }
@@ -71,8 +83,11 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
     self.actionLable = @[
         @"0  测试窗口",
         @"1  iToast",
+       
         @"2  激励广告",
-        @"3  用户中心"
+        @"3  用户中心",
+        @"4  MyToast",
+        @"5  大Toast",
     ];
     
 }

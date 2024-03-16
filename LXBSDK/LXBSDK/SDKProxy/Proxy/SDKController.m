@@ -12,6 +12,7 @@
 #import "LoginController.h"
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <GoogleSignIn/GoogleSignIn.h>
+#import "LXBToast.h"
 static SDKController* instance;
 
 
@@ -90,6 +91,10 @@ static SDKController* instance;
         return YES;
     }
     return NO;
+}
+
+- (void)showToast:(NSString *)content{
+    [LXBToast showToastWithMessage:content];
 }
 
 @end
