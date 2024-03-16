@@ -79,6 +79,9 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
             [SVProgressHUD setCornerRadius:4];
             [SVProgressHUD showWithStatus:@"充值中奋斗奋斗奋斗奋斗奋斗奋斗奋斗奋斗奋斗奋斗奋斗的奋斗奋斗"];
             [SVProgressHUD dismissWithDelay:3.0f];
+            
+            
+            //[[[UIApplication sharedApplication] delegate] window].rootViewController
             break;
         default:
             break;
