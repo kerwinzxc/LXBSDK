@@ -24,12 +24,24 @@ static PayController* instance;
     [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handlerLogin:) name:LoginSuccNotiName object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handlerPayFail:) name:PayFailNotiName object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handlerPaySucc:) name:PaySuccNotiName object:nil];
 }
 
 - (void)handlerLogin:(NSNotification *)noti{
     ResVisitor *user =(ResVisitor *)noti.object;
     DDLog(@"[[[[[%@",user.device_id);
     [self finishLostOrder];
+}
+
+- (void)handlerPayFail:(NSNotification *)noti{
+    [LXBHelper hideLoading];
+}
+
+- (void)handlerPaySucc:(NSNotification *)noti{
+    
 }
 
 - (void)dealloc{
@@ -44,13 +56,7 @@ static PayController* instance;
     return instance;
 }
 
-- (void)QueryInfo:(NSString *)proId{
-    // 请求商品信息
-    NSSet *productIdentifiers = [NSSet setWithObject:proId];
-    SKProductsRequest *productsRequest = [[SKProductsRequest alloc] initWithProductIdentifiers:productIdentifiers];
-    productsRequest.delegate = self;
-    [productsRequest start];
-}
+
 
 #pragma mark - SKProductsRequestDelegate
 - (void)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response {
@@ -122,7 +128,8 @@ static PayController* instance;
     
     //用户还没有完成登陆
     if ([DataHub getInstance].userModel == nil){
-        DDLog(@"用户还没有登陆不去查询");
+        DDLog(@"用户还没有登陆不去查询 且关闭订单");
+        //[[SKPaymentQueue defaultQueue] finishTransaction:transaction];
         self.payStatus = LXBPayNone;
     }
     else{
@@ -132,9 +139,12 @@ static PayController* instance;
             ResPayValidate *res = (ResPayValidate *)responseObject;
             DDLog(@"product_id%@",res.product_id);
             [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+            
+            [[NSNotificationCenter defaultCenter] postNotificationName:PaySuccNotiName object:[transaction mj_JSONString]];
+            
             self.payStatus = LXBPayNone;
             } failure:^(NSError * _Nonnull error) {
-                
+                [[NSNotificationCenter defaultCenter] postNotificationName:PayFailNotiName object:[error description]];
             }];
     }
 }
@@ -157,8 +167,11 @@ static PayController* instance;
     else{
         errorInfo = @"用户取消支付";
     }
+    
+    
     // 完成交易后，务必调用finishTransaction方法
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+    [[NSNotificationCenter defaultCenter] postNotificationName:PayFailNotiName object:errorInfo];
     DDLog(@"----failedTransaction");
 }
 
@@ -191,25 +204,101 @@ static PayController* instance;
     }
 }
 
+- (BOOL)checkPayArg:(NSDictionary *)arg{
+    BOOL re = YES;
+    if(arg[@"product_id"] == nil){
+        NSLog(@"product_id error");
+        re = NO;
+    }
+    if(arg[@"amount"] == nil){
+        NSLog(@"amount error");
+        re = NO;
+    }
+    if(arg[@"body"] == nil){
+        NSLog(@"body error");
+        re = NO;
+    }
+    if(arg[@"detail"] == nil){
+        NSLog(@"detail error");
+        re = NO;
+    }
+    if(arg[@"server_id"] == nil){
+        NSLog(@"server_id error");
+        re = NO;
+    }
+    if(arg[@"notify_url"] == nil){
+        NSLog(@"notify_url error");
+        re = NO;
+    }
+    if(arg[@"extension"] == nil){
+        NSLog(@"extension error");
+        re = NO;
+    }
+    
+    return re;
+}
+
+- (void)lxbPay:(NSDictionary *)dic{
+    ReqPayCreate *req = [[ReqPayCreate alloc] init];
+    if([self checkPayArg:dic] == NO){
+        return;
+    }
+    
+    
+    req.product_id = dic[@"product_id"];
+    NSString *amount = dic[@"amount"];
+    req.amount = [amount intValue];
+    req.body = dic[@"body"];
+    req.detail = dic[@"detail"];
+    //游戏服id
+    NSString *serverId = dic[@"server_id"];
+    req.server_id = [serverId intValue];
+    //必须穿
+    req.notify_url = dic[@"notify_url"];
+    //必须穿
+    req.extension = dic[@"extension"];
+    
+    
+    req.device_id = [DataHub getInstance].userModel.device_id;
+    req.cash_fee = req.amount;
+    req.account_id = [DataHub getInstance].userModel.account_id;
+    req.currency = @"USD";
+    req.cash_currency = @"USD";
+    req.platform = @"apple";
+    req.trade_type = @"APP";
+    req.game_id = [[SDKModel getInstance].sdkArg.U8_GAME_ID longLongValue];
+    
+    
+    [PayController ceratePayOrder:req];
+}
+
+
+
 #pragma mark - 网络处理
-+ (void)ceratePayOrder:(ReqPayCreate *)model success:(MSHttpSuccess)success failure:(MSHttpFail)failure{
++ (void)ceratePayOrder:(ReqPayCreate *)model{
     NSInteger transCount = [SKPaymentQueue defaultQueue].transactions.count;
     //
     if(transCount > 0){
-        DDLog(@"有未完成的订单需要处理 不去服务器创建订单")
+        [LXBHelper showToast:getLocalString(@"pay_more_order_need_finish")];
         [[PayController getInstance] finishLostOrder];
     }
     else{
         
+        //拉起遮挡
+        [LXBHelper showLoading:getLocalString(@"pay_paying")];
+        
         [PayController getInstance].payStatus = LXBCreateOriderFormU8Server;
         [NetworkController POST:PayModuleName classMeta:[ResPayCreate class] url:payCreate parameters:[model mj_keyValues]
                         success:^(id responseObject){
-            [[PayController getInstance] handleCreateOrder:responseObject];
-        }
+                            [[PayController getInstance] handleCreateOrder:responseObject];
+                        }
                         failure:^(NSError *error){
-            [PayController getInstance].payStatus = LXBPayNone;
-            failure(error);
-        }];
+                            [PayController getInstance].payStatus = LXBPayNone;
+                            
+                            [[NSNotificationCenter defaultCenter] postNotificationName:PayFailNotiName object:[error description]];
+                            
+                        }
+        ];
     }
 }
 

@@ -14,6 +14,9 @@ static NSString * _Nullable const FacebookLoginNotiName = @"FacebookLoginNotiNam
 static NSString * _Nullable const LoginSuccNotiName = @"LoginSuccNotiName";
 static NSString * _Nullable const LoginFailNotiName = @"LoginFailNotiName";
 
+static NSString * _Nullable const PayFailNotiName = @"PayFailNotiName";
+static NSString * _Nullable const PaySuccNotiName = @"PaySuccNotiName";
+
 static NSString * _Nullable const BindAccountNotiName = @"BindAccountNotiName";
 
 static NSString * _Nullable const CloseAllViewNotiName = @"CloseAllViewNotiName";
@@ -24,6 +27,10 @@ static NSString * _Nullable const AdLoadErrorNotiName = @"AdLoadErrorNotiName";
 
 static NSString * _Nullable const AgreementUrl = @"http://www.lxbgames.com/user";
 static NSString * _Nullable const PolicyUrl = @"https://sites.google.com/view/caifutec-policy-terms";
+
+
+
+
 
 NS_ASSUME_NONNULL_BEGIN
 

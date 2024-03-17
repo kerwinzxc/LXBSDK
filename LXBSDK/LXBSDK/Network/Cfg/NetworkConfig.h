@@ -10,9 +10,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark -总接口
-static NSString *const kApiPrefix = @"https://gmshwtest.boomgames.top/";
-//@"https://gmstest.boomgames.top/";
-//@"https://gms.boomgames.top/"
 static NSString *const kServerVersion = @"v3";
 
 #pragma mark - debug 功能
@@ -28,17 +25,6 @@ static NSString *const HeadXLanguage = @"X-Language";
 static NSString *const HeadXVersion = @"X-Version";
 static NSString *const HeadContentType = @"Content-Type";
 
-
-//static NSString *const U8_GAME_ID = @"1";
-//static NSString *const U8_PACKAGE_ID = @"7047";
-//static NSString *const U8_CHANNEL = @"1111111235";
-//static NSString *const U8_PRIVATE_KEY = @"c6075961d425973f031b75c9f4e09ce9";
-
-
-static NSString *const U8_GAME_ID = @"4";
-static NSString *const U8_PACKAGE_ID = @"7051";
-static NSString *const U8_CHANNEL = @"4";
-static NSString *const U8_PRIVATE_KEY = @"916a817cb27573c0915ef0fe7ade1d32";
 
 @interface NetworkConfig : NSObject
 

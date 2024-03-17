@@ -16,7 +16,6 @@ target 'LXBSDK' do
   pod 'Google-Mobile-Ads-SDK'
   pod 'GoogleUserMessagingPlatform'
   
-  pod 'ZHToast'
   # 谷歌登录
   pod 'GoogleSignIn'
   # Facebook 登录
@@ -41,7 +40,6 @@ target 'TestDemo' do
   pod 'Google-Mobile-Ads-SDK'
   pod 'GoogleUserMessagingPlatform'
   
-  pod 'ZHToast'
   # 谷歌登录
   pod 'GoogleSignIn'
   # Facebook 登录

@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)showRewardedAd;
 - (void)openTestView;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions sdk:(NSDictionary *)arg;
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options;
 - (void)showToast:(NSString *)content;

@@ -9,7 +9,6 @@
 #import "LoginController.h"
 
 @interface BindAccView ()
-@property(nonnull, strong)ZHToastView *loginLoading;
 @end
 
 @implementation BindAccView
@@ -115,7 +114,7 @@
         [[LoginController getInstance] launchApple:1];
     }
     
-    self.loginLoading = [LXBHelper openLoading:getLocalString(@"login_binding")];
+    [LXBHelper showLoading:getLocalString(@"login_binding")];
 }
 
 - (void)loginSuccess{
@@ -128,9 +127,6 @@
 }
 
 - (void)hideLoading{
-    if(self.loginLoading != nil){
-        [self.loginLoading hide];
-    }
     
 }
 

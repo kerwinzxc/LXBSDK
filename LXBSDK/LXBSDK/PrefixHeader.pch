@@ -19,6 +19,7 @@
 #import <MyLayout/MyLayout.h>
 
 #import "MSNetwork.h"
+#import "LXBHelper.h"
 #import "ThirdUserInfo.h"
 #import "LXBBaseView.h"
 #import "LXBUITap.h"
@@ -30,11 +31,10 @@
 #import "KeychainController.h"
 #import "LXBConfig.h"
 #import "BaseConfig.h"
-#import "LXBHelper.h"
+
 #import "LXBScreen.h"
 #import "U8Language.h"
 #import "LXBLogicView.h"
-#import "LXBTestView.h"
 #import "SDKModel.h"
 #import "ViewHub.h"
 #endif /* PrefixHeader_pch */

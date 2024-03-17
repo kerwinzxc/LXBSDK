@@ -7,7 +7,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <ZHToastView.h>
 NS_ASSUME_NONNULL_BEGIN
 
 static NSString *const LXBResourcesBundleName = @"LxbBundle";
@@ -25,10 +24,11 @@ static NSString *const LXBResourcesBundleName = @"LxbBundle";
 
 + (UIColor *)normalTextColor;
 
-+ (void)showToast:(NSString *)info supView:(UIView *)view;
++ (void)showToast:(NSString *)toast;
 
-+ (ZHToastView *)openLoading:(NSString *)content;
++ (void)showLoading:(NSString *)content;
 
++ (void)hideLoading;
 @end
 
 NS_ASSUME_NONNULL_END

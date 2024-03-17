@@ -10,7 +10,6 @@ ${BUILT_PRODUCTS_DIR}/MMKVCore/MMKVCore.framework
 ${BUILT_PRODUCTS_DIR}/MyLayout/MyLayout.framework
 ${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework
 ${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework
-${BUILT_PRODUCTS_DIR}/ZHToast/ZHToast.framework
 ${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/FBAEMKit/FBAEMKit.framework/FBAEMKit
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework/FBSDKCoreKit

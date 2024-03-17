@@ -19,12 +19,12 @@
         [MSNetwork closeLog];
     }
     
-    [MSNetwork setBaseURL:kApiPrefix];
+    [MSNetwork setBaseURL:[SDKModel getInstance].sdkArg.kApiPrefix];
     [MSNetwork setRequestTimeoutInterval:NETWORKTIMEOUT];
     
-    [MSNetwork setValue:U8_GAME_ID forHTTPHeaderField:HeadXGameId];
-    [MSNetwork setValue:U8_CHANNEL forHTTPHeaderField:HeadXChannelId];
-    [MSNetwork setValue:U8_PACKAGE_ID forHTTPHeaderField:HeadXPackageId];
+    [MSNetwork setValue:[SDKModel getInstance].sdkArg.U8_GAME_ID forHTTPHeaderField:HeadXGameId];
+    [MSNetwork setValue:[SDKModel getInstance].sdkArg.U8_CHANNEL forHTTPHeaderField:HeadXChannelId];
+    [MSNetwork setValue:[SDKModel getInstance].sdkArg.U8_PACKAGE_ID forHTTPHeaderField:HeadXPackageId];
     [MSNetwork setValue:@"1" forHTTPHeaderField:HeadXDeviceType];
     [MSNetwork setValue:@"zh-CN" forHTTPHeaderField:HeadXLanguage];
     [MSNetwork setValue:@"2.0" forHTTPHeaderField:HeadXVersion];
@@ -90,7 +90,7 @@
     [MSNetwork closeLog];
     //设置基础的Url
     //最终完整Url为[NSString stringWithFormat:@“%@%@”,_baseURL,URL]
-    [MSNetwork setBaseURL:kApiPrefix];
+    [MSNetwork setBaseURL:[SDKModel getInstance].sdkArg.kApiPrefix];
 
     //设置缓存过滤 设置后会移除该参数进行缓存
     //

@@ -51,7 +51,6 @@ PODS:
     - SVProgressHUD/Core (= 2.3.1)
   - SVProgressHUD/Core (2.3.1)
   - YYCache (1.0.4)
-  - ZHToast (0.0.1)
 
 DEPENDENCIES:
   - AFNetworking
@@ -65,7 +64,6 @@ DEPENDENCIES:
   - MyLayout
   - SVProgressHUD
   - YYCache
-  - ZHToast
 
 SPEC REPOS:
   trunk:
@@ -87,7 +85,6 @@ SPEC REPOS:
     - MyLayout
     - SVProgressHUD
     - YYCache
-    - ZHToast
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
@@ -108,8 +105,7 @@ SPEC CHECKSUMS:
   MyLayout: 39ee012bd780936c973bdc5d8ce0f84e3de489d7
   SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
-  ZHToast: 1960412c9a5c7f664b68c03c399aa88cd69eac9f
 
-PODFILE CHECKSUM: 375c63748351c8270b0759c3f9fba1b808fbf321
+PODFILE CHECKSUM: cba4e53c623f6f4613b43dcb92b48217a83249cf
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.12.1

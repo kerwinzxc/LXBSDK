@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)openLoginView;
 + (void)openWebView:(NSString *)urlString title:(NSString *)title;
 + (void)openCenterView;
++ (void)openTestView;
 @end
 
 NS_ASSUME_NONNULL_END

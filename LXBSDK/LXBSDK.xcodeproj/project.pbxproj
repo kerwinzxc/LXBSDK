@@ -64,8 +64,6 @@
 		8941CBE72B6BA2E000DA9CA5 /* ResRealName.h in Headers */ = {isa = PBXBuildFile; fileRef = 8941CBE52B6BA2E000DA9CA5 /* ResRealName.h */; };
 		8941CBE82B6BA2E000DA9CA5 /* ResRealName.m in Sources */ = {isa = PBXBuildFile; fileRef = 8941CBE62B6BA2E000DA9CA5 /* ResRealName.m */; };
 		8941CBEA2B6BC1D700DA9CA5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8941CBE92B6BC1D700DA9CA5 /* StoreKit.framework */; };
-		89A8141C2B832BEA001177D1 /* Hert.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A8141A2B832BEA001177D1 /* Hert.h */; };
-		89A8141D2B832BEA001177D1 /* Hert.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A8141B2B832BEA001177D1 /* Hert.m */; };
 		89A814242B833F34001177D1 /* ChangeAccountView.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A814222B833F34001177D1 /* ChangeAccountView.h */; };
 		89A814252B833F34001177D1 /* ChangeAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A814232B833F34001177D1 /* ChangeAccountView.m */; };
 		89A814292B835711001177D1 /* ChangeAccWarperView.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A814272B835711001177D1 /* ChangeAccWarperView.h */; };
@@ -110,6 +108,8 @@
 		89CD6B1E2BA1C9B50051B2BB /* GoogleLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CD6B1C2BA1C9B50051B2BB /* GoogleLoginController.m */; };
 		89CD6B372BA2A4D30051B2BB /* FacebookLoginController.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CD6B352BA2A4D30051B2BB /* FacebookLoginController.h */; };
 		89CD6B382BA2A4D30051B2BB /* FacebookLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CD6B362BA2A4D30051B2BB /* FacebookLoginController.m */; };
+		89CD6B8E2BA69AD80051B2BB /* SDKArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CD6B8C2BA69AD80051B2BB /* SDKArg.h */; };
+		89CD6B8F2BA69AD80051B2BB /* SDKArg.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CD6B8D2BA69AD80051B2BB /* SDKArg.m */; };
 		89EFAF312B6F859D00F13986 /* ReqPayValidate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF2F2B6F859D00F13986 /* ReqPayValidate.h */; };
 		89EFAF322B6F859D00F13986 /* ReqPayValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF302B6F859D00F13986 /* ReqPayValidate.m */; };
 		89EFAF352B6F85B400F13986 /* ResPayValidate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF332B6F85B400F13986 /* ResPayValidate.h */; };
@@ -224,8 +224,6 @@
 		8941CBE52B6BA2E000DA9CA5 /* ResRealName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResRealName.h; sourceTree = "<group>"; };
 		8941CBE62B6BA2E000DA9CA5 /* ResRealName.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResRealName.m; sourceTree = "<group>"; };
 		8941CBE92B6BC1D700DA9CA5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		89A8141A2B832BEA001177D1 /* Hert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hert.h; sourceTree = "<group>"; };
-		89A8141B2B832BEA001177D1 /* Hert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hert.m; sourceTree = "<group>"; };
 		89A814222B833F34001177D1 /* ChangeAccountView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeAccountView.h; sourceTree = "<group>"; };
 		89A814232B833F34001177D1 /* ChangeAccountView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeAccountView.m; sourceTree = "<group>"; };
 		89A814272B835711001177D1 /* ChangeAccWarperView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeAccWarperView.h; sourceTree = "<group>"; };
@@ -269,6 +267,8 @@
 		89CD6B1C2BA1C9B50051B2BB /* GoogleLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleLoginController.m; sourceTree = "<group>"; };
 		89CD6B352BA2A4D30051B2BB /* FacebookLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FacebookLoginController.h; sourceTree = "<group>"; };
 		89CD6B362BA2A4D30051B2BB /* FacebookLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacebookLoginController.m; sourceTree = "<group>"; };
+		89CD6B8C2BA69AD80051B2BB /* SDKArg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKArg.h; sourceTree = "<group>"; };
+		89CD6B8D2BA69AD80051B2BB /* SDKArg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDKArg.m; sourceTree = "<group>"; };
 		89EFAF2F2B6F859D00F13986 /* ReqPayValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReqPayValidate.h; sourceTree = "<group>"; };
 		89EFAF302B6F859D00F13986 /* ReqPayValidate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReqPayValidate.m; sourceTree = "<group>"; };
 		89EFAF332B6F85B400F13986 /* ResPayValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResPayValidate.h; sourceTree = "<group>"; };
@@ -705,6 +705,8 @@
 			children = (
 				89CD6B072BA17EAA0051B2BB /* SDKModel.h */,
 				89CD6B082BA17EAA0051B2BB /* SDKModel.m */,
+				89CD6B8C2BA69AD80051B2BB /* SDKArg.h */,
+				89CD6B8D2BA69AD80051B2BB /* SDKArg.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -759,8 +761,6 @@
 			children = (
 				89EFB03E2B8305EC00F13986 /* LXBConfig.h */,
 				89EFB03F2B8305EC00F13986 /* LXBConfig.m */,
-				89A8141A2B832BEA001177D1 /* Hert.h */,
-				89A8141B2B832BEA001177D1 /* Hert.m */,
 			);
 			path = Cfg;
 			sourceTree = "<group>";
@@ -860,6 +860,7 @@
 				89EFAF582B70C78A00F13986 /* ReqOverseaBind.h in Headers */,
 				89A814392B84C1C8001177D1 /* ServiceAndPolicyView.h in Headers */,
 				89A814292B835711001177D1 /* ChangeAccWarperView.h in Headers */,
+				89CD6B8E2BA69AD80051B2BB /* SDKArg.h in Headers */,
 				89EFAF352B6F85B400F13986 /* ResPayValidate.h in Headers */,
 				891C1D862B6907A7004AF32A /* LXBSDK.h in Headers */,
 				89EFAFB02B721C6A00F13986 /* LXBScreen.h in Headers */,
@@ -883,7 +884,6 @@
 				89CD6B372BA2A4D30051B2BB /* FacebookLoginController.h in Headers */,
 				89A814422B85CAF2001177D1 /* TapDelegate.h in Headers */,
 				8941CBC22B6B6EA600DA9CA5 /* PayConfig.h in Headers */,
-				89A8141C2B832BEA001177D1 /* Hert.h in Headers */,
 				89A814242B833F34001177D1 /* ChangeAccountView.h in Headers */,
 				8941CBA32B6A742800DA9CA5 /* BaseResponse.h in Headers */,
 				8941CBCA2B6B708100DA9CA5 /* ResPayCreate.h in Headers */,
@@ -1111,7 +1111,6 @@
 				891C1DB52B690ABC004AF32A /* NetworkController.m in Sources */,
 				89EFAF772B71D55000F13986 /* UserCenterView.m in Sources */,
 				8941CBAE2B6B41AC00DA9CA5 /* ResVisitor.m in Sources */,
-				89A8141D2B832BEA001177D1 /* Hert.m in Sources */,
 				89A8143A2B84C1C8001177D1 /* ServiceAndPolicyView.m in Sources */,
 				89A8142A2B835711001177D1 /* ChangeAccWarperView.m in Sources */,
 				89A8142E2B837967001177D1 /* DeleteAccountView.m in Sources */,
@@ -1121,6 +1120,7 @@
 				89EFAF512B70B62600F13986 /* ReqAutoLogin.m in Sources */,
 				891C1DEC2B6921C2004AF32A /* KeychainController.m in Sources */,
 				89EFAF322B6F859D00F13986 /* ReqPayValidate.m in Sources */,
+				89CD6B8F2BA69AD80051B2BB /* SDKArg.m in Sources */,
 				89CD6B382BA2A4D30051B2BB /* FacebookLoginController.m in Sources */,
 				89A814252B833F34001177D1 /* ChangeAccountView.m in Sources */,
 				89EFAF802B71E25500F13986 /* LXBHelper.m in Sources */,

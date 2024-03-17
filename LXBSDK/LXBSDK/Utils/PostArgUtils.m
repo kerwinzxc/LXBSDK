@@ -32,7 +32,7 @@
 }
 
 + (NSDictionary *)hmacSHA256WithDict:(NSDictionary *)dict{
-    NSString *secret = U8_PRIVATE_KEY;
+    NSString *secret = [SDKModel getInstance].sdkArg.U8_PRIVATE_KEY;
     NSMutableDictionary *value = [[NSMutableDictionary alloc] initWithDictionary:dict];
     NSNumber *timestamp = [self getMillisec];
     NSString *nonce = [self getNonceStr];

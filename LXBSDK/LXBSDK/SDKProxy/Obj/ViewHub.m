@@ -10,6 +10,7 @@
 #import "ChangeAccountView.h"
 #import "LXBWebView.h"
 #import "UserCenterView.h"
+#import "LXBTestView.h"
 @implementation ViewHub
 
 + (void)openKeFuView{
@@ -35,6 +36,13 @@
     NSString *title = getLocalString(@"user_account_ui_usercenter");
     UserCenterView *view = [[UserCenterView alloc] initTitle:title isRightCloseBtn:RightClose];
     UIWindow *window = [UIApplication sharedApplication].windows[0];
+    [window addSubview:view];
+}
+
++ (void)openTestView{
+    LXBTestView *view = [[LXBTestView alloc] init];
+    
+    UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
     [window addSubview:view];
 }
 

@@ -114,17 +114,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>WToast.xcscheme</key>
+		<key>SVProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>YYCache.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>ZHToast.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

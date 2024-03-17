@@ -18,16 +18,14 @@ NS_ASSUME_NONNULL_BEGIN
 + (PayController *)getInstance;
 @property(nonatomic, assign)LXBPayStatus payStatus;
 
-- (void)QueryInfo:(NSString *)proId;
 - (BOOL)finishLostOrder;
 - (void)appleBuyWithProId:(NSString *)proId;
-- (void)handleCreateOrder:(ResPayCreate *)res;
 
+- (void)lxbPay:(NSDictionary *)dic;
 
+//+ (void)ceratePayOrder:(ReqPayCreate *)model success:(MSHttpSuccess)success failure:(MSHttpFail)failure;
 
-+ (void)ceratePayOrder:(ReqPayCreate *)model success:(MSHttpSuccess)success failure:(MSHttpFail)failure;
-
-+ (void)validateOrder:(ReqPayValidate *)model success:(MSHttpSuccess)success failure:(MSHttpFail)failure;
+//+ (void)validateOrder:(ReqPayValidate *)model success:(MSHttpSuccess)success failure:(MSHttpFail)failure;
 
 @end
 

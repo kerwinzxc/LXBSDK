@@ -45,7 +45,7 @@ static LoginController* instance;
     req.device_id = @"bowen1236";
     req.uuid = @"bowen1236";
     
-    NSInteger cId = [U8_CHANNEL intValue];
+    NSInteger cId = [[SDKModel getInstance].sdkArg.U8_CHANNEL intValue];
     req.channel_id = cId;
     __weak typeof(self)weakSelf = self;
     [UserCenterController visitorReq:req success:^(id  _Nonnull responseObject) {
@@ -169,7 +169,7 @@ static LoginController* instance;
         ReqThirdPartyLogin *req = [[ReqThirdPartyLogin alloc] init];
         req.device_id = [KeychainController loadLXBLoginDevicesId];
         //req.device_id = //@"bowen_fb";//[KeychainController loadLXBLoginDevicesId];
-        req.channel_id = [U8_CHANNEL longLongValue];
+        req.channel_id = [[SDKModel getInstance].sdkArg.U8_CHANNEL longLongValue];
         if(tType == 0){
             //苹果
             bind.verify_type = 0;

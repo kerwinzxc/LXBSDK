@@ -12,7 +12,6 @@
 #import "LoginController.h"
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <GoogleSignIn/GoogleSignIn.h>
-#import "LXBToast.h"
 static SDKController* instance;
 
 
@@ -52,7 +51,7 @@ static SDKController* instance;
 }
 
 - (void)openWebView:(NSString *)urlString{
-    [ViewHub openWebView:urlString title:nil];
+    [ViewHub openWebView:urlString title:@"xxxx"];
 }
 
 - (void)AdInitAfterControllerDidInit:(UIViewController *)vController adID:(NSString *)adId{
@@ -65,13 +64,21 @@ static SDKController* instance;
 }
 
 - (void)openTestView{
-    LXBTestView *view = [[LXBTestView alloc] init];
-    [[view getRootWindow] addSubview:view];
+    [ViewHub openTestView];
 }
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions sdk:(NSDictionary *)arg{
     
+    SDKArg *sdkArg = [SDKArg new];
+    sdkArg.U8_GAME_ID = arg[@"U8_GAME_ID"];
+    sdkArg.U8_PACKAGE_ID = arg[@"U8_PACKAGE_ID"];
+    sdkArg.U8_CHANNEL = arg[@"U8_CHANNEL"];
+    sdkArg.U8_PRIVATE_KEY = arg[@"U8_PRIVATE_KEY"];
+    sdkArg.kApiPrefix = arg[@"kApiPrefix"];
+    
+    
+    [SDKModel getInstance].sdkArg = sdkArg;
     [NetworkController networkServiceInit];
     [PayController getInstance];
     [LoginController getInstance];
@@ -94,7 +101,7 @@ static SDKController* instance;
 }
 
 - (void)showToast:(NSString *)content{
-    [LXBToast showToastWithMessage:content];
+    [LXBHelper showToast:content];
 }
 
 @end

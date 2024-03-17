@@ -7,9 +7,7 @@
 
 #import "ChangeAccountView.h"
 #import "LoginController.h"
-#import <ZHToastView.h>
 @interface ChangeAccountView()
-@property(nonnull, strong)ZHToastView *loginLoading;
 @end
 
 @implementation ChangeAccountView
@@ -99,7 +97,7 @@
         //[self destroy];
     }
     
-    self.loginLoading = [LXBHelper openLoading:getLocalString(@"login_logining")];
+    [LXBHelper showLoading:getLocalString(@"login_logining")];
 }
 
 - (void)loginSuccess{
@@ -112,9 +110,7 @@
 }
 
 - (void)hideLoading{
-    if(self.loginLoading != nil){
-        [self.loginLoading hide];
-    }
+    [LXBHelper hideLoading];
 }
 
 

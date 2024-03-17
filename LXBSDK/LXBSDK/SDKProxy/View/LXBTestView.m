@@ -90,22 +90,19 @@
             [ViewHub openLoginView];
             break;
         case 3:
-            [LXBHelper showToast:@"xxx xxx xxx xxxx xxxxxxxxx xxxxx xxxxx xxx" supView:self];
+            [LXBHelper showToast:@"xxx xxx xxx xxxx xxxxxxxxx xxxxx xxxxx xxx"];
             break;
         case 4:
-            
+            [self createOrder];
             break;
         case 5:
-            
+            [self appleBuy];
             break;
         case 6:
-            
             break;
         case 7:
-            
             break;
         case 8:
-            
             break;
         case 9:
             
@@ -123,9 +120,10 @@
         @"0  关闭自己",
         @"1  打开网页",
         @"2  登录界面",
-        @"3  Tost测试"
+        @"3  Tost测试",
+        @"4  正常支付",
+        @"5  直接拉起啊苹果支付",
     ];
-    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -134,15 +132,11 @@
 
 
 - (void)test{
-    ReqVisitor *req = [[ReqVisitor alloc] init];
-    req.device_id = @"123456";
-    req.uuid = @"123465";
-    NSInteger cId = [U8_CHANNEL intValue];
-    NSDictionary *dic = req.mj_keyValues;
+
 }
 
 - (void)payItem{
-    [[PayController getInstance] QueryInfo:@"12yuan"];
+    //[[PayController getInstance] QueryInfo:@"12yuan"];
 }
 
 - (void)appleBuy{
@@ -151,8 +145,9 @@
 
 - (void)realName{
     ReqRealName *req = [[ReqRealName alloc] init];
-    req.app_id = [U8_GAME_ID longLongValue];
-    req.channel_id = [U8_CHANNEL longLongValue];
+    
+    req.app_id = [[SDKModel getInstance].sdkArg.U8_GAME_ID longLongValue];
+    req.channel_id = [[SDKModel getInstance].sdkArg.U8_CHANNEL longLongValue];
     req.account_id = [DataHub getInstance].userModel.account_id;
     req.realname = @"张胜";
     req.id_card = @"422128197201131431";
@@ -164,40 +159,30 @@
 }
 
 - (void)createOrder{
-    ReqPayCreate *req = [[ReqPayCreate alloc] init];
-    req.account_id = [DataHub getInstance].userModel.account_id;
-    req.amount = 100;
-    req.currency = @"CNY";
-    req.cash_fee = 100;
-    req.cash_currency = @"CNY";
-    req.body = @"body";
-    req.detail = @"detaildetaildetaildetail";
-    req.platform = @"apple";
-    req.trade_type = @"APP";
-    req.game_id = [U8_GAME_ID longLongValue];
-    //游戏服id
-    req.server_id = 1;
-    //必须穿
-    req.notify_url = @"";
-    //必须穿
-    req.extension = @"ext";
-    //必须穿
-    req.device_id = @"";
-    req.product_id = @"12yuan";
+    NSDictionary *dic = @{
+        @"product_id":@"12yuan",
+        @"amount":@"100",
+        @"body":@"body",
+        @"detail":@"more detail",
+        @"server_id":@"1",
+        @"notify_url":@"https://www.baidu.com",
+        @"extension":@"ext",
+    };
+    [[PayController getInstance] lxbPay:dic];
     
-    
-    DDLog(@"%@",req.mj_keyValues);
-    [PayController ceratePayOrder:req
-                          success:^(id  _Nonnull responseObject) {
-        NSLog(@"");
-        
-    }
-                          failure:^(NSError * _Nonnull error) {
-        DDLog(@"");
-    }];
 }
 - (void)finishLostOrder{
     [[PayController getInstance] finishLostOrder];
+}
+
+- (void)testwwew{
+//    - (void)QueryInfo:(NSString *)proId{
+//        // 请求商品信息
+//        NSSet *productIdentifiers = [NSSet setWithObject:proId];
+//        SKProductsRequest *productsRequest = [[SKProductsRequest alloc] initWithProductIdentifiers:productIdentifiers];
+//        productsRequest.delegate = self;
+//        [productsRequest start];
+//    }
 }
 
 @end

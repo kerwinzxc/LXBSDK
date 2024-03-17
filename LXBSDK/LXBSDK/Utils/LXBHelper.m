@@ -7,7 +7,8 @@
 
 #import "LXBHelper.h"
 #import <UIKit/UIKit.h>
-#import <ZHToast/ZHToastView.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import "LXBToast.h"
 @implementation LXBHelper
 
 + (UIImage *)imageWithName:(NSString *)name {
@@ -36,26 +37,23 @@
     return [UIColor colorWithRed:75.0f/255.0f green:83.0f/255.0f blue:96.0f/255.0f alpha:1.0f];;
 }
 
-+ (void)showToast:(NSString *)info supView:(UIView *)view{
-
++ (void)showLoading:(NSString *)content{
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeClear];
+    [SVProgressHUD setCornerRadius:4];
+    [SVProgressHUD setBackgroundColor:[[UIColor alloc] initWithRed:(251.0f / 255) green:(232.0f / 255) blue:(184.0f / 255) alpha:1.0f]];
+    
+    [SVProgressHUD setForegroundColor:[[UIColor alloc] initWithRed:(98.0f / 255) green:(90.0f /255) blue:(74.0f / 255) alpha:1.0f]];
+    [SVProgressHUD showWithStatus:content];
+    //[SVProgressHUD dismissWithDelay:9.0f];
 }
 
-+ (ZHToastView *)openLoading:(NSString *)content{
-    return [self showNormalDialogViewController:content];
++ (void)hideLoading{
+    [SVProgressHUD dismiss];
 }
 
-
-
-+ (ZHToastView *)showNormalDialogViewController:(NSString *)content {
-    ZHToastView *toast = [[ZHToastView alloc] initWithStyle:ZHToastStyleHUD];
-    UIWindow *w = [UIApplication sharedApplication].windows[0];
-    toast.parentView = w;
-    toast.labelText = content;
-    toast.automaticallyHide = NO;
-    toast.labelFont = [UIFont boldSystemFontOfSize:16];
-    toast.bkgColor = [UIColor grayColor];
-    [toast show];
-    return toast;
++ (void)showToast:(NSString *)toast{
+    [LXBToast showToastWithMessage:toast];
 }
+
 
 @end

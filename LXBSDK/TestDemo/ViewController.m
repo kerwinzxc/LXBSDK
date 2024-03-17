@@ -10,8 +10,6 @@
 #import <LXBSDK/LXBConfig.h>
 #import <LXBSDK/LXBADInfo.h>
 #import <CocoaLumberjack/CocoaLumberjack.h>
-#import <ZHToast/ZHToastView.h>
-#import "LXBToast.h"
 #import <SVProgressHUD/SVProgressHUD.h>
 static DDLogLevel ddLogLevel = DDLogLevelDebug;
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -34,13 +32,9 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
     fileLog.rollingFrequency = 60 * 60 *24;
     fileLog.logFileManager.maximumNumberOfLogFiles = 3;
     [DDLog addLogger:fileLog];
-    
     NSString *adID = @"ca-app-pub-3940256099942544/1712485313";
     [[SDKController getInstance] AdInitAfterControllerDidInit:self adID:adID];
-    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showRewardedAd:) name:AdRewardedNotiName object:nil];
-    
-    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -60,7 +54,7 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
             [[SDKController getInstance] openTestView];
             break;
         case 1:
-            [LXBToast showToastWithMessage:@"王二麻子"];
+            // showToastWithMessage:@"王二麻子"];
             break;
         case 2:
             [[SDKController getInstance] showRewardedAd];
@@ -75,11 +69,6 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
             [[SDKController getInstance] showToast:@"王二麻子仿佛山山水水反反复复发发发反反复复发的是冯绍峰地方奋斗奋斗发生的奋斗"];
             break;
         case 6:
-            [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeClear];
-            [SVProgressHUD setCornerRadius:4];
-            [SVProgressHUD showWithStatus:@"充值中奋斗奋斗奋斗奋斗奋斗奋斗奋斗奋斗奋斗奋斗奋斗的奋斗奋斗"];
-            [SVProgressHUD dismissWithDelay:3.0f];
-            
             
             //[[[UIApplication sharedApplication] delegate] window].rootViewController
             break;
@@ -92,7 +81,6 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
     self.actionLable = @[
         @"0  测试窗口",
         @"1  iToast",
-       
         @"2  激励广告",
         @"3  用户中心",
         @"4  MyToast",
