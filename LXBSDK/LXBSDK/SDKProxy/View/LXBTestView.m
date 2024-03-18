@@ -165,7 +165,7 @@
         @"body":@"body",
         @"detail":@"more detail",
         @"server_id":@"1",
-        @"notify_url":@"https://www.baidu.com",
+        @"notify_url":@"https:www.baidu.com",
         @"extension":@"ext",
     };
     [[PayController getInstance] lxbPay:dic];

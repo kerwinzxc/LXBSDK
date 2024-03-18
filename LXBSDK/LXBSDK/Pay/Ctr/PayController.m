@@ -41,7 +41,8 @@ static PayController* instance;
 }
 
 - (void)handlerPaySucc:(NSNotification *)noti{
-    
+    [LXBHelper hideLoading];
+    [LXBHelper showToast:getLocalString(@"pay_payfinish")];
 }
 
 - (void)dealloc{
@@ -140,7 +141,9 @@ static PayController* instance;
             DDLog(@"product_id%@",res.product_id);
             [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
             
-            [[NSNotificationCenter defaultCenter] postNotificationName:PaySuccNotiName object:[transaction mj_JSONString]];
+            
+            NSLog(@"-----%@", [res mj_JSONString]);
+            [[NSNotificationCenter defaultCenter] postNotificationName:PaySuccNotiName object:[res mj_JSONString]];
             
             self.payStatus = LXBPayNone;
             } failure:^(NSError * _Nonnull error) {
@@ -296,7 +299,7 @@ static PayController* instance;
                             [PayController getInstance].payStatus = LXBPayNone;
                             
                             [[NSNotificationCenter defaultCenter] postNotificationName:PayFailNotiName object:[error description]];
-                            
+                    
                         }
         ];
     }

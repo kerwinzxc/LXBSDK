@@ -35,6 +35,8 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
     NSString *adID = @"ca-app-pub-3940256099942544/1712485313";
     [[SDKController getInstance] AdInitAfterControllerDidInit:self adID:adID];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showRewardedAd:) name:AdRewardedNotiName object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(paySuccHandle:) name:PaySuccNotiName object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(payFailHandle:) name:PayFailNotiName object:nil];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -103,22 +105,24 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
     return 80;
 }
 
-- (void)showRewardedAd:(NSNotification *)noti{
-    LXBADInfo *info = (LXBADInfo *)noti.object;
-    
-    NSLog(@"---%@", info.adType);
-}
 
-
-- (void)toast1{
-   
-}
-
-- (void)toast2{
-    //[LXBHelper showNormalDialogViewController];
-}
 
 - (void)dealloc{
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
+
+- (void)paySuccHandle:(NSNotification *)noti{
+    NSLog(@"pay succ  %@", noti.object);
+}
+
+- (void)payFailHandle:(NSNotification *)noti{
+    NSLog(@"pay fail  %@", noti.object);
+}
+
+- (void)showRewardedAd:(NSNotification *)noti{
+    LXBADInfo *info = (LXBADInfo *)noti.object;
+    NSLog(@"---%@", info.adType);
+}
+
+
 @end

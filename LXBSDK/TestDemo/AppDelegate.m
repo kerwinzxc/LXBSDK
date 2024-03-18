@@ -26,8 +26,6 @@
     //static NSString *const U8_PACKAGE_ID = @"7047";
     //static NSString *const U8_CHANNEL = @"1111111235";
     //static NSString *const U8_PRIVATE_KEY = @"c6075961d425973f031b75c9f4e09ce9";
-    
-    
     NSDictionary *dic = @{
         @"U8_GAME_ID": @"4",
         @"U8_PACKAGE_ID": @"7051",
@@ -51,8 +49,5 @@
     }
     return NO;
 }
-
-
-
 
 @end
