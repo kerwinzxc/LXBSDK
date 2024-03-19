@@ -13,14 +13,16 @@ NS_ASSUME_NONNULL_BEGIN
 + (SDKController *)getInstance;
 - (void)openCenterView;
 - (void)openWebView:(NSString *)urlString;
-- (void)AdInitAfterControllerDidInit:(UIViewController *)vController adID:(NSString *)adId;
+- (void)AdInitAfterControllerDidInit:(UIViewController *)vController;
 - (void)showRewardedAd;
 - (void)openTestView;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions sdk:(NSDictionary *)arg;
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options;
 - (void)showToast:(NSString *)content;
+
+- (void)sdkArgInit:(NSDictionary *)arg;
 @end
 
 

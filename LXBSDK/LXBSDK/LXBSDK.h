@@ -18,6 +18,7 @@ FOUNDATION_EXPORT const unsigned char LXBSDKVersionString[];
 #import <LXBSDK/SDKController.h>
 #import <LXBSDK/LXBADInfo.h>
 #import <LXBSDK/LXBConfig.h>
+#import <LXBSDK/AdjustController.h>
 //Add Framework Security / StoreKit
 //Add Framework AuthenticationServices
 //Add Framework WebKit

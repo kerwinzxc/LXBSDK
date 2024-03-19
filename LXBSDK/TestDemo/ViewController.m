@@ -32,11 +32,16 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
     fileLog.rollingFrequency = 60 * 60 *24;
     fileLog.logFileManager.maximumNumberOfLogFiles = 3;
     [DDLog addLogger:fileLog];
-    NSString *adID = @"ca-app-pub-3940256099942544/1712485313";
-    [[SDKController getInstance] AdInitAfterControllerDidInit:self adID:adID];
+    
+    
+    
+    NSLog(@"viewDidLoadviewDidLoadviewDidLoadviewDidLoad");
+    
+    [[SDKController getInstance] AdInitAfterControllerDidInit:self];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showRewardedAd:) name:AdRewardedNotiName object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(paySuccHandle:) name:PaySuccNotiName object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(payFailHandle:) name:PayFailNotiName object:nil];
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -113,6 +118,9 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
 
 - (void)paySuccHandle:(NSNotification *)noti{
     NSLog(@"pay succ  %@", noti.object);
+    NSDictionary * dic = [self dictiognaryWithJsonString:noti.object];
+    
+    [[AdjustController getInstance] purchase:@"576c1d" amount:@"1200" currency:@"USD"];
 }
 
 - (void)payFailHandle:(NSNotification *)noti{
@@ -122,6 +130,33 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
 - (void)showRewardedAd:(NSNotification *)noti{
     LXBADInfo *info = (LXBADInfo *)noti.object;
     NSLog(@"---%@", info.adType);
+}
+
+- (NSString *)jsonSgtringWithDict:(NSDictionary *)dict {
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&error];
+    NSString *jsonString;
+    if (!jsonData) {
+    }else{
+        jsonString = [[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding];
+    }
+    return jsonString;
+}
+
+- (NSDictionary *)dictiognaryWithJsonString:(NSString *)jsonString{
+    if (jsonString == nil) {
+        return nil;
+    }
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *err;
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
+                                                        options:NSJSONReadingMutableContainers
+                                                          error:&err];
+    if(err)
+    {
+        return nil;
+    }
+    return dic;
 }
 
 

@@ -22,6 +22,14 @@ target 'LXBSDK' do
   pod 'FBSDKLoginKit'
   
   pod 'SVProgressHUD'
+  
+  pod 'Adjust'
+  
+  pod 'FirebaseAnalytics'
+  
+  pod 'FirebaseCrashlytics'
+  
+  pod 'ThinkingSDK'
 end
 
 target 'TestDemo' do
@@ -46,6 +54,14 @@ target 'TestDemo' do
   pod 'FBSDKLoginKit'
   
   pod 'SVProgressHUD'
+  
+  pod 'Adjust'
+  
+  pod 'FirebaseAnalytics'
+  
+  pod 'FirebaseCrashlytics'
+  
+  pod 'ThinkingSDK'
 end
 
 post_install do |installer|

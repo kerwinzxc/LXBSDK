@@ -17,26 +17,36 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    _window.rootViewController = [[ViewController alloc] init];
-    [_window makeKeyAndVisible];
     
-    
-    //static NSString *const U8_GAME_ID = @"1";
-    //static NSString *const U8_PACKAGE_ID = @"7047";
-    //static NSString *const U8_CHANNEL = @"1111111235";
-    //static NSString *const U8_PRIVATE_KEY = @"c6075961d425973f031b75c9f4e09ce9";
     NSDictionary *dic = @{
         @"U8_GAME_ID": @"4",
         @"U8_PACKAGE_ID": @"7051",
         @"U8_CHANNEL": @"4",
         @"U8_PRIVATE_KEY":@"916a817cb27573c0915ef0fe7ade1d32",
         @"kApiPrefix":@"https://gmshwtest.boomgames.top/",
+        @"googleAdUnitId":@"ca-app-pub-3940256099942544/1712485313",
+        
+        @"adJustAppToken":@"lmnre3uzx5a8",
+        @"adJustEnvironment":@"1",
+        
     };
+    [[SDKController getInstance] sdkArgInit:dic];
     
+    
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    _window.rootViewController = [[ViewController alloc] init];
+    [_window makeKeyAndVisible];
+    
+    //static NSString *const U8_GAME_ID = @"1";
+    //static NSString *const U8_PACKAGE_ID = @"7047";
+    //static NSString *const U8_CHANNEL = @"1111111235";
+    //static NSString *const U8_PRIVATE_KEY = @"c6075961d425973f031b75c9f4e09ce9";
     //@"https://gmstest.boomgames.top/";
     //@"https://gms.boomgames.top/"
-    [[SDKController getInstance] application:application didFinishLaunchingWithOptions:launchOptions sdk:dic];
+   
+    
+    NSLog(@"didFinishLaunchingWithOptionsdidFinishLaunchingWithOptionsdidFinishLaunchingWithOptions");
+    [[SDKController getInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
 }
 

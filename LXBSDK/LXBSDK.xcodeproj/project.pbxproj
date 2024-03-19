@@ -110,6 +110,12 @@
 		89CD6B382BA2A4D30051B2BB /* FacebookLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CD6B362BA2A4D30051B2BB /* FacebookLoginController.m */; };
 		89CD6B8E2BA69AD80051B2BB /* SDKArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CD6B8C2BA69AD80051B2BB /* SDKArg.h */; };
 		89CD6B8F2BA69AD80051B2BB /* SDKArg.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CD6B8D2BA69AD80051B2BB /* SDKArg.m */; };
+		89CD6BB12BA7F14E0051B2BB /* AdjustController.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CD6BAF2BA7F14E0051B2BB /* AdjustController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89CD6BB22BA7F14E0051B2BB /* AdjustController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CD6BB02BA7F14E0051B2BB /* AdjustController.m */; };
+		89CD6BB42BA8353B0051B2BB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CD6BB32BA8353A0051B2BB /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		89CD6BB62BA835490051B2BB /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CD6BB52BA835490051B2BB /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		89CD6BB72BA835640051B2BB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8941CBE92B6BC1D700DA9CA5 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		89CD6BB92BA8356F0051B2BB /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CD6BB82BA8356F0051B2BB /* AppTrackingTransparency.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		89EFAF312B6F859D00F13986 /* ReqPayValidate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF2F2B6F859D00F13986 /* ReqPayValidate.h */; };
 		89EFAF322B6F859D00F13986 /* ReqPayValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF302B6F859D00F13986 /* ReqPayValidate.m */; };
 		89EFAF352B6F85B400F13986 /* ResPayValidate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF332B6F85B400F13986 /* ResPayValidate.h */; };
@@ -147,7 +153,7 @@
 		CEADAC7F2B7A3BC300C34569 /* LXBLogicView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEADAC7D2B7A3BC300C34569 /* LXBLogicView.m */; };
 		CEADACBD2BA59BF300C34569 /* LXBToast.h in Headers */ = {isa = PBXBuildFile; fileRef = CEADACBB2BA59BF300C34569 /* LXBToast.h */; };
 		CEADACBF2BA59BFF00C34569 /* LXBToast.m in Sources */ = {isa = PBXBuildFile; fileRef = CEADACBA2BA59BF200C34569 /* LXBToast.m */; };
-		FFB512BDA3A6E25301A726DA /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADE1CE4487ABAEF2D87E922 /* Pods_TestDemo.framework */; };
+		FFB512BDA3A6E25301A726DA /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADE1CE4487ABAEF2D87E922 /* Pods_TestDemo.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -269,6 +275,11 @@
 		89CD6B362BA2A4D30051B2BB /* FacebookLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacebookLoginController.m; sourceTree = "<group>"; };
 		89CD6B8C2BA69AD80051B2BB /* SDKArg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKArg.h; sourceTree = "<group>"; };
 		89CD6B8D2BA69AD80051B2BB /* SDKArg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDKArg.m; sourceTree = "<group>"; };
+		89CD6BAF2BA7F14E0051B2BB /* AdjustController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdjustController.h; sourceTree = "<group>"; };
+		89CD6BB02BA7F14E0051B2BB /* AdjustController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdjustController.m; sourceTree = "<group>"; };
+		89CD6BB32BA8353A0051B2BB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		89CD6BB52BA835490051B2BB /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
+		89CD6BB82BA8356F0051B2BB /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		89EFAF2F2B6F859D00F13986 /* ReqPayValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReqPayValidate.h; sourceTree = "<group>"; };
 		89EFAF302B6F859D00F13986 /* ReqPayValidate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReqPayValidate.m; sourceTree = "<group>"; };
 		89EFAF332B6F85B400F13986 /* ResPayValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResPayValidate.h; sourceTree = "<group>"; };
@@ -334,8 +345,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CD6BB62BA835490051B2BB /* AdServices.framework in Frameworks */,
 				891C1DAA2B6908A5004AF32A /* LXBSDK.framework in Frameworks */,
+				89CD6BB42BA8353B0051B2BB /* AdSupport.framework in Frameworks */,
+				89CD6BB72BA835640051B2BB /* StoreKit.framework in Frameworks */,
 				FFB512BDA3A6E25301A726DA /* Pods_TestDemo.framework in Frameworks */,
+				89CD6BB92BA8356F0051B2BB /* AppTrackingTransparency.framework in Frameworks */,
 				89A8144E2B86F76A001177D1 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,6 +392,7 @@
 		891C1D842B6907A7004AF32A /* LXBSDK */ = {
 			isa = PBXGroup;
 			children = (
+				89CD6BAE2BA7F1330051B2BB /* Adjust */,
 				89CD6B142BA1A4E90051B2BB /* Login */,
 				89CD6AF92BA053E80051B2BB /* Ad */,
 				89EFAF5E2B70E33600F13986 /* Base */,
@@ -416,6 +432,9 @@
 		891C1DA92B6908A5004AF32A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				89CD6BB82BA8356F0051B2BB /* AppTrackingTransparency.framework */,
+				89CD6BB52BA835490051B2BB /* AdServices.framework */,
+				89CD6BB32BA8353A0051B2BB /* AdSupport.framework */,
 				89A8144C2B86F75B001177D1 /* WebKit.framework */,
 				89EFAF4C2B70836700F13986 /* AuthenticationServices.framework */,
 				8941CBE92B6BC1D700DA9CA5 /* StoreKit.framework */,
@@ -756,6 +775,15 @@
 			path = Facebook;
 			sourceTree = "<group>";
 		};
+		89CD6BAE2BA7F1330051B2BB /* Adjust */ = {
+			isa = PBXGroup;
+			children = (
+				89CD6BAF2BA7F14E0051B2BB /* AdjustController.h */,
+				89CD6BB02BA7F14E0051B2BB /* AdjustController.m */,
+			);
+			path = Adjust;
+			sourceTree = "<group>";
+		};
 		89EFAF3F2B6FB3E300F13986 /* Cfg */ = {
 			isa = PBXGroup;
 			children = (
@@ -874,6 +902,7 @@
 				891C1DEB2B6921C2004AF32A /* KeychainController.h in Headers */,
 				89EFAF4A2B7082EF00F13986 /* AppleLoginController.h in Headers */,
 				8941CBC62B6B6F3800DA9CA5 /* ReqPayCreate.h in Headers */,
+				89CD6BB12BA7F14E0051B2BB /* AdjustController.h in Headers */,
 				89A814312B845341001177D1 /* DeleteWarperView.h in Headers */,
 				89A8142D2B837967001177D1 /* DeleteAccountView.h in Headers */,
 				8941CBDF2B6BA2B900DA9CA5 /* RealNameConfig.h in Headers */,
@@ -1141,6 +1170,7 @@
 				89CD6B0A2BA17EAA0051B2BB /* SDKModel.m in Sources */,
 				89EFAF632B70E36300F13986 /* BaseConfig.m in Sources */,
 				89A814472B85DDD8001177D1 /* LXBBaseView.m in Sources */,
+				89CD6BB22BA7F14E0051B2BB /* AdjustController.m in Sources */,
 				89B06DAD2B6E3DE200605573 /* NSObject+BLLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

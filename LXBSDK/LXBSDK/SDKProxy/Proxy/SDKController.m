@@ -12,6 +12,7 @@
 #import "LoginController.h"
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <GoogleSignIn/GoogleSignIn.h>
+#import "AdjustController.h"
 static SDKController* instance;
 
 
@@ -54,8 +55,8 @@ static SDKController* instance;
     [ViewHub openWebView:urlString title:@"xxxx"];
 }
 
-- (void)AdInitAfterControllerDidInit:(UIViewController *)vController adID:(NSString *)adId{
-    [GoogleAdWarper.sharedInstance googleAdInitAfterControllerDidInit:vController adID:adId];
+- (void)AdInitAfterControllerDidInit:(UIViewController *)vController{
+    [GoogleAdWarper.sharedInstance googleAdInitAfterControllerDidInit:vController adID:[SDKModel getInstance].sdkArg.googleAdUnitId];
     [SDKModel getInstance].rootController = vController;
 }
 
@@ -68,21 +69,12 @@ static SDKController* instance;
 }
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions sdk:(NSDictionary *)arg{
-    
-    SDKArg *sdkArg = [SDKArg new];
-    sdkArg.U8_GAME_ID = arg[@"U8_GAME_ID"];
-    sdkArg.U8_PACKAGE_ID = arg[@"U8_PACKAGE_ID"];
-    sdkArg.U8_CHANNEL = arg[@"U8_CHANNEL"];
-    sdkArg.U8_PRIVATE_KEY = arg[@"U8_PRIVATE_KEY"];
-    sdkArg.kApiPrefix = arg[@"kApiPrefix"];
-    
-    
-    [SDKModel getInstance].sdkArg = sdkArg;
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     [NetworkController networkServiceInit];
     [PayController getInstance];
     [LoginController getInstance];
     [[FBSDKApplicationDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+    [[AdjustController getInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
 }
 
@@ -103,5 +95,19 @@ static SDKController* instance;
 - (void)showToast:(NSString *)content{
     [LXBHelper showToast:content];
 }
+
+- (void)sdkArgInit:(NSDictionary *)arg{
+    SDKArg *sdkArg = [SDKArg new];
+    sdkArg.U8_GAME_ID = arg[@"U8_GAME_ID"];
+    sdkArg.U8_PACKAGE_ID = arg[@"U8_PACKAGE_ID"];
+    sdkArg.U8_CHANNEL = arg[@"U8_CHANNEL"];
+    sdkArg.U8_PRIVATE_KEY = arg[@"U8_PRIVATE_KEY"];
+    sdkArg.kApiPrefix = arg[@"kApiPrefix"];
+    sdkArg.googleAdUnitId = arg[@"googleAdUnitId"];
+    sdkArg.adJustAppToken = arg[@"adJustAppToken"];
+    sdkArg.adJustEnvironment = arg[@"adJustEnvironment"];
+    [SDKModel getInstance].sdkArg = sdkArg;
+}
+
 
 @end
