@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign)BOOL reward;
 @property(nonatomic, strong)NSString *adType;
 @property(nonatomic, strong)NSString *adID;
-@property(nonatomic, assign)double amount;
+@property(nonatomic, assign)NSDecimalNumber *amount;
 @property(nonatomic, strong)NSString *errerInfo;
 
 @end

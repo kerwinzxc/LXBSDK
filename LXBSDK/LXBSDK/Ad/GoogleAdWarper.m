@@ -98,6 +98,7 @@ typedef NS_ENUM(NSInteger, GoogleAdLoadState){
         GADRequest *request = [GADRequest request];
         NSString *gid = self.googleAdId;
         
+        __weak typeof(self)weakSelf = self;
         self.googleAdLoadState = GoogleLoading;
         [GADRewardedAd loadWithAdUnitID:gid
                                 request:request
@@ -105,13 +106,16 @@ typedef NS_ENUM(NSInteger, GoogleAdLoadState){
                                             if (error) {
                                                 NSLog(@"Rewarded ad failed to load with error: %@", [error localizedDescription]);
                                                     //todo
-                                                self.googleAdLoadState = GoogleAdNone;
+                                                weakSelf.googleAdLoadState = GoogleAdNone;
                                                 return;
                                             }
-                                            self.googleAdLoadState = GoogleLoaded;
-                                            self.rewardedAd = ad;
+                                            weakSelf.googleAdLoadState = GoogleLoaded;
+                                            weakSelf.rewardedAd = ad;
                                             NSLog(@"Rewarded ad loaded.");
-                                            self.rewardedAd.fullScreenContentDelegate = self;
+                                            weakSelf.rewardedAd.fullScreenContentDelegate = weakSelf;
+                                            weakSelf.rewardedAd.paidEventHandler = ^(GADAdValue * _Nonnull value) {
+                                                weakSelf.adInfo.amount = value.value;
+                                            };
           }];
     }
 }
@@ -150,7 +154,6 @@ typedef NS_ENUM(NSInteger, GoogleAdLoadState){
                             NSLog(@"name %@",info.adNetworkClassName);
                             self.adInfo.reward = YES;
                             self.adInfo.adType = info.adNetworkClassName;
-                            self.adInfo.amount = [reward.amount doubleValue];
         }];
     
     self.googleAdLoadState = GoogleAdNone;

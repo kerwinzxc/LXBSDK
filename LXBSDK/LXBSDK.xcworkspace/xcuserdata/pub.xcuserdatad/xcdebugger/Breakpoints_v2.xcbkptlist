@@ -18,38 +18,6 @@
             endingLineNumber = "219"
             landmarkName = "-handerAppleLogin:"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "78E14563-0D27-4C4E-A44B-6DC08AA17B4E - 18f5427238f97d16"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__34-[SDKController handerAppleLogin:]_block_invoke_3"
-                  moduleName = "TestDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pub/Documents/LXBSDK/LXBSDK/LXBSDK/SDKProxy/Ctr/SDKController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "219"
-                  endingLineNumber = "219"
-                  offsetFromSymbolStart = "60">
-               </Location>
-               <Location
-                  uuid = "78E14563-0D27-4C4E-A44B-6DC08AA17B4E - 18f5427238f97d16"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__34-[SDKController handerAppleLogin:]_block_invoke_3"
-                  moduleName = "TestDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pub/Documents/LXBSDK/LXBSDK/LXBSDK/SDKProxy/Ctr/SDKController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "219"
-                  endingLineNumber = "219"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

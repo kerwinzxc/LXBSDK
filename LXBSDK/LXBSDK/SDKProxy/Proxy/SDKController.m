@@ -13,6 +13,8 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <GoogleSignIn/GoogleSignIn.h>
 #import "AdjustController.h"
+#import <ThinkingSDK/ThinkingSDK.h>
+#import "FirebaseController.h"
 static SDKController* instance;
 
 
@@ -71,8 +73,10 @@ static SDKController* instance;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     [NetworkController networkServiceInit];
+    [self shushuInit];
     [PayController getInstance];
     [LoginController getInstance];
+    [[FirebaseController getInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     [[FBSDKApplicationDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     [[AdjustController getInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
@@ -106,8 +110,53 @@ static SDKController* instance;
     sdkArg.googleAdUnitId = arg[@"googleAdUnitId"];
     sdkArg.adJustAppToken = arg[@"adJustAppToken"];
     sdkArg.adJustEnvironment = arg[@"adJustEnvironment"];
+    sdkArg.shushuAppid = arg[@"shushuAppid"];
+    sdkArg.shushuUrl = arg[@"shushuUrl"];
+    sdkArg.shushuEnvironment = arg[@"shushuEnvironment"];
     [SDKModel getInstance].sdkArg = sdkArg;
 }
 
+- (void)shushuInit{
+    NSString *appid = [SDKModel getInstance].sdkArg.shushuAppid;
+    NSString *url = [SDKModel getInstance].sdkArg.shushuUrl;
+    
+    TDConfig *config = [[TDConfig alloc] init];
+    config.appid = appid;
+    config.serverUrl = url;
+    if([[SDKModel getInstance].sdkArg.shushuEnvironment isEqual:@"1"]){
+        config.mode = TDModeDebug;
+    }
+    [TDAnalytics startAnalyticsWithConfig:config];
+    
+    [TDAnalytics setDistinctId:[TDAnalytics getDeviceId]];
+    
+    NSLog(@"shushuid %@", [TDAnalytics getDeviceId]);
+}
+
+#pragma firebase 上报
+
+- (void)firebaseCreateAccount{
+    [[FirebaseController getInstance] createAccount];
+}
+- (void)firebaseCreateRole{
+    [[FirebaseController getInstance] createRole];
+}
+- (void)firebaseEnterGame{
+    [[FirebaseController getInstance] enterGame];
+}
+- (void)firebaseLevelUp:(NSString *)level{
+    [[FirebaseController getInstance] levelUp:level];
+}
+
+
+#pragma adjust 上报
+
+- (void)adjustTrackEventWithToken:(NSString *)token{
+    [[AdjustController getInstance] trackEventWithToken:token];
+}
+
+- (void)trackPurchase:(NSString *)token amount:(int)amount currency:(NSString *)currency{
+    [[AdjustController getInstance] purchaseWithToken:token amount:amount currency:currency];
+}
 
 @end

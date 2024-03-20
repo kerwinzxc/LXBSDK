@@ -23,6 +23,17 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)showToast:(NSString *)content;
 
 - (void)sdkArgInit:(NSDictionary *)arg;
+
+
+#pragma firebase 上报
+- (void)firebaseCreateAccount;
+- (void)firebaseCreateRole;
+- (void)firebaseEnterGame;
+- (void)firebaseLevelUp:(NSString *)level;
+
+#pragma adjust 上报
+- (void)adjustTrackEventWithToken:(NSString *)token;
+- (void)trackPurchase:(NSString *)token amount:(int)amount currency:(NSString *)currency;
 @end
 
 

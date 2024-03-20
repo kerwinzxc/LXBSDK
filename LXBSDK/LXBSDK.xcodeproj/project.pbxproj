@@ -110,12 +110,15 @@
 		89CD6B382BA2A4D30051B2BB /* FacebookLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CD6B362BA2A4D30051B2BB /* FacebookLoginController.m */; };
 		89CD6B8E2BA69AD80051B2BB /* SDKArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CD6B8C2BA69AD80051B2BB /* SDKArg.h */; };
 		89CD6B8F2BA69AD80051B2BB /* SDKArg.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CD6B8D2BA69AD80051B2BB /* SDKArg.m */; };
-		89CD6BB12BA7F14E0051B2BB /* AdjustController.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CD6BAF2BA7F14E0051B2BB /* AdjustController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89CD6BB12BA7F14E0051B2BB /* AdjustController.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CD6BAF2BA7F14E0051B2BB /* AdjustController.h */; };
 		89CD6BB22BA7F14E0051B2BB /* AdjustController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CD6BB02BA7F14E0051B2BB /* AdjustController.m */; };
 		89CD6BB42BA8353B0051B2BB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CD6BB32BA8353A0051B2BB /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		89CD6BB62BA835490051B2BB /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CD6BB52BA835490051B2BB /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		89CD6BB72BA835640051B2BB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8941CBE92B6BC1D700DA9CA5 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		89CD6BB92BA8356F0051B2BB /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CD6BB82BA8356F0051B2BB /* AppTrackingTransparency.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		89E9F5B12BA98B75004C5B5B /* FirebaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E9F5B02BA98B75004C5B5B /* FirebaseController.m */; };
+		89E9F5B22BA98B75004C5B5B /* FirebaseController.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E9F5AF2BA98B75004C5B5B /* FirebaseController.h */; };
+		89E9F5B42BAA9AFA004C5B5B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89E9F5B32BAA9AFA004C5B5B /* GoogleService-Info.plist */; };
 		89EFAF312B6F859D00F13986 /* ReqPayValidate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF2F2B6F859D00F13986 /* ReqPayValidate.h */; };
 		89EFAF322B6F859D00F13986 /* ReqPayValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EFAF302B6F859D00F13986 /* ReqPayValidate.m */; };
 		89EFAF352B6F85B400F13986 /* ResPayValidate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EFAF332B6F85B400F13986 /* ResPayValidate.h */; };
@@ -280,6 +283,9 @@
 		89CD6BB32BA8353A0051B2BB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		89CD6BB52BA835490051B2BB /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
 		89CD6BB82BA8356F0051B2BB /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		89E9F5AF2BA98B75004C5B5B /* FirebaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirebaseController.h; sourceTree = "<group>"; };
+		89E9F5B02BA98B75004C5B5B /* FirebaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirebaseController.m; sourceTree = "<group>"; };
+		89E9F5B32BAA9AFA004C5B5B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		89EFAF2F2B6F859D00F13986 /* ReqPayValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReqPayValidate.h; sourceTree = "<group>"; };
 		89EFAF302B6F859D00F13986 /* ReqPayValidate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReqPayValidate.m; sourceTree = "<group>"; };
 		89EFAF332B6F85B400F13986 /* ResPayValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResPayValidate.h; sourceTree = "<group>"; };
@@ -392,6 +398,7 @@
 		891C1D842B6907A7004AF32A /* LXBSDK */ = {
 			isa = PBXGroup;
 			children = (
+				89E9F5AE2BA98B4A004C5B5B /* Firebase */,
 				89CD6BAE2BA7F1330051B2BB /* Adjust */,
 				89CD6B142BA1A4E90051B2BB /* Login */,
 				89CD6AF92BA053E80051B2BB /* Ad */,
@@ -413,6 +420,7 @@
 		891C1D912B6907D0004AF32A /* TestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				89E9F5B32BAA9AFA004C5B5B /* GoogleService-Info.plist */,
 				89EFAFE82B72877C00F13986 /* U8SDK_Language.bundle */,
 				89EFAF682B70FDC200F13986 /* LxbBundle.bundle */,
 				89EFAF442B707F4000F13986 /* TestDemo.entitlements */,
@@ -784,6 +792,15 @@
 			path = Adjust;
 			sourceTree = "<group>";
 		};
+		89E9F5AE2BA98B4A004C5B5B /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				89E9F5AF2BA98B75004C5B5B /* FirebaseController.h */,
+				89E9F5B02BA98B75004C5B5B /* FirebaseController.m */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		89EFAF3F2B6FB3E300F13986 /* Cfg */ = {
 			isa = PBXGroup;
 			children = (
@@ -873,6 +890,7 @@
 				89CD6B012BA054020051B2BB /* GoogleAdWarper.h in Headers */,
 				89A814352B845F04001177D1 /* DeleteAccConfirmView.h in Headers */,
 				891C1DF12B692324004AF32A /* KeychainConfig.h in Headers */,
+				89E9F5B22BA98B75004C5B5B /* FirebaseController.h in Headers */,
 				89EFAF5C2B70CCF100F13986 /* BindExtend.h in Headers */,
 				89CD6B042BA0568C0051B2BB /* LXBADInfo.h in Headers */,
 				89EFAF762B71D55000F13986 /* UserCenterView.h in Headers */,
@@ -1036,6 +1054,7 @@
 				89EFAFE92B72877C00F13986 /* U8SDK_Language.bundle in Resources */,
 				89EFAF692B70FDC200F13986 /* LxbBundle.bundle in Resources */,
 				891C1D9D2B6907D0004AF32A /* Main.storyboard in Resources */,
+				89E9F5B42BAA9AFA004C5B5B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1152,6 +1171,7 @@
 				89CD6B8F2BA69AD80051B2BB /* SDKArg.m in Sources */,
 				89CD6B382BA2A4D30051B2BB /* FacebookLoginController.m in Sources */,
 				89A814252B833F34001177D1 /* ChangeAccountView.m in Sources */,
+				89E9F5B12BA98B75004C5B5B /* FirebaseController.m in Sources */,
 				89EFAF802B71E25500F13986 /* LXBHelper.m in Sources */,
 				89EFAF592B70C78A00F13986 /* ReqOverseaBind.m in Sources */,
 				8941CBB22B6B4BAD00DA9CA5 /* ThirdUserInfo.m in Sources */,

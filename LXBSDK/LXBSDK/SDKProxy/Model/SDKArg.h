@@ -21,6 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong)NSString *adJustAppToken;
 @property(nonatomic, strong)NSString *adJustEnvironment;
 
+@property(nonatomic, strong)NSString *shushuAppid;
+@property(nonatomic, strong)NSString *shushuUrl;
+@property(nonatomic, strong)NSString *shushuEnvironment;
 @end
 
 NS_ASSUME_NONNULL_END

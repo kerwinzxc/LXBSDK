@@ -13,9 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (AdjustController *)getInstance;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
-- (void)createAccount:(NSString *)token;
-- (void)createRole:(NSString *)token;
-- (void)purchase:(NSString *)token amount:(NSString *)amount currency:(NSString *)currency;
+
+
+- (void)trackEventWithToken:(NSString *)token;
+- (void)purchaseWithToken:(NSString *)token amount:(int)amount currency:(NSString *)currency;
 @end
 
 NS_ASSUME_NONNULL_END

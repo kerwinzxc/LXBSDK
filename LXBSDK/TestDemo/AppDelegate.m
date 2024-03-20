@@ -27,8 +27,19 @@
         @"googleAdUnitId":@"ca-app-pub-3940256099942544/1712485313",
         
         @"adJustAppToken":@"lmnre3uzx5a8",
+        //1 是测试环境 其他真是环境
         @"adJustEnvironment":@"1",
         
+        //  //d973b221c3104f1c917a796b013dd090
+        @"shushuAppid":@"cbf0e9d25f0a4e5db63ee20e3b574037",
+        
+        //shushu.boomgames.top:5000
+        @"shushuUrl":@"https://ss-gat.hnminigames.fun:5000",
+        //1 是测试环境 其他真是环境
+        @"shushuEnvironment":@"2",
+        @"adjustPayToken":@"576c1d",
+        @"adjustPayToken":@"",
+        @"adjustPayToken":@"",
     };
     [[SDKController getInstance] sdkArgInit:dic];
     

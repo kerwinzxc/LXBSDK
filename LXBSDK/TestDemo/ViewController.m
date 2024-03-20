@@ -11,6 +11,8 @@
 #import <LXBSDK/LXBADInfo.h>
 #import <CocoaLumberjack/CocoaLumberjack.h>
 #import <SVProgressHUD/SVProgressHUD.h>
+#import <ThinkingSDK/ThinkingSDK.h>
+#import <MJExtension/MJExtension.h>
 static DDLogLevel ddLogLevel = DDLogLevelDebug;
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong)NSArray *actionLable;
@@ -38,7 +40,7 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
     NSLog(@"viewDidLoadviewDidLoadviewDidLoadviewDidLoad");
     
     [[SDKController getInstance] AdInitAfterControllerDidInit:self];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showRewardedAd:) name:AdRewardedNotiName object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(rewardedAdFinish:) name:AdRewardedNotiName object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(paySuccHandle:) name:PaySuccNotiName object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(payFailHandle:) name:PayFailNotiName object:nil];
     
@@ -79,6 +81,10 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
             
             //[[[UIApplication sharedApplication] delegate] window].rootViewController
             break;
+        case 7:
+            [self shushuTest];
+            break;
+            
         default:
             break;
     }
@@ -93,6 +99,7 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
         @"4  MyToast",
         @"5  大Toast",
         @"6  转菊花",
+        @"7  数数测试",
     ];
     
 }
@@ -119,17 +126,19 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
 - (void)paySuccHandle:(NSNotification *)noti{
     NSLog(@"pay succ  %@", noti.object);
     NSDictionary * dic = [self dictiognaryWithJsonString:noti.object];
+    int price = [[dic objectForKey:@"amount"] intValue];
+    int price2 = price / 100;
     
-    [[AdjustController getInstance] purchase:@"576c1d" amount:@"1200" currency:@"USD"];
+    [[SDKController getInstance] trackPurchase:@"576c1d" amount:price2 currency:@"USD"];
 }
 
 - (void)payFailHandle:(NSNotification *)noti{
     NSLog(@"pay fail  %@", noti.object);
 }
 
-- (void)showRewardedAd:(NSNotification *)noti{
+- (void)rewardedAdFinish:(NSNotification *)noti{
     LXBADInfo *info = (LXBADInfo *)noti.object;
-    NSLog(@"---%@", info.adType);
+    NSLog(@"---%@", [info mj_JSONString]);
 }
 
 - (NSString *)jsonSgtringWithDict:(NSDictionary *)dict {
@@ -159,5 +168,9 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
     return dic;
 }
 
+
+- (void)shushuTest{
+    [TDAnalytics track:@"login_call"];
+}
 
 @end
