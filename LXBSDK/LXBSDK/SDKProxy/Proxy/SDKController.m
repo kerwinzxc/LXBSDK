@@ -10,11 +10,11 @@
 #import "PayController.h"
 #import "GoogleAdWarper.h"
 #import "LoginController.h"
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <GoogleSignIn/GoogleSignIn.h>
 #import "AdjustController.h"
 #import <ThinkingSDK/ThinkingSDK.h>
 #import "FirebaseController.h"
+#import "FacebookLoginController.h"
 static SDKController* instance;
 
 
@@ -77,7 +77,9 @@ static SDKController* instance;
     [PayController getInstance];
     [LoginController getInstance];
     [[FirebaseController getInstance] application:application didFinishLaunchingWithOptions:launchOptions];
-    [[FBSDKApplicationDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+    
+    [[FacebookLoginController getInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+    
     [[AdjustController getInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
 }
@@ -89,7 +91,7 @@ static SDKController* instance;
         return YES;
     }
     
-    handled = [FBSDKApplicationDelegate.sharedInstance application:app openURL:url sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey] annotation:options[UIApplicationLaunchOptionsAnnotationKey]];
+    handled = [[FacebookLoginController getInstance] application:app openURL:url options:options];
     if(handled){
         return YES;
     }

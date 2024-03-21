@@ -13,6 +13,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (FacebookLoginController *)getInstance;
 
 - (void)facebookLogin;
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
