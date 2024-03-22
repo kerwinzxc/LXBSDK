@@ -33,6 +33,7 @@ static NSString *const LXBAccount = @"LXBAccount";
 
 + (NSString *)loadAccessToken;
 + (void)saveAccessToken:(NSString *)serverToken;
++ (void)delecteAccessToken;
 
 + (NSString *)loadAccount;
 + (void)saveAccount:(NSString *)account;

@@ -70,6 +70,9 @@ static SDKController* instance;
     [ViewHub openTestView];
 }
 
+- (void)sdkLogin{
+    [[LoginController getInstance] login];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     [NetworkController networkServiceInit];

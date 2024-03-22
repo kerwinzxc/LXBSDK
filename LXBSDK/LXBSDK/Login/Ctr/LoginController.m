@@ -12,6 +12,11 @@
 #import "AppleLoginController.h"
 #import "GoogleLoginController.h"
 #import "FacebookLoginController.h"
+
+@interface  LoginController()
+@property(nonatomic, assign)int loginWithToken;
+@end
+
 @implementation LoginController
 
 static LoginController* instance;
@@ -25,25 +30,27 @@ static LoginController* instance;
 
 - (instancetype)init{
     self = [super init];
+    self.loginWithToken = 0;
     return self;
 }
 
 - (void)login{
     NSString *token = [KeychainController loadAccessToken];
     if(token == nil || [token isEqual:@""]){
-        [self loginWithToken];
+        self.loginWithToken = 1;
+        [self loginWithDeviceId];
     }
     else{
-        [self loginWithDeviceId];
+        [self loginWithToken];
     }
 }
 
 - (void)loginWithDeviceId{
     ReqVisitor *req = [[ReqVisitor alloc] init];
-//    req.device_id = @"123456";
-//    req.uuid = @"123465";
-    req.device_id = @"bowen1236";
-    req.uuid = @"bowen1236";
+//    req.device_id = @"bowen1236";
+//    req.uuid = @"bowen1236";
+    req.device_id = [KeychainController loadLXBLoginDevicesId];
+    req.uuid = req.device_id;
     
     NSInteger cId = [[SDKModel getInstance].sdkArg.U8_CHANNEL intValue];
     req.channel_id = cId;
@@ -254,6 +261,11 @@ static LoginController* instance;
 
 - (void)postLoginFail:(NSString *)info{
     NSLog(@"---%@", info);
+    if(self.loginWithToken == 1){
+        [KeychainController delecteAccessToken];
+        self.loginWithToken = 0;
+    }
+    
     [[NSNotificationCenter defaultCenter] postNotificationName:LoginFailNotiName object:info];
 }
 

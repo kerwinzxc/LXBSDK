@@ -138,6 +138,10 @@
     [self saveKeyValueWithTableWraper:LXBDevicesIDService keyStr:LXBAccessToken valueStr:serverToken];
 }
 
++ (void)delecteAccessToken{
+    [self deleteValueWithTableName:LXBDevicesIDService keyStr:LXBAccessToken];
+}
+
 + (NSString *)loadAccount{
     return [self loadValueWithTableName:LXBDevicesIDService withKey:LXBAccount];
 }

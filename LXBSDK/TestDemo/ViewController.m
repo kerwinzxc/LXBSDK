@@ -84,7 +84,9 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
         case 7:
             [self shushuTest];
             break;
-            
+        case 8:
+            [[SDKController getInstance] sdkLogin];
+            break;
         default:
             break;
     }
@@ -100,6 +102,7 @@ static DDLogLevel ddLogLevel = DDLogLevelDebug;
         @"5  大Toast",
         @"6  转菊花",
         @"7  数数测试",
+        @"8  自动登录",
     ];
     
 }
