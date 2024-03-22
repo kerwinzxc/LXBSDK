@@ -47,7 +47,7 @@ static LoginController* instance;
     
     NSInteger cId = [[SDKModel getInstance].sdkArg.U8_CHANNEL intValue];
     req.channel_id = cId;
-    __weak typeof(self)weakSelf = self;
+    __weak __typeof(self)weakSelf = self;
     [UserCenterController visitorReq:req success:^(id  _Nonnull responseObject) {
         [weakSelf handlerLoginSucc:responseObject];
     } failure:^(NSError * _Nonnull error) {
@@ -70,7 +70,7 @@ static LoginController* instance;
         return;
     }
     
-    __weak typeof(self)weakSelf = self;
+    __weak __typeof(self)weakSelf = self;
     [UserCenterController autoLoginReq:req success:^(id  _Nonnull responseObject) {
         [weakSelf handlerLoginSucc:responseObject];
         } failure:^(NSError * _Nonnull error) {
@@ -135,7 +135,7 @@ static LoginController* instance;
 
 - (void)thirdLoginHub:(BindExtend *)bind thirdType:(NSInteger)tType{
     
-    __weak typeof(self) weakSelf = self;
+    __weak __typeof(self) weakSelf = self;
     if([SDKModel getInstance].loginType == ThirdPartyLoginBind){
         ReqOverseaBind *reqBind = [[ReqOverseaBind alloc] init];
         if(tType == 0){

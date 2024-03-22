@@ -98,7 +98,7 @@ typedef NS_ENUM(NSInteger, GoogleAdLoadState){
         GADRequest *request = [GADRequest request];
         NSString *gid = self.googleAdId;
         
-        __weak typeof(self)weakSelf = self;
+        __weak __typeof(self)weakSelf = self;
         self.googleAdLoadState = GoogleLoading;
         [GADRewardedAd loadWithAdUnitID:gid
                                 request:request
