@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)AdInitAfterControllerDidInit:(UIViewController *)vController;
 - (void)showRewardedAd;
 - (void)openTestView;
+- (void)sdkLogin;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 

@@ -113,6 +113,23 @@
 - (void)bindBtnClick:(LXBUITap *)send{
     if(send.view.tag == 0){
         //绑定
+        if([[DataHub getInstance].userModel.platforms count] > 0){
+            ThirdUserInfo *dic = [DataHub getInstance].userModel.platforms[0];
+            NSString *apType = dic.platform_type;
+            if(apType != nil){
+                if([apType isEqual:@"fb"]){
+                    [LXBHelper showToast:getLocalString(@"user_center_banged_facebook")];
+                }
+                else if([apType isEqual:@"gg"]){
+                    [LXBHelper showToast:getLocalString(@"user_center_banged_google")];
+                }
+                else if([apType isEqual:@"ap"]){
+                    [LXBHelper showToast:getLocalString(@"user_center_banged_apple")];
+                }
+            }
+            
+            return;
+        }
         BindAccView *bindView = [[BindAccView alloc] initTitle:getLocalString(@"user_account_ui_bind_title") isRightCloseBtn:RightClose];
 
         UIWindow *window = [UIApplication sharedApplication].windows[0];

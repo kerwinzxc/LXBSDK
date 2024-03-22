@@ -39,10 +39,11 @@
 
 + (void)showLoading:(NSString *)content{
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeClear];
-    [SVProgressHUD setCornerRadius:4];
-    [SVProgressHUD setBackgroundColor:[[UIColor alloc] initWithRed:(251.0f / 255) green:(232.0f / 255) blue:(184.0f / 255) alpha:1.0f]];
-    
-    [SVProgressHUD setForegroundColor:[[UIColor alloc] initWithRed:(98.0f / 255) green:(90.0f /255) blue:(74.0f / 255) alpha:1.0f]];
+    [SVProgressHUD setCornerRadius:8];
+    //[SVProgressHUD setBackgroundColor:[[UIColor alloc] initWithRed:(251.0f / 255) green:(232.0f / 255) blue:(184.0f / 255) alpha:1.0f]];
+    [SVProgressHUD setBackgroundColor:[[UIColor alloc] initWithRed:(10.0f / 255) green:(10.0f / 255) blue:(10.0f / 255) alpha:0.6f]];
+    //[SVProgressHUD setForegroundColor:[[UIColor alloc] initWithRed:(98.0f / 255) green:(90.0f /255) blue:(74.0f / 255) alpha:1.0f]];
+    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
     [SVProgressHUD showWithStatus:content];
     //[SVProgressHUD dismissWithDelay:9.0f];
 }
