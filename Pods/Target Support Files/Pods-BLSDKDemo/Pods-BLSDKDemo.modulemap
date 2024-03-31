@@ -1,0 +1,6 @@
+framework module Pods_BLSDKDemo {
+  umbrella header "Pods-BLSDKDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
