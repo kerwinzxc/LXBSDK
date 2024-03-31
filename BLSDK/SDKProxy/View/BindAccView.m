@@ -76,22 +76,47 @@
         LXBUITap *tap = [[LXBUITap alloc] init];
         [tap addTarget:self action:@selector(viewClick:)];
         [bindApple addGestureRecognizer:tap];
+        
+        MyLinearLayout *imageParent = nil;
+        MyLinearLayout *txtParent = nil;
+        for (int i = 0; i < 3; i++) {
+            MyLinearLayout *componentParent = [MyLinearLayout linearLayoutWithOrientation:MyOrientation_Vert];
+            
+            componentParent.myHeight = UI(50);
+            if(i == 0 || i == 2){
+                componentParent.myWidth = UI(60);
+                if (i == 0){
+                    imageParent = componentParent;
+                    //imageParent.backgroundColor = [UIColor redColor];
+                }
+                componentParent.gravity = MyGravity_Horz_Left | MyGravity_Vert_Center;
+            }
+            if(i == 1){
+                componentParent.weight = 1;
+                txtParent = componentParent;
+                componentParent.gravity = MyGravity_Center;
+            }
+            
+            [bindApple addSubview:componentParent];
+        }
+        
         UIImageView *appleIcon = [[UIImageView alloc] init];
         
         appleIcon.image = [LXBHelper imageWithName:dic[@"imgName"]];
         appleIcon.myHeight = UI(31);
         appleIcon.myWidth = UI(31);
-        appleIcon.myLeft = UI(80);
-        [bindApple addSubview:appleIcon];
+        appleIcon.myLeft = UI(10);
+        [imageParent addSubview:appleIcon];
         UILabel *titleLable = [UILabel new];
         titleLable.text = dic[@"showText"];
         titleLable.myWidth = MyLayoutSize.wrap;
+        titleLable.alignment = MyGravity_Center;
         titleLable.textAlignment = NSTextAlignmentCenter;
         titleLable.myHeight = MyLayoutSize.wrap;
         titleLable.font = [UIFont boldSystemFontOfSize:UI(16)];
         titleLable.textColor = [LXBHelper normalTextColor];
         [titleLable sizeToFit];
-        [bindApple addSubview:titleLable];
+        [txtParent addSubview:titleLable];
         [self.contentView addSubview:bindApple];
     }
 }
@@ -127,7 +152,7 @@
 }
 
 - (void)hideLoading{
-    
+    [LXBHelper hideLoading];
 }
 
 @end
