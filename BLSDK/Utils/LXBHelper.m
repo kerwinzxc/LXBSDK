@@ -14,10 +14,29 @@ static BOOL showing = NO;
 @implementation LXBHelper
 
 + (UIImage *)imageWithName:(NSString *)name {
-    NSString *imaPath = [NSString stringWithFormat:@"LxbBundle.bundle/%@", name];
-    UIImage *image = [UIImage imageNamed:imaPath];
-    return image;
+    NSBundle *bundle = [self lagMainBundle];
+    NSString *file = [bundle pathForResource:name ofType:@"png"];
+    UIImage *img = [UIImage imageWithContentsOfFile:file];
+    return img;
 }
+
++ (NSBundle *)lagMainBundle{
+    
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    NSURL *url = [bundle URLForResource:@"LxbBundle" withExtension:@"bundle"];
+    if (url) {
+        bundle = [NSBundle bundleWithURL:url];
+    }
+    if (!bundle) {
+        NSString * bundlePath = [[NSBundle mainBundle] pathForResource:@"LxbBundle" ofType:@"bundle"];
+        if (bundlePath) {
+            bundle = [NSBundle bundleWithPath:bundlePath];
+        }
+    }
+    return bundle;
+
+}
+
 
 + (UIColor *)mainColor{
     return [UIColor colorWithRed:0.97 green:0.87 blue:0.33 alpha:1];;
